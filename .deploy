@@ -1,10 +1,7 @@
+Echo "Running NPM Build"
 cd buildchain
 npm ci
 npm run build
-cd ..
-
-cd cms
-composer install --no-scripts --no-interaction --prefer-dist --optimize-autoloader --ignore-platform-reqs
 cd ..
 
 git add -A
