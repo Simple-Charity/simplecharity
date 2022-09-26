@@ -1,0 +1,22 @@
+
+{% macro input(required, name, value, type, id) %}
+    <input class="form-input"
+           id="{{ id }}"
+           type="{{ type }}"
+           name="{{ name }}"
+           value="{{ value|e }}"
+    >
+{% endmacro input %}
+
+{% macro label(for,text) %}
+    <label class="form-label" for="{{ for }}">
+        {{ text }}
+    </label>
+{% endmacro %}
+
+{% macro button(text,type) %}
+    <button class="stories__next-btn"
+            type="{{ type|default('submit') }}">
+        {{ text }}
+    </button>
+{% endmacro %}

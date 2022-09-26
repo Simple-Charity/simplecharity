@@ -1,0 +1,56 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+{% import "_macros/blog" as blog %}
+
+{% block headMeta %}
+    {% if entry.pageDescription|length %}
+        <meta name="description" content={{ entry.pageDescription }}>
+    {% endif %}
+{% endblock %}
+
+{% block contentborderless %}
+    <section class="edge edge-t mx-auto relative">
+        <header class="w-full z-10 relative max-w-screen-2xl mx-auto">
+            <h1 class="header-one">
+                student blog <span class="tracking-overlap hidden sm:inline">–––––––––</span>
+            </h1>
+        </header>
+    </section>
+
+    <div class="edge">
+        <div class="max-w-screen-2xl mx-auto">
+
+        {% paginate craft.entries.section('studentBlog').limit(10) as pageInfo, pageEntries %}
+
+        {% for post in pageEntries %}
+            {{ blog.blogTeaserPost(post, loop) }}
+        {% endfor %}
+
+        {% if pageInfo.totalPages > 1 %}
+            <ul class="flex list-reset  mb-12">
+
+                {% if pageInfo.prevUrl %}
+                    <li><a class="block text-blue border-r border-blue px-3 py-2" href="{{ pageInfo.prevUrl }}">Previous</a></li>
+                {% endif %}
+
+                {% for page, url in pageInfo.getPrevUrls(5) %}
+                    <li><a class="block text-blue border-r border-blue px-3 py-2" href="{{ url }}">{{ page }}</a></li>
+                {% endfor %}
+
+                <li class="block text-green border-r border-blue px-3 py-2">{{ pageInfo.currentPage }}</li>
+
+                {% for page, url in pageInfo.getNextUrls(5) %}
+                    <li><a class="block text-blue border-r border-blue px-3 py-2" href="{{ url }}">{{ page }}</a></li>
+                {% endfor %}
+
+                {% if pageInfo.nextUrl %}
+                    <li><a class="block text-blue px-3 py-2" href="{{ pageInfo.nextUrl }}">Next</a></li>
+                {% endif %}
+            </ul>
+        {% endif %}
+
+        </div>
+    </div>
+   
+
+
+{% endblock %}

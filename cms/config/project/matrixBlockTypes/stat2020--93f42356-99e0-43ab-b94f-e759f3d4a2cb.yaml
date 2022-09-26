@@ -1,0 +1,41 @@
+field: 9c051f34-07ac-45aa-be8b-5b68c079a7f7 # Table Data
+fieldLayouts:
+  72cd6fd9-5040-4d13-ab01-ad6ff54b7f51:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 57badb1e-15c6-47d0-881e-6822f9ac336f # Stat 2020
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  57badb1e-15c6-47d0-881e-6822f9ac336f: # Stat 2020
+    columnSuffix: twhtlmud
+    contentColumnType: text
+    fieldGroup: null
+    handle: stat2020
+    instructions: ''
+    name: 'Stat 2020'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: stat2020
+name: 'Stat 2020'
+sortOrder: 3

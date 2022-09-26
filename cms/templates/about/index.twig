@@ -1,0 +1,287 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+{% set entry = craft.entries.slug('about').one() %}
+
+{% block headMeta %}
+    {% if entry.pageDescription|length %}
+        <meta name="description" content={{ entry.pageDescription }}>
+    {% endif %}
+{% endblock %}
+
+{% block headLinks %}
+    {{ parent() }}
+{% endblock headLinks %}
+
+{% block contentborderless %}
+    
+    {# BANNER 1 #}
+
+    <div class="bg-[#ffffff]">
+        <div class="edge edge-t relative z-10">
+            <div class="max-w-screen-2xl mx-auto">
+                <div>
+                    <h1 class="header-one">about <span class="tracking-overlap hidden sm:inline">--------------------</span></h1>
+                </div>
+
+                <div class="mt-20">
+                    <p class="text-red text-sm xxl:text-lg tracking-wider font-semibold">OUR MISSION</p>
+                </div>
+
+                <div class="pt-6 sm:w-3/4 md:w-2/3">
+                    <p class="text-2xl lg:text-3xl xxl:text-4xl text-blue font-semibold">{{ craft.entries.slug('site-wide-assets').one().simpleMissionStatement|replace("solidarity","<span class='text-red'>solidarity</span>")|striptags }} </p>
+                </div>
+            </div>
+        </div>
+        
+        <div v-prlx="{ preserveInitialPosition:false, speed: 0.3 }" class="bg-cover bg-left-top h-[30rem] sm:h-[50rem] lg:h-[60rem] xxl:h-[80rem]" style="background-image: url('{{ entry.aboutBanner1.one().getUrl() }}');"></div>
+        
+    </div>
+
+    {# BANNER 2 #}
+
+    <div class="relative edge bg-red h-[40rem] xl:h-[50rem]">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="">
+                <p class="text-linen text-sm xxl:text-lg tracking-wider font-semibold">OUR VISION</p>
+            </div>
+
+            <div class="pt-6">
+                <p class="text-2xl lg:text-3xl xxl:text-4xl text-blue font-semibold">We envision a world where <br class="sm:hidden">all Christians<br class="hidden sm:block"> love the poor <span class="text-linen"><br class="sm:hidden">in deed & in truth.</span></p>
+            </div>
+
+            <img class="absolute left-[-.4rem] bottom-[-.4rem] w-[20rem] sm:w-[30rem] lg:w-[32rem] xxl:w-[40rem]" src="{{ entry.aboutSquiggle1.one().getUrl() }}" alt="">
+        </div>
+    </div>
+
+    {# BANNER 3 #}
+
+    <div class="relative edge bg-cover bg-center h-[20rem] sm:h-[30rem] md:h-[40rem] lg:h-[50rem] xl:h-screen" style="background-image: url('{{ entry.aboutBanner2.one().getUrl() }}');">
+        <div class="absolute bottom-10 sm:bottom-32 xxl:bottom-40 left-6 sm:left-14 lg:left-20">
+            <div class="">
+                <p class="text-red text-sm tracking-wider font-semibold">WHAT WE DO</p>
+            </div>
+
+            <div class="pt-6">
+                <p class="text-xl sm:text-2xl lg:text-3xl xxl:text-4xl text-linen font-semibold">Our programs aim to create <br class="hidden sm:block">communities of practice that live <br class="hidden sm:block">out solidarity with the poor.</p>
+            </div>
+        </div>
+        
+    </div>
+
+    {# BANNER 4 #}
+
+    {% set c = entry.infoCards.all() %}
+
+    <div class="relative md:flex justify-center">
+        {% for card in c %}
+            <div v-prlx="{ reverse: true, preserveInitialPosition: false, speed: 0.05 }" class="hidden md:block relative z-10 md:mt-[-4rem] md:w-[14rem] lg:w-[20rem] xxl:w-[24rem] md:mx-5 p-8 lg:p-12 bg-{{ card.backgroundColor }} transition-all ease-in-out duration-300 transform">
+                <div class="max-w-[30rem] mx-auto text-center md:max-w-none md:text-left">
+                    <h1 class="text-3xl lg:text-5xl xxl:text-6xl font-serif font-bold">{{ card.primaryText }}</h1>
+
+                    <div class="mt-6 xxl:mt-20 md:h-[18rem] xxl:h-[24rem] pb-8 md:pb-0">
+                        <p class="text-md lg:text-lg xxl:text-2xl text-blue leading-relaxed">{{ card.secondaryText }}</p>
+                    </div>
+
+                    <div class="flex justify-center">
+                        <button>
+                            <a href="{{ card.buttonSlug.one().url }}">
+                                <div class="bluebutton w-44 lg:w-52">{{ card.buttonText }}</div>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:hidden relative z-10 md:mt-[-4rem] md:w-[14rem] lg:w-[20rem] xxl:w-[24rem] md:mx-5 p-8 lg:p-12 bg-{{ card.backgroundColor }} transition-all ease-in-out duration-300 transform">
+                <div class="max-w-[30rem] mx-auto text-center md:max-w-none md:text-left">
+                    <h1 class="text-3xl font-serif font-bold">{{ card.primaryText }}</h1>
+
+                    <div class="mt-6 xxl:mt-20 md:h-[18rem] xxl:h-[24rem] pb-8 md:pb-0">
+                        <p class="text-md lg:text-lg xxl:text-2xl text-blue leading-relaxed">{{ card.secondaryText }}</p>
+                    </div>
+
+                    <div class="flex justify-center">
+                        <button>
+                            <a href="{{ card.buttonSlug.one().url }}">
+                                <div class="bluebutton w-44 lg:w-52">{{ card.buttonText }}</div>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    
+        <img class="absolute top-52 w-full max-w-[100rem] scale-[1.28]" src="{{ entry.aboutSquiggle2.one().getUrl() }}" alt="">
+    </div>
+
+    {# BANNER 5 #}
+
+    <div class="edge bg-cover bg-center">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="">
+                <p class="text-red text-sm tracking-wider font-semibold">OUR CORE VALUES</p>
+            </div>
+
+            <div class="pt-6 pb-14">
+                <p class="text-2xl lg:text-3xl text-blue font-semibold">In all things we do, we seek to <br class="hidden sm:block">embody the following values.</p>
+            </div>
+
+            <div class="sm:flex flex-wrap justify-center my-10 md:w-full">
+                {% set i = 0 %}
+                {% for value in entry.coreValues.all() %}
+                    <div class="sm:w-[7rem] md:w-[7rem] lg:w-[10rem] text-center sm:mx-[.2rem] md:mx-4 lg:mx-7 mb-12 sm:mb-0 {% if i % 2 == 0 %}sm:mt-20{% else %}sm:mt-0{% endif %}">
+                        <div class="mb-1 flex justify-center sm:block"> 
+                            <img class="w-[12rem] sm:w-[7rem] md:w-[7rem] lg:w-[10rem]" src="{{ value.icon.one().getUrl() }}" alt="">
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                            <p class="text-blue font-semibold text-lg lg:text-2xl">{{ value.positiveText }}</p>
+                            <p class="text-blue text-md lg:text-xl">{{ value.negativeText }}</p>
+                        </div>
+                        
+                        {% set i = i + 1 %}
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="mt-20">
+                <h2 class="text-lg sm:text-xl lg:text-2xl text-blue">These are our core values because <br class="hidden sm:block"><span class="font-semibold">helping others is most...</span></h2>
+                
+                <div class="ml-4 md:ml-20 xxl:ml-60 mt-4">
+                    {% for value in entry.coreValues.all() %}
+                        <h2 class="text-md sm:text-lg md:text-xl xxl:text-2xl text-blue mb-4"><span class="bg-{{ value.accentColor }} text-linen font-semibold px-1">{{ value.attributeName }}</span> {{ value.attributeDescription }}</h2>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    {# BANNER 6 #}
+
+    <div class="bg-lightgreen">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="relative sm:hidden bg-cover" style="background-image: url('{{entry.aboutAndrewLee.one().getUrl()}}');">
+                <div class="">
+                    <div class="text-center edge-x py-20 flex justify-center items-center relative z-20">
+                        <div>
+                            <div class="">
+                                <p class="text-red text-sm xxl:text-lg tracking-wider font-semibold">OUR IMPACT</p>                
+                            </div>
+                            <div class="my-6 xxl:my-12">
+                                <p class="text-md lg:text-lg xxl:text-2xl text-linen w-[15rem] lg:w-[20rem] xxl:w-[28rem] mx-auto">{{ entry.statsDescription1 }}</p>
+                            
+                            </div>
+
+                            {% for stat in entry.stats.all() %}
+                                <div class="my-3 lg:my-4 xxl:my-10">
+                                    <div class="mb-4">
+                                        <h1 class="text-4xl text-linen lg:text-5xl xxl:text-8xl font-serif font-bold">{{ stat.amount }}</h1>
+                                    </div>
+                                    <div class="lg:w-[12rem] mx-auto">
+                                        <p class="text-linen text-sm tracking-wide lg:tracking-wider">{{ stat.description|upper }}</p>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-blue opacity-[.8] z-10"></div>
+                </div>
+            </div>
+
+            <div class="hidden sm:block">
+                <div class="grid grid-cols-2">
+                    <div class="text-center px-10 lg:px-20 py-20 flex justify-center items-center">
+                        <div>
+                            <div class="">
+                                <p class="text-red text-sm xxl:text-lg tracking-wider font-semibold">OUR IMPACT</p>                
+                            </div>
+                            <div class="my-6 xxl:my-12">
+                                <p class="text-md lg:text-lg xxl:text-2xl text-blue w-[15rem] lg:w-[20rem] xxl:w-[28rem] mx-auto">{{ entry.statsDescription1 }}</p>
+                            
+                            </div>
+
+                            {% for stat in entry.stats.all() %}
+                                <div class="my-3 lg:my-4 xxl:my-10">
+                                    <div class="mb-4">
+                                        <h1 class="text-4xl lg:text-5xl xxl:text-8xl font-serif font-bold">{{ stat.amount }}</h1>
+                                    </div>
+                                    <div class="lg:w-[12rem] mx-auto">
+                                        <p class="text-blue text-sm tracking-wide lg:tracking-wider">{{ stat.description|upper }}</p>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="overflow-hidden relative">
+                        <img v-prlx="{ speed: 0.05, preserveInitialPosition: false, reverse: true }" class="mt-10 scale-[1.01] translate-x-[-0.02rem]" src="{{ entry.aboutAndrewLee.one().getUrl() }}" alt="">
+
+                        <div class="absolute h-20 top-0 left-0 right-0 z-10 bg-lightgreen"></div>
+                        <div class="absolute h-20 bottom-0 left-0 right-0 z-10 bg-lightgreen"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {# BANNER 7 #}
+
+    <div class="edge h-[65rem] sm:h-[53rem] md:h-[58rem] lg:h-[70rem]">
+        <div class="max-w-screen-xl mx-auto">
+            <div class="sm:flex justify-start items-start">
+                <div class="w-full sm:w-1/2">
+                    <p class="text-red text-sm tracking-wider font-semibold">FINANCIALS & TRANSPARENCY</p>
+
+                    <div class="my-6">
+                        <p class="text-2xl lg:text-3xl text-blue font-semibold">We're an open book.</p>
+                    </div>
+
+                    <div class="max-w-screen-xl mx-auto">
+                        {% for doc in entry.transparencyDocs.all() %}
+                            <div class="mb-4 ml-8">
+                                <a href="{{ doc.docSlug }}" class="text-red font-serif font-bold text-xl sm:text-2xl lg:text-3xl underline">{{ doc.docName }}</a>
+                            </div>
+                        {% endfor %}
+
+                        <div class="mt-20 pb-4">
+                            <h2 class="text-blue text-lg leading-tight tracking-wide">BUDGET BREAKDOWN</h2>
+                        </div>
+                    
+                        <div class="relative">
+                            <div class="absolute top-8 left-[-8rem] sm:left-[-3rem] lg:left-[-2rem] w-[20rem] sm:w-[24rem] md:w-[32rem] lg:w-[40rem]">
+                                <img src="{{ entry.aboutGraph.one().getUrl() }}" alt="">
+                            </div>
+
+                            <div class="text-blue text-[10px] absolute top-[3rem] left-[12rem] sm:text-xs sm:top-[3.1rem] sm:left-[21rem] md:text-md md:top-[3.6rem] md:left-[28.88rem] lg:text-lg lg:top-[3.8rem] lg:left-[38rem]">
+                                <span class="font-bold tracking-wider">49.6%</span> CORE PROGRAMS
+                            </div>
+                            <div class="text-blue text-[10px] absolute top-[5.3rem] left-[12rem] sm:text-xs sm:top-[5.9rem] sm:left-[21rem] md:text-md md:top-[7.3rem] md:left-[28.88rem] lg:text-lg lg:top-[8.4rem] lg:left-[38rem]">
+                                <span class="font-bold tracking-wider">4.8%</span> FUNDRAISING
+                            </div>
+                            <div class="text-blue text-[10px] absolute top-[7.6rem] left-[12rem] sm:text-xs sm:top-[8.6rem] sm:left-[21rem] md:text-md md:top-[10.9rem] md:left-[28.88rem] lg:text-lg lg:top-[12.9rem] lg:left-[38rem]">
+                                <span class="font-bold tracking-wider">8.1%</span> ADMINISTRATIVE
+                            </div>
+                            <div class="text-blue text-[10px] absolute top-[9.9rem] left-[12rem] sm:text-xs sm:top-[11.4rem] sm:left-[21rem] md:text-md md:top-[14.5rem] md:left-[28.88rem] lg:text-lg lg:top-[17.5rem] lg:left-[38rem]">
+                                <span class="font-bold tracking-wider">37.5%</span> GRANTS <span class="hidden md:inline">TO CHARITIES</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="w-3/4 mx-auto max-w-[15rem] sm:w-1/2 sm:max-w-none mt-[23rem] sm:mt-0">
+                    <div class="w-full sm:w-[10rem] xl:w-[15rem]">
+                        <a class="w-full" href="https://www.guidestar.org/profile/81-2367982" target="_blank">
+                            <img class="w-full" src="https://widgets.guidestar.org/TransparencySeal/9639075"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+{% endblock %}
+
+
+{% block bodyJs %}
+    {{ parent() }}
+{% endblock bodyJs %}

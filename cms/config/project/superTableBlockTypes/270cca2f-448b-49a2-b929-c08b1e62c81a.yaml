@@ -1,0 +1,35 @@
+field: 36690932-3aeb-4461-add0-19d804107b47 # Beliefs Pages
+fieldLayouts:
+  0afbc7c2-a706-46cb-bcf4-6ff27f0ac811:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 22719c53-1950-419d-9fcf-6889e131a46e # Page
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  22719c53-1950-419d-9fcf-6889e131a46e: # Page
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: page
+    instructions: ''
+    name: Page
+    searchable: false
+    settings:
+      contentTable: '{{%matrixcontent_page}}'
+      maxBlocks: ''
+      minBlocks: ''
+      propagationKeyFormat: null
+      propagationMethod: all
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix

@@ -1,0 +1,22 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 2b1d6476-49e2-48d6-a867-87f7d83ddbbc # Partners
+handle: featuredDonorPartners
+instructions: ''
+name: 'Featured Donor Partners'
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: ''
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: true
+  source: null
+  sources:
+    - 'section:46ccdf77-55b1-4b94-8ab2-8318592c13ee' # Partners
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

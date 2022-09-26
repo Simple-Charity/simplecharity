@@ -1,0 +1,201 @@
+fieldLayouts:
+  cb21845e-a0ee-4627-b2a9-3d4110540a55:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 7a633eca-bfc2-4150-9029-8866716a9600 # Page Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a15632d6-3fd3-4b9c-b1a5-89468da17a82 # Page Status
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 927a76f6-1e16-45da-998b-9795f552f597 # Light Background
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Page Data'
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 70fd18c6-5135-4159-8fb7-f5c23ea9deda # About Banner 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c516a434-d927-4504-b29d-7f35c06273c1 # About Banner 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f9768f5e-1df5-4ddd-8256-116dac854281 # About Graph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ae1c1d48-b88b-45d5-b301-44dbd0c9a868 # About Andrew Lee
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Assets
+        sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: 4c3b2893-31d9-4694-b088-cfb381121155 # About Squiggle 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3079a75c-fb21-4964-9838-733d14d29365 # About Squiggle 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Squiggles
+        sortOrder: 4
+      -
+        elements:
+          -
+            fieldUid: 42ca8644-e860-481d-82fa-0dae13cf6078 # Transparency Docs
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Docs
+        sortOrder: 5
+      -
+        elements:
+          -
+            fieldUid: 5f75385e-f53b-48ce-aa9d-8db8ad51e29d # Stats Description 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 612b1ae7-4b35-40a3-8ac3-c8cba9814589 # Stats Description 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 74284365-7a11-44ce-89c8-f0d2cdd8fc9d # Stats
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Stats
+        sortOrder: 6
+      -
+        elements:
+          -
+            fieldUid: 9334a6a7-c99f-44ee-a619-26303237f362 # Core Values
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Values
+        sortOrder: 7
+      -
+        elements:
+          -
+            fieldUid: eb4b0a5c-ec8c-4c06-a6a4-c5f5f1a2d047 # Info Cards 
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Info Cards'
+        sortOrder: 8
+handle: about
+hasTitleField: false
+name: About
+section: aebd3596-f0c5-4f10-8b22-74c079f120e0 # About
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

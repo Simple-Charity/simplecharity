@@ -1,0 +1,89 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+
+{% block contentborderless %}
+    <div class="edge edge-t">
+        <div class="max-w-screen-md mx-auto">
+            <section class="">
+                <header class="w-full z-10 relative">
+                    <nav class="text-sm md:text-2xl tracking-wide mb-6 xxl:mb-4 lg:mb-104 pb-6">
+                        <ol class="list-reset flex">
+                            <li><a href="{{ craft.entries.slug('blog-main-page').one().url }}" class="font-extrabold inline-block border-b border-dotted transition-all hover:opacity-75 cursor-pointer"> Student Blog</a>
+                            </li>
+                            <li><span class="mx-2 font-light">/</span></li>
+                            <li class="font-normal"> {{ entry.postDate|date("F d, Y") }}</li>
+                        </ol>
+                    </nav>
+                    <h1 class="text-blue text-4xl lg:text-5xl font-serif leading-tight pb-6">
+                        {{ entry.title }}
+                    </h1>
+                    
+                    {% if entry.authorPhoto|length and entry.authorShortBio|length %}
+                        <div class="flex items-center mt-4 pb-4 border-dotted">
+                            <img src="{{ entry.authorPhoto.one().getUrl('authorPhoto') }}" class="rounded-full w-32 mr-4" alt="Author of this post - {{ entry.title }}">
+                            <div>
+                                {% if entry.blogCredit|length %}
+                                    <p class="text-xl font-semibold">
+                                        {{ entry.blogCredit }}
+                                    </p>
+                                {% endif %}
+                                <p class="text-md">
+                                    {{ entry.authorShortBio }}
+                                </p>
+                            </div>
+                        </div>
+                    {% endif %}
+                </header>
+            </section>
+            {% for block in entry.blogContent.all() %}
+                <div class="mt-8 md:mt-16{% if loop.last %} mb-12 md:mb-24 lg:mb-32{% endif %}">
+                    {% switch block.type %}
+
+                    {% case "largeText" %}
+                        <div class="stories__block--lg-text redactor">
+                            {{ block.text|replace({'<a href': '<a target="_blank" class="text-red underline" href'})|raw }}
+                        </div>
+
+                    {% case "smallText" %}
+                        <div class="stories__block--sm-text redactor">
+                            {% set blockText = block.text %}
+                            {{ block.text|replace({ '<a href': ( '<a target="_blank" class="text-red underline" href'  ) })|raw }}
+                        </div>
+
+                    {% case "image" %}
+                        <figure class="mt-8 md:mt-16 mb-8 md:mb-16 w-full">
+                            <img class="lazyload" data-src="{{ block.image.one().getUrl('storySmallImage') }}" alt="{{ entry.title }}">
+                            {% if block.image.one().imageCaption|length %}
+                                <figcaption>
+                                    <p class="text-sm text-center pt-2">
+                                        {{ block.image.one().imageCaption }}
+                                    </p>
+                                </figcaption>
+                            {% endif %}
+                        </figure>
+
+                    {% endswitch %}
+
+                </div>
+            {% endfor %}
+
+            <section class="flex flex-wrap content-ctn mt-12 md:mt-24 mx-auto relative mb-12 mx-auto border-t pt-6 border-dotted">
+                <h3 class="font-sans font-semibold text-lg lg:text-2xl mb-4">
+                    Subscribe to get updates from the blog.
+                </h3>
+
+                <div class="typeform-widget" data-url="https://form.typeform.com/to/m6adQDpq?typeform-medium=embed-snippet" data-transparency="100" data-hide-headers="true" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+            </section>
+        </div>
+    </div>
+    
+
+
+{% endblock %}
+
+{% block bodyJs %}
+    {{ parent() }}
+{% endblock bodyJs %}
+
+
+

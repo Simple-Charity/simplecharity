@@ -1,0 +1,313 @@
+fieldLayouts:
+  c1d0739a-d5cb-479e-bec7-01faee42bc36:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: a15632d6-3fd3-4b9c-b1a5-89468da17a82 # Page Status
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b23dcc49-c08d-46f8-b0e3-3ce8f14cece2 # Legacy
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 927a76f6-1e16-45da-998b-9795f552f597 # Light Background
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Page Data'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: ad5f00e4-1b48-494f-a2c3-b66eb3c64b3e # Partner Motto
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9207a6b9-2db9-4277-ac3c-e97c4c6a4350 # Partner Focus
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a08f5fc8-9695-4020-ac3b-70a6fbb63354 # Partner Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f357a4d4-4d37-443e-8420-e260177ce583 # Partner Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e0fc785f-cba9-4991-89b2-efd6b299bbda # Kindful Campaign Page
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Generic Data'
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 9c0b961d-e12c-4301-a3de-748129a32867 # Cause Area
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 47a5e597-de28-4a21-bd8e-7d6849507248 # Countries of Operation
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b310cbd7-5f43-438f-8a4d-9d8a38f4ceee # Year Recommended
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 92b7c23b-f33d-44bb-8103-52b878fbf8ee # Top Seven
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Partner Search Data'
+        sortOrder: 3
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: Title
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: eabb9c1c-d89f-4b47-a047-d46b49617621 # Partner Featured Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3daa54de-98b4-4bf5-8005-d5737b3ce6ca # Partner Hero Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 95fbfc95-6fc4-494c-9681-b87bd287194e # Partner Hero Text Highlight
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6c9cd75c-60ce-4dc2-87bc-cc6aa6677492 # Partner Descriptive Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Title Banner'
+        sortOrder: 4
+      -
+        elements:
+          -
+            fieldUid: 11ac932b-77db-46ef-a914-8718e3ed9588 # Every Dollar Goes Toward The Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c3d8e53d-a73e-4912-a16e-2dff005d9bbf # Partner Impact
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Dollar Impact Banner'
+        sortOrder: 5
+      -
+        elements:
+          -
+            fieldUid: 282ed9d4-497e-479d-bef6-4855c8ddc68c # Overall Impact Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 239454ac-22dd-4e40-89b2-1ac68ce66ff4 # Overall Impact Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Overall Impact Banner'
+        sortOrder: 6
+      -
+        elements:
+          -
+            fieldUid: 96aa5e33-5392-4f29-84b8-97fea9f6d69d # Partner Dropdowns
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Dropdowns Banner'
+        sortOrder: 7
+      -
+        elements:
+          -
+            fieldUid: f980abe7-b1ac-480c-a8e3-b3ba971c5634 # Related Story
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f39de907-66b6-48cd-b329-0cb0114af282 # Image Alignment
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 815278f2-ff88-40a3-a8e0-60f94693cffd # Featured Podcast Episode
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 373086b8-e4c2-4bc4-95c2-e86e94ca6a78 # Podcast Image Alignment
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Story Banner'
+        sortOrder: 8
+      -
+        elements:
+          -
+            fieldUid: 9ac983f7-c715-4df5-a769-4a6a89ec1ac5 # Why We Trust Them Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1ceca99e-e5ae-45f5-b9a7-2dd94d94501d # Why We Trust Them Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Why We Trust Them Banner'
+        sortOrder: 9
+handle: partners
+hasTitleField: true
+name: Partners
+section: 46ccdf77-55b1-4b94-8ab2-8318592c13ee # Partners
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: ''

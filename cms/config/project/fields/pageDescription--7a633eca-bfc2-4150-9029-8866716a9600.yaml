@@ -1,0 +1,19 @@
+columnSuffix: fckwhhjy
+contentColumnType: text
+fieldGroup: 266c6678-9669-488e-82b7-68601833935a # About
+handle: pageDescription
+instructions: 'This is the text that will be displayed as a subtitle (or ''snippet'') on Google and other search engines for this page. '
+name: 'Page Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

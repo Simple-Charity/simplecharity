@@ -1,0 +1,20 @@
+/**
+ * pages/pop.pcss
+ *
+ * Styles for the Profession of Practice
+ *
+ */
+
+.pop {
+    &__link {
+        @apply text-yellow font-semibold border-b border-dotted transition-all;
+        &:hover {
+            @apply opacity-75;
+        }
+    }
+
+    &__back {
+        display: inline-block;
+        transform: rotate(180deg) scaleY(-1);
+    }
+}

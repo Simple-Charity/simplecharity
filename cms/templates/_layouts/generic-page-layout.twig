@@ -1,0 +1,90 @@
+{% extends "_boilerplate/_layouts/base-html-layout.twig" %}
+
+{% block headMeta %}
+{% endblock headMeta %}
+
+{% block bodyTag %}
+    <body class="{{ 'bg-'~pageBackground }}">
+{% endblock bodyTag %}
+
+{% block headLinks %}
+    {{ parent() }}
+
+    {# Flickity Styles #}
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+{% endblock headLinks %}
+
+{% block headJs %}
+    {# Flickity CDN #}
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+{% endblock headJs %}
+
+{# -- Page body -- #}
+{% block bodyHtml %}
+    <div id="page-container" class="overflow-hidden leading-tight">
+        <div id="content-container" class="bg-repeat header-background">
+            
+            {# Header #}
+            {% include "_partials/header.twig" %}
+
+            {# Main Page Content #}
+            <main>
+                {% if entry.pageStatus.value == "downForMaintenance" %}
+                    {% include "_partials/maintenance.twig" %}
+                {% elseif entry.pageStatus.value == "underConstruction" %}
+                    {% include "_partials/comingsoon.twig" %}
+                {% else %}
+                    {% block contentborderless %}
+                    {% endblock %}
+                {% endif %}
+            </main>
+        </div>
+
+        {# Info Footer #}
+        {% include "_partials/footer.twig" %}
+
+        {# "loading" interaction component #}
+        <transition enter-active-class="animated fadeIn fast" leave-active-class="animated fadeOut fast">
+            <loading v-if="appIsLoading"></loading>
+        </transition>
+
+        {# Menu data processing #}
+
+        {% set main = craft.entries.slug('site-wide-assets').one() %}
+        {% set navItems = main.navigationItems.all() %}
+
+        {% set navList = [] %}
+        {% set cats = [] %}
+
+        {% for item in navItems %}
+            {% if "menu" in item.displayArea and item.category.value not in cats %}
+                {% set cats = cats|merge([
+                    item.category.value
+                ]) %}
+            {% endif %}
+
+
+            {% switch item.type %}
+                {% case "navigationItem" %}
+                    {% set target = item.targetPage.one().url %}
+                {% case "externalItem" %}
+                    {% set target = item.externalUrl %}
+            {% endswitch %}
+            {% if "menu" in item.displayArea  %}
+                {% set navList = navList|merge([
+                    {
+                        name:item.itemName,
+                        reference: target,
+                        cat:item.category.value,
+                    }
+                ]) %}
+            {% endif %}
+        {% endfor %}
+
+        {# Menu Component #}
+        
+        <transition enter-active-class="animated fadeIn menuAnimate" leave-active-class="animated fadeOut menuAnimate">
+            <site-menu @close="toggleMenu" v-cloak v-if="menuIsVisible" :navs="{{ navList|json_encode }}" :ca="{{ cats|json_encode }}"></site-menu>
+        </transition>
+    </div>
+{% endblock bodyHtml %}

@@ -1,0 +1,58 @@
+columnSuffix: iwyjblej
+contentColumnType: string
+fieldGroup: 2b1d6476-49e2-48d6-a867-87f7d83ddbbc # Partners
+handle: yearRecommended
+instructions: ''
+name: 'Year Recommended'
+searchable: false
+settings:
+  multi: true
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 2019-2020
+        -
+          - value
+          - '20192020'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 2020-2021
+        -
+          - value
+          - '20202021'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 2021-2022
+        -
+          - value
+          - '20212022'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 2022-2023
+        -
+          - value
+          - '20222023'
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\MultiSelect

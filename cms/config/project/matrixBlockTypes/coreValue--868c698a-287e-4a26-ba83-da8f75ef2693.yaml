@@ -1,0 +1,199 @@
+field: 9334a6a7-c99f-44ee-a619-26303237f362 # Core Values
+fieldLayouts:
+  727ef1c5-49dd-418c-a83c-9ede459c5776:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: f2739b26-74cb-473d-958b-2a3e49a4bc49 # Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 26d16a04-97b8-418a-9a96-a79dc7669fda # Positive Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 320265cf-46c9-4500-8737-0612e61d184b # Negative Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5b18df65-ba57-4e2b-8e3d-8e722790aa62 # Accent Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: eddcd06b-59df-4498-a879-34b1c094b38b # Attribute Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8bb1ccc5-29c3-4de1-a315-2cf3efa32019 # Attribute Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  5b18df65-ba57-4e2b-8e3d-8e722790aa62: # Accent Color
+    columnSuffix: hdhwkwhy
+    contentColumnType: text
+    fieldGroup: null
+    handle: accentColor
+    instructions: ''
+    name: 'Accent Color'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  8bb1ccc5-29c3-4de1-a315-2cf3efa32019: # Attribute Description
+    columnSuffix: uiaaacgh
+    contentColumnType: text
+    fieldGroup: null
+    handle: attributeDescription
+    instructions: ''
+    name: 'Attribute Description'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  26d16a04-97b8-418a-9a96-a79dc7669fda: # Positive Text
+    columnSuffix: laxjwmhf
+    contentColumnType: text
+    fieldGroup: null
+    handle: positiveText
+    instructions: ''
+    name: 'Positive Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  320265cf-46c9-4500-8737-0612e61d184b: # Negative Text
+    columnSuffix: zhzwzjiq
+    contentColumnType: text
+    fieldGroup: null
+    handle: negativeText
+    instructions: ''
+    name: 'Negative Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  eddcd06b-59df-4498-a879-34b1c094b38b: # Attribute Name
+    columnSuffix: angjmkkr
+    contentColumnType: text
+    fieldGroup: null
+    handle: attributeName
+    instructions: ''
+    name: 'Attribute Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  f2739b26-74cb-473d-958b-2a3e49a4bc49: # Icon
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: icon
+    instructions: ''
+    name: Icon
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: coreValue
+name: 'Core Value'
+sortOrder: 1

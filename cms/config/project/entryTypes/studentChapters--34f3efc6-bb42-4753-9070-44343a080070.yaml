@@ -1,0 +1,211 @@
+fieldLayouts:
+  822806f9-eacd-4486-8ad3-5dc82138cb3e:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7a633eca-bfc2-4150-9029-8866716a9600 # Page Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a15632d6-3fd3-4b9c-b1a5-89468da17a82 # Page Status
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 927a76f6-1e16-45da-998b-9795f552f597 # Light Background
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Page Data'
+        sortOrder: 1
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: ''
+            label: Chapter
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+        name: 'Start A Club'
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 08d66bf8-3c98-44fc-bce4-5eeccc3262f0 # Chapters Cards
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Cards
+        sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: 269f96df-2a0b-428b-a9fd-ccca81728d66 # Tori Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 30f15e9d-f57d-4b2b-808f-9bd63c6ed07b # Chapter Squiggle 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0f84852c-0852-469a-877e-42ab02751c54 # Chapter Sprout
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 37144696-ae8f-40ea-bb17-fad909b634ce # Chapter Map
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a136443b-de0e-47bb-aa45-3546f7e8fc66 # John Kang
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7f92b4f5-ee87-418d-81d6-850a633333de # Big Quotes
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 73621214-6b58-493c-b837-db6b4a521385 # USA Map Outline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 10d4ff4b-25d0-47dc-8b0e-8a87637ad8a6 # Sun Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 922a795a-67ad-4840-bd68-2b601521a999 # Mountain Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 11f3a3e0-88db-45d3-9679-9a73feae4a86 # SC Tabling At Duke
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Assets
+        sortOrder: 4
+      -
+        elements:
+          -
+            fieldUid: 3d351861-9bdd-4332-96ad-00a59755f771 # Quotes
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Quote
+        sortOrder: 5
+      -
+        elements:
+          -
+            fieldUid: ed9297cf-a1c1-4a43-b91d-de99dac43531 # FAQs
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 011489e7-5ebd-4cbd-8ecf-41512a00a694 # FAQ Caret
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: FAQs
+        sortOrder: 6
+handle: studentChapters
+hasTitleField: false
+name: 'Student Chapters'
+section: b94b98e9-ef19-47a9-96b3-20c2f808b7d7 # Student Chapters
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

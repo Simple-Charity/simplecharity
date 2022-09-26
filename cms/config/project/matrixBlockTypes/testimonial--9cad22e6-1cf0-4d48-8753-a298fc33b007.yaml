@@ -1,0 +1,43 @@
+field: 1c0e13e8-3a49-4155-9c36-39259bed1d61 # Podcast Testimonials
+fieldLayouts:
+  b4c9832d-6bcd-4443-b7a8-40e070510fd5:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 726f5b33-91a4-4a42-80e2-43f8c933a92b # Podcast Quote
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  726f5b33-91a4-4a42-80e2-43f8c933a92b: # Podcast Quote
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: podcastQuote
+    instructions: ''
+    name: 'Podcast Quote'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: testimonial
+name: Testimonial
+sortOrder: 1

@@ -1,0 +1,157 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% set relatedPartner = entry.relatedPartner.one() %}
+{% set pageBackground = pageBackground|default('deepnavy') %}
+{% set navigationColor = navigationColor|default('blue') %}
+
+{% block headLinks %}
+    {{ parent() }}
+{% endblock headLinks %}
+
+{% block contentborderless %}
+
+<div class="edge edge-t">
+    <div class="mx-auto max-w-screen-2xl">
+        <section class="justify-center">
+            <header class="w-full z-10 relative">
+                <a href="{{ craft.entries.slug('podcast').one().url }}" class="hover:text-yellow text-linen"> <p class="header-one text-linen">podcast <span class="tracking-overlap hidden sm:inline">–––––––––</span></p> </a>
+            </header>
+        </section>
+
+        <section class="justify-center relative bg-deepnavy my-20 sm:mt-10 sm:mb-20">
+            <p class="leading-tight text-2xl sm:text-3xl lg:text-4xl font-semibold mt-26 mb-8 sm:mb-20 text-linen">
+                Episode {{ entry.episodeTitle }}
+            </p>
+            <div class="flex justify-center">
+                <div class="w-full sm:w-3/4 lg:w-1/2 max-w-[50rem] inline-block">
+                    <div class="w-full">
+                        {% set art = entry.episodeArt.one().podcastArtOptimize %}
+                        <picture>
+                            <source data-srcset="{{ art.srcset() }}"
+                                    data-sizes="(min-width: 1280) 25vw, (min-width: 768) 50vw, 100vw"
+                                    type="image/webp"/>
+                            <img src="{{ art.placeholderImage() }}"
+                                data-srcset="{{ art.srcset() }}"
+                                class="lazyload blur-up"
+                                data-sizes="(min-width: 1280) 25vw, (min-width: 768) 50vw, 100vw"
+                                alt="Episode art"
+                            />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+                
+                
+                
+
+
+        </section>
+
+        <section class="bg-deepnavy">
+            <h1 class="section-hero-text font-serif text-linen leading-tight mt-4">
+                {{ entry.episodeHeroText|typogrify }}
+            </h1>
+
+            <div class="w-full my-6 sm:my-20">
+                {% set img = entry.episodeFeatureImage.one().storyImagesOptimize %}
+                <picture>
+                    <source data-srcset="{{ img.srcset() }}"
+                            data-sizes="(min-width: 1280) 25vw, (min-width: 768) 50vw, 100vw"
+                            type="image/webp"/>
+                    <img src="{{ img.placeholderImage() }}"
+                        data-srcset="{{ img.srcset() }}"
+                        class="lazyload blur-up"
+                        data-sizes="(min-width: 1280) 25vw, (min-width: 768) 50vw, 100vw"
+                        alt="Episode feature image"
+                    />
+                </picture>
+            </div>
+
+            <div class="text-linen stories__block--sm-text redactor text-left sm:my-12">
+                <p> {{ entry.episodeDescription }} </p>
+            </div>
+
+        </section>
+
+        <div class="w-full flex justify-center">
+            <div class="w-full sm:w-3/4 mt-32" id='buzzsprout-small-player-1046077-tags-{{ entry.slug }}'></div><script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/1046077.js?player=small&tags={{ entry.slug }}&container_id=buzzsprout-small-player-1046077-tags-{{ entry.slug }}'></script>
+        
+        </div>
+
+
+        <section class="relative bg-deepnavy sm:flex flex-wrap justify-center text-center sm:py-20 max-w-[50rem] mx-auto">
+                <div class="z-10 w-full sm:w-1/2 my-16 sm:mb-2 sm:mt-0">
+                    <p class="text-xl sm:text-2xl lg:text-3xl xl:font-4xl font-bold leading-tight mb-4 text-linen text-xl sm:text-3xl">
+                        People Interviewed
+                    </p>
+                    <div class="my-4 leading-loose text-linen">
+                        {% for item in entry.peopleInterviewed|split('</p>') %}
+                            <div class="text-linen text-lg lg:text-xl">{{ item|striptags }}</div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="z-10 w-full sm:w-1/2">
+                    <p class="mt-4 sm:mt-0 text-xl sm:text-2xl lg:text-3xl xl:font-4xl font-bold leading-tight mb-4 text-linen text-xl sm:text-3xl">
+                    Music
+                    </p>
+                    <content-toggle closedText="See References" openedText="Hide References">
+                        <p class="my-4 leading-loose">
+                            {% for item in entry.music|split('</p>') %}
+                                <div class="text-linen text-sm lg:text-lg">{{ item|striptags }}</div>
+                            {% endfor %}
+                        </p>
+                    </content-toggle>
+                    <p class="mt-4 text-xl sm:text-2xl lg:text-3xl xl:font-4xl font-bold leading-tight mb-4 text-linen text-xl sm:text-3xl">
+                    Sound Effects
+                    </p>
+                    <content-toggle closedText="See References" openedText="Hide References">
+                        <p class="my-4 leading-loose">
+                            {% for item in entry.soundEffects|split('</p>') %}
+                                <div class="text-linen text-sm lg:text-lg pb-4">{{ item|striptags }}</div>
+                            {% endfor %}
+                        </p>
+                    </content-toggle>
+                </div>
+            
+        </section>
+
+        <section class="bg-deepnavy">
+
+        <div class="flex flex-wrap justify-center my-20">
+                <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDQ2MDc3LnJzcw?sa=X&ved=0CAYQrrcFahcKEwjgkLnbqsTtAhUAAAAAHQAAAAAQAQ"> 
+                    <button type="button" class="whitebutton w-[15rem] mx-4 my-2">
+                        Listen on Google
+                    </button> 
+                </a>
+
+                <a href="https://podcasts.apple.com/us/podcast/two-coins/id1510423830">
+                    <button type="button" class="whitebutton w-[15rem] mx-4 my-2">
+                        Listen on Apple
+                    </button>
+                </a>
+
+                <a href="https://open.spotify.com/show/6ibUbGEewMeNnu7gITnQ1c?si=xHNtWdIzS7Gn2rRpZueFbw">
+                    <button type="button" class="whitebutton w-[15rem] mx-4 my-2">
+                        Listen on Spotify
+                    </button> 
+                </a>
+            </div>
+
+        </section>
+    </div>
+    
+</div>
+
+
+
+
+{% endblock %}
+
+{% block subcontent %}
+
+{% endblock %}
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+{{ parent() }}
+{% endblock bodyJs %}

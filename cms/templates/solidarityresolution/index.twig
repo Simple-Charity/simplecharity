@@ -1,0 +1,120 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% set pageBackground = pageBackground|default('linen') %}
+
+{% block headMeta %}
+    {% if entry.pageDescription|length %}
+        <meta name="description" content={{ entry.pageDescription }}>
+    {% endif %}
+{% endblock %}
+
+
+
+{% block headLinks %}
+    {{ parent() }}
+{% endblock headLinks %}
+
+{% block contentborderless %}
+    <div class="edge">
+        <section class="edge-t content-ctn mx-auto relative">
+            <header class="w-full z-10 relative mx-auto max-w-screen-md">
+                <h1 class="header-one text-blue mb-20 sm:mb-32 whitespace-nowrap">
+                    solidarity resolution <span class="tracking-overlap hidden sm:inline">–––––––</span>
+                </h1>
+            </header>
+        </section>
+
+        <section class="text-blue">
+            {% for page in entry.beliefsPages.all() %}
+                <div id="story-{{ loop.index }}" v-cloak class="page beliefChunk animated fadeIn" :class="{ 'hidden' : currentChunk != {{ loop.index }} }">
+                    {% for block in page.page.all() %}
+                        <div class="max-w-screen-md mx-auto {% if loop.last %} mb-12 md:mb-24 lg:mb-32{% endif %}">
+                            {% switch block.type %}
+                                {% case "heading" %}
+                                    <p class="text-2xl lg:text-3xl font-semibold mb-12 text-center">
+                                        {{ block.heading }} 
+                                    </p>
+                                {% case "subheading" %}
+                                    <p class="text-2xl lg:text-3xl underline mb-8 text-left {% if block.centered %} text-center {% endif %} ">
+                                        {{ block.subheading }} 
+                                    </p>
+                                {% case "verse" %}
+                                    {% set verse_text = "" %}
+                                    {% for v in block.verse.one().verse.all() %}
+                                        {% set verse_text = verse_text ~ v.text ~ " " %}
+                                    {% endfor %}
+
+                                    <div class="redactor text-center mb-10">
+                                        <div class="text-xl italic mb-1">{{ verse_text }}</div>
+                                        <h4 class="text-xl font-sans">{{ block.verse.one().title }}</h4>
+                                    </div>  
+                                {% case "largeParagraphs" %}
+                                    <div class="font-normal redactor mb-20 leading-relaxed  text-lg sm:text-xl xl:text-2xl">
+                                        {{ block.paragraphs|replace({'<a href': '<a class="text-red underline" href'})|raw }}
+                                    </div>
+                                {% case "inlineImage" %}
+                                    <div class="mb-10">
+                                        <img data-aos="fade-in" data-aos-duration="2000" data-aos-delay="300"  class="lazyload mx-auto block w-2/12 lg:w-1/12" data-src="{{ block.image.one().url }}" alt="">
+                                    </div>
+                                {% case "smallParagraphs" %}
+                                    <div class="leading-relaxed redactor mb-40 text-lg sm:text-xl xl:text-2xl">
+                                        {{ block.paragraphs|replace({'<a href': '<a class="text-red underline" href'})|raw }}
+                                    </div>
+                                {% case "summaryBlock" %}
+                                    <div class="flex flex-col sm:flex-row my-12 items-center">
+                                        <div class="w-[5rem] min-w-[5rem]">
+                                            <div class="max-w-[4rem] max-h-[4rem]">
+                                            <img class="w-full max-w-[4rem] max-h-[4rem]" src="{{ block.summaryImage.one().getUrl() }}" alt="">
+                                        </div>
+                                        </div>
+                                        
+                                        <div class="flex-grow ml-0 sm:ml-6 mt-6 sm:mt-0">
+                                            <p class="text-lg sm:text-xl xl:text-2xl redactor">{{ block.summaryText|striptags }}</p>
+                                        </div>
+                                    </div>
+                            {% endswitch %}
+                        </div>
+
+                    {% endfor %}
+                    {% if loop.last %}
+                        <div class="max-w-screen-md mx-auto">
+                            <section class="flex flex-wrap content-ctn mt-12 md:mt-24 mx-auto relative mb-12 mx-auto border-t pt-6 border-dotted stories__block">
+                                <h3 class="font-sans font-semibold text-lg lg:text-2xl">
+                                    Make the commitment.
+                                </h3>
+                            </section>
+                            <div>
+                                <div data-tf-widget="Xaz3LbWD" data-tf-opacity="0" data-tf-iframe-props="title=Solidarity Resolution Interest Form" data-tf-medium="snippet" style="width:100%;height:500px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+                            </div>
+                        </div>
+                        
+                    {% endif %}
+
+                </div>
+
+            {% endfor %}
+
+            <div class="flex mx-auto max-w-screen-md pb-12">
+                <p @click="beliefsPreviousChunk" v-if="currentChunk > 1" class="cursor-pointer p-4 inline-block">
+                    <span class="text-blue text-7xl">&#8592;</span>
+                </p>
+                <p @click="beliefsNextChunk" v-if="currentChunk != beliefTotalChunks" class="cursor-pointer p-4 inline-block ml-auto">
+                    <span class="text-blue text-7xl">&#8594;</span>
+                </p>
+            </div>
+        </section>
+    </div>
+    
+
+    <transition enter-active-class="animated fadeIn fast" leave-active-class="animated fadeOut fast">
+        <ajax-modal :target="ajaxModal.clickTarget" @close="toggleAjaxModal" v-if="ajaxModal.isActive"></ajax-modal>
+    </transition>
+
+{% endblock %}
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+    {{ parent() }}
+    <script type="text/javascript" src="https://ou715.infusionsoft.app/app/webTracking/getTrackingCode"></script>
+    <script type="text/javascript" src="https://ou715.infusionsoft.com/app/timezone/timezoneInputJs?xid=7c94766b5117fc5298cb0fe19f0fba1a"></script>
+{% endblock bodyJs %}

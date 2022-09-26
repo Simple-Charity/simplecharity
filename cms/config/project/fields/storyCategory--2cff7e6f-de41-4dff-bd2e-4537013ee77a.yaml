@@ -1,0 +1,24 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: e1f791be-0f68-4c7b-ae38-d963a110e071 # Stories
+handle: storyCategory
+instructions: 'Select a category for this story.'
+name: 'Story Category'
+searchable: false
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  allowSelfRelations: false
+  branchLimit: '1'
+  limit: null
+  localizeRelations: false
+  selectionLabel: 'Add category'
+  showSiteMenu: true
+  source: 'group:92014c99-db3b-416b-8b13-cda1644eba43' # Stories
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

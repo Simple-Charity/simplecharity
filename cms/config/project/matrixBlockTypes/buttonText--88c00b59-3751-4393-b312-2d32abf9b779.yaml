@@ -1,0 +1,101 @@
+field: d4a70001-7043-457f-82b0-deb2155045e5 # Big Red Button
+fieldLayouts:
+  c14932b3-c63a-4d45-81f6-3e77068816b9:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 474a3676-ce7f-4411-a1a0-4e63837c3db8 # Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: af1a173c-1914-4742-93ad-2c314db525d5 # Button Reference
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8dcd782a-7d99-4b63-bf6c-cddce618ddcb # Button External Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  8dcd782a-7d99-4b63-bf6c-cddce618ddcb: # Button External Link
+    columnSuffix: cddbxthv
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonExternalLink
+    instructions: 'Only fill this out if there is no internal reference. '
+    name: 'Button External Link'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  474a3676-ce7f-4411-a1a0-4e63837c3db8: # Button Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: ''
+    name: 'Button Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  af1a173c-1914-4742-93ad-2c314db525d5: # Button Reference
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttonReference
+    instructions: ''
+    name: 'Button Reference'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: buttonText
+name: Button
+sortOrder: 1

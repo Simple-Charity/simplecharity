@@ -1,0 +1,6 @@
+siteUid: null
+sortOrder: 3
+template: account/_subscribedPlan
+uriParts:
+  - account/plan/manage
+uriPattern: account/plan/manage

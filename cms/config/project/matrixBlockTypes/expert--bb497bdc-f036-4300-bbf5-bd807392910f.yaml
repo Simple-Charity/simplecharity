@@ -1,0 +1,113 @@
+field: dd94008c-c434-445b-99b4-4bd745b9281b # Experts
+fieldLayouts:
+  fdca1813-6caf-46a1-950f-5abf78dfd93d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: b58ea504-992d-4384-8117-40c73cb12d10 # Photo
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6323dc5f-e9e6-4bce-aa8b-4119273191be # Full Name
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 070032fd-e84b-44db-a494-f5cbc8ce23b1 # Short Bio
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  6323dc5f-e9e6-4bce-aa8b-4119273191be: # Full Name
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: fullName
+    instructions: ''
+    name: 'Full Name'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  070032fd-e84b-44db-a494-f5cbc8ce23b1: # Short Bio
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: shortBio
+    instructions: ''
+    name: 'Short Bio'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b58ea504-992d-4384-8117-40c73cb12d10: # Photo
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: photo
+    instructions: ''
+    name: Photo
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      singleUploadLocationSource: 'volume:c11a4541-3158-40e5-a5ca-edd013d68aff' # Podcast
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: true
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: expert
+name: expert
+sortOrder: 1

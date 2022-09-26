@@ -1,0 +1,70 @@
+field: eaf86304-0ad2-4f84-af2d-9b942aab2c25 # Challenge Steps
+fieldLayouts:
+  62376458-9e9e-49a5-959e-50624692f0ea:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: bfe522b4-6626-4b81-97ce-0cce4267a16f # Step Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 672fb184-450f-4775-937c-05936a3baa7e # Step Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  672fb184-450f-4775-937c-05936a3baa7e: # Step Description
+    columnSuffix: okqodrxi
+    contentColumnType: text
+    fieldGroup: null
+    handle: stepDescription
+    instructions: ''
+    name: 'Step Description'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  bfe522b4-6626-4b81-97ce-0cce4267a16f: # Step Name
+    columnSuffix: suxjofmp
+    contentColumnType: text
+    fieldGroup: null
+    handle: stepName
+    instructions: ''
+    name: 'Step Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: step
+name: Step
+sortOrder: 1

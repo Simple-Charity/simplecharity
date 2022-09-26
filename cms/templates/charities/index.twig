@@ -1,0 +1,127 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% set pageBackground = pageBackground|default('linen') %}
+{% set navigationColor = navigationColor|default('blue') %}
+{% set storyCategories = craft.categories.group('stories').level(1).all() %}
+
+{% block headMeta %}
+    {% if entry.pageDescription|length %}
+        <meta name="description" content={{ entry.pageDescription }}>
+    {% endif %}
+{% endblock %}
+
+{% block headLinks %}
+    {{ parent() }}
+{% endblock headLinks %}
+
+{% block contentborderless %}
+
+    <div class="edge-x py-20 lg:py-32">
+        <div class="py-20 max-w-screen-2xl mx-auto">
+            <h1 class="header-one pb-12">charity<br>recommendations <span class="tracking-overlap hidden sm:inline">–––––––––</span></h1>
+
+            <h1 class="headercaps pb-10">CURRENT TOP 7 PICKS</h1>
+
+            <div class="">
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold tracking-wide text-blue pb-4">Our <span class="text-red">top 7</span> charities include...</h1>
+                <div class="pl-20 pb-6">
+                    <p class="smalltext sm:mediumtext">5 <span class="xsmalltext sm:smalltext">global charities that fall within each cause area</span></p>
+                    <p class="smalltext font-semibold">+</p>
+                    <p class="smalltext sm:mediumtext">1 <span class="xsmalltext sm:smalltext">global charity that works in all five cause areas</span></p>
+                    <p class="smalltext font-semibold">+</p>
+                    <p class="smalltext sm:mediumtext">1 <span class="xsmalltext sm:smalltext">domestic charity</span></p>
+                </div>
+                <hr class="pt-8 pb-4">
+            </div>
+
+            {% set bulb = entry.charityBulbIcon.one().getUrl() %}
+            {% set home = entry.charityHomeIcon.one().getUrl() %}
+            {% set dollar = entry.charityDollarIcon.one().getUrl() %}
+            {% set heart = entry.charityHeartIcon.one().getUrl() %}
+            {% set cross = entry.charityCrossIcon.one().getUrl() %}
+            {% set all = entry.donateAllIcons.one().getUrl() %}
+            {% set usa = entry.donateUsaMap.one().getUrl() %}
+
+            {% set ci1 = craft.entries.section("Partners").title("Blessings International").one().partnerIcon.one().getUrl() %}
+            {% set ci2 = craft.entries.section("Partners").title("Edify").one().partnerIcon.one().getUrl() %}
+            {% set ci3 = craft.entries.section("Partners").title("Love Justice International").one().partnerIcon.one().getUrl() %}
+            {% set ci4 = craft.entries.section("Partners").title("HOPE International").one().partnerIcon.one().getUrl() %}
+            {% set ci5 = craft.entries.section("Partners").title("Children in Christ").one().partnerIcon.one().getUrl() %}
+            {% set ci6 = craft.entries.section("Partners").title("Tearfund").one().partnerIcon.one().getUrl() %}
+            {% set ci7 = craft.entries.section("Partners").title("The Bowery Mission").one().partnerIcon.one().getUrl() %}
+
+            <top-seven bulb="{{bulb}}" home="{{home}}" dollar="{{dollar}}" heart="{{heart}}" cross="{{cross}}" all="{{all}}" usa="{{usa}}" caret="{{ entry.charityCaret.one().getUrl() }}" barecaret="{{ entry.bareCaret.one().getUrl() }}" ci1="{{ ci1 }}" ci2="{{ ci2 }}" ci3="{{ ci3 }}" ci4="{{ ci4 }}" ci5="{{ ci5 }}" ci6="{{ ci6 }}" ci7="{{ ci7 }}"></top-seven>
+
+        </div>
+
+        {% set charities = [] %}
+
+        {% for item in entry.featuredDonorPartners.all() %}
+            {% set charities = charities|merge([
+                {
+                    name:item.title,
+                    url:"/partners/" ~ item.slug,
+                    color: "bg-" ~ item.partnerColor.handle|default('linen') ,
+
+                    healthIsCause:item.causeArea.contains("health"),
+                    educationIsCause:item.causeArea.contains("education"),
+                    ministryIsCause:item.causeArea.contains("ministry"),
+                    capitalIsCause:item.causeArea.contains("capital"),
+                    safetyIsCause:item.causeArea.contains("safety"),
+
+                    nineteenIsYear:item.yearRecommended.contains("20192020"),
+                    twentyIsYear:item.yearRecommended.contains("20202021"),
+                    twentyOneIsYear:item.yearRecommended.contains("20212022"),
+
+                    topSeven:item.topSeven,
+
+                    icon:item.partnerIcon.one().getUrl(),
+                    motto:item.partnerMotto,
+                    focus:item.partnerFocus,
+                    impact:item.partnerImpact|striptags,
+
+                    opened: false,
+                    visible: true,
+                }
+            ]) %}
+        {% endfor %}
+    </div>
+    <div class="bg-deepnavy relative edge-x">
+        <charity-search :partners="{{ charities | json_encode }}" caret="{{ entry.charityCaret.one().getUrl() }}" barecaret="{{ entry.bareCaret.one().getUrl() }}" bulb="{{bulb}}" home="{{home}}" dollar="{{dollar}}" heart="{{heart}}" cross="{{cross}}"></charity-search>
+        {% set wave = entry.blueWaveOne.one() %}
+    </div>
+    <div class="relative h-[5rem] bg-lightgreen">
+        <div class="absolute left-0 right-0 top-0">
+            <img src="{{wave.getUrl()}}" alt="">
+        </div>
+    </div>
+    
+
+    
+
+    <div class="edge sm:pt-[10rem] md:pt-[10rem] lg:pt-[12rem] lg:pb-[10rem] xl:pt-[16rem] xxl:pt-[24rem] bg-lightgreen">
+        <div class="mx-auto max-w-screen-xl">
+            <h5 class="headercaps pb-6">DONATE WITH CONFIDENCE</h5>
+            <p class="text-lg sm:text-2xl font-semibold pb-6">We selected the above <span class="text-red">24 charities*</span> from a group of 628. We did the work to vet them so that you can give with confidence to help the poor.</p>
+            <p class="text-lg pb-6">100% of your gift will go where you choose.</p>
+            <p class="text-md pb-6"><strong>Note</strong>: This is by no means an exhaustive list. It's just a launching point to make things a little less intimidating for you, in the same way an essay prompt helps narrow your focus enough to clear your writer's block. Although our recommendations stand out for their trustworthiness and effectiveness, there are still many, many other Christian organizations that we evaluated that we would heartily endorse. In any case, we encourage you to do your due diligence and ultimately give wherever you feel called to give.</p>
+            <p class="text-md pb-6">*Simple Charity does not receive compensation from any of these organizations.</p>
+
+            <a href="{{ craft.entries.slug('process').one().url }}">
+                <button>
+                    <div class="bluebutton">
+                        See our vetting process
+                    </div>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    
+
+{% endblock %}
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+    {{ parent() }}
+{% endblock bodyJs %}

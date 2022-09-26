@@ -1,0 +1,110 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% set pageBackground = entry.storyCategory.one().storiesCategoryColor.handle %}
+{% set textColor = entry.storyCategory.one().storiesCategoryTextColor.handle %}
+{% set relatedPartner = entry.relatedPartner.one() %}
+{% set navigationColor = textColor %}
+
+{% block contentborderless %}
+
+    {# PAGE HEADER #}
+
+    <section class="edge edge-t">
+        <div class="mx-auto max-w-screen-md">
+            <header class="w-full z-10 relative text-{{ textColor }}" data-aos="fade-up" data-aos-duration="450" data-aos-delay="300">
+                <nav class="text-sm md:text-2xl xxl:text-4xl tracking-wide mb-6 xxl:mb-4 lg:mb-104">
+                    <ol class="list-reset flex">
+                        <li><a href="{{ craft.entries.slug('stories-main-page').one().url }}" class="font-semibold font-sans uppercase tracking-widest text-sm text-red mb-3"> Stories</a></li>
+                    </ol>
+                </nav>
+                <h1 class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-serif font-bold">
+                    <span class="{% if entry.addImageHeaderBackground %} pb-6 lg:pb-12 pr-6 lg:pr-12{% endif %}">
+                        {{ entry.title }}
+                    </span>
+                </h1>
+            </header>
+        </div>
+        
+        {# HEADER IMAGE #}
+
+        <div class="mx-auto max-w-screen-md">
+            <div class="mt-10" data-aos="fade-up" data-aos-offset="0" data-aos-duration="450" data-aos-delay="450">
+                {% set heroImg = entry.storyHeroImage.one().getUrl %}
+                <div class="flex items-center justify-center">
+                    <figure class="w-full">
+                        
+                        <img class="w-full" src="{{ heroImg }}">
+                        
+                        {% if entry.storyHeroImage.one().imageCaption|length %}
+                            <figcaption>
+                                <p class="text-sm text-center pt-2">
+                                    {{ entry.storyHeroImage.one().imageCaption }}
+                                </p>
+                            </figcaption>
+                        {% endif %}
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        {# PAGE BODY #}
+
+        <div class="mx-auto max-w-screen-md">
+            {% for block in entry.storiesMainBlock.all() %}
+                {% set loopIndex = loop.index %}
+
+                <div class="{% if loop.last and (not entry.storiesHiddenBlock|length) %} mb-12 md:mb-24 lg:mb-32{% endif %}">
+                    {% switch block.type %}
+
+                        {% case "largeText" %}
+                            <div class="text-{{ textColor }} font-semibold text-xl sm:text-2xl md:text-3xl redactor my-10">
+                                {{ block.text }}
+                            </div>
+
+                        {% case "smallText" %}
+                            <div class="text-{{ textColor }} text-lg sm:text-2xl redactor">
+                                {{ block.text }}
+                            </div>
+                    {% endswitch %}
+                </div>
+            {% endfor %}
+
+            {% if entry.storiesHiddenBlock|length %}
+                <div class="mt-8 md:mt-16 mb-12 md:mb-24 lg:mb-32 mx-auto text-{{ textColor }}">
+                    <content-toggle toggletext="Read More">
+
+                        {% for block in entry.storiesHiddenBlock.all() %}
+                            <div class="mt-8 md:mt-16 mx-auto">
+                                {% switch block.type %}
+
+                                {% case "largeText" %}
+                                    <div class="text-{{ textColor }} font-semibold text-2xl sm:text-3xl md:text-4xl redactor">
+                                        {{ block.text }}
+                                    </div>
+
+                                {% case "smallText" %}
+                                    <div class="text-{{ textColor }} text-lg sm:text-2xl redactor">
+                                        {{ block.text }}
+                                    </div>
+
+                                {% case "smallImage" %}
+                                        <figure class="mt-8 md:mt-16 mb-8 md:mb-16 w-full md:mx-auto">
+                                            <img class="lazyload" data-src="{{ block.smallImage.one().getUrl('storySmallImage') }}" alt="{{ entry.title }}">
+                                            {% if block.smallImage.one().imageCaption|length %}
+                                                <figcaption>
+                                                    <p class="text-sm text-center pt-2">
+                                                        {{ block.smallImage.one().imageCaption }}
+                                                    </p>
+                                                </figcaption>
+                                            {% endif %}
+                                        </figure>
+                                {% endswitch %}
+                            </div>
+                        {% endfor %}
+                    </content-toggle>
+                </div>
+            {% endif %}
+        </div>
+    </section>
+
+{% endblock %}

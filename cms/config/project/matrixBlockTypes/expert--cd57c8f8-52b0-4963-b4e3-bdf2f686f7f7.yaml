@@ -1,0 +1,142 @@
+field: b7c1aaa6-52eb-4170-a794-80f380e11696 # Podcast Team
+fieldLayouts:
+  0848f900-75c5-475a-be91-f78121c99ec4:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 31f4c251-8869-4ad2-83b9-0f2058068310 # Full Name
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e7d47e7d-a7b6-45be-91d4-ecc58f13f72a # Short Bio
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 002db005-6b93-4da0-9ab0-006da3ec35c4 # Bio
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8a06e679-8b4d-4916-a154-b2aa33d1c9a4 # Photo
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  002db005-6b93-4da0-9ab0-006da3ec35c4: # Bio
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: bio
+    instructions: ''
+    name: Bio
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  8a06e679-8b4d-4916-a154-b2aa33d1c9a4: # Photo
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: photo
+    instructions: ''
+    name: Photo
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      singleUploadLocationSource: 'volume:c11a4541-3158-40e5-a5ca-edd013d68aff' # Podcast
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: true
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  31f4c251-8869-4ad2-83b9-0f2058068310: # Full Name
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: fullName
+    instructions: ''
+    name: 'Full Name'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e7d47e7d-a7b6-45be-91d4-ecc58f13f72a: # Short Bio
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: shortBio
+    instructions: ''
+    name: 'Short Bio'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: expert
+name: Member
+sortOrder: 1

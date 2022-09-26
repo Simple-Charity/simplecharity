@@ -1,0 +1,171 @@
+field: fa456c16-e228-4d2e-a30e-8d1e19737ed8 # Season One
+fieldLayouts:
+  149345a9-91be-41e4-b0d1-da12536f25e2:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 8dfeb5a7-d073-4127-9026-5afb204f6b81 # Art
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e497ee2d-0ac8-485d-9d8c-3e886c3b9a5c # Release Date
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ba3976d4-3e27-429f-9c8c-c0f98de4a1aa # Episode Title
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a79b3b96-044e-42de-85aa-7e33eb6454eb # Interviewee
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 748d21dd-5938-4b48-9bd0-348e624ce0c7 # Episode Slug
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  8dfeb5a7-d073-4127-9026-5afb204f6b81: # Art
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: art
+    instructions: ''
+    name: Art
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      singleUploadLocationSource: 'volume:c11a4541-3158-40e5-a5ca-edd013d68aff' # Podcast
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: true
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  748d21dd-5938-4b48-9bd0-348e624ce0c7: # Episode Slug
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: episodeSlug
+    instructions: 'Put the slug used for the podcast episode page.'
+    name: 'Episode Slug'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a79b3b96-044e-42de-85aa-7e33eb6454eb: # Interviewee
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: interviewee
+    instructions: ''
+    name: Interviewee
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ba3976d4-3e27-429f-9c8c-c0f98de4a1aa: # Episode Title
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: episodeTitle
+    instructions: ''
+    name: 'Episode Title'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e497ee2d-0ac8-485d-9d8c-3e886c3b9a5c: # Release Date
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: releaseDate
+    instructions: ''
+    name: 'Release Date'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: episodes
+name: Episodes
+sortOrder: 1

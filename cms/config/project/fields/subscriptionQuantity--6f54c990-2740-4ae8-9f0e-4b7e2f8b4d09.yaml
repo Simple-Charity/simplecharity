@@ -1,0 +1,20 @@
+columnSuffix: null
+contentColumnType: integer(10)
+fieldGroup: 266c6678-9669-488e-82b7-68601833935a # About
+handle: subscriptionQuantity
+instructions: ''
+name: 'Subscription Quantity'
+searchable: true
+settings:
+  decimals: 0
+  defaultValue: null
+  max: null
+  min: null
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

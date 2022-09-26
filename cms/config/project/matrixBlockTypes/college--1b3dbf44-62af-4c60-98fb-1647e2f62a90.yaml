@@ -1,0 +1,41 @@
+field: 4ff5c659-06c9-4f1e-85be-e4bc5792c681 # Colleges
+fieldLayouts:
+  b2f7f56b-ce84-44de-a58b-4c26b5db11ec:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 8f5ce5a0-fa1c-40f8-ab00-da3de67e0d89 # College
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  8f5ce5a0-fa1c-40f8-ab00-da3de67e0d89: # College
+    columnSuffix: dayhqvkh
+    contentColumnType: text
+    fieldGroup: null
+    handle: college
+    instructions: ''
+    name: College
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: college
+name: College
+sortOrder: 1

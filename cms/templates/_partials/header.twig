@@ -1,0 +1,60 @@
+
+{% if entry.lightBackground %}
+    {% set textColor = "text-blue" %}
+{% else %}
+    {% set textColor = "text-linen" %}
+{% endif %}
+
+{% set buttonColor = "bg-red border-red" %}
+
+{% set transformButtonText = false %}
+
+{% if entry.storyCategory|length %}
+    {% if entry.storyCategory.one().storiesCategoryColor.handle == 'linen' %}
+        {% set transformButtonText = true %}
+    {% endif %}
+{% endif %}
+
+{% if entry.storyCategory|length %}
+    {% if entry.storyCategory.one().storiesCategoryColor.handle == 'red' %}
+        {% set buttonColor = "bg-blue border-blue" %}
+    {% endif %}
+{% endif %}
+
+{% set main = craft.entries.slug('site-wide-assets').one() %}
+
+<header class="flex flex-wrap z-[100] absolute bg-transparent bg-transparent inset-x-0 top-0 w-full p-6 lg:p-12 text-linen lg:{{ textColor }} items-center"
+        id="page-header">
+    <div class="w-1/4 z-10">
+        <a class="inline" href="https://simplecharity.org">
+            {{ svg('@webroot/img/site/SC_masthead.svg')|attr({class:'inline transition-all transition-opacity ease-in-out duration-300 transform hover:opacity-75 fill-current w-24 lg:w-[8.5rem] xl:w-40 md:mx-auto lg:m-0 ' ~ textColor }) }}
+        </a>
+    </div>
+    <div class="w-3/4">
+        <ul class="list-none float-right font-sans font-semibold text-xl xl:text-2xl pr-10 {{ textColor }}">
+           
+            {# Blue menu items to right #}
+            {% for item in main.headerItems.all() %}
+                <li class="hidden lg:inline px-4 transition-opacity ease-in-out duration-300 transform hover:opacity-75 transition-all">
+                    <a href="{% if item.itemReference.one()|length %}{{ item.itemReference.one().url }}{% else %}{{ item.externalLink }}{% endif %}">
+                        {{ item.itemName|title }}
+                    </a>
+                </li>
+            {% endfor %}
+
+            {# Big red header button #}
+            <li class="hidden lg:inline px-4 hover:opacity-75 transition-all">
+                <button class="text-linen {% if transformButtonText %} hover:text-blue {% endif %} {{buttonColor}} font-semibold rounded-full border-2 px-10 py-2 transition duration-200 ease-in-out transform hover:bg-transparent">
+                    <a class="" href="{% if main.bigRedButton.one()|length %}{{ main.bigRedButton.one().buttonReference.one().url }}{% else %}{{ main.bigRedButton.one().buttonExternalLink }}{% endif %}">
+                        {{ main.bigRedButton.one().buttonText }}
+                    </a>
+                </button>
+            </li>
+            
+            {# Menu button #}
+            <li class="inline px-4 cursor-pointer fixed top-[1.7rem] right-4 lg:top-[3.8rem] xl:top-[4.1rem] lg:right-8">
+                <span @click="toggleMenu" class="text-3xl relative hover:opacity-75 transition-all font-semibold {{ textColor }}">&#8943;</span>
+            </li>
+        </ul>
+    </div>
+</header>

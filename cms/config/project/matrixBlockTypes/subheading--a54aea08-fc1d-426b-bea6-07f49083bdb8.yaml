@@ -1,0 +1,65 @@
+field: 22719c53-1950-419d-9fcf-6889e131a46e # Page
+fieldLayouts:
+  9d8249a8-ce14-4623-a816-8f0f13047d9e:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: f0bbd4b7-b474-41f1-965f-75d538b8d3d8 # Subheading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 447788ed-5f07-42d0-9f74-431f79b78af2 # Centered
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  447788ed-5f07-42d0-9f74-431f79b78af2: # Centered
+    columnSuffix: slatftou
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: centered
+    instructions: ''
+    name: Centered
+    searchable: false
+    settings:
+      default: false
+      offLabel: 'No'
+      onLabel: 'Yes'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  f0bbd4b7-b474-41f1-965f-75d538b8d3d8: # Subheading
+    columnSuffix: yvqvxvfu
+    contentColumnType: text
+    fieldGroup: null
+    handle: subheading
+    instructions: ''
+    name: Subheading
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: subheading
+name: Subheading
+sortOrder: 2

@@ -1,0 +1,112 @@
+field: a4eb416d-e2ac-407e-bc0c-a362690e842a # Challenge Supports
+fieldLayouts:
+  2d4c6e0a-c8c5-4e5b-8e59-704766f1e54e:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 6f0768fd-2f35-4b02-8b0f-c71f22e61bf5 # Support Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: aa8a2b07-b3e4-4833-a49e-68d91e1ccf2a # Support Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: af5e8b90-a2b3-40ee-8aab-1a12d4daea65 # Support Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  6f0768fd-2f35-4b02-8b0f-c71f22e61bf5: # Support Name
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: supportName
+    instructions: ''
+    name: 'Support Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  aa8a2b07-b3e4-4833-a49e-68d91e1ccf2a: # Support Description
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: supportDescription
+    instructions: ''
+    name: 'Support Description'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  af5e8b90-a2b3-40ee-8aab-1a12d4daea65: # Support Icon
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: supportIcon
+    instructions: ''
+    name: 'Support Icon'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: support
+name: Support
+sortOrder: 1

@@ -1,0 +1,22 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 2b1d6476-49e2-48d6-a867-87f7d83ddbbc # Partners
+handle: relatedStory
+instructions: 'Choose a story to relate to this partner. This will display on the Donate pages.'
+name: 'Related Story'
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: '1'
+  localizeRelations: false
+  selectionLabel: 'Link Story'
+  showSiteMenu: true
+  source: null
+  sources:
+    - 'section:5ae2b8a7-1c8b-4403-8519-bc8e4401cfc3' # Stories
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

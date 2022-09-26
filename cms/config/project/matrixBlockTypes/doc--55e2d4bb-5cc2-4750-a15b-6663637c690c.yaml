@@ -1,0 +1,70 @@
+field: 42ca8644-e860-481d-82fa-0dae13cf6078 # Transparency Docs
+fieldLayouts:
+  5319dfe6-5223-47c3-be8f-fbfb8d06520f:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 6a4dc85a-8987-4fe8-8956-9ebf50d6f86b # Doc Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 2d8f09a0-baa5-40a4-8005-2ac21001fa85 # Doc Slug
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  2d8f09a0-baa5-40a4-8005-2ac21001fa85: # Doc Slug
+    columnSuffix: tyowkuun
+    contentColumnType: text
+    fieldGroup: null
+    handle: docSlug
+    instructions: ''
+    name: 'Doc Slug'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  6a4dc85a-8987-4fe8-8956-9ebf50d6f86b: # Doc Name
+    columnSuffix: rvtyvfmj
+    contentColumnType: text
+    fieldGroup: null
+    handle: docName
+    instructions: ''
+    name: 'Doc Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: doc
+name: Doc
+sortOrder: 1

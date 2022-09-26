@@ -1,0 +1,231 @@
+/**
+ * pages/stories.pcss
+ *
+ * Styles for the Stories page and sub-pages.
+ *
+ */
+
+.stories {
+    &__hero-img {
+        margin-top: -75px;
+
+        @screen xl {
+            margin-top: -200px;
+        }
+    }
+
+    /* Matrix blocks on story entries */
+    &__block {
+        @apply mt-8 max-w-5xl mx-auto;
+
+        @apply md:mt-16;
+
+        &--no-mt {
+            margin-top: 0;
+        }
+
+        &--lg-text {
+            @apply text-left font-sans font-semibold leading-normal text-xl;
+
+            @apply md:text-3xl md:leading-snug;
+            @apply xl:text-4xl;
+
+            &--lg {
+                font-weight: 400;
+            }
+        }
+
+        &--sm-text {
+            @apply font-sans font-medium leading-normal;
+
+            @apply md:text-2xl md:leading-snug;
+        }
+    }
+
+    /* Donation amount form inputs */
+    &__donate-amt {
+        @apply rounded-full h-20 w-20 flex items-center justify-center bg-red text-linen font-serif text-lg mr-3 transition-all border-2 border-red;
+
+        &:hover {
+            @apply bg-linen text-red cursor-pointer;
+        }
+
+        @apply md:h-24 md:w-24 md:text-xl md:mr-6;
+    }
+
+    &__donate-input:checked + label {
+        @apply bg-linen text-red cursor-pointer;
+    }
+
+    &__next-btn {
+        min-width: 250px;
+        @apply font-serif text-lg tracking-wide border-2 border-blue py-4 px-8 text-linen bg-blue transition-all;
+
+        &:hover {
+            @apply bg-transparent text-blue cursor-pointer;
+        }
+    }
+
+}
+
+
+.story-sq {
+
+    &__ctn {
+        @apply flex flex-wrap items-center;
+
+        @apply xl:flex-nowrap;
+    }
+
+    &__group {
+        @apply order-3 flex flex-wrap -mx-2 mb-8 w-full;
+
+        @apply md:-mx-4;
+
+        @apply xl:order-2 xl:-mx-8 xl:mb-0;
+
+        &--donate {
+            margin: 0 auto;
+        }
+    }
+
+    &__gutter_ttl {
+        @apply uppercase text-sm font-normal order-1 pb-4 pr-2;
+        letter-spacing: 5px;
+
+        @apply xl:mr-6 xl:pb-4 xl:pb-0 xl:pr-0;
+        @screen xl {
+            writing-mode: vertical-rl;
+        }
+    }
+
+    &__icon {
+        @apply fill-current w-4 pb-4 order-2;
+
+        @apply xl:w-10 xl:ml-6 xl:pb-0 xl:order-3;
+    }
+
+
+    @apply w-full sm:w-half p-2;
+
+    @apply md:p-4;
+
+    @apply lg:w-3/12;
+
+    @apply xl:p-8;
+
+    &::before {
+        content: '';
+        float: left;
+        padding-top: 100%;
+    }
+
+    &__outer {
+        @apply relative;
+
+        &::after {
+            display: block;
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-repeat: no-repeat;
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIG92ZXJmbG93PSJ2aXNpYmxlIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIzMy4xODQ0NzA5MjA3NzQ0MiIgaGVpZ2h0PSIzMy4xODQ0NzA5MjA3NzQ0MiI+PGc+PHBhdGggeG1sbnM6ZGVmYXVsdD0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Ik0xOSAxNWwtNiA2LTEuNDItMS40MkwxNS4xNyAxNkg0VjRoMnYxMGg5LjE3bC0zLjU5LTMuNThMMTMgOWw2IDZ6IiBzdHlsZT0iZmlsbDogcmdiKDM4LCA1OSwgNzgpOyIgdmVjdG9yLWVmZmVjdD0ibm9uLXNjYWxpbmctc3Ryb2tlIi8+PC9nPjwvc3ZnPg==);
+            width: 20px;
+            height: 20px;
+            background-size: 20px;
+            @apply m-4;
+
+            @apply lg:m-6;
+            @screen lg {
+                width: 33px;
+                height: 33px;
+                background-size: 33px;
+            }
+        }
+    }
+
+    &__inner {
+        @apply pt-4 px-4;
+
+        @apply max:pt-10 max:px-10;
+    }
+
+    &__ttl {
+        @apply font-serif text-lg;
+
+        @apply md:text-2xl pr-12;
+
+        @apply lg:text-xl pr-0;
+
+        @apply max:text-3xl;
+    }
+
+
+    /* purgecss start ignore */
+    &__red-1 {
+        background-color: color-mod(theme('colors.red') tint(40%));
+    }
+
+    &__red-2 {
+        background-color: color-mod(theme('colors.red') tint(30%));
+    }
+
+    &__red-3 {
+        background-color: color-mod(theme('colors.red') tint(10%));
+    }
+
+
+    &__yellow-1 {
+        background-color: color-mod(theme('colors.yellow') tint(40%));
+    }
+
+    &__yellow-2 {
+        background-color: color-mod(theme('colors.yellow') tint(30%));
+    }
+
+    &__yellow-3 {
+        background-color: color-mod(theme('colors.yellow') tint(10%));
+    }
+
+
+    &__linen-1 {
+        background-color: color-mod(theme('colors.linen') shade(20%));
+    }
+
+    &__linen-2 {
+        background-color: color-mod(theme('colors.linen') shade(15%));
+    }
+
+    &__linen-3 {
+        background-color: color-mod(theme('colors.linen') shade(10%));
+    }
+
+
+    &__green-1 {
+        background-color: color-mod(theme('colors.green') tint(40%));
+    }
+
+    &__green-2 {
+        background-color: color-mod(theme('colors.green') tint(30%));
+    }
+
+    &__green-3 {
+        background-color: color-mod(theme('colors.green') tint(10%));
+    }
+
+    &__teal-1 {
+        background-color: color-mod(theme('colors.teal') tint(40%));
+    }
+
+    &__teal-2 {
+        background-color: color-mod(theme('colors.teal') tint(30%));
+    }
+
+    &__teal-3 {
+        background-color: color-mod(theme('colors.teal') tint(10%));
+    }
+
+    /* purgecss end ignore */
+
+}

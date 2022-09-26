@@ -1,0 +1,69 @@
+columnSuffix: hnehyalm
+contentColumnType: string
+fieldGroup: 2b1d6476-49e2-48d6-a867-87f7d83ddbbc # Partners
+handle: causeArea
+instructions: ''
+name: 'Cause Area'
+searchable: false
+settings:
+  multi: true
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Health
+        -
+          - value
+          - health
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Education
+        -
+          - value
+          - education
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Ministry
+        -
+          - value
+          - ministry
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Capital
+        -
+          - value
+          - capital
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Safety
+        -
+          - value
+          - safety
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\MultiSelect

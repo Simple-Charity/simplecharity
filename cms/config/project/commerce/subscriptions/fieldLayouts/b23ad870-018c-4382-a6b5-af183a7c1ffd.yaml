@@ -1,0 +1,14 @@
+tabs:
+  -
+    elements:
+      -
+        fieldUid: 6f54c990-2740-4ae8-9f0e-4b7e2f8b4d09 # Subscription Quantity
+        instructions: null
+        label: null
+        required: '0'
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        warning: null
+        width: 100
+    name: 'Subscription Data'
+    sortOrder: 1

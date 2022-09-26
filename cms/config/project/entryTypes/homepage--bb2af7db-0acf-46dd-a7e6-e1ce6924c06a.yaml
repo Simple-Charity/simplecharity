@@ -1,0 +1,216 @@
+fieldLayouts:
+  dc3aa7a8-bceb-45f8-a462-6ebbcb2ab601:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7a633eca-bfc2-4150-9029-8866716a9600 # Page Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a15632d6-3fd3-4b9c-b1a5-89468da17a82 # Page Status
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 927a76f6-1e16-45da-998b-9795f552f597 # Light Background
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Page Data'
+        sortOrder: 1
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7a785146-8ae4-44d6-9d4f-46e0a32de039 # Homepage Primary Banner
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 53d8c3b0-63c1-4abf-9789-39d79799fb47 # Homepage Secondary Banner
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 22aebf80-99c7-499b-b53a-b6855f469046 # Homepage Tertiary Banner
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 22b2f4d0-cbad-4629-86e1-b156684ef9a9 # Homepage Squiggle 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: eff795c5-5b81-480d-b272-22865c62db96 # Home Give Freely Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9186a02c-5a82-41ba-ad26-5945aa42a042 # Home Embrace Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 39205281-87b8-4023-91d2-3b900c603c92 # Home Faithful Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Assets
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: f5e5a5ac-06db-4992-889e-f62cb470184e # Homepage Cards
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Cards
+        sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: 3d351861-9bdd-4332-96ad-00a59755f771 # Quotes
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Quote
+        sortOrder: 4
+      -
+        elements:
+          -
+            fieldUid: 7d807e4d-265c-43d9-835e-ce1c11ce15f5 # Facebook Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1c3bf04c-a4a6-4874-9f37-b79685da9799 # Facebook Icon Light
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: eacf78ba-71bd-4792-9bf6-d9c631600319 # Instagram Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e81eb070-5e20-45e6-a5f7-8588839daaa9 # Instagram Icon Light
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 481d4794-f2ad-462e-b9fe-03e64537c48a # LinkedIn Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e91dc8a2-648d-42e0-be86-c119aa12abda # LinkedIn Icon Light
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Footer Icons'
+        sortOrder: 5
+handle: homepage
+hasTitleField: false
+name: Homepage
+section: e94c67d3-609d-4147-88b3-d5e42a95c76b # Homepage
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: ''

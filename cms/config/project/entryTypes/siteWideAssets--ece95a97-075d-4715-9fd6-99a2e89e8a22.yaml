@@ -1,0 +1,272 @@
+fieldLayouts:
+  9d87860f-b112-4097-b40c-c59b6aaa01f4:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 728b96c0-af4f-473c-b03b-13eb42cd4a7c # Mission Statement
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: cc936a94-70f8-45e2-9668-473c7c3c03dc # Simple Mission Statement
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Mission Statement'
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 4e3b9df7-3bea-4445-be1a-a2481f2f4bc0 # Social Media Icons
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6b4827de-4f95-4753-a795-7df4cf10ae21 # Footer Red Buttons
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e892303f-f80c-4212-9137-8047a2d4c0f4 # Newsletter Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9a814fcc-af5c-4283-9a7a-b9868bf252dd # Newsletter Copy
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f67994e7-3937-4c9d-bbd3-e18ad57a596c # Footer Sign Up Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 53b21488-cc9f-401c-9506-acf450bd7b09 # Simple Charity EIN
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c29c3ac0-6424-4dc7-8a60-1d44e9906725 # Simple Charity Address
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7909aed5-381b-437e-bf82-394caf136412 # Compliance Documents
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Footer
+        sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: 7644c07f-9f4e-4dab-b534-6a19e8cdb63e # Header Items
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d4a70001-7043-457f-82b0-deb2155045e5 # Big Red Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Header
+        sortOrder: 4
+      -
+        elements:
+          -
+            fieldUid: 34c3a52a-ffdd-4336-9d7a-738968ffa86f # Coming Soon Background
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ebe51366-4c4a-4429-9ed8-af3cd535cd5e # Coming Soon Message
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 09f2366e-67eb-49cd-80b8-6e0061a94eeb # Maintenance Message
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Error Pages'
+        sortOrder: 5
+      -
+        elements:
+          -
+            fieldUid: 15b9047e-629c-4b70-b7ec-352b2d2fb6d4 # Navigation Items
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Navigation
+        sortOrder: 6
+      -
+        elements:
+          -
+            fieldUid: 0f1d9fac-f684-4d07-8be6-850f2272757d # Cause Icons
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Assets
+        sortOrder: 7
+      -
+        elements:
+          -
+            fieldUid: c5ae0723-b14d-4da2-b164-fcaf2bc81710 # Squiggly World Map
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Maps
+        sortOrder: 8
+      -
+        elements:
+          -
+            fieldUid: bfa3569c-ee9a-4d53-8d98-d00f60cba909 # Blue Caret
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Carets
+        sortOrder: 9
+      -
+        elements:
+          -
+            fieldUid: 21bab37d-048d-4648-9ab4-af627955413c # Light Mint Wave 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7e7ccbd5-6252-4d44-8b63-0864a5dd28c1 # Peach Wave 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7b23a5df-dd1b-4d80-aa2a-7991632a193a # Dark Blue Wave 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Waves
+        sortOrder: 10
+handle: siteWideAssets
+hasTitleField: false
+name: 'Site Wide Assets'
+section: dadc93de-9c35-4c95-964a-4b88ff41510e # Site Wide Assets
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

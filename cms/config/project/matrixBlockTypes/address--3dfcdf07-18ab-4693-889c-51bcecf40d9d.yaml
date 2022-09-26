@@ -1,0 +1,99 @@
+field: c29c3ac0-6424-4dc7-8a60-1d44e9906725 # Simple Charity Address
+fieldLayouts:
+  eb61ed8b-e008-4384-9808-006ecc48f4ab:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 908cf83d-274b-47ba-8163-451b437ae5e7 # Address Line 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d2909213-6972-48ca-8186-7c77cdaa3d66 # Address Line 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 2ad4d2bf-b1e7-41d1-b8a1-b6dcc10577d1 # Address Line 3
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  2ad4d2bf-b1e7-41d1-b8a1-b6dcc10577d1: # Address Line 3
+    columnSuffix: bfackkem
+    contentColumnType: text
+    fieldGroup: null
+    handle: addressLine3
+    instructions: ''
+    name: 'Address Line 3'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  908cf83d-274b-47ba-8163-451b437ae5e7: # Address Line 1
+    columnSuffix: tmkoescc
+    contentColumnType: text
+    fieldGroup: null
+    handle: addressLine1
+    instructions: ''
+    name: 'Address Line 1'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d2909213-6972-48ca-8186-7c77cdaa3d66: # Address Line 2
+    columnSuffix: xdjwtwtv
+    contentColumnType: text
+    fieldGroup: null
+    handle: addressLine2
+    instructions: ''
+    name: 'Address Line 2'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: address
+name: Address
+sortOrder: 1

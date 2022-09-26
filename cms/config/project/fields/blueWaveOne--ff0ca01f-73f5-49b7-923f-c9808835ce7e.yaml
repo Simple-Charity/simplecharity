@@ -1,0 +1,34 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 6366bfff-897e-466c-b6cb-63affba25b24 # Podcast
+handle: blueWaveOne
+instructions: 'upload svg of blue wave'
+name: 'Blue Wave One'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:c11a4541-3158-40e5-a5ca-edd013d68aff' # Podcast
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: '1'
+  selectionLabel: ''
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: true
+  singleUploadLocationSource: 'volume:c11a4541-3158-40e5-a5ca-edd013d68aff' # Podcast
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:c11a4541-3158-40e5-a5ca-edd013d68aff' # Podcast
+  targetSiteId: null
+  useSingleFolder: true
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

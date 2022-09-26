@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 6366bfff-897e-466c-b6cb-63affba25b24 # Podcast
+handle: experts
+instructions: ''
+name: Experts
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_experts}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

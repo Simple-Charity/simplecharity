@@ -1,0 +1,49 @@
+field: 47a5e597-de28-4a21-bd8e-7d6849507248 # Countries of Operation
+fieldLayouts:
+  d9ebb5af-5b59-4017-9026-d8fd786e34e5:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 3e805f09-688e-4998-8faa-d91c434f8cb5 # Countries
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  3e805f09-688e-4998-8faa-d91c434f8cb5: # Countries
+    columnSuffix: gwtuxvfq
+    contentColumnType: text
+    fieldGroup: null
+    handle: countries
+    instructions: 'Put each country in this region in which the partner operates, separated by commas. '
+    name: Countries
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: subSaharanAfrica
+name: 'Sub-Saharan Africa'
+sortOrder: 7

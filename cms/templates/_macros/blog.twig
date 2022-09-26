@@ -1,0 +1,35 @@
+{% macro blogTeaserPost(entry, loop) %}
+    <article data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="flex flex-wrap py-12 md:py-20 border-b-2{% if loop.last %} mb-12 md:mb-24 lg:mb-32{% endif %}">
+        <div class="w-full lg:w-half pr-10">
+            <p class="font-serif text-2xl md:text-3xl leading-none mb-4">
+                <a href="/blog/{{ entry.slug }}" class="hover:opacity-75 transition-all">
+                    {{ entry.title }}
+                </a>
+            </p>
+            <p class="uppercase text-sm tracking-wide mb-6 lg:mb-10 tracking-wider">
+                {{ entry.postDate|date("F d, Y") }}
+            </p>
+            <div class="flex items-center mt-4 pb-4 h-20">
+                <div class="mr-3">
+                    <img src="{{ entry.authorPhoto.one().getUrl() }}" class="rounded-full h-20 w-20 mr-4 object-cover" alt="Author of this post - {{ entry.title }}">
+                </div>
+                
+                <p class="uppercase text-sm tracking-wide mb-4 lg:mb-0 tracking-wider">
+                    {{ entry.blogCredit }}
+                </p>
+            </div>
+            
+            
+        </div>
+        <div class="w-full lg:w-half">
+            <p class="text-md md:text-lg mb-4 xl:mb-10">
+                {{ entry.blogTeaserText }}
+            </p>
+            <p>
+                <a class="border-b pb-1 hover:opacity-75 transition-all" href="/blog/{{ entry.slug }}">
+                    Read More &rarr;
+                </a>
+            </p>
+        </div>
+    </article>
+{% endmacro %}

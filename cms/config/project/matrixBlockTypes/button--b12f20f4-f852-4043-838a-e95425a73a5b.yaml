@@ -1,0 +1,70 @@
+field: f67994e7-3937-4c9d-bbd3-e18ad57a596c # Footer Sign Up Button
+fieldLayouts:
+  81941e0f-31c3-4c5f-811b-cc67ae6a578d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 45b169ac-567f-4ffe-b7e0-3b5bfb547636 # Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b36614ad-b59f-4441-9598-fbd5a0ead4b2 # Button Reference
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  45b169ac-567f-4ffe-b7e0-3b5bfb547636: # Button Text
+    columnSuffix: bmbulnxj
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: ''
+    name: 'Button Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b36614ad-b59f-4441-9598-fbd5a0ead4b2: # Button Reference
+    columnSuffix: mbfvbaei
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonReference
+    instructions: ''
+    name: 'Button Reference'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: button
+name: Button
+sortOrder: 1

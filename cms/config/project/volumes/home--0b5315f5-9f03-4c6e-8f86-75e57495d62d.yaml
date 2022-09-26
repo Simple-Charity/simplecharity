@@ -1,0 +1,70 @@
+fieldLayouts:
+  244e8c4f-c1ad-47e9-91a8-f06978822aa4:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\AssetTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 795f5118-7777-4deb-a9d8-9ac7a8c8defa # Homepage Images
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 78928d4d-7ba2-4f47-a6cf-c1205a9c115c # Homepage Images Mobile
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: home
+hasUrls: true
+name: Home
+settings:
+  addSubfolderToRootUrl: true
+  autoFocalPoint: ''
+  bucket: simple-charity
+  bucketSelectionMode: choose
+  cfDistributionId: $CLOUDFRONT_DISTRIBUTION_ID
+  cfPrefix: ''
+  expires: '30 days'
+  keyId: $S3_KEY_ID
+  makeUploadsPublic: ''
+  region: us-east-2
+  secret: $S3_SECRET
+  storageClass: ''
+  subfolder: site/home
+sortOrder: 4
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+type: craft\awss3\Volume
+url: $CLOUDFRONT_URL

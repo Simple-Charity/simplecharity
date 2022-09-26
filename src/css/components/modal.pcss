@@ -1,0 +1,15 @@
+/**
+ * components/modal.css
+ *
+ * Styles for any modal components or overlay elements.
+ *
+ */
+
+.modal-bg {
+    background: theme('colors.linen');
+    z-index: 100;
+
+    @screen md {
+        background: color-mod(theme('colors.tan') a(85%));
+    }
+}

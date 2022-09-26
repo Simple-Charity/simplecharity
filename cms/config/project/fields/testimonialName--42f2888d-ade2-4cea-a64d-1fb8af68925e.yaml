@@ -1,0 +1,19 @@
+columnSuffix: gjwuhjui
+contentColumnType: text
+fieldGroup: 132cb2d1-306b-49d1-8a16-ec22a6feb5a3 # Testimonials
+handle: testimonialName
+instructions: ''
+name: 'Testimonial Name'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

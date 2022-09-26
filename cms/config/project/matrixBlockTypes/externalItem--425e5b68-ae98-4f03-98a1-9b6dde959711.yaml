@@ -1,0 +1,316 @@
+field: 15b9047e-629c-4b70-b7ec-352b2d2fb6d4 # Navigation Items
+fieldLayouts:
+  250dd4d7-79c8-468c-a3da-930ce74e8b82:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 9caa7b62-2291-4441-8227-18be41eebee6 # Item Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c1ced48b-72c9-48d0-bcff-592ef5b65a60 # Category
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: cdf8de34-cb9f-4618-a06c-d7fc7b4c661b # Display Area
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3a3e4df0-9f3d-4ebf-b3a2-34f84143f75a # Item Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 03f1b323-dc07-4777-b2d0-6c9719c1bbac # Item Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a745549a-588d-4f18-aa98-95d0f6bf5a9c # External Url
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8faf9072-1971-4266-9a2b-8f363288cb81 # Item Icon Secondary
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  3a3e4df0-9f3d-4ebf-b3a2-34f84143f75a: # Item Description
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemDescription
+    instructions: ''
+    name: 'Item Description'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Paragraphs.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  03f1b323-dc07-4777-b2d0-6c9719c1bbac: # Item Icon
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemIcon
+    instructions: ''
+    name: 'Item Icon'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  8faf9072-1971-4266-9a2b-8f363288cb81: # Item Icon Secondary
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemIconSecondary
+    instructions: ''
+    name: 'Item Icon Secondary'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  9caa7b62-2291-4441-8227-18be41eebee6: # Item Name
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemName
+    instructions: ''
+    name: 'Item Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a745549a-588d-4f18-aa98-95d0f6bf5a9c: # External Url
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: externalUrl
+    instructions: ''
+    name: 'External Url'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c1ced48b-72c9-48d0-bcff-592ef5b65a60: # Category
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: category
+    instructions: ''
+    name: Category
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - About
+            -
+              - value
+              - about
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Content
+            -
+              - value
+              - content
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Community
+            -
+              - value
+              - community
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Charities
+            -
+              - value
+              - charities
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  cdf8de34-cb9f-4618-a06c-d7fc7b4c661b: # Display Area
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: displayArea
+    instructions: ''
+    name: 'Display Area'
+    searchable: false
+    settings:
+      multi: true
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Footer
+            -
+              - value
+              - footer
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Menu
+            -
+              - value
+              - menu
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Homepage
+            -
+              - value
+              - homepage
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\MultiSelect
+handle: externalItem
+name: 'External Item'
+sortOrder: 2

@@ -1,0 +1,70 @@
+field: 819b71ac-942e-4e8f-935c-b508b89f9ba3 # Verse
+fieldLayouts:
+  46af688b-7487-4c43-881b-2b6fad77e5b8:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 3131ab8a-287a-4efa-9cf8-5c2dd0c0b0ce # Reference
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: af1b583a-1963-4dae-8fb5-ffc663e80a3d # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  3131ab8a-287a-4efa-9cf8-5c2dd0c0b0ce: # Reference
+    columnSuffix: hbpncrom
+    contentColumnType: text
+    fieldGroup: null
+    handle: reference
+    instructions: 'Should be in the form chapter:verse'
+    name: Reference
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  af1b583a-1963-4dae-8fb5-ffc663e80a3d: # Text
+    columnSuffix: uiqxxgvj
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: verse
+name: Verse
+sortOrder: 1

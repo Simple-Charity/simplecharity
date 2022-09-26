@@ -1,0 +1,208 @@
+field: 8aa3e0ac-3075-4ea3-acd2-d7a85db97d3c # Careers
+fieldLayouts:
+  97c0789e-b6f0-432c-936b-0337b6a8a3e0:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: a91b6aa2-6739-4187-9b0e-fec20d69d1d7 # Job Title
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 62df3d17-f617-4108-8e9c-14cfd20c33d8 # Currently Accepting Applications
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8cadffce-d139-483d-b9a7-2e2ac9f3172d # Job Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 42f32320-558a-4e8f-a29a-46eee33b09c0 # Job Qualifications
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d0257079-2b4e-4bbd-9ae8-949394717773 # Salary
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 66dc8187-9793-4603-9c29-8c5defa64ac4 # Application Instructions
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  8cadffce-d139-483d-b9a7-2e2ac9f3172d: # Job Description
+    columnSuffix: lwozqyju
+    contentColumnType: text
+    fieldGroup: null
+    handle: jobDescription
+    instructions: ''
+    name: 'Job Description'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Paragraphs.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  42f32320-558a-4e8f-a29a-46eee33b09c0: # Job Qualifications
+    columnSuffix: auaawojf
+    contentColumnType: text
+    fieldGroup: null
+    handle: jobQualifications
+    instructions: 'Requirements or desirable qualities for candidates'
+    name: 'Job Qualifications'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Paragraphs.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  62df3d17-f617-4108-8e9c-14cfd20c33d8: # Currently Accepting Applications
+    columnSuffix: rbgglwrn
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: currentlyAcceptingApplications
+    instructions: ''
+    name: 'Currently Accepting Applications'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  66dc8187-9793-4603-9c29-8c5defa64ac4: # Application Instructions
+    columnSuffix: lshgfcaq
+    contentColumnType: text
+    fieldGroup: null
+    handle: applicationInstructions
+    instructions: 'E.g. ''To apply, send a cover letter and resume to brian@simplecharity.org.'''
+    name: 'Application Instructions'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Paragraphs.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  a91b6aa2-6739-4187-9b0e-fec20d69d1d7: # Job Title
+    columnSuffix: jqprugej
+    contentColumnType: text
+    fieldGroup: null
+    handle: jobTitle
+    instructions: ''
+    name: 'Job Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d0257079-2b4e-4bbd-9ae8-949394717773: # Salary
+    columnSuffix: trnhuuxi
+    contentColumnType: text
+    fieldGroup: null
+    handle: salary
+    instructions: 'Enter a salary and specify per annum or per hour (e.g. ''$15/hour'' or ''$25,000/year'')'
+    name: Salary
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: career
+name: Career
+sortOrder: 1

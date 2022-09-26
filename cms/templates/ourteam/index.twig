@@ -1,0 +1,105 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+{% set entry = craft.entries.slug('ourteam').one() %}
+
+{% set pageBackground = pageBackground|default('green') %}
+
+{% block headMeta %}
+    {% if entry.pageDescription|length %}
+        <meta name="description" content={{ entry.pageDescription }}>
+    {% endif %}
+{% endblock %}
+
+
+{% block headLinks %}
+    {{ parent() }}
+{% endblock headLinks %}
+
+{% block contentborderless %}
+    <section class="edge edge-t">
+        <div class="mx-auto max-w-screen-2xl">
+            <header class="w-full z-10 relative" data-aos="fade-up" data-aos-duration="450" data-aos-delay="300">
+                <h1 class="header-one pb-10">
+                    our team <span class="tracking-overlap hidden sm:inline">–––––––––</span>
+                </h1>
+            </header>
+    
+            <div class="w-full" data-aos="fade-up" data-aos-offset="0" data-aos-duration="450" data-aos-delay="450">
+                {% set aboutImg = entry.aboutHeroImage.one().aboutImagesOptimize %}
+                <picture>
+                    <source data-srcset="{{ aboutImg.srcsetWebP() }}"
+                            data-sizes="80vw"
+                            type="image/webp"/>
+                    <img src="{{ aboutImg.placeholderImage() }}"
+                            data-srcset="{{ aboutImg.srcset() }}"
+                            class="lazyload blur-up mx-auto"
+                            data-sizes="80vw"
+                    />
+                </picture>
+            </div>
+        </div>
+
+        {% set globe = entry.aboutGlobe.one() %}
+
+        <img src="{{ globe.getUrl() }}"
+             class="lazyload mx-auto w-half md:w-4/12 lg:3/12 xl:w-2/12 h-auto -mt-12 relative"
+             alt=""
+             />
+
+        <div class="flex flex-wrap text-center max-w-3xl xl:max-w-4xl mx-auto py-12 md:py-20 xl:py-32 -mx-4 px-4 md:mx-auto">
+            <header id="about" class="w-full" data-aos="fade-up" data-aos-duration="1000">
+                
+            </header>
+            <p class="sc-callout mb-4 xl:mb-10" data-aos="fade-up" data-aos-duration="1000">
+                {{ entry.aboutTeamText }}
+            </p>
+        </div>
+
+    </section>
+
+    {% set cats = [] %}
+    {% set c = [] %}
+    {% set ppl = [] %}
+    {% set j = 0 %}
+
+    {% for item in entry.aboutTeam.all() %}
+
+        {% set l = item.teamMemberLongerBio|split("<p>") %}
+        {% set l2 = [] %}
+
+        {% for jtem in l %}
+            {% set l2 = l2|merge([jtem|striptags("</p>")]) %}
+        {% endfor %}
+
+        {% if item.teamMemberType|lower not in c %}
+            {% set c = c|merge([item.teamMemberType|lower]) %}
+
+            {% if j % 2 == 0 %}
+                {% set bgcolor = 'bg-deepnavy text-linen' %}
+            {% else %}
+                {% set bgcolor = 'bg-green text-blue' %}
+            {% endif %}
+
+            {% set cats = cats|merge([{cat: item.teamMemberType|lower, bgc: bgcolor}]) %}
+            {% set j = j + 1 %}
+        {% endif %}
+
+        {% set ppl = ppl|merge([
+            {
+                name:item.teamMemberName,
+                title:item.teamMemberTitle,
+                shortBio:item.teamMemberShortBio,
+                longBio:l2,
+                image:item.teamMemberPhoto.one().getUrl(),
+                type:item.teamMemberType|lower,
+                isOpen:false,
+            }
+        ]) %}
+    {% endfor %}
+
+    <people :ppl="{{ ppl|json_encode }}" :cats="{{ cats|json_encode }}"></people>
+{% endblock %}
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+    {{ parent() }}
+{% endblock bodyJs %}

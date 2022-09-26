@@ -1,0 +1,70 @@
+field: 852293a0-2780-40b7-a388-de44cdfd2ea3 # Charity Evaluation Report
+fieldLayouts:
+  4baa5a2b-e18b-41e7-b035-0aadab4a7230:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 1feed2cd-4e40-4f20-b46c-ced7034d5322 # Document Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8beec3f1-3000-47f5-a8fa-1bd1358fd7a8 # Document Reference
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  1feed2cd-4e40-4f20-b46c-ced7034d5322: # Document Name
+    columnSuffix: jakfcikc
+    contentColumnType: text
+    fieldGroup: null
+    handle: documentName
+    instructions: ''
+    name: 'Document Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  8beec3f1-3000-47f5-a8fa-1bd1358fd7a8: # Document Reference
+    columnSuffix: qgfnpsga
+    contentColumnType: text
+    fieldGroup: null
+    handle: documentReference
+    instructions: ''
+    name: 'Document Reference'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: document
+name: Document
+sortOrder: 1

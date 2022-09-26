@@ -1,0 +1,50 @@
+field: 6597ee4f-ee31-4b87-aa82-d4c9f895e057 # Blog Content
+fieldLayouts:
+  0a014289-c0f8-4e7f-b2b6-c4e423154e51:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 5fbcf938-9101-4f31-9d70-56fa0273ff01 # Text
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  5fbcf938-9101-4f31-9d70-56fa0273ff01: # Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Paragraphs.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: largeText
+name: 'Large Text'
+sortOrder: 1

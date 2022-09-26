@@ -1,0 +1,128 @@
+field: 30a99fdf-5b65-4e1b-97ae-e5da56bd6ca8 # Generic Modal
+fieldLayouts:
+  a263c507-a9da-43d1-92ac-af0f1f3f03ae:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: a481eae2-2105-4649-849c-f555e67e8187 # Modal Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 2d870c1f-4963-4d65-ab54-4576efc26fb7 # Modal Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a44879ea-12d8-4bac-96a8-860f95bd0fae # Modal Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 057a724a-9942-43e3-b99a-0238d3cd0a4c # Modal Button Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  2d870c1f-4963-4d65-ab54-4576efc26fb7: # Modal Text
+    columnSuffix: mtuhsbms
+    contentColumnType: text
+    fieldGroup: null
+    handle: modalText
+    instructions: ''
+    name: 'Modal Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  057a724a-9942-43e3-b99a-0238d3cd0a4c: # Modal Button Link
+    columnSuffix: ysbuvzfw
+    contentColumnType: text
+    fieldGroup: null
+    handle: modalButtonLink
+    instructions: ''
+    name: 'Modal Button Link'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a481eae2-2105-4649-849c-f555e67e8187: # Modal Title
+    columnSuffix: aowkbrev
+    contentColumnType: text
+    fieldGroup: null
+    handle: modalTitle
+    instructions: ''
+    name: 'Modal Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a44879ea-12d8-4bac-96a8-860f95bd0fae: # Modal Button Text
+    columnSuffix: ywykovfd
+    contentColumnType: text
+    fieldGroup: null
+    handle: modalButtonText
+    instructions: ''
+    name: 'Modal Button Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: modal
+name: Modal
+sortOrder: 1

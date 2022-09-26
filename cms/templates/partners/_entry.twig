@@ -1,0 +1,525 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% set donate_link = "https://simplecharity.kindful.com" %}
+{% if entry.kindfulCampaignPage|length %}
+    {% set donate_link = entry.kindfulCampaignPage %}
+{% endif %}
+
+{% block contentborderless %}
+
+    {% if entry.legacy %}
+
+        {# LEGACY LAYOUT #}
+
+        <div class="edge edge-t">
+            {% if not craft.app.request.isAjax() %}
+                <section class="my-12 lg:my-48 max-w-6xl mx-auto">
+            {% endif %}
+
+            <p class="font-semibold font-sans uppercase tracking-widest text-sm text-red mb-3">
+                Partner
+            </p>
+            <h1 class="header-one mb-10">
+                {{ entry.title }} <span class="tracking-overlap hidden sm:inline">–––––––––</span>
+            </h1>
+            <div class="font-sans font-normal redactor{% if not craft.app.request.isAjax() %} stories__block--sm-text{% endif %}">
+                {{ entry.partnerDescriptiveText }}
+            </div>
+
+            {% if entry.partnerLink|length and craft.app.request.isAjax() %}
+                <p class="mt-6">
+                    <a class="border-b pb-1 uppercase tracking-wide text-sm font-semibold text-red transition-all hover:opacity-75" href="{{ entry.partnerLink }}" target="_blank">
+                        Visit {{ entry.title }} <span class="icon-next"></span>
+                    </a>
+                </p>
+            {% endif %}
+
+            {% if entry.relatedStory|length and not craft.app.request.isAjax() %}
+                <p class="mt-6">
+                    <a class="border-b pb-1 uppercase tracking-wide text-sm font-semibold text-red transition-all hover:opacity-75" href="/stories/{{ entry.relatedStory.one().slug }}">
+                        Read a story of impact &#8594;
+                    </a>
+                </p>
+            {% endif %}
+
+            <div class="py-10 sm:py-20 flex items-center">
+                <div class="bluebutton">
+                    <a href="https://simplecharity.kindful.com">
+                        Make a donation
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    {% else %}
+
+        {# NEW LAYOUT #}
+
+        {% if entry.relatedStory.one()|length %}
+            {% set story = entry.relatedStory.one() %}
+        {% endif %}
+
+        {% if entry.featuredPodcastEpisode.one()|length %}
+            {% set podcast = entry.featuredPodcastEpisode.one() %}
+        {% endif %}
+
+        {# BANNER 1: PARTNERS #}
+
+        <div class="edge bg-lightgreen relative">
+            <div class="mx-auto max-w-screen-2xl relative z-20">
+                <div class="edge-t mb-10 lg:mb-20 xl:mb-32">
+                    <div class="header-one">partners <span class="tracking-overlap hidden sm:inline">–––––––––</span></div>
+                </div>
+                <div class="flex flex-wrap sm:flex-nowrap justify-start">
+                    {% if entry.partnerFeaturedImage.one()|length %}
+                        <div class="mb-10 sm:mr-4 lg:mr-10 xl:mr-20 xxl:mr-32 w-full sm:w-[12rem] md:w-[17rem] lg:w-[25rem] xl:w-[35rem]">
+                            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" class="w-[100%] h-[75vw] sm:w-[12rem] sm:h-[12rem] md:w-[17rem] md:h-[17rem] lg:w-[25rem] lg:h-[25rem] xl:w-[35rem] xl:h-[35rem] bg-cover bg-center" style="background-image: url('{{ entry.partnerFeaturedImage.one().getUrl() }}');">
+                            </div>
+                        </div>
+                    {% endif %}
+                    <div class="">
+                        <div class="pb-10 xl:pb-12">
+                            <h1 class="text-3xl xl:text-5xl xxl:text-6xl font-bold">{{ entry.title }}</h1>
+                        </div>
+                        <vue-typed-js :strings="['{{ entry.partnerHeroTextHighlight }}']" :type-speed="75">
+                            <div class="pb-2 xl:pb-4">
+                                <p class="text-xl xl:text-3xl xxl:text-4xl font-bold">{{ entry.partnerHeroText }} <span class="text-red"><span class="typing"></span></span></p>
+                            </div>
+                        </vue-typed-js>
+                        <div class="text-lg xl:text-xl xxl:text-2xl sm:pb-3 lg:pb-6 xl:pb-10 redactor">
+                            <p>{{ entry.partnerDescriptiveText }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-[-10vw] left-0 right-0 z-10">
+                <img class="" src="{{ craft.entries.slug('site-wide-assets').one().lightMintWave1.one().getUrl() }}" alt="">
+            </div>
+        </div>
+
+        {# BANNER 2: DOLLAR IMPACT #}
+
+        <div class="edge bg-linen relative z-[0]">
+            <div class="mx-auto max-w-screen-2xl mt-[7vw]">
+                <div class="w-full md:w-3/4 lg:w-1/2">
+                    <div class="mb-6">
+                        <h1 class="text-sm font-semibold tracking-[2px]">DOLLAR IMPACT</h1>
+                    </div>
+                    <div class="mb-6">
+                        <p class="text-xl font-bold xl:text-3xl xxl:text-4xl ">Your dollars go toward <span class="text-red">{{ entry.everyDollarGoesTowardTheText }}</span></p>
+                    </div>
+                    <div class="mb-6">
+                        <p class="text-lg xl:text-xl xxl:text-2xl sm:pb-3 lg:pb-6 xl:pb-10">{{ entry.partnerImpact|striptags }}</p>
+                    </div>
+                    <div>
+                        <a href="{{ donate_link }}">
+                            <div class="bluebutton w-[13rem] sm:w-[15rem]">
+                                Donate here
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {# BANNER 3: OVERALL IMPACT #}
+
+        <div class="edge bg-red relative">
+            <div class="mx-auto max-w-screen-2xl sm:grid sm:grid-cols-2 relative z-0">
+                <div class="w-full"></div>
+                <div class="">
+                    <div class="pb-6">
+                        <h1 class="text-linen text-sm font-semibold tracking-[2px]">OVERALL IMPACT</h1>
+                    </div>
+                    <div class="pb-6">
+                        <p class="text-xl font-bold xl:text-3xl xxl:text-4xl">{{ entry.overallImpactHeader|striptags }}</p>
+                    </div>
+                    <div class="sm:pb-3 lg:pb-6 xl:pb-10">
+                        <p class="text-lg xl:text-xl xxl:text-2xl">{{ entry.overallImpactText|striptags }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-[-15vw] left-0 right-0 z-[-20]">
+                <img src="{{ craft.entries.slug('site-wide-assets').one().peachWave1.one().getUrl() }}" alt="">
+            </div>
+        </div>
+
+        {# BANNER 4: OVERVIEW #}
+
+        {% set icons = craft.entries.slug("site-wide-assets").one().causeIcons.all() %}
+        {% set map = craft.entries.slug("site-wide-assets").one().squigglyWorldMap.one().getUrl() %}
+
+        <div id="ap" class="edge bg-linen mt-[15vw] relative z-20">
+            <div class="mx-auto max-w-screen-2xl">
+                <div class="mb-6">
+                    <h1 class="text-sm font-semibold tracking-[2px]">OVERVIEW</h1>
+                </div>
+
+                {% set dropdowns = [] %}
+
+                {% for item in entry.partnerDropdowns.all() %}
+                    {% switch item.type %}
+                    {% case "textDropdown" %}
+
+                        {% set raw_text = item.dropdownText|split('</p>') %}
+                        {% set processed_text = [] %}
+
+                        {% for t in raw_text %}
+                            {% set processed_text = processed_text|merge([t|striptags]) %}
+                        {% endfor %}
+
+                        {% set dropdowns = dropdowns|merge([
+                            {
+                                type:"text",
+                                title:item.dropdownTitle,
+                                text:processed_text,
+                                open:false,
+                            }
+                        ]) %}
+                    {% case "mapDropdown" %}
+
+                        {% set countryResult = [] %}
+
+                        {% for continent in entry.countriesOfOperation.all() %}
+
+                            {% set s = "" %}
+                            {% set s2 = "" %}
+
+                            {% switch continent.type.name %}
+                                {% case "North America" %}
+                                    {% set s = "left-[20%] lg:left-[25%] top-[20%]" %}
+                                    {% set s2 = "left-[-1rem]" %}
+                                {% case "Europe & Central Asia" %}
+                                    {% set s = "left-[50%] lg:left-[53%] top-[15%]" %}
+                                    {% set s2 = "left-[-1rem]" %}
+                                {% case "East Asia & Pacific" %}
+                                    {% set s = "left-[78%] md:left-[60%] lg:left-[75%] top-[28%]" %}
+                                    {% set s2 = "right-[-1rem] lg:left-[-1rem]" %}
+                                {% case "Latin America & Caribbean" %}
+                                    {% set s = "left-[28%] lg:left-[30%] top-[60%]" %}
+                                    {% set s2 = "left-[-1rem]" %}
+                                {% case "Middle East & North Africa" %}
+                                    {% set s = "right-[57%] md:right-[78%] lg:left-[46%] top-[38%] lg:top-[32%]" %}
+                                    {% set s2 = "right-[-1rem] lg:left-[-1rem]" %}
+                                {% case "South Asia" %}
+                                    {% set s = "left-[74.2%] lg:left-[70%] top-[45%]" %}
+                                    {% set s2 = "left-[-1rem]" %}
+                                {% case "Sub-Saharan Africa" %}
+                                    {% set s = "left-[53%] lg:left-[54%] top-[73%]" %}
+                                    {% set s2 = "left-[-1rem]" %}
+                            {% endswitch %}
+
+                            {% set countryResult = countryResult|merge([{
+                                "name":continent.type.name, 
+                                "countries":continent.countries|striptags|split(","),
+                                "isOpen":false,
+                                "style2": s,
+                                "style3": s2,
+                                "no_listing": continent.countries|striptags|split(",") == [""],
+                            }]) %}
+                        {% endfor %}
+
+                        {% set dropdowns = dropdowns|merge([
+                            {
+                                type:"map",
+                                title:item.dropdownTitle,
+                                continents: countryResult,
+                                open:false,
+                            }
+                        ]) %}
+                    {% case "systemIconsDropdown" %}
+                        {% set dropdowns = dropdowns|merge([
+                            {
+                                type:"system",
+                                title:item.dropdownTitle,
+                                systems:entry.causeArea,
+                                open:false,
+                            }
+                        ]) %}
+                        {% case "siteLinkDropdown" %}
+                        {% set dropdowns = dropdowns|merge([
+                            {
+                                type:"siteLink",
+                                title:item.dropdownTitle,
+                                open:false,
+                            }
+                        ]) %}
+                    {% endswitch %}
+                {% endfor %}
+
+                {% set ic = [] %}
+                {% for item in icons %}
+
+                    {% set temp = false %}
+
+                    {% for system in entry.causeArea %}
+                        {% if item.iconName|lower == system|lower %}
+                            {% set temp = true %}
+                        {% endif %}
+                    {% endfor %}
+
+                    {% set ic = ic|merge([
+                        {
+                            icon_name:item.iconName,
+                            icon_asset:item.iconSolid.one().getUrl(),
+                            icon_enabled:temp,
+                        }
+                    ]) %}
+                {% endfor %}
+
+                <partner-drop :dropdowns="{{ dropdowns|json_encode }}"
+                              map="{{ map }}"
+                              :icons="{{ ic|json_encode }}"
+                              bc="{{ craft.entries.slug("site-wide-assets").one().blueCaret.one().getUrl() }}"
+                              pl="{{ entry.partnerLink }}"
+                              pls="{{ entry.partnerLink|replace('https://','')|replace('www.','')|replace('/','') }}">
+                </partner-drop>
+            </div>
+        </div>
+
+        {# BANNER 5: READ A STORY OF IMPACT #}
+
+        {% if entry.relatedStory.one()|length or entry.featuredPodcastEpisode.one()|length %}
+            <div class="edge bg-deepnavy relative">
+                <div class="mx-auto max-w-screen-2xl relative z-10">
+                    <div class="flex flex-wrap sm:flex-nowrap justify-start mb-10 xl:mb-16">
+                        <div class="sm:mr-10 lg:mr-10 xl:mr-20 xxl:mr-32 w-full sm:w-[12rem] md:w-[17rem] lg:w-[25rem] xl:w-[30rem] flex items-center">
+                            {% if story.storyHeroImage|length %}
+                                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" class="hidden sm:block rounded-full w-[100%] h-[75vw] sm:w-[12rem] sm:h-[12rem] md:w-[17rem] md:h-[17rem] lg:w-[25rem] lg:h-[25rem] xl:w-[30rem] xl:h-[30rem] bg-cover {% switch entry.imageAlignment.value %}{% case 'center' %} bg-center {% case 'top' %} bg-top {% case 'topRight' %} bg-right-top {% case 'right' %} bg-right {% case 'bottomRight' %} bg-right-bottom {% case 'bottom' %} bg-bottom {% case 'bottomLeft' %} bg-left-bottom {% case 'left' %} bg-left {% case 'topLeft' %} bg-left-top {% endswitch %} lg:pr-20 lg:pb-20" style="background-image: url('{{ story.storyHeroImage.one().getUrl() }}');">
+                                </div>
+                            {% elseif podcast.episodeFeatureImage|length %}
+                                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" class="hidden sm:block rounded-full w-[100%] h-[75vw] sm:w-[12rem] sm:h-[12rem] md:w-[17rem] md:h-[17rem] lg:w-[25rem] lg:h-[25rem] xl:w-[30rem] xl:h-[30rem] bg-cover {% switch entry.podcastImageAlignment.value %}{% case 'center' %} bg-center {% case 'top' %} bg-top {% case 'topRight' %} bg-right-top {% case 'right' %} bg-right {% case 'bottomRight' %} bg-right-bottom {% case 'bottom' %} bg-bottom {% case 'bottomLeft' %} bg-left-bottom {% case 'left' %} bg-left {% case 'topLeft' %} bg-left-top {% endswitch %} lg:pr-20 lg:pb-20" style="background-image: url('{{ podcast.episodeFeatureImage.one().getUrl() }}');">
+                                </div>
+                            {% endif %}
+                        </div>
+                        <div class="flex items-center ">
+                            <div class="">
+                                <div class="pb-6 lg:pb-12">
+                                    <h1 class="text-red text-sm font-semibold tracking-[2px]">STORY OF IMPACT</h1>
+                                </div>
+                                {% if story.storyHeroImage|length %}
+                                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" class="sm:hidden mb-6 w-[100%] h-[75vw] sm:w-[12rem] sm:h-[12rem] md:w-[17rem] md:h-[17rem] lg:w-[25rem] lg:h-[25rem] xl:w-[30rem] xl:h-[30rem] bg-cover {% switch entry.imageAlignment.value %}{% case 'center' %} bg-center {% case 'top' %} bg-top {% case 'topRight' %} bg-right-top {% case 'right' %} bg-right {% case 'bottomRight' %} bg-right-bottom {% case 'bottom' %} bg-bottom {% case 'bottomLeft' %} bg-left-bottom {% case 'left' %} bg-left {% case 'topLeft' %} bg-left-top {% endswitch %} lg:pr-20 lg:pb-20" style="background-image: url('{{ story.storyHeroImage.one().getUrl() }}');">
+                                    </div>
+                                {% elseif podcast.episodeFeatureImage|length %}
+                                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" class="sm:hidden mb-6 w-[100%] h-[75vw] sm:w-[12rem] sm:h-[12rem] md:w-[17rem] md:h-[17rem] lg:w-[25rem] lg:h-[25rem] xl:w-[30rem] xl:h-[30rem] bg-cover {% switch entry.podcastImageAlignment.value %}{% case 'center' %} bg-center {% case 'top' %} bg-top {% case 'topRight' %} bg-right-top {% case 'right' %} bg-right {% case 'bottomRight' %} bg-right-bottom {% case 'bottom' %} bg-bottom {% case 'bottomLeft' %} bg-left-bottom {% case 'left' %} bg-left {% case 'topLeft' %} bg-left-top {% endswitch %} lg:pr-20 lg:pb-20" style="background-image: url('{{ podcast.episodeFeatureImage.one().getUrl() }}');">
+                                    </div>
+                                {% endif %}
+                                <div class="pb-6">
+                                    <p class="text-linen text-xl font-bold xl:text-3xl xxl:text-4xl">
+                                        {% if entry.relatedStory.one()|length %}
+                                            {{ story.title }}
+                                        {% elseif entry.featuredPodcastEpisode.one()|length %}
+                                            {{ podcast.episodeHeroText|striptags }}
+                                        {% endif %}
+                                    </p>
+                                </div>
+                                <div class="text-lg xl:text-xl xxl:text-2xl sm:pb-3 lg:pb-6 xl:pb-10 flex flex-wrap justify-center sm:justify-start">
+                                    {% if entry.relatedStory.one()|length %}
+                                        <a href="{{ story.url }}">
+                                            <div class="redbutton w-[13rem] mx-4 sm:mx-0 md:mr-4 mb-4">
+                                                Read here
+                                            </div>
+                                        </a>
+                                    {% endif %}
+
+                                    {% if entry.featuredPodcastEpisode.one()|length %}
+                                        <a href="{{ entry.featuredPodcastEpisode.one().getUrl() }}">
+                                            <div class="redbutton  w-[13rem]">
+                                                Listen here
+                                            </div>
+                                        </a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm:w-3/4 pb-6">
+                        {% if entry.relatedStory.one()|length or entry.featuredPodcastEpisode.one()|length %}
+                            <p class="text-linen text-xl font-bold xl:text-3xl xxl:text-4xl">
+                                {% if entry.relatedStory.one().featureFirstName|length %}
+                                    When you donate to {{ entry.title }}, you are helping people like {{ story.featureFirstName }} <span class="text-red">flourish</span> as an individual.
+                                {% elseif entry.featuredPodcastEpisode.one().featureFirstName|length %}
+                                    When you donate to {{ entry.title }}, you are helping people like {{ podcast.featureFirstName }} <span class="text-red">flourish</span> as an individual.
+                                {% endif %}
+                            </p>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="absolute bottom-[-8vw] scale-x-105 left-0 right-0 -z-10">
+                    <img src="{{ craft.entries.slug('site-wide-assets').one().darkBlueWave1.one().getUrl() }}" alt="">
+                </div>
+            </div>
+        {% endif %}
+
+        {# BANNER 6: WHY WE TRUST THEM #}
+
+        <div class="edge bg-lightgreen">
+            <div class="mx-auto max-w-screen-2xl {% if entry.relatedStory.one()|length or entry.featuredPodcastEpisode.one()|length %} mt-[8vw] {% endif %}">
+                <div class="sm:w-10/12 md:w-3/4 lg:w-2/3 xl:w-1/2">
+                    <div class="pb-6">
+                        <h1 class="text-red text-sm font-semibold tracking-[2px]">WHY WE TRUST THEM</h1>
+                    </div>
+                    <div class="pb-6">
+                        <p class="text-xl font-bold xl:text-3xl xxl:text-4xl text-blue">
+                            {{ entry.whyWeTrustThemHeader|striptags }}
+                        </p>
+                    </div>
+                    <div class="pb-12">
+                        <p class="text-blue text-lg xl:text-xl xxl:text-2xl">{{ entry.whyWeTrustThemText|striptags }}</p>
+                    </div>
+                    <a href="{{ donate_link }}">
+                        <div class="bluebutton w-[13rem]">
+                            Donate here
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        {# BANNER 7: EXPLORE MORE #}
+        
+        <div class="edge bg-blue">
+            <div class="mx-auto max-w-screen-2xl">
+                <div class="text-linen text-sm font-semibold tracking-[2px] pb-10 md:pb-24">EXPLORE MORE</div>
+                <div>
+                    <div class="md:flex justify-center">
+
+                        {# dynamically determine whether the block should display #}
+
+                        {% set checkAgainst = [] %}
+
+                        {% for worldBankRegion in entry.countriesOfOperation.all() %}
+                            {% set checkAgainst = checkAgainst|merge([worldBankRegion.type.handle]) %}
+                        {% endfor %}
+
+                        {% set total_query_set = [] %}
+                        {% set con = [] %}
+
+                        {% for partner in craft.entries.section("partners").id("not " ~ entry.id).all() %}
+                            {% for worldBankRegion in partner.countriesOfOperation.all() %}
+                                {% if worldBankRegion.type.handle in checkAgainst %}
+                                    {% set total_query_set = total_query_set|merge([
+                                        {
+                                            "whichWBRegion": worldBankRegion.type.name,
+                                            "partnerObject": partner,
+                                        }
+                                    ]) %}
+                                    {% if not (worldBankRegion.type.name in con) %}
+                                        {% set con = con|merge([worldBankRegion.type.name]) %}
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+
+                        {# <div>
+                            {% for item in total_query_set %}
+                                <div class="text-linen text-xl">
+                                    {{ item }}
+                                </div>
+                            {% endfor %}
+                        </div> #}
+
+
+                        {% if total_query_set|length %}
+                            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" class="md:w-[16rem] lg:w-[20rem] xl:w-[24rem] bg-linen mb-10 md:mb-0 md:mr-4">
+                                <div class="w-full h-[1.5rem] bg-red"></div>
+                                <div class="px-6 xlaf:px-14 py-20 min-h-[16rem] md:min-h-[20rem] lg:min-h-[24rem] xl:min-h-[28rem] xxl:min-h-[32rem] flex">
+                                    
+                                    <p class="text-lg lg:text-xl xl:text-2xl font-bold">
+                                        See another charity in 
+
+                                        {# dynamically generate correct grammar depending on the number of regions #}
+                                        
+                                        {% switch con|length %}
+                                            {% case 1 %}
+                                                {% set rand_partner = random(total_query_set) %}
+                                                <a class="text-red underline" href="{{ rand_partner.partnerObject.url }}">{{ con[0] }}</a>
+                                            {% default %}
+                                                {% set i = 0 %}
+                                                {% for area in con %}
+                                                    {% set query_set = [] %}
+                                                    {% for partner in total_query_set %}
+                                                        {% if partner.whichWBRegion == area %}
+                                                            {% set query_set = query_set|merge([partner]) %}
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                    {% set rand_partner = random(query_set) %}
+                                                    {% switch (con|length - i) %}
+                                                        {% case 1 %} {# last entry #}
+                                                            <span> or <a class="text-red underline" href="{{ rand_partner.partnerObject.url }}">{{ area }}</a></span>
+                                                        {% case 2 %} {# penultimate entry #}
+                                                            <span><a class="text-red underline" href="{{ rand_partner.partnerObject.url }}">{{ area }}</a> </span>
+                                                        {% default %}
+                                                            <span><a class="text-red underline" href="{{ rand_partner.partnerObject.url }}">{{ area }}</a>, </span>
+                                                    {% endswitch %}
+                                                    {% set i = i + 1 %}
+                                                {% endfor %}
+                                        {% endswitch %}
+                                    </p>
+                                </div>
+                            </div>
+                        {% endif %}
+
+                        {# dynamically determine whether the block should display #}
+
+                        {% set total_query_set = [] %}
+                        {% set sys = [] %}
+
+                        {% for system in entry.causeArea %}
+                            {% set query_set = craft.entries.section("partners").causeArea(system.value).id("not " ~ entry.id).all() %}
+                            {% if query_set|length %}
+                                {% set total_query_set = total_query_set|merge(query_set) %}
+                                {% set sys = sys|merge([system]) %}
+                            {% endif %}
+                        {% endfor %}
+
+                        {% if total_query_set|length %}
+                            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="md:w-[16rem] lg:w-[20rem] xl:w-[24rem] bg-linen mb-10 md:mb-0 md:mx-4">
+                                <div class="w-full h-[1.5rem] bg-red"></div>
+                                <div class="px-6 xlaf:px-14 py-20 min-h-[16rem] md:min-h-[20rem] lg:min-h-[24rem] xl:min-h-[28rem] xxl:min-h-[32rem] flex">
+                                    <p class="text-lg lg:text-xl xl:text-2xl font-bold">
+                                        See another charity in 
+
+                                        {# dynamically generate correct grammar depending on the number of cause areas #}
+                                        
+                                        {% switch sys|length %}
+                                            {% case 1 %}
+                                                {% set query_set = craft.entries.section("partners").causeArea(sys[0].value).id("not " ~ entry.id).all() %}
+                                                {% set rand_partner = random(query_set) %}
+                                                <a class="text-red underline" href="{{ rand_partner.url }}">{{ sys[0] }}</a>
+                                            {% default %}
+                                                {% set i = 0 %}
+                                                {% for area in sys %}
+                                                    {% set query_set = craft.entries.section("partners").causeArea(area.value).id("not " ~ entry.id).all() %}
+                                                    {% set rand_partner = random(query_set) %}
+                                                    {% switch (sys|length - i) %}
+                                                        {% case 1 %} {# last entry #}
+                                                            <span> or <a class="text-red underline" href="{{ rand_partner.url }}">{{ area.label|lower }}</a></span>
+                                                        {% case 2 %} {# penultimate entry #}
+                                                            <span><a class="text-red underline" href="{{ rand_partner.url }}">{{ area.label|lower }}</a> </span>
+                                                        {% default %}
+                                                            <span><a class="text-red underline" href="{{ rand_partner.url }}">{{ area.label|lower }}</a>, </span>
+                                                    {% endswitch %}
+                                                    {% set i = i + 1 %}
+                                                {% endfor %}
+                                        {% endswitch %}
+                                    </p>
+                                </div>
+                            </div>
+                        {% endif %}
+
+                        {# block #}
+
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="md:w-[16rem] lg:w-[20rem] xl:w-[24rem] bg-linen mb-10 md:mb-0 md:ml-4">
+                            <div class="w-full h-[1.5rem] bg-red"></div>
+                            <div class="px-6 xlaf:px-14 py-20 min-h-[16rem] md:min-h-[20rem] lg:min-h-[24rem] xl:min-h-[28rem] xxl:min-h-[32rem] flex">
+                                {% set random_partner = craft.entries.section("partners").orderBy("RAND()").one() %}
+                                <p class="text-lg lg:text-xl xl:text-2xl font-bold">See another <a class="text-red underline" href="/partners/{{ random_partner.slug }}">charity</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock  %}

@@ -1,0 +1,19 @@
+fieldLayouts:
+  21051f46-388d-44e2-afd5-f05bc854bfb3:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: cb5cc030-c8da-4be8-b8de-e8500300ef35 # Donate Button Entry
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Tab 1'
+        sortOrder: 1
+handle: site
+name: Site
+sortOrder: 2

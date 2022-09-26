@@ -1,0 +1,19 @@
+columnSuffix: null
+contentColumnType: text
+fieldGroup: 84e64693-a1cb-4ec1-a08e-4bded3602c99 # Blog
+handle: authorShortBio
+instructions: ''
+name: 'Author Short Bio'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: '200'
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

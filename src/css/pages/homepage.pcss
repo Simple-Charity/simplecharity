@@ -1,0 +1,71 @@
+/**
+ * pages/homepage.pcss
+ *
+ * Styles for the Home page.
+ *
+ */
+
+.sc-hero {
+    max-width: theme("screens.max");
+}
+
+
+.hero-text {
+    max-width: theme("screens.xxl");
+
+    @apply text-3xl;
+
+    @apply md:text-5xl;
+
+    @screen lg {
+        font-size: 8.5vw;
+    }
+
+    @screen xxl {
+        font-size: 7rem;
+    }
+
+    @screen max {
+        font-size: 9rem;
+    }
+}
+
+.home-sc-map {
+    margin-top: -13rem;
+    @screen xl {
+        margin-top: -15rem;
+    }
+    @screen xxl {
+        margin-top: -20rem;
+    }
+
+    @screen max {
+        margin-top: -24rem;
+    }
+}
+
+.sc-home-about-img {
+  &__2 {
+      max-height: 1000px;
+  }
+}
+
+.home-slideshow {
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: .5;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, theme('colors.green') 0%, theme('colors.blue') 100%);
+    }
+
+    &__bw {
+        filter: grayscale(100%) !important;
+    }
+}

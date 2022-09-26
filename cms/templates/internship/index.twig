@@ -1,0 +1,323 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% set pageBackground = pageBackground|default('linen') %}
+{% set navigationColor = navigationColor|default('blue') %}
+{% set storyCategories = craft.categories.group('stories').level(1).all() %}
+
+{% block headMeta %}
+    {% if entry.pageDescription|length %}
+        <meta name="description" content={{ entry.pageDescription }}>
+    {% endif %}
+{% endblock %}
+
+{% block headLinks %}
+    {{ parent() }}
+{% endblock headLinks %}
+
+{% block contentborderless %}
+
+    {# BANNER 1: HEADER #}
+
+    {# layout for large screens #}
+
+    {% set interns = entry.interns2021.one() %}
+
+    <div class="relative bg-linen overflow-hidden">
+        <div class="edge edge-t hidden lg:block pb-20 relative">
+            <div class="max-w-screen-2xl mx-auto">
+                <div class=" relative bg-linen">
+                    <h1 class="text-5xl text-blue font-serif font-bold pb-16">summer internship program  <span class="tracking-overlap hidden sm:inline">–––––––––</span></h1>
+                    <div class="lg:flex relative">
+                        <div class="w-1/3 mr-6">
+                            <h5 class="headercaps pb-6">YOU'RE INVITED</h5>
+                            <p class="text-2xl text-blue leading-normal font-bold">Grow professionally and spiritually in a Christian community <span class="linenspace-nowrap">of <span class="text-red">practice.</span></span></p>
+                            {% if entry.currentlyAcceptingInternshipApplications %}
+                                <a href="https://forms.gle/4XCBLCDQp4U46HiF9">
+                                    <button class="my-6 pt-4">
+                                        <div class="bluebutton hover:bg-linen hover:text-blue">
+                                            <div class="">Apply Today</div>
+                                        </div>
+                                    </button>
+                                </a>
+                            {% else %}
+                                <modal buttontext="Apply today" 
+                                    modaltitle="{{ entry.genericModal.one().modalTitle }}" 
+                                    modalbody="{{ entry.genericModal.one().modalText }}" 
+                                    buttonone="{{ entry.genericModal.one().modalButtonText }}" 
+                                    linkone="{{ entry.genericModal.one().modalButtonLink }}">
+                                </modal>
+                            {% endif %}
+                        </div>
+
+                        <div class="w-2/3">
+                            <img class="w-full" src="{{ entry.interns2021.one().getUrl() }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {# layout for small screens #}
+
+        <div class="lg:hidden pb-20 relative">
+            <div class="edge-x relative bg-linen">
+                <h1 class="text-3xl sm:text-4xl text-blue font-serif font-bold pt-32 pb-16">summer internship <br> program <span class="tracking-overlap hidden sm:inline">–––––––––</span></h1>
+                <div class="w-full">
+                    <img class="" src="{{ interns.getUrl() }}" alt="" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+                </div>
+
+                <div class="relative">
+                    <div class="text-center">
+                        <h5 class="headercaps pb-6 pt-10">YOU'RE INVITED</h5>
+                        <div class="md:w-2/3 mx-auto">
+                            <p class="text-xl sm:text-2xl md:text-3xl text-blue leading-relaxed font-bold">Grow professionally and spiritually in a Christian community of <span class="text-red">practice.</span></p>
+                        </div>
+                        <div class="w-full flex items-center">
+                            <div class="mx-auto">
+                                {% if entry.currentlyAcceptingInternshipApplications %}
+                                    <a href="https://forms.gle/4XCBLCDQp4U46HiF9">
+                                        <button class="my-6 pt-4">
+                                            <div class="hover:bg-linen hover:text-blue bluebutton">Apply Today</div>
+                                        </button>
+                                    </a>
+                                {% else %}
+                                    <modal buttontext="Apply today" 
+                                        modaltitle="{{ entry.genericModal.one().modalTitle }}" 
+                                        modalbody="{{ entry.genericModal.one().modalText }}" 
+                                        buttonone="{{ entry.genericModal.one().modalButtonText }}" 
+                                        linkone="{{ entry.genericModal.one().modalButtonLink }}">
+                                    </modal>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% set sq1 = entry.internshipSquiggle0.one() %}
+
+
+            <div class="absolute -bottom-12 -left-32 md:-left-12 w-[25rem]">
+                <img class="" src="{{ sq1.getUrl() }}" alt="">
+            </div>
+        </div>
+    </div>
+    
+
+    {# BANNER 2: WHAT IT IS #}
+
+    {% set akj = entry.angelaKathiaJoy.one() %}
+
+    <div class="relative py-20 edge-x z-10 overflow-hidden">
+        <div v-prlx="{ preserveInitialPosition: false, speed:0.15 }" class="absolute top-[-10rem] left-0 right-0 bottom-0 bg-right bg-cover" style="background-image: url('{{ akj.getUrl() }}');">
+        </div>
+        <div class="mx-auto max-w-screen-2xl">
+            <div class="md:hidden absolute z-20 bg-blue opacity-[.65] top-0 right-0 left-0 bottom-0"></div>
+            <div class="relative z-30">
+                <h5 class="headercaps">WHAT IT IS</h5>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl text-linen font-bold pt-16 pb-16">More than an<br>internship.</h1>
+
+                <div class="w-full md:w-7/12">
+                    <p class="text-linen leading-tight text-lg lg:text-xl pb-6">Simple Charity’s aim is to transform young adults into people who look more like Christ. And one of the ways we can look more like Christ is by caring for the poor: King Jesus in Disguise.</p>
+                    <p class="text-linen leading-tight text-lg lg:text-xl pb-20">Based out of Durham, North Carolina, this 9-week, full-time summer internship program alters interns’ views on what it might mean to follow God‘s call to practice solidarity with the poor in both life and work. In the process, interns learn new marketable skills, improve on old ones, and grow in fellowship with God and with others.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    {# BANNER 3: THREE CARDS #}
+
+    <div class="bg-deepnavy relative z-20">
+        <div class="hidden md:flex sm:justify-center relative z-30 md:pl-6 edge-x xl:w-11/12 max-w-screen-2xl mx-auto">
+            <div v-prlx="{ speed : 0.05, preserveInitialPosition: false }" class="bg-yellow transition-all duration-200 ease-in-out transform mt-[-5rem] p-8 sm:p-6 md:p-8 h-[25rem] sm:h-[40rem] sm:w-[16rem] md:mx-4 lg:w-[20rem]">
+
+                <h5 class="text-md tracking-wider">GROW</h5>
+                <h5 class="text-2xl lg:text-3xl font-serif font-bold tracking-wide pb-10">professionally.</h5>
+
+                <p class="text-md lg:text-lg pb-12 sm:pb-2">Interns are placed, based on their skills and interests, in 2-3 project teams each. Examples of past projects include charity evaluation research, writing for our blog, social media, graphic design, videography, marketing, audio engineering, creating spiritual formation resources and fundraising.</p>
+
+            </div>
+            <div v-prlx="{ speed : 0.05, preserveInitialPosition: false }" class="bg-green transition-all duration-200 ease-in-out transform mt-[-5rem] p-8 sm:p-6 md:p-8 h-[25rem] sm:h-[40rem] sm:w-[16rem] md:mx-4 lg:w-[20rem]">
+
+                <h5 class="text-md tracking-wider">GROW</h5>
+                <h5 class="text-2xl lg:text-3xl font-serif font-bold tracking-wide pb-10">spiritually.</h5>
+
+                <p class="text-md lg:text-lg pb-12 sm:pb-2">Spiritual growth activities include weekly intern- and staff-led Bible studies and devotionals, community service and fundraising projects, guest speakers, prayer sessions and worship nights. Additionally, interns attend a retreat about generosity called a “JOG” (Journey of Generosity) in the NC mountains.</p>
+
+            </div>
+            <div v-prlx="{ speed : 0.05, preserveInitialPosition: false }" class="bg-red transition-all duration-200 ease-in-out transform mt-[-5rem] p-8 sm:p-6 md:p-8 h-[25rem] sm:h-[40rem] sm:w-[16rem] md:mx-4 lg:w-[20rem]">
+
+                <h5 class="text-md tracking-wider">GROW</h5>
+                <h5 class="text-2xl lg:text-3xl font-serif font-bold tracking-wide pb-10">relationally.</h5>
+
+                <p class="text-md lg:text-lg pb-12 sm:pb-2">We know how to have fun! Team bonding activities, sports days, game/movie nights, weekend trips, retreats and meals together forge a tight bond amongst all community members.</p>
+
+            </div>
+        </div>
+
+        <div class="sm:flex md:hidden sm:justify-center relative z-30 md:pl-6 lg:px-12 xl:w-11/12 max-w-screen-2xl mx-auto">
+            <div class="bg-yellow transition-all duration-200 ease-in-out transform mt-[-5rem] p-8 sm:p-6 md:p-8 h-[25rem] sm:h-[40rem] sm:w-[16rem] md:mx-4 lg:w-[20rem]">
+
+                <h5 class="text-md tracking-wider">GROW</h5>
+                <h5 class="text-2xl lg:text-3xl font-serif font-bold tracking-wide pb-10">professionally.</h5>
+
+                <p class="text-md lg:text-lg pb-12 sm:pb-2">Interns are placed, based on their skills and interests, in 2-3 project teams each. Examples of past projects include charity evaluation research, writing for our blog, social media, graphic design, videography, marketing, audio engineering, creating spiritual formation resources and fundraising.</p>
+
+            </div>
+            <div  class="bg-green transition-all duration-200 ease-in-out transform mt-[-5rem] p-8 sm:p-6 md:p-8 h-[25rem] sm:h-[40rem] sm:w-[16rem] md:mx-4 lg:w-[20rem]">
+
+                <h5 class="text-md tracking-wider">GROW</h5>
+                <h5 class="text-2xl lg:text-3xl font-serif font-bold tracking-wide pb-10">spiritually.</h5>
+
+                <p class="text-md lg:text-lg pb-12 sm:pb-2">Spiritual growth activities include weekly intern- and staff-led Bible studies and devotionals, community service and fundraising projects, guest speakers, prayer sessions and worship nights. Additionally, interns attend a retreat about generosity called a “JOG” (Journey of Generosity) in the NC mountains.</p>
+
+            </div>
+            <div  class="bg-red transition-all duration-200 ease-in-out transform mt-[-5rem] p-8 sm:p-6 md:p-8 h-[25rem] sm:h-[40rem] sm:w-[16rem] md:mx-4 lg:w-[20rem]">
+
+                <h5 class="text-md tracking-wider">GROW</h5>
+                <h5 class="text-2xl lg:text-3xl font-serif font-bold tracking-wide pb-10">relationally.</h5>
+
+                <p class="text-md lg:text-lg pb-12 sm:pb-2">We know how to have fun! Team bonding activities, sports days, game/movie nights, weekend trips, retreats and meals together forge a tight bond amongst all community members.</p>
+
+            </div>
+        </div>
+
+        <div class="max-w-screen-lg mx-auto">
+            {% set oh = entry.oneHundredPercentCircle.one() %}
+
+            <div class="flex edge-x items-center relative z-40">
+                <div class="relative py-20">
+                    <div class="relative w-32 h-32 sm:w-60 sm:h-60 lg:w-72 lg:h-72 my-10">
+                        <img class="absolute transform" src="{{oh.getUrl()}}" alt="">
+                        <div class="flex justify-center items-center h-full w-full text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-red font-serif font-bold">100%</div>
+                    </div>
+                </div>
+                <div class="pl-8">
+                    <h5 class="headercaps">IMPACT</h5>
+                    <div>
+                        <p class="text-linen text-xs sm:text-lg md:text-lg tracking-wider py-4">OF OUR 2020 AND 2021 INTERN COHORTS REPORTED THAT THEY WOULD RECOMMEND THIS INTERNSHIP TO A FRIEND.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {# BANNER 4: TESTIMONIALS #}
+
+    {# BANNER 4 #}
+
+    {# layout for large screens #}
+
+    {% set q = entry.quotes.one() %}
+    <div class="relative z-40 overflow-hidden bg-lightgreen edge">
+        <div class="mx-auto max-w-screen-2xl">
+            {% include "_partials/quote" %}
+        </div>
+        <img src="{{q.squiggle.one().getUrl()}}" alt="" class="absolute right-[-5rem] bottom-[-1rem] md:bottom-[-4rem] w-[20rem] sm:w-[20rem] md:w-[25rem] lg:w-[30rem] xxl:w-[34rem]">
+    </div>
+
+    {# BANNER 5: WHO THEY ARE #}
+
+    <div class="relative">
+        <div class="">
+            <div class="bg-deepnavy relative edge z-20">
+                <div class="max-w-screen-2xl mx-auto">
+                    <h5 class="headercaps pb-6">WHO THEY ARE</h5>
+                    <div class="w-full sm:w-2/3">
+                        <p class="text-2xl sm:text-3xl text-linen relative z-20">Our interns are a diverse group of college undergrads and recent grads passionate about living with <span class="text-red linenspace-nowrap">open hands.</span></p>
+                    </div>
+    
+                    <div class="sm:hidden">
+                        <div class="relative pt-6 z-0" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="0">
+                            {% set justin = entry.justinBucket.one() %}
+                            <img src="{{justin.getUrl()}}" alt="">
+                        </div>
+                        
+                        <div class="text-linen text-xl lg:text-2xl realtive z-10">
+                            <h5 class="headercaps pt-6 pb-6 relative z-20">WHERE THEY COME FROM</h5>
+                            {% set i = 0 %}
+                            {% for item in entry.colleges.all() %}
+                                <p class="pb-2" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="{{i}}">{{item.college}}</p>
+                                {% set i = i + 50 %}
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <div class="hidden sm:block">
+                        <h5 class="headercaps pt-16 pb-6 relative z-20">WHERE THEY COME FROM</h5>
+                        <div class="grid grid-cols-2">
+                            <div class="text-linen text-xl lg:text-2xl">
+                                {% set i = 0 %}
+                                {% for item in entry.colleges.all() %}
+                                    <p class="pb-2" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="{{i}}">{{item.college}}</p>
+                                    {% set i = i + 50 %}
+                                {% endfor %}
+                            </div>
+                            <div class="-mt-20 sm:-mt-44 relative z-0" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="0">
+                                {% set justin = entry.justinBucket.one() %}
+                                <img src="{{justin.getUrl()}}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% set border = entry.internshipSwoopBorder.one() %}
+
+        <div class="absolute -bottom-20 xl:-bottom-40 w-full z-10 scale-105">
+            <img src="{{ border.getUrl() }}" alt="">
+        </div>
+        
+
+    </div>
+
+    {# BANNER 6: WANT IN? #}
+
+    <div class="bg-red text-center overflow-hidden relative">
+        <h5 class="headercaps text-linen pt-40 pb-12 xl:pt-72">WANT IN?</h5>
+        <div class="w-2/3 mx-auto">
+            <p class="text-blue text-xl">Click the link below to submit your application today!</p>
+        </div>
+
+        <div class="w-full flex items-center">
+            <div class="mx-auto">
+                
+                {% if entry.currentlyAcceptingInternshipApplications %}
+                    <button class="my-6 pt-10 pb-40">
+                        <a href="https://forms.gle/4XCBLCDQp4U46HiF9">
+                            <div class="bluebutton">
+                                <div class="text-linen headercaps mx-auto text-md tracking-wide">Apply Today</div>
+                            </div>
+                        </a>
+                    </button>
+                {% else %}
+                    <div class="pb-40">
+                        <modal buttontext="Apply today" 
+                                modaltitle="{{ entry.genericModal.one().modalTitle }}" 
+                                modalbody="{{ entry.genericModal.one().modalText }}" 
+                                buttonone="{{ entry.genericModal.one().modalButtonText }}" 
+                                linkone="{{ entry.genericModal.one().modalButtonLink }}">
+                        </modal>
+                    </div>
+                    
+                {% endif %}
+                
+            </div>
+        </div>
+    
+        {% set squiggle3 = entry.internshipSquiggle2.one() %}
+
+        <div class="absolute -bottom-10 -left-20 w-3/4 sm:w-1/2 max-w-[40rem]">
+            <img src="{{squiggle3.getUrl()}}" alt="">
+        </div>
+    </div>
+    
+{% endblock %}
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+    {{ parent() }}
+{% endblock bodyJs %}

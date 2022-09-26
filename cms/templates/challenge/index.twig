@@ -1,0 +1,233 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% set pageBackground = pageBackground|default('linen') %}
+{% set navigationColor = navigationColor|default('blue') %}
+{% set storyCategories = craft.categories.group('stories').level(1).all() %}
+
+{% block headMeta %}
+    {% if entry.pageDescription|length %}
+        <meta name="description" content={{ entry.pageDescription }}>
+    {% endif %}
+{% endblock %}
+
+{% block headLinks %}
+    {{ parent() }}
+{% endblock headLinks %}
+
+{% block contentborderless %} 
+
+    <div class="edge-x pt-40 sm:pt-44 lg:pt-60 xl:pt-80 h-screen relative overflow-hidden">
+        <div v-prlx="{speed:0.15, preserveInitialPosition: false}" class="absolute top-[-15rem] left-0 right-0 bottom-0 bg-center bg-cover" style="background-image: url('{{ entry.bannerImage.one().getUrl() }}');"></div>
+        <div class="relative z-10">
+            <h1 class="text-linen font-serif text-3xl sm:text-4xl lg:text-6xl xl:text-7xl">charity</h1>
+            <h1 class="text-linen font-serif text-3xl sm:text-4xl lg:text-6xl xl:text-7xl">challenge <span class="tracking-overlap hidden sm:inline">–––––––</span></h1></h1>
+            <h1 class="text-linen font-sans text-xl sm:text-2xl lg:text-3xl xl:text-4xl mt-10 font-semibold">Sky's the limit.</h1>
+        </div>
+    </div>
+
+    <div class="edge">
+        <div class="max-w-screen-2xl mx-auto">
+            <h2 class="text-red tracking-wider text-sm">THE STORY OF THE FIRST CHARITY CHALLENGE</h2>
+
+            <div class="mt-8">
+                <div class="overflow-hidden md:hidden">
+                    <div v-prlx.mobile="{speed: 0.04, preserveInitialPosition: false, reverse: true}">
+                        <img class="scale-[1.20]" src="{{ entry.brianJesseSkydiving.one().getUrl() }}" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="mt-10 text-blue text-3xl font-semibold">It all started as many things at Simple <br class="hidden md:block">Charity do...</h2>
+
+            <div class="flex mt-10">
+                <div class="mr-4 text-lg md:text-md lg:text-lg xl:text-xl text-blue">
+                    <p class="mb-6">...that is, with a crazy idea! During Simple Charity’s 2021 summer internship, our college interns set out to raise $10,000 for Neverthirst, an outstanding charity that seeks to provide clean and living water for the unreached. Two of our interns, Jesse Kinya and Kathia Smith, challenged Brian Grasso (our founder and CEO, and their boss) to face one of his greatest fears—heights. Brian agreed to a deal: if we were to hit our goal, he would jump out of an airplane.</p>
+                    <p class="mb-6">Donations poured in, and by God’s grace, we raised $10,508! So, on July 31, Jesse and Kathia happily took Brian to thrust aside his fears and go skydiving. And...(drumroll)...they survived.</p>
+                    <p class="mb-6">According to Neverthirst, every $25 serves one person with clean water. By that calculation, we were able to serve around 417 people—the size of an entire village! Would we have hit our goal without Brian’s vow? God only knows. But today, the entire Simple Charity team wants to encourage you to take a Charity Challenge.</p>
+                    <p class="mb-6">It could just mean the difference between dirty or clean water for a neighbor in need.</p>
+                </div>
+                <div class="min-w-[15rem] lg:w-[150rem] hidden md:block">
+                    <div class="overflow-hidden">
+                        <div v-prlx.mobile="{speed: 0.04, preserveInitialPosition: false, reverse: true}">
+                            <img class="scale-[1.20]" src="{{ entry.brianJesseSkydiving.one().getUrl() }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="bg-deepnavy edge">
+        <div class="max-w-screen-2xl mx-auto">
+            <h2 class="text-red tracking-wider text-sm">HOW IT WORKS</h2>
+
+            <h2 class="mt-10 text-linen text-3xl font-semibold pb-10">Make your challenge. Take your challenge.</h2>
+
+            <div class="mx-auto md:w-[35rem] lg:w-[52rem] xl:w-[65rem]">
+                <div class="flex flex-wrap justify-center">
+                    {% set i = 0 %}
+                    {% for step in entry.challengeSteps.all() %}
+                        <div class="w-full md:w-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="{{ ( i * 100 ) % 300 }}">
+                            <div class="border-2 {% if i % 2 == 0 %}bg-lightgreen border-lightgreen{% else %}bg-green border-green{% endif %} p-4 lg:p-6 mb-4 lg:mb-6 {% if not(i % 3 == 2)  %}md:mr-4 lg:mr-6{% endif %} w-full h-[11rem] md:w-[11rem] md:h-[11rem] lg:w-[16rem] lg:h-[16rem] xl:w-[20rem] xl:h-[20rem] transition ease-in-out duration-300 hover:bg-transparent text-blue hover:text-linen">
+                                <div class="flex items-end mb-4 lg:block">
+                                    <h1 class="font-serif mr-2 text-5xl lg:text-6xl xl:text-7xl">{{ i + 1 }}</h1>
+                                    <p class="lg:mt-4 text-xl lg:text-2xl xl:text-3xl font-semibold">{{ step.stepName }}</p>
+                                </div>
+                                
+                                <p class="lg:mt-4 text-sm md:text-xs lg:text-sm xl:text-lg">{{ step.stepDescription }}</p>
+                            </div>
+                        </div>
+                        {% set i = i + 1 %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-red edge">
+        <div class="max-w-screen-2xl mx-auto">
+            <h2 class="text-linen tracking-wider text-sm mb-20 sm:mb-10">HOW SIMPLE CHARITY WILL SUPPORT YOU</h2>
+            
+            <div class="md:flex mx-auto lg:w-full xl:w-[70rem] xxl:w-[85rem]">
+                {% set i = 0  %}
+                {% for sup in entry.challengeSupports.all() %}
+                    {% if i == 0 %}
+                        {% set p = "h-[4rem]" %}
+                    {% elseif i == 1 %}
+                        {% set p = "h-[5rem]" %}
+                    {% elseif i == 2 %}
+                        {% set p = "h-[5rem]" %}
+                    {% endif %}
+                    <div class="w-2/3 md:w-1/3 md:px-2 xl:px-8 xxl:px-12 text-center mx-auto pb-10 md:pb-0">
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="{{ ( i * 200 ) % 600 }}" class="mt-10 h-[7rem]">
+                            <div class="{{p}}">
+                                <img class="h-full mx-auto" src="{{ sup.supportIcon.one().getUrl() }}" alt="">
+                            </div>
+                        </div>
+                        <h2 class="text-blue text-xl lg:text-2xl font-semibold mb-2">{{ sup.supportName }}</h2>
+                        <h2 class="text-blue text-sm lg:text-lg">{{ sup.supportDescription }}</h2>
+                    </div>
+                    {% set i = i + 1 %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#feede0] edge relative h-[45rem] sm:h-[45rem] md:h-[52rem] lg:h-[60rem] xl:h-[73rem]">
+        <div class="max-w-screen-2xl mx-auto">
+            <h2 class="text-red tracking-wider text-sm">ENDLESS POSSIBILITIES</h2>
+            <h2 class="mt-10 text-blue text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-semibold">Only requirement? Make it <br class="hidden sm:block">conversation-starter worthy!</h2>
+
+            <div class="absolute left-0 right-0 bottom-0 px-2 lg:px-20">
+                <div class="w-full">
+                    <img class="mx-auto max-w-[24rem] sm:max-w-[1000rem] w-full sm:w-[38rem] md:w-[45rem] lg:w-[55rem] xl:w-[70rem]" src="{{ entry.challengeThoughtBubble.one().getUrl() }}" alt="">
+                
+                </div>
+
+                
+            </div>
+        </div>
+        <div class="absolute inset-0">
+            <div class="max-w-[24rem] mx-auto relative">
+                <span class="whitespace-nowrap bg-red rounded-full text-xs px-3 py-2 sm:px-4 sm:py-3 absolute 
+                rotate-[-20deg] transition ease-in-out duration-300 transform hover:rotate-[0deg] 
+                top-[14rem] left-[12%] 
+                sm:text-sm sm:top-[15rem] sm:left-[2rem] 
+                md:text-lg md:top-[15rem] md:left-[2rem]
+                lg:text-xl lg:top-[15.5rem] lg:left-[1rem]
+                xl:text-2xl xl:top-[20.5rem] xl:left-[1rem]">
+                    Shave your head
+                </span>
+                <span class="whitespace-nowrap bg-[#fec3a4] sm:bg-[#feede0] rounded-full text-xs px-3 py-2 sm:px-4 sm:py-3 absolute 
+                rotate-[-5deg] transition ease-in-out duration-300 transform hover:rotate-[0deg] 
+                top-[19rem] left-[50%] 
+                sm:text-sm sm:top-[17rem] sm:left-[8rem] 
+                md:text-lg md:top-[17.9rem] md:left-[8rem]
+                lg:text-xl lg:top-[19rem] lg:left-[8rem]
+                xl:text-2xl xl:top-[24rem] xl:left-[8rem]">
+                    Dye your hair
+                </span>
+                <span class="whitespace-nowrap bg-red rounded-full text-xs px-3 py-2 sm:px-4 sm:py-3 absolute 
+                rotate-[5deg] transition ease-in-out duration-300 transform hover:rotate-[0deg] 
+                top-[17.5rem] left-[18%] 
+                sm:text-sm sm:top-[17rem] sm:left-[19rem] 
+                md:text-lg md:top-[17rem] md:left-[19rem]
+                lg:text-xl lg:top-[18rem] lg:left-[19rem]
+                xl:text-2xl xl:top-[23rem] xl:left-[19rem]">
+                    Climb a mountain
+                </span>
+                <span class="whitespace-nowrap bg-[#fec3a4] rounded-full text-xs px-3 py-2 sm:px-4 sm:py-3 absolute 
+                rotate-[10deg] sm:rotate-[-10deg] transition ease-in-out duration-300 transform hover:rotate-[0deg] 
+                top-[22rem] left-[60%] 
+                sm:text-sm sm:top-[20rem] sm:left-[0rem] 
+                md:text-lg md:top-[22rem] md:left-[0rem]
+                lg:text-xl lg:top-[24rem] lg:left-[-2rem]
+                xl:text-2xl xl:top-[29rem] xl:left-[-2rem]">
+                    Bungee jumping
+                </span>
+                <span class="whitespace-nowrap bg-red sm:bg-[#feede0] rounded-full text-xs px-3 py-2 sm:px-4 sm:py-3 absolute 
+                rotate-[-20deg] transition ease-in-out duration-300 transform hover:rotate-[0deg] 
+                top-[21rem] left-[5%] 
+                sm:text-sm sm:top-[20rem] sm:left-[12rem] 
+                md:text-lg md:top-[21rem] md:left-[12rem]
+                lg:text-xl lg:top-[23rem] lg:left-[12rem]
+                xl:text-2xl xl:top-[28rem] xl:left-[12rem]">
+                    Run a marathon
+                </span>
+                <span class="whitespace-nowrap bg-[#fec3a4] rounded-full text-xs px-3 py-2 sm:px-4 sm:py-3 absolute 
+                rotate-[-15deg] sm:rotate-[-5deg] transition ease-in-out duration-300 transform hover:rotate-[0deg] 
+                top-[24rem] left-[12%] 
+                sm:text-sm sm:top-[22rem] sm:left-[18rem] 
+                md:text-lg md:top-[24rem] md:left-[18rem]
+                lg:text-xl lg:top-[26rem] lg:left-[18rem]
+                xl:text-2xl xl:top-[32rem] xl:left-[18rem]">
+                    Speak in pig latin for a day
+                </span>
+                <span class="whitespace-nowrap bg-[#fec3a4] sm:bg-[#feede0] rounded-full text-xs px-3 py-2 sm:px-4 sm:py-3 absolute 
+                rotate-[10deg] transition ease-in-out duration-300 transform hover:rotate-[0deg] 
+                top-[27.8rem] left-[30%] 
+                sm:text-sm sm:top-[24rem] sm:left-[3rem] 
+                md:text-lg md:top-[27.3rem] md:left-[3rem]
+                lg:text-xl lg:top-[30rem] lg:left-[3rem]
+                xl:text-2xl xl:top-[36rem] xl:left-[-1rem]">
+                    Wear something weird in public <span class="hidden sm:inline">for a day</span> 
+                </span>
+                <span class="whitespace-nowrap bg-[#fec3a4] rounded-full text-xs px-3 py-2 sm:px-4 sm:py-3 absolute 
+                rotate-[-5deg] transition ease-in-out duration-300 transform hover:rotate-[0deg] 
+                top-[31rem] left-[20%] 
+                sm:text-sm sm:top-[27rem] sm:left-[1rem] 
+                md:text-lg md:top-[31rem] md:left-[1rem]
+                lg:text-xl lg:top-[34rem] lg:left-[-2rem]
+                xl:text-2xl xl:top-[41rem] xl:left-[-4rem]">
+                    Consume a crazy spicy food
+                </span>
+                <span class="whitespace-nowrap bg-red rounded-full text-xs px-3 py-2 sm:px-4 sm:py-3 absolute 
+                rotate-[5deg] transition ease-in-out duration-300 transform hover:rotate-[0deg] 
+                top-[34rem] left-[40%] 
+                sm:text-sm sm:top-[28rem] sm:left-[18.5rem] 
+                md:text-lg md:top-[32rem] md:left-[18.5rem]
+                lg:text-xl lg:top-[35rem] lg:left-[18.5rem]
+                xl:text-2xl xl:top-[42rem] xl:left-[20.5rem]">
+                    Do x number of pushups
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="edge">
+        <div class="max-w-screen-2xl mx-auto">
+            <h1 class="text-blue font-serif text-2xl sm:text-3xl lg:text-6xl xl:text-7xl">so, what are you waiting for? </h1>
+            <p class="mt-10 text-lg lg:text-2xl">We're here to take this exciting journey with you! Fill out the<br class="hidden sm:block">form below and we'll be in contact with you soon.</p>
+            
+            <div class="my-10">
+                <div data-tf-widget="H5U1cQrY" data-tf-iframe-props="title=Charity Challenge Interest Form" data-tf-medium="snippet" style="width:100%;height:500px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+    {{ parent() }}
+{% endblock bodyJs %}

@@ -1,0 +1,49 @@
+field: 47a5e597-de28-4a21-bd8e-7d6849507248 # Countries of Operation
+fieldLayouts:
+  894d7d13-cda8-4ce9-a0f3-04ee69b931ef:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: cb914f17-4850-4002-a081-96a73c9949a0 # Countries
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  cb914f17-4850-4002-a081-96a73c9949a0: # Countries
+    columnSuffix: xeftikph
+    contentColumnType: text
+    fieldGroup: null
+    handle: countries
+    instructions: 'Put each country in this region in which the partner operates, separated by commas. '
+    name: Countries
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: southAsia
+name: 'South Asia'
+sortOrder: 6

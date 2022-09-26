@@ -1,0 +1,145 @@
+/**
+ * components/global.css
+ *
+ * Project-wide styles
+ *
+ */
+
+body {
+    @apply font-sans font-medium text-blue;
+}
+
+.headercaps {
+    @apply text-sm font-semibold tracking-wider text-red;
+}
+
+.headertext {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif text-blue
+}
+
+.header-one {
+    @apply text-blue font-serif font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl
+}
+
+.header-spacing {
+    @apply px-10 sm:px-20 pt-40 lg:pt-52
+}
+
+.edge {
+    @apply px-6 sm:px-14 lg:px-20 py-10 sm:py-14 lg:py-20
+}
+
+.edge-x {
+    @apply px-6 sm:px-14 lg:px-20
+}
+
+.edge-y {
+    @apply py-10 sm:py-14 lg:py-20
+}
+
+.edge-t {
+    @apply mt-20 lg:mt-40
+}
+
+.maxw {
+    @apply max-w-screen-2xl mx-auto
+}
+
+.noscrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.mediumtext {
+    @apply text-xl font-semibold
+}
+
+.smalltext {
+    @apply text-lg font-normal
+}
+
+.xsmalltext {
+    @apply text-sm font-normal
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.bluebutton {
+    @apply flex justify-center items-center rounded-full px-10 h-12 text-sm sm:text-lg bg-blue border-2 border-blue text-linen transition duration-200 ease-in-out transform hover:bg-transparent hover:text-blue
+}
+
+.redbutton {
+    @apply flex justify-center items-center rounded-full px-10 h-12 text-sm sm:text-lg bg-red border-2 border-red text-linen transition duration-200 ease-in-out transform hover:bg-transparent
+}
+
+.whitebutton {
+    @apply flex justify-center items-center rounded-full px-10 h-12 text-sm sm:text-lg bg-transparent border-2 border-linen text-linen transition duration-200 ease-in-out transform hover:bg-linen hover:text-blue
+}
+
+.menuAnimate {
+    animation-duration: 500ms !important;
+}
+
+.content-ctn {
+    max-width: 1800px;
+}
+
+.transition-all {
+    transition: all 300ms ease;
+}
+
+/* Header / Footer */
+.sc-header {
+    position: relative;
+
+    &::before {
+        content: '';
+        @apply block w-full absolute inset-0 h-full z-0;
+        background: linear-gradient(90deg, theme('colors.green') 0%, theme('colors.teal') 100%);
+
+        @apply lg:h-1;
+        @screen lg {
+            background: linear-gradient(90deg, theme('colors.red') 0%, theme('colors.yellow') 100%);
+        }
+    }
+
+    &__menu-icon {
+        @screen lg {
+            top: 10px;
+        }
+    }
+}
+
+.donate {
+    &__p {
+        @apply w-full text-center absolute text-linen;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.form-label {
+    @apply block uppercase tracking-wide text-blue text-xs font-medium mb-2 text-left;
+}
+
+.form-input {
+    @apply appearance-none bg-transparent w-full py-1 leading-tight transition-all border-b-2 pb-1 font-serif;
+
+    &:focus {
+        @apply outline-none border-red;
+    }
+}
+
+.form-select {
+    @apply block appearance-none w-full bg-linen border border-blue text-blue py-3 px-4 pr-8 rounded leading-tight;
+
+    &:focus {
+        @apply outline-none;
+    }
+}
+
+.modal-headline {
+    @apply text-xl font-bold py-3 px-4 px-0 pb-10;
+    @apply md:text-2xl
+}

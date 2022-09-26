@@ -1,0 +1,70 @@
+field: 9ac983f7-c715-4df5-a769-4a6a89ec1ac5 # Why We Trust Them Header
+fieldLayouts:
+  31481c3b-7122-451d-93af-66c00f39a708:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 83bad041-0076-42a7-8027-88ec8faca8f3 # Text Block
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f142e8e1-4444-4fe8-a82c-db613d763863 # Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  83bad041-0076-42a7-8027-88ec8faca8f3: # Text Block
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: textBlock
+    instructions: ''
+    name: 'Text Block'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  f142e8e1-4444-4fe8-a82c-db613d763863: # Color
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: color
+    instructions: ''
+    name: Color
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: textBlock
+name: 'Text Block'
+sortOrder: 1

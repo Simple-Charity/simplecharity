@@ -1,0 +1,54 @@
+/**
+ * components/section-pages.pcss
+ *
+ * Common elements across landing pages.
+ *
+ */
+
+.line-header {
+    display: flex;
+    align-items: center;
+
+    &::after {
+        content: '';
+        width: 25px;
+        height: 1px;
+        margin: 0 15px;
+
+        @screen lg {
+            height: 2px;
+            margin: 0 35px;
+            width: 90px;
+        }
+    }
+
+    &--blue::after {
+        background-color: theme('colors.blue');
+    }
+
+    &--yellow::after {
+        background-color: theme('colors.yellow');
+    }
+
+    &--red::after {
+        background-color: theme('colors.red');
+    }
+
+    &--green::after {
+        background-color: theme('colors.green');
+    }
+
+    &--linen::after {
+        background-color: theme('colors.linen');
+    }
+
+}
+
+.section-hero-text {
+    @apply text-3xl;
+
+    @apply md:text-5xl;
+    @screen xxl {
+        font-size: 6rem;
+    }
+}

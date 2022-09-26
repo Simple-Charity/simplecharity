@@ -1,0 +1,209 @@
+field: ac7fabd0-d6bf-4e56-ba30-d2e429697b97 # About Team
+fieldLayouts:
+  24a3ed5f-3a74-432f-a1b6-d033e8a3ccef:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: fe25cb8c-c12f-46a0-ba11-95166876fa31 # Team Member Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 71c3b90e-bbe2-4c9c-91a4-e9518aae47e3 # Team Member Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a91a1a22-cfd3-4409-9a6f-2dd6d2888fc1 # Team Member Type
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: bf8c98dd-3656-4147-91f7-a802fdc4b9cf # Team Member Short Bio
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0c8e18d6-a2e3-4367-90aa-b4c69a5eba4b # Team Member Longer Bio
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6e06aca7-6921-47a4-b6aa-8b80f8a81fd2 # Team Member Photo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  0c8e18d6-a2e3-4367-90aa-b4c69a5eba4b: # Team Member Longer Bio
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: teamMemberLongerBio
+    instructions: ''
+    name: 'Team Member Longer Bio'
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Paragraphs.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  6e06aca7-6921-47a4-b6aa-8b80f8a81fd2: # Team Member Photo
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: teamMemberPhoto
+    instructions: ''
+    name: 'Team Member Photo'
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      singleUploadLocationSource: 'volume:cefbf56d-1bc3-4105-808c-b1604587278b' # About
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: true
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  71c3b90e-bbe2-4c9c-91a4-e9518aae47e3: # Team Member Title
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: teamMemberTitle
+    instructions: ''
+    name: 'Team Member Title'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a91a1a22-cfd3-4409-9a6f-2dd6d2888fc1: # Team Member Type
+    columnSuffix: fuxjleuw
+    contentColumnType: text
+    fieldGroup: null
+    handle: teamMemberType
+    instructions: ''
+    name: 'Team Member Type'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  bf8c98dd-3656-4147-91f7-a802fdc4b9cf: # Team Member Short Bio
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: teamMemberShortBio
+    instructions: ''
+    name: 'Team Member Short Bio'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  fe25cb8c-c12f-46a0-ba11-95166876fa31: # Team Member Name
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: teamMemberName
+    instructions: ''
+    name: 'Team Member Name'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: teamMember
+name: 'Team Member'
+sortOrder: 1

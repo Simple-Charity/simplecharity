@@ -1,0 +1,318 @@
+field: 15b9047e-629c-4b70-b7ec-352b2d2fb6d4 # Navigation Items
+fieldLayouts:
+  3b8bc5a6-30e1-4498-b209-e3cf31e07dac:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 1c35d7d5-014b-440a-87e3-71474a14c44c # Item Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 461f1417-744e-40be-b1ed-e69448dc83e2 # Category
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 458fe4ea-e5d8-43b6-8487-73aea6780cb3 # Display Area
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1b0533df-4b1a-44df-95a7-3b24062474ad # Item Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9254ac33-f448-44eb-962d-f3c5c713bc89 # Item Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d2c23c8c-48b7-4eba-a37e-3225f75cbf40 # Item Icon Secondary
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 91c1666d-d9b5-4743-a79e-695c87924444 # Target Page
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  1b0533df-4b1a-44df-95a7-3b24062474ad: # Item Description
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemDescription
+    instructions: ''
+    name: 'Item Description'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Paragraphs.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  1c35d7d5-014b-440a-87e3-71474a14c44c: # Item Name
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemName
+    instructions: 'The name that will display on the menu, footer, etc. '
+    name: 'Item Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  91c1666d-d9b5-4743-a79e-695c87924444: # Target Page
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: targetPage
+    instructions: 'The item''s target page'
+    name: 'Target Page'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  458fe4ea-e5d8-43b6-8487-73aea6780cb3: # Display Area
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: displayArea
+    instructions: 'Where should the item display?'
+    name: 'Display Area'
+    searchable: false
+    settings:
+      multi: true
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Footer
+            -
+              - value
+              - footer
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Menu
+            -
+              - value
+              - menu
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Homepage
+            -
+              - value
+              - homepage
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\MultiSelect
+  461f1417-744e-40be-b1ed-e69448dc83e2: # Category
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: category
+    instructions: 'The header under which the item should go'
+    name: Category
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - About
+            -
+              - value
+              - about
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Content
+            -
+              - value
+              - content
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Community
+            -
+              - value
+              - community
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Charities
+            -
+              - value
+              - charities
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  9254ac33-f448-44eb-962d-f3c5c713bc89: # Item Icon
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemIcon
+    instructions: ''
+    name: 'Item Icon'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  d2c23c8c-48b7-4eba-a37e-3225f75cbf40: # Item Icon Secondary
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemIconSecondary
+    instructions: ''
+    name: 'Item Icon Secondary'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: navigationItem
+name: 'Navigation Item'
+sortOrder: 1

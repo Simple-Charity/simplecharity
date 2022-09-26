@@ -1,0 +1,99 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% set pageBackground = pageBackground|default('blue') %}
+{% set navigationColor = navigationColor|default('linen') %}
+{% set storyCategories = craft.categories.group('stories').level(1).all() %}
+
+{% set heroImg = entry.storiesMainPageHeroImage.one().storyImagesOptimize %}
+
+{% block headLinks %}
+    {{ parent() }}
+{% endblock headLinks %}
+
+{% block contentborderless %}
+    <div class="edge edge-t">
+        <div class="mx-auto max-w-screen-2xl">
+            <section class="">
+                <div class="max-w-screen-2xl mx-auto">
+                    <header class="w-full top-0 z-10 relative">
+                        <p class="header-one text-yellow mb-20">stories <span class="tracking-overlap hidden sm:inline">–––––––––</span></p>
+                    </header>
+                    <div class="relative z-0">
+                        <picture>
+                            <source data-srcset="{{ heroImg.srcsetWebP() }}"
+                                    data-sizes="80vw"
+                                    type="image/webp"/>
+                            <img src="{{ heroImg.placeholderImage() }}"
+                                data-srcset="{{ heroImg.srcset() }}"
+                                class="lazyload blur-up w-full"
+                                data-sizes="80vw"/>
+                        </picture>
+                    </div>
+                </div>
+            </section>
+
+            <section class="flex flex-wrap md:text-center mx-auto pt-8 pb-4 md:py-20 xl:py-32">
+
+                <div>
+                    <h1 class="text-left text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-yellow font-extrabold leading-tight mb-10">
+                        {{ entry.storiesMainPageHeroText }}
+                    </h1>
+                </div>
+
+                <p class="text-yellow text-left mb-4 xl:mb-10 font-sans font-medium leading-normal md:text-2xl xl:text-4xl md:leading-snug "
+                data-aos="fade-up" data-aos-duration="2000">
+                    {{ entry.storiesMainPageInfoText }}
+                </p>
+            </section>
+
+            <div class="max-w-screen-2xl mx-auto sm:pb-40">
+                {% for cat in storyCategories %}
+                    {% set parentColor = cat.storiesCategoryColor.handle %}
+                    <section class="story-sq__ctn content-ctn mx-auto" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">
+                        <p class="text-{{ parentColor }} story-sq__gutter_ttl">
+                            {{ cat.title }}
+                        </p>
+                        <div class="story-sq__group">
+                            {% for entry in craft.entries.relatedTo(cat).all() %}
+                                {% set subCat = entry.storyCategory.level(2).one() %}
+                                {% if subCat %}
+                                    {% set bgColor = (loop.index == 4) ? 'bg-'~parentColor : 'story-sq__'~parentColor~'-'~loop.index %}
+                                    <div class="story-sq">
+                                        <a href="{{ entry.url }}">
+                                            <div class="hover:opacity-75 transition-all story-sq__outer h-full {{ bgColor }}">
+                                                <div class="story-sq__inner">
+                                                    <p class="story-sq__ttl">
+                                                        {{ entry.storyShortTitle }}
+                                                    </p>
+                                                    <p class="text-xxs md:text-xs uppercase font-semibold tracking-wide font-normal absolute bottom-0 left-0 m-4 lg:m-6">
+                                                        {{ subCat.title }}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                        {% if cat.storyCategoryIcon|length %}
+                            <img data-src="{{ cat.storyCategoryIcon.one().url }}"
+                                class="lazyload story-sq__icon"
+                                alt=""
+                            />
+                        {% endif %}
+                    </section>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+
+{% endblock %}
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+    {{ parent() }}
+{% endblock bodyJs %}

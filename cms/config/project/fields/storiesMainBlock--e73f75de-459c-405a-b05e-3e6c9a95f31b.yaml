@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: e1f791be-0f68-4c7b-ae38-d963a110e071 # Stories
+handle: storiesMainBlock
+instructions: 'Edit the content of the main block here. You have the option to also include a "hidden" block that is triggered by the reader. This block is visible by default.'
+name: 'Stories Main Block'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_storiesmainblock}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,14 @@
+columnSuffix: bqxtjogo
+contentColumnType: boolean
+fieldGroup: 2b1d6476-49e2-48d6-a867-87f7d83ddbbc # Partners
+handle: topSeven
+instructions: 'Is this partner one of our Top Seven Charities?'
+name: 'Top Seven'
+searchable: false
+settings:
+  default: false
+  offLabel: 'No'
+  onLabel: 'Yes'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

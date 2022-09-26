@@ -1,0 +1,50 @@
+field: e73f75de-459c-405a-b05e-3e6c9a95f31b # Stories Main Block
+fieldLayouts:
+  18b8793b-ed3f-49f3-a55d-8c622fa47458:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 5e5fa934-3a3b-46d4-989a-0142a0b42cbe # Text
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  5e5fa934-3a3b-46d4-989a-0142a0b42cbe: # Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: 'Enter the text for this block.'
+    name: Text
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Paragraphs.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: smallText
+name: 'Small Text'
+sortOrder: 2

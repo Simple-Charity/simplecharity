@@ -1,0 +1,14 @@
+columnSuffix: mlmcrtdt
+contentColumnType: boolean
+fieldGroup: 266c6678-9669-488e-82b7-68601833935a # About
+handle: currentlyAcceptingInternshipApplications
+instructions: ''
+name: 'Currently Accepting Internship Applications'
+searchable: false
+settings:
+  default: true
+  offLabel: 'No'
+  onLabel: 'Yes'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

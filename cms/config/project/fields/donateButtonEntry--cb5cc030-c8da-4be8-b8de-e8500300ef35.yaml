@@ -1,0 +1,21 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 73f956fe-3b15-4dd6-99f2-210057f6c81a # Globals
+handle: donateButtonEntry
+instructions: 'Choose the entry that should serve as the target of the global "Donate" button.'
+name: 'Donate Button Entry'
+searchable: true
+settings:
+  allowSelfRelations: false
+  limit: '1'
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: true
+  source: null
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

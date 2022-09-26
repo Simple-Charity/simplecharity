@@ -1,0 +1,35 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 266c6678-9669-488e-82b7-68601833935a # About
+handle: missionFullText
+instructions: ''
+name: 'Mission Full Text'
+searchable: true
+settings:
+  columns:
+    __assoc__:
+      -
+        - a7fe0148-8b00-4460-a902-c3df1fb3cba1 # Overlay Title
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - c76751a8-3111-4cda-a171-fd618e00d0f3 # Text
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_missionfulltext}}'
+  fieldLayout: row
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationMethod: all
+  selectionLabel: ''
+  staticField: '1'
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

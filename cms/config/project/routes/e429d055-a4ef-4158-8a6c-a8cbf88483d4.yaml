@@ -1,0 +1,9 @@
+siteUid: null
+sortOrder: 1
+template: about/more
+uriParts:
+  - about/more/
+  -
+    - slug
+    - '[^\/]+'
+uriPattern: 'about/more/<slug:[^\/]+>'

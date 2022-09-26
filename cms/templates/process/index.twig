@@ -1,0 +1,232 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% block headMeta %}
+    {% if entry.pageDescription|length %}
+        <meta name="description" content={{ entry.pageDescription }}>
+    {% endif %}
+{% endblock %}
+
+{% block headLinks %}
+    {{ parent() }}
+{% endblock headLinks %}
+
+{% block contentborderless %}
+
+    <div class="edge bg-deepnavy relative z-20">
+        <div class="mx-auto max-w-screen-2xl">
+            <div class="pt-20 lg:pt-40">
+                <div class="lg:w-7/12">
+                    <h1 class="header-one text-linen">our evaluation <br> process <span class="tracking-[-.2em] hidden sm:inline">–––––––––</span></h1>
+                    <p class="pt-20 text-red text-md tracking-wider">MAXIMIZING THE GOOD</p>
+                    <p class="pt-12 text-linen text-2xl font-semibold">Afraid your gift won’t help? Or—worse—afraid it’ll hurt? We evaluate Christian charities for their effectiveness so your gift can do the <span class="text-red">most good.</span></p>
+                    <p class="pt-12 text-teal text-lg pb-20 max-w-[40rem]">We evaluate charities on the basis of seven key qualities: Accountability, Integrity, Transparency, Measured Impact, Cultural Humility, Altruism and Kingdom-Mindedness.</p>
+                </div>
+                
+
+                {% set hex = entry.processHexagons.one() %}
+
+                {% set h_image = [] %}
+                {% set h_caption = [] %}
+
+                {% for hexagon in entry.processHexagonsSmall.all() %}
+                    {% set h_image = h_image|merge([hexagon.hexagonImage.one().getUrl()]) %}
+                    {% set h_caption = h_caption|merge([hexagon.caption]) %}
+                {% endfor %}
+
+                <div class="relative max-w-[35rem] mx-auto lg:hidden h-[10rem] pb-[230%] sm:pb-0 sm:h-[40rem]">
+                    <div>
+                        <img class="transition-all ease-in-out duration-200 transform absolute left-0 top-0               w-[55%] sm:w-[38%] sm:translate-y-[0%] sm:left-[50%] sm:translate-x-[-50%]" src="{{ h_image[0] }}" alt="">
+                    </div>
+                    <div>
+                        <img class="transition-all ease-in-out duration-200 transform absolute right-0 translate-y-[55%]  w-[55%] sm:w-[38%] sm:right-[0%] sm:translate-y-[55%]" src="{{ h_image[1] }}" alt="">
+                    </div>
+                    <div>
+                        <img class="transition-all ease-in-out duration-200 transform absolute left-0 translate-y-[110%]  w-[55%] sm:w-[38%] sm:translate-y-[55%]" src="{{ h_image[2] }}" alt="">
+                    </div>
+                    <div>
+                        <img class="transition-all ease-in-out duration-200 transform absolute right-0 translate-y-[165%] w-[55%] sm:w-[38%] sm:left-[50%] sm:translate-x-[-50%] sm:translate-y-[110%]" src="{{ h_image[3] }}" alt="">
+                    </div>
+                    <div>
+                        <img class="transition-all ease-in-out duration-200 transform absolute left-0 translate-y-[220%]  w-[55%] sm:w-[38%] sm:translate-y-[165%] sm:left-auto sm:right-0" src="{{ h_image[4] }}" alt="">
+                    </div>
+                    <div>
+                        <img class="transition-all ease-in-out duration-200 transform absolute right-0 translate-y-[275%] w-[55%] sm:w-[38%] sm:translate-y-[165%] sm:left-0" src="{{ h_image[5] }}" alt="">
+                    </div>
+                    <div>
+                        <img class="transition-all ease-in-out duration-200 transform absolute left-0 translate-y-[330%]  w-[55%] sm:w-[38%] sm:translate-y-[220%] sm:left-[50%] sm:translate-x-[-50%]" src="{{ h_image[6] }}" alt="">
+                    </div>
+
+                    
+                   
+                </div>
+
+                <div class="hidden lg:block relative flex justify-center lg:h-[60rem] xl:h-[72rem] xxl:h-[74rem]">
+                    <div class="relative lg:w-[55rem] xl:w-[68rem] xxl:w-[75rem] mx-auto">
+                        <img class="hidden lg:block transition-all ease-in-out duration-200 transform w-[20rem] lg:w-[55rem] xl:w-[68rem] xxl:w-[75rem]" src="{{ hex.getUrl() }}" alt="">
+
+                        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="0" class="transition-all ease-in-out duration-200 transform absolute text-md text-linen tracking-wide text-center lg:top-[13rem] lg:left-[25rem] xl:text-lg xl:top-[15.8rem] xl:left-[31.1rem] xxl:top-[17.8rem] xxl:left-[34.6rem]">MEASURED<br>IMPACT</div>
+                        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="0" class="transition-all ease-in-out duration-200 transform absolute text-md text-blue tracking-wide text-center  lg:top-[7rem] lg:left-[14.5rem] xl:text-lg xl:top-[8rem] xl:left-[18.2rem] xxl:top-[9.3rem] xxl:left-[20.4rem]">INTEGRITY</div>
+                        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="0" class="transition-all ease-in-out duration-200 transform absolute text-md text-blue tracking-wide text-center  lg:top-[13rem] lg:left-[2.5rem] xl:text-lg xl:top-[15.8rem] xl:left-[3.4rem] xxl:top-[17.8rem] xxl:left-[4.3rem]">ACCOUNTABILITY</div>
+                        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="0" class="transition-all ease-in-out duration-200 transform absolute text-md text-blue tracking-wide text-center  lg:top-[19.1rem] lg:left-[13.2rem] xl:text-lg xl:top-[23.5rem] xl:left-[16.8rem] xxl:top-[25.9rem] xxl:left-[18.9rem]">TRANSPARENCY</div>
+                        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="0" class="transition-all ease-in-out duration-200 transform absolute text-md text-blue tracking-wide text-center  lg:top-[19.1rem] lg:left-[35.8rem] xl:text-lg xl:top-[23.5rem] xl:left-[44.5rem] xxl:top-[25.9rem] xxl:left-[49.3rem]">ALTRUISM</div>
+                        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="0" class="transition-all ease-in-out duration-200 transform absolute text-md text-blue tracking-wide text-center  lg:top-[13rem] lg:left-[45.5rem] xl:text-lg xl:top-[15.8rem] xl:left-[56.6rem] xxl:top-[17.8rem] xxl:left-[62.8rem]">KINGDOM-<br>MINDEDNESS</div>
+                        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="0" class="transition-all ease-in-out duration-200 transform absolute text-md text-blue tracking-wide text-center  lg:top-[7rem] lg:left-[35.6rem] xl:text-lg xl:top-[8rem] xl:left-[44.2rem] xxl:top-[9.3rem] xxl:left-[49rem]">CULTURAL<br>HUMILITY</div>
+
+                        <img class="transition-all ease-in-out duration-200 transform hidden lg:block absolute lg:top-[24rem] lg:left-[-1rem] lg:w-[25rem] xl:top-[30rem] xl:left-[-1rem] xl:w-[30.3rem] xxl:top-[33rem] xxl:left-[-1rem] xxl:w-[33.3rem]" src="{{ entry.processBracket1.one().getUrl() }}" alt="">
+                        <img class="transition-all ease-in-out duration-200 transform hidden lg:block absolute lg:top-[24rem] lg:right-[-1rem] lg:w-[25rem] xl:top-[30rem] xl:right-[-1rem] xl:w-[30.3rem] xxl:top-[33rem] xxl:right-[-1rem] xxl:w-[33.3rem]" src="{{ entry.processBracket1.one().getUrl() }}" alt="">
+                        <img class="transition-all ease-in-out duration-200 transform hidden lg:block absolute lg:top-[18.48rem] lg:left-[50%] lg:w-[0.15rem] lg:h-[12rem] xl:top-[23rem] xl:w-[0.2rem] xl:h-[15rem] xxl:top-[25.5rem] xxl:w-[0.21rem] xxl:h-[16.1rem]" src="{{ entry.processBracket2.one().getUrl() }}" alt="">
+
+
+                        <div class="w-[17rem] xl:w-[21rem] xxl:w-[23rem] absolute hidden lg:block lg:top-[31rem] xl:top-[39rem] xxl:top-[43rem]">
+                            <div class="w-full relative">
+                                <h1 class="text-linen font-serif text-4xl pb-10 absolute lg:left-[5.8rem] xl:left-[8rem] xxl:left-[9rem]">operations</h1>
+                                <p class="text-teal lg:text-lg xl:text-xl pt-[5rem]">All nonprofits in any location or sector can be evaluated for Accountability, Integrity and Transparency. For most nonprofits, these three qualities are already assessed by Charity Navigator, GuideStar and ECFA. Instead of reinventing the wheel, we utilize their evaluation results.</p>
+                            </div>
+                        </div>
+
+                        <div class="w-[17rem] xl:w-[21rem] xxl:w-[23rem] absolute hidden lg:block lg:top-[31rem] xl:top-[39rem] xxl:top-[43rem] lg:left-[50%] lg:translate-x-[-50%]">
+                            <div class="w-full relative">
+                                <h1 class="text-linen font-serif text-4xl pb-10 text-center">impact</h1>
+                                <p class="text-teal lg:text-lg xl:text-xl ">The data that an organization collects on its impact is a critical component of determining its effectiveness. We examine the metrics that nonprofits use to tell the story of their impact as well as the methodology they use to obtain those metrics.</p>
+                            </div>
+                        </div>
+
+                        <div class="w-[17rem] xl:w-[21rem] xxl:w-[23rem] absolute hidden lg:block lg:top-[31rem] xl:top-[39rem] xxl:top-[43rem] lg:right-[0rem]">
+                            <div class="w-full relative">
+                                <h1 class="text-linen font-serif text-4xl pb-10 absolute lg:left-[2.8rem] xl:left-[4rem] xxl:left-[4.2rem]">story</h1>
+                                <p class="text-teal lg:text-lg xl:text-xl pt-[5rem]">For Christian-led nonprofits that address global poverty, Cultural Humility, Altruism and Kingdom-mindedness are essential. You will not find these qualities in most other charity evaluation frameworks. We rely on interviews, financial information and statements of faith to evaluate these qualities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pb-[4rem]">
+
+                <div class="md:pt-[0rem] lg:hidden">
+                    <div class="w-full relative">
+                        <h1 class="text-linen font-serif text-4xl pb-4 lg:left-[5.8rem] xl:left-[8rem] xxl:left-[9rem]">operations</h1>
+                        <p class="text-teal text-lg pb-[4rem]">All nonprofits in any location or sector can be evaluated for Accountability, Integrity and Transparency. For most nonprofits, these three qualities are already assessed by Charity Navigator, GuideStar and ECFA. Instead of reinventing the wheel, we utilize their evaluation results.</p>
+                    </div>
+
+                    <div class="w-full relative">
+                        <h1 class="text-linen font-serif text-4xl pb-4">impact</h1>
+                        <p class="text-teal text-lg pb-[4rem]">The data that an organization collects on its impact is a critical component of determining its effectiveness. We examine the metrics that nonprofits use to tell the story of their impact as well as the methodology they use to obtain those metrics.</p>
+                    </div>
+
+                    <div class="w-full relative">
+                        <h1 class="text-linen font-serif text-4xl pb-4 lg:left-[2.8rem] xl:left-[4rem] xxl:left-[4.2rem]">story</h1>
+                        <p class="text-teal text-lg  pb-[4rem]">For Christian-led nonprofits that address global poverty, Cultural Humility, Altruism and Kingdom-mindedness are essential. You will not find these qualities in most other charity evaluation frameworks. We rely on interviews, financial information and statements of faith to evaluate these qualities.</p>
+                    </div>
+                </div>
+
+                {% if entry.charityEvaluationReport.all()|length %}
+                    <p class="pt-12 text-linen text-2xl font-semibold pb-6">Want a deeper dive into our <br class="hidden sm:block"> evaluation criteria?</span></p>
+                    
+                    <button>
+                        <a href="{{ entry.charityEvaluationReport.one().documentReference}}">
+                            <div class="redbutton">
+                                <h2 class="text-linen text-lg font-semibold">{{ entry.charityEvaluationReport.one().documentName }}</h2>
+                            </div>
+                        </a>
+                    </button>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="edge xl:py-32 xxl:py-40 xxl:pb-60 bg-lightgreen">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="relative">
+                {% set t1 = entry.processTarget1.one().getUrl() %}
+                {% set t2 = entry.processTarget2.one().getUrl() %}
+                {% set t3 = entry.processTarget3.one().getUrl() %}
+                {% set t4 = entry.processTarget4.one().getUrl() %}
+                {% set t5 = entry.processTarget5.one().getUrl() %}
+
+                <process t1="{{t1}}" t2="{{t2}}" t3="{{t3}}" t4="{{t4}}" t5="{{t5}}"></process>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+
+
+    <div class="edge bg-blue relative z-20">
+        <div>
+            <div class="">
+                <div class="max-w-screen-2xl mx-auto">
+                    <p class="text-red text-md tracking-wider">READY, SET, GIVE</p>
+                    <p class="pt-12 text-linen text-xl lg:text-2xl">Explore our list of stellar faith-based charities and give freely knowing that your gift, no matter its size, is making a real difference in the lives of people around the world.</p>
+
+                    <div class="flex flex-wrap">
+                        <button class="w-full sm:w-auto">
+                            <a href="{{ craft.entries.slug('charities').one().url }}">
+                                <div class="redbutton mt-10 mr-6 w-full sm:w-[21rem]">
+                                    <h2 class="text-linen text-lg font-semibold">Explore Charities</h2>
+                                </div>
+                            </a>
+                        </button>
+
+                        <button class="w-full sm:w-auto">
+                            <a href="{{ craft.entries.slug('philosophy').one().url }}">
+                                <div class="redbutton whitebutton hover:bg-red hover:border-red mt-6 sm:mt-10 sm:w-[21rem]">
+                                    <h2 class="text-linen text-lg font-semibold"><span class="sm:hidden">Our Philosophy</span><span class="hidden sm:inline">Check out our philosophy</span></h2>
+                                </div>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    {% if entry.faqs.all()|length %}
+        <div class="edge bg-deepnavy relative z-20">
+            <div>
+                {% set faqs = [] %}
+
+                {% for item in entry.faqs.all() %}
+                    {% set faqs = faqs|merge([
+                        {
+                            question: item.question,
+                            answer: item.answer|striptags,
+                            isOpen: false,
+                        }
+                    ]) %}
+                {% endfor %}
+
+                {% set c = entry.faqCaret.one().getUrl() %}
+
+                {% set tc = true %}
+
+                <div class="">
+                    <div class="max-w-screen-2xl mx-auto">
+                        <faq :faqs="{{ faqs | json_encode }}" caret="{{ c }}" tc="{{ tc }}"></faq>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+{% endblock %}
+
+
+{% block bodyJs %}
+    {{ parent() }}
+{% endblock bodyJs %}

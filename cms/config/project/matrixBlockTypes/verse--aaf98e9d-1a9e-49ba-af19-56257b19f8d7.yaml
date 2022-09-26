@@ -1,0 +1,44 @@
+field: 22719c53-1950-419d-9fcf-6889e131a46e # Page
+fieldLayouts:
+  17661e4c-52c1-4997-ad3a-3852718c2683:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: df8a69b1-9283-44a8-8f6e-b23c78bc0753 # Verse
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  df8a69b1-9283-44a8-8f6e-b23c78bc0753: # Verse
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: verse
+    instructions: ''
+    name: Verse
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources:
+        - 'section:6a47c200-952d-46e2-a08e-27d996e7ce7a' # Verses
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: verse
+name: Verse
+sortOrder: 6

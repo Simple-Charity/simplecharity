@@ -1,0 +1,93 @@
+{# -- Base HTML layout template that all HTML requests inherit from -- #}
+{#
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ┌─────────────────────────────────────────────────────────────────────────┐ │
+│ │                                headMeta                                 │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│ ┌─────────────────────────────────────────────────────────────────────────┐ │
+│ │                                headLinks                                │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│ ┌─────────────────────────────────────────────────────────────────────────┐ │
+│ │                                 headJs                                  │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│ ┌─────────────────────────────────────────────────────────────────────────┐ │
+│ │                                 headCss                                 │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                             │
+│                                 headContent                                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ┌─────────────────────────────────────────────────────────────────────────┐ │
+│ │                                bodyHtml                                 │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│ ┌─────────────────────────────────────────────────────────────────────────┐ │
+│ │                                 bodyJs                                  │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                             │
+│                                 bodyContent                                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+#}
+{% extends craft.app.request.isAjax() and not craft.app.request.getIsPreview()
+    ? "_boilerplate/_layouts/base-ajax-layout.twig"
+    : "_boilerplate/_layouts/base-web-layout.twig"
+%}
+
+{% block htmlTag %}
+    <html class="fonts-loaded scroll-smooth" lang="{{ craft.app.language |slice(0,2) }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+{% endblock htmlTag %}
+
+{# -- Page content that should be included in the <head> -- #}
+{% block headContent %}
+    {# -- Any <meta> tags that should be included in the <head> #}
+    {% block headMeta %}
+    {% endblock headMeta %}
+
+    {# -- Any <link> tags that should be included in the <head> #}
+    {% block headLinks %}
+    {% endblock headLinks %}
+
+    {# -- Inline and polyfill JS #}
+    {% include "_boilerplate/_partials/head-js.twig" %}
+
+    <link rel="stylesheet" href="https://simplecharity.org/dist/css/styles.e0567e47bd9114cf77b7.css">
+
+    {# -- Any JavaScript that should be included before </head> -- #}
+    {% block headJs %}
+    {% endblock headJs %}
+
+    {# Iubenda cookie widget for GDPR compliance, only appears for European IP addresses #}
+    <script type="text/javascript">
+        var _iub = _iub || [];
+        _iub.csConfiguration = {"consentOnContinuedBrowsing":false,"countryDetection":true,"floatingPreferencesButtonDisplay":false,"gdprAppliesGlobally":false,"invalidateConsentWithoutLog":true,"lang":"en","perPurposeConsent":true,"siteId":2690418,"whitelabel":false,"cookiePolicyId":41605890, "banner":{ "acceptButtonCaptionColor":"#FFFFFF","acceptButtonColor":"#F68E6D","acceptButtonDisplay":true,"backgroundColor":"#FFFFFF","brandBackgroundColor":"#FFFFFF","brandTextColor":"#000000","closeButtonDisplay":false,"customizeButtonCaptionColor":"#4D4D4D","customizeButtonColor":"#DADADA","customizeButtonDisplay":true,"position":"float-bottom-left","rejectButtonCaptionColor":"#FFFFFF","rejectButtonColor":"#263B4E","rejectButtonDisplay":true,"textColor":"#000000" }};
+    </script>   
+    <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+
+    {# -- Inline and critical CSS #}
+    <style>
+        [v-cloak] {display: none !important;}
+        {# -- Any CSS that should be included before </head> -- #}
+        {% block headCss %}
+        {% endblock headCss %}
+    </style>
+    {% include "_boilerplate/_partials/critical-css.twig" %}
+
+{% endblock headContent %}
+
+{# -- Page content that should be included in the <body> -- #}
+{% block bodyContent %}
+    {# -- Page content that should be included in the <body> -- #}
+    {% block bodyHtml %}
+    {% endblock bodyHtml %}
+
+    {#-- Site-wide JavaScript --#}
+    {{ craft.twigpack.includeSafariNomoduleFix() }}
+    {{ craft.twigpack.includeJsModule("runtime.js", true) }}
+    {{ craft.twigpack.includeJsModule("app.js", true) }}
+
+    {# -- Inline JS #}
+    {% include "_boilerplate/_partials/body-js.twig" %}
+
+    {# -- Any JavaScript that should be included before </body> -- #}
+    {% block bodyJs %}
+    {% endblock bodyJs %}
+{% endblock bodyContent %}

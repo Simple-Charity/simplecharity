@@ -1,0 +1,68 @@
+defaultPlacement: end
+fieldLayouts:
+  0fa5f52a-97ae-4b13-9141-3581ff4389ef:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: b1f7a83b-3612-4f8a-9aaa-9a8a792dc88c # Stories Category Color
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 14904d51-bbcf-4d04-9539-5432cc5b31ef # Stories Category Text Color
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e12e9e10-4334-4c9f-b270-2f8d60f1c0aa # Story Category Icon
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Stories Category'
+        sortOrder: 1
+handle: stories
+name: Stories
+siteSettings:
+  972e83d1-5fbc-4d0f-b1f1-674d47402fbd: # $SITE_NAME
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 2
+  uid: 1aeab864-b253-4244-b0a4-f36737987ec3

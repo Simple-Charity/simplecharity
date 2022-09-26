@@ -1,0 +1,76 @@
+field: 3ecc7748-3ba2-4a36-8209-7161827eca77 # Transparency Full Text
+fieldLayouts:
+  4a9795b1-523c-41bd-b637-d178d7c6a381:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 1718beab-261a-4621-ba27-a60b0f6169e4 # Overlay Title
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 55fc8afb-61c0-47d9-8f1a-6fbef8c06709 # Text
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  55fc8afb-61c0-47d9-8f1a-6fbef8c06709: # Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Paragraphs.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  1718beab-261a-4621-ba27-a60b0f6169e4: # Overlay Title
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: overlayTitle
+    instructions: ''
+    name: 'Overlay Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText

@@ -1,0 +1,9 @@
+format: null
+handle: authorPhoto
+height: 200
+interlace: none
+mode: crop
+name: 'Author Photo'
+position: center-center
+quality: null
+width: 200

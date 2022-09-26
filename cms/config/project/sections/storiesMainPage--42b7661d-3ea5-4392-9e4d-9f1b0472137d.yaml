@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: storiesMainPage
+name: 'Stories Main Page'
+propagationMethod: all
+siteSettings:
+  972e83d1-5fbc-4d0f-b1f1-674d47402fbd: # $SITE_NAME
+    enabledByDefault: true
+    hasUrls: true
+    template: stories/index
+    uriFormat: stories
+type: single

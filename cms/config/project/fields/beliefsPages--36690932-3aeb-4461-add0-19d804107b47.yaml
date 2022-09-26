@@ -1,0 +1,29 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 59c6208b-8f0d-4dc6-b35b-20538e63fa9f # Beliefs
+handle: beliefsPages
+instructions: ''
+name: 'Beliefs Pages'
+searchable: true
+settings:
+  columns:
+    __assoc__:
+      -
+        - 22719c53-1950-419d-9fcf-6889e131a46e # Page
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_beliefspages}}'
+  fieldLayout: matrix
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: 'Add a page'
+  staticField: ''
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

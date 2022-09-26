@@ -1,0 +1,22 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: e1f791be-0f68-4c7b-ae38-d963a110e071 # Stories
+handle: relatedPartner
+instructions: 'Choose a related partner for this story.'
+name: 'Related Partner'
+searchable: true
+settings:
+  allowSelfRelations: false
+  limit: '1'
+  localizeRelations: false
+  selectionLabel: 'Add a partner'
+  showSiteMenu: true
+  source: null
+  sources:
+    - 'section:46ccdf77-55b1-4b94-8ab2-8318592c13ee' # Partners
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

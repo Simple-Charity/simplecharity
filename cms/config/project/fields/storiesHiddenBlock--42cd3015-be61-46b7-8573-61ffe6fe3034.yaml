@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: e1f791be-0f68-4c7b-ae38-d963a110e071 # Stories
+handle: storiesHiddenBlock
+instructions: 'Add some "Read More" content to the story.'
+name: 'Stories Hidden Block'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_storieshiddenblock}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

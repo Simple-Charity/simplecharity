@@ -1,0 +1,14 @@
+columnSuffix: null
+contentColumnType: boolean
+fieldGroup: e1f791be-0f68-4c7b-ae38-d963a110e071 # Stories
+handle: addImageHeaderBackground
+instructions: ''
+name: 'Add Image Header Background'
+searchable: true
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

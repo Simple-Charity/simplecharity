@@ -1,0 +1,79 @@
+fieldLayouts:
+  482a974b-9575-4851-ad87-a0a5e472ae10:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\AssetTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4df31025-d439-4fb2-af7f-3d3f63ec8880 # About Images Optimize
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6edf7791-2377-4dae-bc7f-3c5622bcf57f # Team Square Optimize
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4dffa13f-0ba5-4eba-92ab-b7b82a1fc5c8 # About Mission Images
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: about
+hasUrls: true
+name: About
+settings:
+  addSubfolderToRootUrl: true
+  autoFocalPoint: ''
+  bucket: simple-charity
+  bucketSelectionMode: choose
+  cfDistributionId: $CLOUDFRONT_DISTRIBUTION_ID
+  cfPrefix: ''
+  expires: '30 days'
+  keyId: $S3_KEY_ID
+  makeUploadsPublic: ''
+  region: us-east-2
+  secret: $S3_SECRET
+  storageClass: ''
+  subfolder: site/about
+sortOrder: 6
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+type: craft\awss3\Volume
+url: $CLOUDFRONT_URL

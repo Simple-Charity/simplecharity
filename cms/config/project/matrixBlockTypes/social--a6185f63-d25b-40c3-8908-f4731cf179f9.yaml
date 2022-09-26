@@ -1,0 +1,141 @@
+field: 4e3b9df7-3bea-4445-be1a-a2481f2f4bc0 # Social Media Icons
+fieldLayouts:
+  c1326a7e-11cb-4ab1-bc72-f636be9277c5:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: b8bcaf43-eaba-4b8d-a918-5e3df0a01eac # Social Media Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 80faa1b6-8eb7-4dee-9f9e-3dc599ea5d43 # Social Media Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ec35b4d0-59fb-4edd-a497-2eb365d47f14 # Social Media Podcast Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 85a993a9-f7d1-43b2-82e0-3258a95cc0c4 # Social Media Icon Dark
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  80faa1b6-8eb7-4dee-9f9e-3dc599ea5d43: # Social Media Link
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: socialMediaLink
+    instructions: ''
+    name: 'Social Media Link'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  85a993a9-f7d1-43b2-82e0-3258a95cc0c4: # Social Media Icon Dark
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: socialMediaIconDark
+    instructions: 'svg preferred'
+    name: 'Social Media Icon Dark'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  b8bcaf43-eaba-4b8d-a918-5e3df0a01eac: # Social Media Name
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: socialMediaName
+    instructions: ''
+    name: 'Social Media Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ec35b4d0-59fb-4edd-a497-2eb365d47f14: # Social Media Podcast Link
+    columnSuffix: ywgtlzei
+    contentColumnType: text
+    fieldGroup: null
+    handle: socialMediaPodcastLink
+    instructions: ''
+    name: 'Social Media Podcast Link'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: social
+name: Social
+sortOrder: 1

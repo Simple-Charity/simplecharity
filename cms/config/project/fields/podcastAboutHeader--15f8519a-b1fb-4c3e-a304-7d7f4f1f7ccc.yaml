@@ -1,0 +1,19 @@
+columnSuffix: sijrfnnv
+contentColumnType: text
+fieldGroup: 266c6678-9669-488e-82b7-68601833935a # About
+handle: podcastAboutHeader
+instructions: ''
+name: 'Podcast About Header'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

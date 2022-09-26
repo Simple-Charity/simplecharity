@@ -1,0 +1,10 @@
+{% macro blocker(slot) %}
+    <div class="fixed inset-0 overflow-auto flex modal-bg">
+        <div
+            class="fixed w-full md:max-w-2xl md:relative top-0 md:bottom-0 inset-x-0 align-top m-auto justify-center w-full h-screen lg:h-auto flex flex-col">
+            <div class="bg-linen p-12 animated fadeIn fast border-8 h-screen md:h-auto scrolling-touch overflow-y-scroll">
+                {{ slot }}
+            </div>
+        </div>
+    </div>
+{% endmacro %}

@@ -1,0 +1,7 @@
+<div class="relative h-[4rem] sm:h-screen py-72 px-10 sm:px-20 bg-cover flex justify-center items-center text-center bg-center" style="background-image: url('{{ craft.entries.slug('site-wide-assets').one().comingSoonBackground.one().getUrl() }}');">
+    <div class="bg-blue opacity-[.85] absolute top-0 bottom-0 left-0 right-0 z-10"></div>
+    <div class="relative z-20">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-bold text-linen pb-12">down for maintenance</h1>
+        <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-linen xl:text-3xl">{{ craft.entries.slug('site-wide-assets').one().maintenanceMessage }}</p>
+    </div>
+</div>

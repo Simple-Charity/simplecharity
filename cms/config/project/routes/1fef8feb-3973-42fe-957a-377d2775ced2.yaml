@@ -1,0 +1,6 @@
+siteUid: null
+sortOrder: 2
+template: account/_unsubscribedPlan
+uriParts:
+  - account/all-giving/plan
+uriPattern: account/all-giving/plan

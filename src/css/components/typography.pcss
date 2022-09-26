@@ -1,0 +1,33 @@
+/**
+ * components/typography.css
+ *
+ * Typography rules.
+ *
+ */
+
+/*
+    Subheader text style
+ */
+.sc-subhead {
+    @apply font-sans font-medium;
+    @apply md:text-2xl;
+}
+
+/*
+    Large callout text style
+ */
+.sc-callout {
+    @apply font-sans font-semibold w-full leading-normal;
+
+    @apply md:text-2xl md:leading-snug;
+    @apply xl:text-4xl;
+
+    /*
+        Large underlined link style
+     */
+    &-link {
+        @apply font-serif border-b-2 pb-2;
+        @apply md:text-2xl;
+        @apply xl:text-4xl;
+    }
+}

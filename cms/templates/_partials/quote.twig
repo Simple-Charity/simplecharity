@@ -1,0 +1,34 @@
+{# TO USE THIS PARTIAL, QUOTES SHOULD BE DESCLARED WITH A VARIABLE q IN THE MAIN FILE.  #}
+
+<div class="relative">
+    <div class="flex items-center overflow-hidden transition-all duration-200 ease-in-out transform max-w-screen-2xl mx-auto">
+        <div class="">
+            <div class="hidden sm:block relative z-20 w-[10rem] h-[10rem] lg:w-[16rem] lg:h-[16rem]"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                <img class="" src="{{ q.icon.one().getUrl() }}" alt="">
+            </div>
+        </div>
+        <div class="sm:pl-12">
+            <img class="w-10 h-10 sm:w-16 sm:h-16 mb-6" src="{{ q.quotesIcon.one().getUrl() }}" alt="">
+            <div class="w-full">
+                <p class="text-blue text-sm lg:text-md lg:text-lg xl:text-xl xxl:text-2xl pb-4 md:pb-6 leading-6 md:leading-relaxed" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">{{ q.quoteText }}</p>
+
+
+                <div class="sm:hidden flex items-center">
+                    <div class="relative pr-4"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                        <img class="w-20" src="{{ q.icon.one().getUrl() }}" alt="">
+                    </div>
+                    <div>
+                        <p class="text-red text-sm tracking-wider">{{ q.fullName }}</p>
+                        <p class="text-blue text-sm">{{ q.description }}</p>
+                    </div>
+                </div>
+                
+                <div class="hidden sm:block">
+                    <p class="text-red tracking-wider font-semibold text-sm pb-2">{{ q.fullName }}</p>
+                    <p class="text-blue text-sm">{{ q.description }}</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

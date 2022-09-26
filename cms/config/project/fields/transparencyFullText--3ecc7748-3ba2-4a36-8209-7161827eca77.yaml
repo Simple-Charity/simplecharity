@@ -1,0 +1,35 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 266c6678-9669-488e-82b7-68601833935a # About
+handle: transparencyFullText
+instructions: ''
+name: 'Transparency Full Text'
+searchable: true
+settings:
+  columns:
+    __assoc__:
+      -
+        - 1718beab-261a-4621-ba27-a60b0f6169e4 # Overlay Title
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 82da0b2a-882e-4544-8995-92ec1607efbf # Mission Full Text
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_transparencyfulltext}}'
+  fieldLayout: row
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationMethod: all
+  selectionLabel: ''
+  staticField: '1'
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

@@ -1,0 +1,9 @@
+baseUrl: 'https://simplecharity.org'
+enabled: true
+handle: default
+hasUrls: true
+language: en-US
+name: $SITE_NAME
+primary: true
+siteGroup: ca29bac6-50f1-4f2d-9aaf-462fb7442cdf # $SITE_NAME
+sortOrder: 1

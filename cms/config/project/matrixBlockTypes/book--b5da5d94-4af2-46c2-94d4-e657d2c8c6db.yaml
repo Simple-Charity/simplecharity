@@ -1,0 +1,83 @@
+field: 8632fd0b-243b-4503-ba0b-94d375eb5951 # Simple Charity Books
+fieldLayouts:
+  57a6efd1-370d-48e9-a5c1-9966b6027148:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: a88daa86-8498-4824-8341-5723abc02388 # Book Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4ec05108-97b0-4c88-b647-a837d8d42c51 # Book Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  4ec05108-97b0-4c88-b647-a837d8d42c51: # Book Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: bookImage
+    instructions: ''
+    name: 'Book Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  a88daa86-8498-4824-8341-5723abc02388: # Book Title
+    columnSuffix: vuuzquaq
+    contentColumnType: text
+    fieldGroup: null
+    handle: bookTitle
+    instructions: ''
+    name: 'Book Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: book
+name: Book
+sortOrder: 1

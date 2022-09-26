@@ -1,0 +1,19 @@
+columnSuffix: szydofhs
+contentColumnType: text
+fieldGroup: 266c6678-9669-488e-82b7-68601833935a # About
+handle: kindfulCampaignPage
+instructions: 'Link to the Kindful campaign for this partner. '
+name: 'Kindful Campaign Page'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

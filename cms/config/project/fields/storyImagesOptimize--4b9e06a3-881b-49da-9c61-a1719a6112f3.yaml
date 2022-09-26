@@ -1,0 +1,118 @@
+columnSuffix: null
+contentColumnType: text
+fieldGroup: 601f52d6-827c-458a-ae29-ec5db8f8cd66 # ImageOptimize
+handle: storyImagesOptimize
+instructions: ''
+name: 'Story Images Optimize'
+searchable: false
+settings:
+  displayDominantColorPalette: '1'
+  displayLazyLoadPlaceholderImages: '1'
+  displayOptimizedImageVariants: '1'
+  ignoreFilesOfType:
+    - image/svg
+    - image/gif
+  variants:
+    -
+      __assoc__:
+        -
+          - width
+          - '1280'
+        -
+          - useAspectRatio
+          - '1'
+        -
+          - aspectRatioX
+          - '8'
+        -
+          - aspectRatioY
+          - '5'
+        -
+          - retinaSizes
+          -
+            - '1'
+            - '2'
+        -
+          - quality
+          - '82'
+        -
+          - format
+          - ''
+    -
+      __assoc__:
+        -
+          - width
+          - '1024'
+        -
+          - useAspectRatio
+          - '1'
+        -
+          - aspectRatioX
+          - '8'
+        -
+          - aspectRatioY
+          - '5'
+        -
+          - retinaSizes
+          -
+            - '1'
+            - '2'
+        -
+          - quality
+          - '82'
+        -
+          - format
+          - ''
+    -
+      __assoc__:
+        -
+          - width
+          - '768'
+        -
+          - useAspectRatio
+          - '1'
+        -
+          - aspectRatioX
+          - '4'
+        -
+          - aspectRatioY
+          - '3'
+        -
+          - retinaSizes
+          -
+            - '1'
+            - '2'
+        -
+          - quality
+          - '60'
+        -
+          - format
+          - ''
+    -
+      __assoc__:
+        -
+          - width
+          - '640'
+        -
+          - useAspectRatio
+          - '1'
+        -
+          - aspectRatioX
+          - '4'
+        -
+          - aspectRatioY
+          - '3'
+        -
+          - retinaSizes
+          -
+            - '1'
+            - '2'
+        -
+          - quality
+          - '60'
+        -
+          - format
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: nystudio107\imageoptimize\fields\OptimizedImages

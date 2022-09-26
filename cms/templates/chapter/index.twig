@@ -1,0 +1,331 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% set pageBackground = pageBackground|default('linen') %}
+
+{% block headMeta %}
+    {% if entry.pageDescription|length %}
+        <meta name="description" content={{ entry.pageDescription }}>
+    {% endif %}
+{% endblock %}
+
+{% block headLinks %}
+    {{ parent() }}
+{% endblock headLinks %}
+
+{% block contentborderless %}
+
+  {% set tori = entry.toriImage.one().getUrl() %}
+
+    <div class="relative edge-x edge-t pt-20 h-screen min-h-[42rem] xl:min-h-[46rem] xxl:min-h-[50rem]">
+        <div v-prlx.mobile="{ speed: 0.3, preserveInitialPosition: false, }" class="absolute top-[-16rem] left-0 right-0 bottom-0 z-0 bg-cover bg-bottom xxl:bg-center" style="background-image: url('{{ tori }}');"></div>
+        <div class="w-full relative -mt-20 sm:-mt-6 mx-auto z-10">
+            <div class="relative z-10">
+                <h1 class="header-one pt-8 pb-10 sm:pb-12">student chapters <span class="tracking-overlap hidden sm:inline">–––––––––</span></h1>
+                <h1 class="text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl lg:leading-normal font-bold font-sans text-blue leading-snug">Want to grow in your faith and <br class="hidden sm:block">in your love towards others?</h1>
+                <h1 class="text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl lg:leading-normal text-red font-bold leading-snug pb-6 lg:pb-10 pt-1">You’re not alone.</h1>
+                <h1 class="text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-blue">We'd love for you to join <br> our community!</h1>
+            </div>
+            <div>
+                <button>
+                    <a class="" href="#connect">
+                        <div class="relative mt-10 sm:mt-16 overflow-hidden">
+                            <div class="bluebutton">
+                                Join Today
+                            </div>
+                        </div>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+  {% set squiggle1 = entry.chapterSquiggle1.one() %}
+  {% set sprout = entry.chapterSprout.one() %}
+
+    <div class="edge bg-red bg-no-repeat text-center bkg-custom-1 relative overflow-hidden">
+        <img class="absolute top-[-0.5rem] left-[-2.5rem] w-[20rem] sm:w-[25rem] md:w-[28rem] lg:w-[35rem] xxl:w-[40rem]" src="{{ squiggle1.getUrl() }}" alt="">
+        <img class="w-10 mx-auto pt-80 pb-10 lg:w-16" src="{{ sprout.getUrl() }}" alt="">
+        <div class="mx-auto">
+            <h1 data-aos="fade-up" data-aos-duration="1000" class="text-xl sm:text-2xl font-semibold font-sans text-blue leading-normal sm:px-20 pb-20 lg:text-3xl max-w-screen-lg mx-auto">Join a <span class="text-linen">community of practice</span> that will give you lifelong friendships and spur you on toward love and good deeds.</span></h1>
+        </div>
+    </div>
+
+  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/671511502?h=1e8d22e8cf&color=f68e6d&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+
+  {% set map = entry.chapterMap.one() %}
+  {% set map2 = entry.usaMapOutline.one() %}
+
+    <div class="relative z-[60] bg-linen w-full">
+        <div class="edge">
+            <h1 class="text-md text-red tracking-wider font-semibold pb-8">WHO WE ARE</h1>
+
+            <div class="sm:flex  max-w-screen-lg">
+                <div class="pb-20 w-11/12 mr-8 ">
+                    <p class="text-blue text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl pb-8">Simple Charity college chapters are a movement of Christian college students learning from, standing with and sacrificing for the poor together. We do it, not out of guilt or obligation, but from a place of joy because we believe the poor are King Jesus in disguise.</p>
+                    <p class="text-blue text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl">Currently, we have 8 active chapters at campuses across the US.</p>
+                </div>
+                <div class="hidden sm:block">
+                    <div class="border-l-4 border-r-4 border-red w-64 text-center">
+                        <span class="font-serif font-bold"  style="font-size: 120pt;">3</span>
+                        <p class="text-blue font-semibold text-2xl">active college<br>chapters</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative sm:h-[50rem] md:h-[56rem] lg:h-[67rem] xl:h-[85rem] bg-linen">
+                <div class="hidden sm:block absolute top-0 transition-all ease-in-out duration-200 transform sm:translate-x-[-48%] sm:w-[55rem] md:w-[67rem] lg:w-[95rem] xl:w-[120rem] xxl:translate-x-[-40%]">
+                    <img class="w-full" src="{{ map.getUrl() }}" alt="">
+                </div>
+
+        
+
+                <div class="sm:hidden relative">
+                    <img src="{{ map2.getUrl() }}" alt="">
+
+                    <div class="absolute left-[10%] top-[25%]">
+                        <div class="flex items-center">
+                            <span class="font-serif font-bold pr-2 text-7xl">3</span>
+                            <p class="font-semibold text-lg text-red leading-5">active college<br>chapters</p>
+                        </div>
+                    </div>
+
+                    <span class="absolute w-2 h-2 bg-red rounded-full left-[83%] top-[55.5%]">
+                    <span class="animate-ping absolute w-2 h-2 bg-red rounded-full"></span>
+                    </span>
+                    <span class="absolute w-2 h-2 bg-red rounded-full left-[80%] top-[58.5%]">
+                    <span class="animate-ping absolute w-2 h-2 bg-red rounded-full"></span>
+                    </span>
+                    <span class="absolute w-2 h-2 bg-red rounded-full left-[47.5%] top-[70%]">
+                    <span class="animate-ping absolute w-2 h-2 bg-red rounded-full"></span>
+                    </span>
+
+                </div>
+
+                <div class="pt-10 sm:hidden">
+                    <div class="grid grid-cols-2 text-center">
+                        <div class="pb-4" data-aos="zoom-in-up" data-aos-duration="1000" class="">
+                            <p class="font-semibold">Abeline Christian University</p>
+                            <p class="text-md">Abiline, TX</p>
+                        </div>
+                        {# <div class="pb-4" data-aos="zoom-in-up" data-aos-duration="1000" class="">
+                            <p class="font-semibold">UNC Chapel Hill</p>
+                            <p class="text-md">Chapel Hill, NC</p>
+                        </div> #}
+                        {# <div class="pb-4" data-aos="zoom-in-up" data-aos-duration="1000" class="">
+                            <p class="font-semibold">Auburn University</p>
+                            <p class="text-md">Auburn, AL</p>
+                        </div> #}
+                        {# <div class="pb-4" data-aos="zoom-in-up" data-aos-duration="1000" class="">
+                            <p class="font-semibold">University of Georgia</p>
+                            <p class="text-md">Athens, GA</p>
+                        </div> #}
+                        {# <div class="pb-4" data-aos="zoom-in-up" data-aos-duration="1000" class="">
+                            <p class="font-semibold">Clemson University</p>
+                            <p class="text-md">Clemson, SC</p>
+                        </div> #}
+                        {# <div class="pb-4" data-aos="zoom-in-up" data-aos-duration="1000" class="">
+                            <p class="font-semibold">University of Florida</p>
+                            <p class="text-md">Gainsville, FL</p>
+                        </div> #}
+                        <div class="pb-4" data-aos="zoom-in-up" data-aos-duration="1000" class="">
+                            <p class="font-semibold">Duke University</p>
+                            <p class="text-md">Durham, NC</p>
+                        </div>
+                        <div class="pb-4" data-aos="zoom-in-up" data-aos-duration="1000" class="">
+                            <p class="font-semibold">University of Virginia</p>
+                            <p class="text-md">Charlottesville, VA</p>
+                        </div>
+                        {# <div class="pb-4" data-aos="zoom-in-up" data-aos-duration="1000" class="">
+                            <p class="font-semibold">Young Harris College</p>
+                            <p class="text-md">Young Harris, GA</p>
+                        </div> #}
+                    </div>
+                </div>
+
+                <div class="hidden sm:block">
+                    <div data-aos="zoom-in-up" data-aos-duration="1000" class="absolute text-blue tracking-wider text-xxs lg:text-xs xl:text-sm sm:left-[26.1rem] sm:top-[18.1rem] md:left-[31.8rem] md:top-[22.08rem] lg:left-[44.8rem] lg:top-[31.2rem] xl:left-[56.5rem] xl:top-[39.45rem] xxl:left-[66.2rem]">
+                        <p class="font-bold">DUKE UNIVERSITY</p>
+                        <p class="text-md">DURHAM, NC</p>
+                    </div>
+                    {# <div data-aos="zoom-in-up" data-aos-duration="1000" class="absolute text-blue tracking-wider text-xxs lg:text-xs xl:text-sm sm:left-[26.1rem] sm:top-[18.4rem] md:left-[31.8rem] md:top-[22.36rem] lg:left-[44.8rem] lg:top-[31.7rem] xl:left-[56.5rem] xl:top-[40.05rem] xxl:left-[66.2rem]">
+                        <p class="font-bold">UNC CHAPEL HILL</p>
+                        <p class="text-md">CHAPEL HILL, NC</p>
+                    </div> #}
+                    {# <div data-aos="zoom-in-up" data-aos-duration="1000" class="absolute text-blue tracking-wider text-xxs lg:text-xs xl:text-sm sm:left-[24.15rem] sm:top-[20.95rem] md:left-[29.45rem] md:top-[25.55rem] lg:left-[41.75rem] lg:top-[36.15rem] xl:left-[52.75rem] xl:top-[45.65rem] xxl:left-[62.3rem]">
+                        <p class="font-bold">CLEMSON UNIVERSITY</p>
+                        <p class="text-md">CLEMSON, SC</p>
+                    </div> #}
+                    {# <div data-aos="zoom-in-up" data-aos-duration="1000" class="absolute text-blue tracking-wider text-xxs lg:text-xs xl:text-sm sm:left-[23.05rem] sm:top-[22.8rem] md:left-[28rem] md:top-[27.80rem] lg:left-[39.75rem] lg:top-[39.35rem] xl:left-[50.18rem] xl:top-[49.75rem] xxl:left-[59.8rem]">
+                        <p class="font-bold">UNIVERSITY OF GEORGIA</p>
+                        <p class="text-md">ATHENS, GA</p>
+                    </div> #}
+                    {# <div data-aos="zoom-in-up" data-aos-duration="1000" class="absolute text-blue tracking-wider text-xxs lg:text-xs xl:text-sm sm:left-[22.2rem] sm:top-[25.15rem] md:left-[27rem] md:top-[30.70rem] lg:left-[38.3rem] lg:top-[43.45rem] xl:left-[48.25rem] xl:top-[54.9rem] xxl:left-[57.8rem]">
+                        <p class="font-bold">YOUNG HARRIS COLLEGE</p>
+                        <p class="text-md">YOUNG HARRIS, GA</p>
+                    </div> #}
+                    {# <div data-aos="zoom-in-up" data-aos-duration="1000" class="absolute text-blue tracking-wider text-xxs lg:text-xs xl:text-sm sm:left-[21.8rem] sm:top-[27.05rem] md:left-[26.5rem] md:top-[32.95rem] lg:left-[37.5rem] lg:top-[46.68rem] xl:left-[47.35rem] xl:top-[59.0rem] xxl:left-[57rem]">
+                        <p class="font-bold">UNIVERSITY OF FLORIDA</p>
+                        <p class="text-md">GAINESVILLE, FL</p>
+                    </div> #}
+                    {# <div data-aos="zoom-in-up" data-aos-duration="1000" class="absolute text-blue tracking-wider text-xxs lg:text-xs xl:text-sm sm:left-[12.01rem] sm:top-[29.9rem] md:left-[15.1rem] md:top-[36.45rem] lg:left-[20.2rem] lg:top-[51.5rem] xl:left-[26.0rem] xl:top-[65.0rem] xxl:left-[35.5rem]">
+                        <p class="font-bold">AUBURN UNIVERSITY</p>
+                        <p class="text-md">AUBURN, AL</p>
+                    </div> #}
+                    <div data-aos="zoom-in-up" data-aos-duration="1000" class="absolute text-blue tracking-wider text-xxs lg:text-xs xl:text-sm sm:left-[3.35rem] sm:top-[31.4rem] md:left-[4.7rem] md:top-[38.0rem] lg:left-[7rem] lg:top-[53.9rem] xl:left-[9.18rem] xl:top-[68.0rem] xxl:left-[18.7rem]">
+                        <p class="font-bold">ABILENE CHRISTIAN<br>UNIVERSITY</p>
+                        <p class="text-md">ABILENE, TX</p>
+                    </div>
+                    <div data-aos="zoom-in-up" data-aos-duration="1000" class="absolute text-blue tracking-wider text-xxs lg:text-xs xl:text-sm sm:left-[26.1rem] sm:top-[15.4rem] md:left-[31.8rem] md:top-[18.72rem] lg:left-[44.8rem] lg:top-[26.5rem] xl:left-[56.5rem] xl:top-[33.52rem] xxl:left-[66.2rem]">
+                        <p class="font-bold">UNIVERSITY OF VIRGINIA</p>
+                        <p class="text-md">CHARLOTTESVILLE, VA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% set sctable = entry.scTablingAtDuke.one().getUrl() %}
+  
+    <div class="relative bg-top">
+        <div class="edge-x">
+            <div v-prlx="{ speed: 0.15, preserveInitialPosition: false, }" class="hidden sm:block absolute top-[-20rem] left-0 right-0 bottom-0 bg-top bg-cover" style="background-image: url({{sctable}})"></div>
+            <div class="mx-auto max-w-screen-2xl">
+                <h1 class="headercaps text-xl pt-60 pb-28 lg:pt-96 lg:pb-32 hidden sm:block relative z-[70]">JOIN THE MOVEMENT.</h1>
+            </div>
+        </div>
+        <div class="sm:flex sm:flex-wrap justify-center mx-auto ">
+            {% set i = 0 %}
+            {% for card in entry.chaptersCards.all() %}
+                {% set isLast = (i == (entry.chaptersCards.all()|length - 1)) %}
+                <div class="relative z-50">
+                    <div v-prlx="{ speed: 0.03, preserveInitialPosition: false, }" class="w-full transition-all ease-in-out duration-300 transform sm:w-[13rem] md:w-[15.5rem] lg:w-[19rem] xl:w-[22rem] relative z-[80]">
+                        <div class="h-6 {% switch card.themeColor.value %}{% case 'mint' %}bg-green{% case 'peach' %}bg-red{% case 'canary' %}bg-yellow{% case 'zeal' %}bg-teal{% case 'quartz' %}bg-pink{% case 'dusk' %}bg-blue{% endswitch %} {% if not isLast %} sm:mr-5 {% endif %}">
+                        </div>
+                        <div class="{% if not isLast %} sm:mr-5 {% endif %} bg-linen align-center text-center pt-10 md:pb-4 lg:pb-10">
+                            <div class="h-30">
+                                <img class="h-24 sm:h-28 sm:w-60 mx-auto" src="{{ card.cardIcon.one().getUrl() }}" alt="">
+                            </div>
+                            <div class="h-16 sm:h-8 lg:h-16 pt-4">
+                                <h1 class="text-3xl sm:text-2xl lg:text-3xl text-blue font-serif font-bold">{{ card.cardTitle|lower }}</h1>
+                            </div>
+                            <div class="text-lg sm:text-xs md:text-sm lg:text-lg leading-relaxed text-blue w-full sm:w-3/4 lg:w-full mx-auto my-8 px-6 sm:px-2 lg:px-10 h-36 lg:h-68">
+                                <p>{{ card.cardDescription|striptags }}</p>
+                            </div>
+                            <button class="w-52 sm:w-40 lg:w-52 xl:w-64 mb-8">
+                                <a class="" href="{% if card.cardButtonInternalReference.one()|length %}{{ card.cardButtonInternalReference.one().url }}{% else %}{{ card.cardButtonExternalReference }}{% endif %}">
+                                    <div class="bluebutton sm:text-sm lg:text-lg">
+                                        {{ card.cardButtonText }}
+                                    </div>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                {% set i = i + 1 %}
+            {% endfor %}
+            <div class="absolute z-0 bg-yellow bottom-0 left-0 right-0 h-[7rem]">
+            </div>
+        </div>
+    </div>
+
+    {# BANNER 5 #}
+
+    {% set q = entry.quotes.one() %}
+
+
+    <div class="bg-yellow relative overflow-hidden ">
+        <div class="hidden xl:block">
+            <img class="absolute w-[60rem] xl:top-12 xl:left-[-10rem] -left-0 z-10" src="{{ q.squiggle.one().getUrl() }}" alt="">
+        </div>
+        <div class="hidden sm:block xl:hidden">
+            <img class="absolute w-[40rem] top-12 md:w-[48rem] md:top-16 lg:w-[60rem] lg:top-10 xl:top-0 xl:left-[-10rem] -left-20 z-10" src="{{ q.squiggle.one().getUrl() }}" alt="">
+        </div>
+        <div class="sm:hidden">
+            <img class="absolute z-10 -bottom-24 -left-6 w-[26rem]" src="{{ q.squiggle.one().getUrl() }}" alt="">
+        </div>
+
+        <div class="edge relative z-50" >
+            {% include "_partials/quote.twig" %}
+        </div>
+    </div>
+
+    <div class="bg-linen relative z-[60] edge">
+        <div id="connect" class="max-w-screen-2xl mx-auto ">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-blue pb-6">connect with us</h1>
+            <p class="text-lg sm:text-xl lg:text-2xl pb-6">Fill out the form below to get plugged into a college chapter on your campus, or to learn about how you can start one!</p>
+            <div>
+                <div data-tf-widget="AnEbWoja" data-tf-opacity="0" data-tf-iframe-props="title=Student Chapters Interest Form" data-tf-medium="snippet" style="width:100%;height:600px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+            </div>
+        </div>
+    </div>
+    
+    {# BANNER 6 #}
+
+    {% set sun = entry.sunIcon.one().getUrl() %}
+    {% set mountain = entry.mountainIcon.one().getUrl() %}
+
+    <div class="relative bg-red edge-x py-20 overflow-hidden">
+        <img class="absolute top-[-0.5rem] left-[-2.5rem] w-[15rem] sm:w-[20rem] md:w-[24rem] lg:w-[26rem] xxl:w-[32rem]" src="{{ squiggle1.getUrl() }}" alt="">
+
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="text-center mb-12 xl:mb-20 xxl:mb-24">
+                <h2 class="text-lg text-linen tracking-wider font-semibold">EXPLORE MORE <br class="lg:hidden"> OPPORTUNITIES</h2>
+            </div>
+            <div class="sm:flex justify-center">
+                <div class="sm:mr-6 lg:mr-10 mb-12 sm:mb-0">
+                    <div class="flex items-center justify-center">
+                        <img class="w-40 h-40" src="{{ sun }}" alt="">
+                    </div>
+                    <div class="flex items-center justify-center sm:block">
+                        <a href="{{ craft.entries.slug('internship').one().url }}">
+                            <button>
+                                <div class="bluebutton w-[16rem] text-sm sm:text-lg">Summer Internship</div>
+                            </button>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="sm:ml-6 lg:ml-10">
+                    <div class="flex items-center justify-center">
+                        <img class="w-40 h-40" src="{{ mountain }}" alt="">
+                    </div>
+                    <div class="flex items-center justify-center sm:block">
+                        <a href="{{ craft.entries.slug('challenge').one().url }}">
+                            <button>
+                                <div class="bluebutton w-[16rem]  text-sm sm:text-lg">Charity Challenge</div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% set f = [] %}
+
+    {% for item in entry.faqs.all() %}
+        {% set f = f|merge([
+            {
+                question:item.question,
+                answer:item.answer|striptags,
+                isOpen:false,
+                height:0,
+            }
+        ]) %}
+    {% endfor %}
+
+    {% set caret = entry.faqCaret.one().getUrl() %}
+
+    <div class="bg-lightgreen edge-x py-20">
+        <div class="max-w-screen-2xl mx-auto">
+            <faq :faqs="{{ f|json_encode }}" caret="{{ caret }}" textcolor="text-blue"></faq>
+        </div>
+    </div>
+{% endblock %}
+
+{% block bodyJs %}
+    {{ parent() }}
+    <script type="text/javascript" src="https://ou715.infusionsoft.app/app/webTracking/getTrackingCode"></script>
+    <script type="text/javascript" src="https://ou715.infusionsoft.com/app/timezone/timezoneInputJs?xid=4c3ed1e94c197fa78a221fb1092b5c8e"></script>
+{% endblock bodyJs %}

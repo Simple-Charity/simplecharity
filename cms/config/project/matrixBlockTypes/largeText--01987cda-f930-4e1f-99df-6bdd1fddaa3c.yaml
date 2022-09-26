@@ -1,0 +1,50 @@
+field: 42cd3015-be61-46b7-8573-61ffe6fe3034 # Stories Hidden Block
+fieldLayouts:
+  0b777ec9-f13c-4c93-bbf6-624cb109339b:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 5dd468fa-bf80-407c-b62b-8dd95c699f15 # Text
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  5dd468fa-bf80-407c-b62b-8dd95c699f15: # Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: ''
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Paragraphs.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: largeText
+name: 'Large Text'
+sortOrder: 1

@@ -1,0 +1,109 @@
+fieldLayouts:
+  26a450ed-d654-476a-a067-845692fa01c9:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 728b96c0-af4f-473c-b03b-13eb42cd4a7c # Mission Statement
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4e3b9df7-3bea-4445-be1a-a2481f2f4bc0 # Social Media Icons
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 53b21488-cc9f-401c-9506-acf450bd7b09 # Simple Charity EIN
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c29c3ac0-6424-4dc7-8a60-1d44e9906725 # Simple Charity Address
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7909aed5-381b-437e-bf82-394caf136412 # Compliance Documents
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'General Information'
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 9a814fcc-af5c-4283-9a7a-b9868bf252dd # Newsletter Copy
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f09216d7-902a-4b74-9e8e-fa67f6803222 # Newsletter Signup Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Newsletter
+        sortOrder: 3
+handle: footer
+hasTitleField: false
+name: Footer
+section: 8d1ae711-2db4-4e29-8be1-32f478a5cd30 # Footer
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

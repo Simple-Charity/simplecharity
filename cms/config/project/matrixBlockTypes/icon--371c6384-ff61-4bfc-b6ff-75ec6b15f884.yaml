@@ -1,0 +1,83 @@
+field: d7f7380c-11e9-4300-85f2-5160054980db # Liturgy Icons
+fieldLayouts:
+  b3a45aea-0b2f-4632-b3ed-1d82f65b5b34:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7a28bd04-bc9c-457e-bb12-a455cbf01865 # Liturgy Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d5c418ff-724c-4b17-a97f-27fde8e1159c # Liturgy Step
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  7a28bd04-bc9c-457e-bb12-a455cbf01865: # Liturgy Icon
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: liturgyIcon
+    instructions: ''
+    name: 'Liturgy Icon'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  d5c418ff-724c-4b17-a97f-27fde8e1159c: # Liturgy Step
+    columnSuffix: csmlfiqs
+    contentColumnType: text
+    fieldGroup: null
+    handle: liturgyStep
+    instructions: ''
+    name: 'Liturgy Step'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: icon
+name: Icon
+sortOrder: 1

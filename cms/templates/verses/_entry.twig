@@ -1,0 +1,33 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% block contentborderless %}
+    <div class="p-10 sm:p-20 min-h-[90vh]">
+        <div class="mx-auto max-w-screen-md">
+            <p class="font-semibold font-sans uppercase tracking-widest text-sm text-red mb-3 mt-[5rem]">
+                ESV
+            </p>
+            <h1 class="header-one mb-6 lg:mb-12">
+                {{ entry.title }} <span class="tracking-overlap hidden sm:inline">–––––––––</span>
+            </h1>
+            
+        
+            
+            <div class="font-sans font-normal redactor">
+                {% for v in entry.verse.all() %}
+                    <div class="flex sm:ml-[-4rem] lg:ml-[-5rem] text-lg lg:text-xl xl:text-2xl mb-4">
+                        <span class="hidden sm:inline text-right w-[4rem] min-w-[4rem] lg:w-[5rem] lg:min-w-[5rem] pr-[1rem] xl:pr-[1.5rem]">{{ v.reference }}</span>
+                        <p class="">
+                            <span class="sm:hidden">{{ v.reference }}</span> {{ v.text }}
+                        </p>
+                    </div>
+                    
+                {% endfor %}
+            </div>
+
+            <p class="text-xxs sm:text-xs text-blue mt-10">
+                Scripture quotations are from The ESV® Bible (The Holy Bible, English Standard Version®), copyright © 2001 by Crossway, a publishing ministry of Good News Publishers. Used by permission. All rights reserved.
+            </p>
+        </div>
+    </div>
+    
+{% endblock  %}

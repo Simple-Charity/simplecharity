@@ -1,0 +1,46 @@
+columnSuffix: pmrurpjy
+contentColumnType: string
+fieldGroup: 266c6678-9669-488e-82b7-68601833935a # About
+handle: pageStatus
+instructions: 'Select a status for this page. '
+name: 'Page Status'
+searchable: false
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Live
+        -
+          - value
+          - live
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Down for Maintenance'
+        -
+          - value
+          - downForMaintenance
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Under Construction'
+        -
+          - value
+          - underConstruction
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

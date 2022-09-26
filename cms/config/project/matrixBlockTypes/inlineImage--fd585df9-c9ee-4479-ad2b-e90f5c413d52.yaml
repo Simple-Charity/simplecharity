@@ -1,0 +1,55 @@
+field: 22719c53-1950-419d-9fcf-6889e131a46e # Page
+fieldLayouts:
+  a731f424-4124-4569-ac36-c631053cc867:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 3dd85da8-1e84-4ed9-a0d7-95fcf980e672 # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  3dd85da8-1e84-4ed9-a0d7-95fcf980e672: # Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      singleUploadLocationSource: 'volume:cddd1056-766f-44c4-af53-502cb0a44f29' # Practice
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: true
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: inlineImage
+name: 'Inline Image'
+sortOrder: 5

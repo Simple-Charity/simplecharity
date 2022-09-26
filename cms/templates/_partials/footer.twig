@@ -1,0 +1,199 @@
+{% set pagesThatEndWithALightGreenBanner = ['donate','chapter','philosophy'] %}
+
+{% set slug = craft.app.request.getSegment(1) %}
+
+{% if slug in pagesThatEndWithALightGreenBanner %}
+    {% set bgc = "bg-linen" %}
+{% else %}
+    {% set bgc = "bg-lightgreen" %}
+{% endif %}
+
+{% set main = craft.entries.slug('site-wide-assets').one() %}
+{% set navItems = main.navigationItems.all() %}
+
+{% set cats = [] %}
+
+{% for item in navItems %}
+    {% if "footer" in item.displayArea and item.category.value not in cats %}
+        {% set cats = cats|merge([item.category.value]) %}
+    {% endif %}
+{% endfor %}
+
+
+<footer class="{{bgc}} edge relative z-10">
+    <div class="max-w-screen-2xl mx-auto">
+
+        {# Mobile Layout #}
+
+        <div class="sm:hidden">
+            <div class="w-full pb-8">
+                <div class="flex items-center justify-between">
+                    <a class="inline" href="{{ siteUrl }}">
+                        {{ svg('@webroot/img/site/SC_masthead.svg')|attr({class:'inline transition-all hover:opacity-75 fill-current w-28 text-blue'}) }}
+                    </a>
+                    <div class="flex">
+                        {% for sm_icon in main.socialMediaIcons.all() %}
+                            <a href="{{ sm_icon.socialMediaLink }}"><img class="w-6 h-6 mr-2" src="{{ sm_icon.socialMediaIconDark.one().getUrl() }}" alt=""></a> 
+                        {% endfor %}
+                    </div>
+                </div>
+                <p class="pt-10 pb-4 text-lg block leading-relaxed">
+                    {{ main.missionStatement|striptags }}
+                </p>
+            </div>
+            <div class="w-full">
+                {% for item in cats %}
+                    <div class="flex pb-6">
+                        <div class="w-[45%] min-w-[45%]">
+                            <h1 class="border-b-2 text-blue font-semibold text-xl mb-4">{{ item|title }}</h1>
+                        </div>
+                        <div class="pt-[1.47rem] font-sans text-sm">
+                            <ul>
+                                {% for navItem in navItems %}
+                                    {% if item == navItem.category.value and "footer" in navItem.displayArea  %}
+
+                                        {% switch navItem.type %}
+                                            {% case "navigationItem" %}
+                                                {% set target = navItem.targetPage.one().url %}
+                                            {% case "externalItem" %}
+                                                {% set target = navItem.externalUrl %}
+                                        {% endswitch %}
+                                        
+                                        <a href="{{ target }}"><li class="pb-1 pl-2 whitespace-nowrap">{{ navItem.itemName }}</li></a>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                {% endfor %}
+                <div class="flex items-center">
+                    <div class="w-[45%]">
+                        <h1 class="text-blue font-semibold text-xl py-4">{{ main.newsletterHeader|title }}</h1>
+                    </div>
+                    <button class="pl-2">
+                        <a href="{{ main.newsletterSignupLink }}">
+                            <div class="bluebutton h-[2rem] px-8 text-lightergreen">
+                                Sign up
+                            </div>
+                        </a>
+                    </button>
+                </div>
+                <p class="pb-6 text-sm leading-relaxed">{{ main.newsletterCopy }}</p>  
+                <div class="flex mt-6">
+                    <div class="pb-6 w-[90%]">
+                        {% for button in main.footerRedButtons.all %}
+                            <div class="pb-4">
+                                <span class="hover:cursor-pointer border-b-2 border-red">
+                                    <a href="{% if button.buttonInternalReference.one()|length %}{{ button.buttonInternalReference.one().url }}{% else %}{{ button.buttonExternalReference }}{% endif %}">
+                                        <span class="text-red tracking-wider border-b-2 font-semibold border-red">{{ button.buttonText|upper }}</span><br>
+                                    </a>
+                                </span>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="w-full">
+                        <div class="text-xs">
+                            <p class="pb-4">EIN: {{ main.simpleCharityEin }}</p>
+
+
+                            <div class="pb-4">
+                                <p class="text-xs">{{ main.simpleCharityAddress.one().addressLine1 }}</p>
+                                <p class="text-xs">{{ main.simpleCharityAddress.one().addressLine2 }}</p>
+                                <p class="text-xs">{{ main.simpleCharityAddress.one().addressLine3 }}</p>
+                            </div>
+
+                            <div class="pb-4">
+                                {% for doc in main.complianceDocuments.all() %}
+                                    <a class="text-xs block" target="_blank" href="{{ doc.documentLink }}">{{ doc.documentName }}</a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        {# Desktop Layout #}
+
+        <div class="hidden sm:flex flex-wrap">
+            <div class="w-1/2 pb-8 sm:pr-12 lg:pr-20">
+                <div class="flex items-center justify-between sm:block">
+                    <a class="inline" href="{{ siteUrl }}">
+                        {{ svg('@webroot/img/site/SC_masthead.svg')|attr({class:'inline transition-all hover:opacity-75 fill-current w-28 sm:w-32 lg:w-40 md:mx-auto lg:m-0 text-blue'}) }}
+                    </a>
+                </div>
+                <p class="pt-10 pb-4 text-lg md:text-lg lg:text-xl block leading-relaxed">
+                    {{ main.missionStatement|striptags }}
+                </p>
+                <div class="flex my-16 ml-[-.1rem]">
+                    {% for sm_icon in main.socialMediaIcons.all() %}
+                        <a href="{{ sm_icon.socialMediaLink }}"><img class="w-8 h-8 mr-2" src="{{ sm_icon.socialMediaIconDark.one().getUrl() }}" alt=""></a> 
+                    {% endfor %}
+                </div>
+                <div class="pb-6">
+                    {% for button in main.footerRedButtons.all %}
+                        <div class="pb-4">
+                            <span class="hover:cursor-pointer border-b-2 border-red">
+                                <a href="{% if button.buttonInternalReference.one()|length %}{{ button.buttonInternalReference.one().url }}{% else %}{{ button.buttonExternalReference }}{% endif %}">
+                                    <span class="text-red tracking-wider border-b-2 font-semibold border-red">{{ button.buttonText|upper }}</span><br>
+                                </a>
+                            </span>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="text-sm">
+                    <p class="pb-4">EIN: {{ main.simpleCharityEin }}</p>
+                    <div class="pb-4">
+                        <p class="text-sm">{{ main.simpleCharityAddress.one().addressLine1 }}</p>
+                        <p class="text-sm">{{ main.simpleCharityAddress.one().addressLine2 }}</p>
+                        <p class="text-sm">{{ main.simpleCharityAddress.one().addressLine3 }}</p>
+                    </div>
+                    <div class="pb-4">
+                        {% for doc in main.complianceDocuments.all() %}
+                            <a class="text-sm block" target="_blank" href="{{ doc.documentLink }}">{{ doc.documentName }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="sm:grid sm:grid-cols-2 w-1/2">
+                {% for item in cats %}
+                    <div class="flex sm:block lg:pr-10 pb-6 sm:pb-4 lg:mr-12">
+                        <div class="w-[45%] min-w-[45%] sm:w-auto sm:min-w-none mr-2 sm:mr-0">
+                            <h1 class="border-b-2 sm:border-none text-blue font-semibold text-xl lg:text-xl xl:text-2xl mb-4 ">{{ item|title }}</h1>
+                        </div>
+                        <div class="pt-[1.47rem] sm:pt-0 font-sans text-sm sm:text-[10pt] md:text-[11pt] lg:text-[12pt] xl:text-lg">
+                            <ul>
+                                {% for navItem in navItems %}
+                                    {% if item == navItem.category.value and "footer" in navItem.displayArea  %}
+                                        {% switch navItem.type %}
+                                            {% case "navigationItem" %}
+                                                {% set target = navItem.targetPage.one().url %}
+                                            {% case "externalItem" %}
+                                                {% set target = navItem.externalUrl %}
+                                        {% endswitch %}
+                                        <a href="{{ target }}"><li class="pb-1 whitespace-nowrap">{{ navItem.itemName }}</li></a>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                {% endfor %}
+                <div class="sm:col-span-2">
+                    <div class="flex items-center">
+                        <div class="w-[45%] sm:w-auto">
+                            <h1 class="text-blue font-semibold text-xl lg:text-xl xl:text-2xl py-4 sm:py-6">{{ main.newsletterHeader|title }}</h1>
+                        </div>
+                    </div>
+                    <p class="pb-6 text-sm sm:text-[10pt] md:text-[11pt] lg:text-[12pt] xl:text-lg leading-relaxed sm:w-3/4">{{ main.newsletterCopy }}</p>
+                    <button class="pl-2 sm:pl-0">
+                        <a href="{{ main.footerSignUpButton.one().buttonReference }}">
+                            <div class="bluebutton text-lightergreen">
+                                {{ main.footerSignUpButton.one().buttonText }}
+                            </div>
+                        </a>
+                    </button>
+                </div>
+            </div> 
+        </div>
+    </div>
+</footer>

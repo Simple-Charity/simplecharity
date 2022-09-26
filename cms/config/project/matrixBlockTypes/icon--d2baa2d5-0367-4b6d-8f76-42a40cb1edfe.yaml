@@ -1,0 +1,83 @@
+field: ea703e4f-5f99-4ddd-88e0-56ec3502494a # SC Icons
+fieldLayouts:
+  f03dd13d-51b3-4adb-ba1d-8fff0f421279:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 100cab40-4c4d-413a-8aac-e57f02ad1c2b # Icon Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 97cb017f-6d32-4bf0-ae0d-b11397163644 # Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  97cb017f-6d32-4bf0-ae0d-b11397163644: # Icon
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: icon
+    instructions: ''
+    name: Icon
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  100cab40-4c4d-413a-8aac-e57f02ad1c2b: # Icon Name
+    columnSuffix: ljrfsafm
+    contentColumnType: text
+    fieldGroup: null
+    handle: iconName
+    instructions: ''
+    name: 'Icon Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: icon
+name: Icon
+sortOrder: 1

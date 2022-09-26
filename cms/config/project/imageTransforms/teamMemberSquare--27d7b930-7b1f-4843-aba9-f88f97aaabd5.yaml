@@ -1,0 +1,9 @@
+format: null
+handle: teamMemberSquare
+height: 800
+interlace: none
+mode: crop
+name: 'Team Member Square'
+position: center-center
+quality: null
+width: 800

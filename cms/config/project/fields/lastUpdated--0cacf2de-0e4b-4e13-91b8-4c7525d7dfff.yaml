@@ -1,0 +1,17 @@
+columnSuffix: null
+contentColumnType: datetime
+fieldGroup: 266c6678-9669-488e-82b7-68601833935a # About
+handle: lastUpdated
+instructions: 'Enter the date the current monthly core giving was last updated.'
+name: 'Last Updated'
+searchable: true
+settings:
+  max: null
+  min: '2021-02-01T00:00:00-05:00'
+  minuteIncrement: '30'
+  showDate: true
+  showTime: false
+  showTimeZone: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Date

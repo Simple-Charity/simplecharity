@@ -1,0 +1,159 @@
+field: eb4b0a5c-ec8c-4c06-a6a4-c5f5f1a2d047 # Info Cards 
+fieldLayouts:
+  2db5d612-dab7-4478-879d-88b48cbb8fca:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 46ecc13c-116c-43e6-91f8-6e9686958eae # Primary Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: bd70bf1a-7369-4326-8292-15c78644287d # Secondary Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f5e01fe1-0eb3-4014-bba4-c54e2393d631 # Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: bb8d4bb9-522f-4b7c-9908-983dc99d54cc # Button Slug
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 504dbfeb-fe5a-45d3-add1-6909303dfcb7 # Background Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  46ecc13c-116c-43e6-91f8-6e9686958eae: # Primary Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: primaryText
+    instructions: ''
+    name: 'Primary Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  504dbfeb-fe5a-45d3-add1-6909303dfcb7: # Background Color
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: backgroundColor
+    instructions: ''
+    name: 'Background Color'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  bb8d4bb9-522f-4b7c-9908-983dc99d54cc: # Button Slug
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttonSlug
+    instructions: ''
+    name: 'Button Slug'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  bd70bf1a-7369-4326-8292-15c78644287d: # Secondary Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: secondaryText
+    instructions: ''
+    name: 'Secondary Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  f5e01fe1-0eb3-4014-bba4-c54e2393d631: # Button Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: ''
+    name: 'Button Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: card
+name: Card
+sortOrder: 1

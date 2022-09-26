@@ -1,0 +1,18 @@
+columnSuffix: null
+contentColumnType: text
+fieldGroup: 89aa3733-252b-4632-adcb-8f2be00aaae1 # Stories Category
+handle: storiesCategoryTextColor
+instructions: 'Choose the dominate text color to use for this category.'
+name: 'Stories Category Text Color'
+searchable: false
+settings:
+  allowCustomColor: false
+  allowOpacity: false
+  colorFormat: auto
+  paletteBaseColors: null
+  paletteColors: ''
+  presetId: '1'
+  presetMode: false
+translationKeyFormat: null
+translationMethod: none
+type: fruitstudios\colorit\fields\ColoritField

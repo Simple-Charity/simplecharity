@@ -1,0 +1,5 @@
+allowPublicRegistration: true
+defaultGroup: b8c1a6e1-7352-456f-a435-847846cb3c10 # Simple Charity Users
+photoSubpath: ''
+photoVolumeUid: 7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d # Site
+requireEmailVerification: true

@@ -1,0 +1,67 @@
+field: fa0a1f6b-f626-432c-8fbc-d361a3ce1cf7
+fieldLayouts:
+  1de2d814-9b1f-4504-ab11-14e4ba38504f:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 60df2f7f-f012-4cf7-87cd-0ed206992865 # Heading
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9dd7b321-00a4-4482-a9d5-15c37f5ac7fe # Large Paragraphs
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  9dd7b321-00a4-4482-a9d5-15c37f5ac7fe: # Large Paragraphs
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: largeParagraphs
+    instructions: ''
+    name: 'Large Paragraphs'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  60df2f7f-f012-4cf7-87cd-0ed206992865: # Heading
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: ''
+    name: Heading
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText

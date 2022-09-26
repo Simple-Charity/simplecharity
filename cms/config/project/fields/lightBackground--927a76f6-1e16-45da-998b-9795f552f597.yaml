@@ -1,0 +1,14 @@
+columnSuffix: aamkrbwa
+contentColumnType: boolean
+fieldGroup: 266c6678-9669-488e-82b7-68601833935a # About
+handle: lightBackground
+instructions: 'Does the page have a light background? This will affect the page header and footer.'
+name: 'Light Background'
+searchable: false
+settings:
+  default: true
+  offLabel: 'No'
+  onLabel: 'Yes'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

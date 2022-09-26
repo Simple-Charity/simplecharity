@@ -1,0 +1,76 @@
+field: 82da0b2a-882e-4544-8995-92ec1607efbf # Mission Full Text
+fieldLayouts:
+  8993e8f0-5922-487d-adfc-8647d3c5a2da:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: a7fe0148-8b00-4460-a902-c3df1fb3cba1 # Overlay Title
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c76751a8-3111-4cda-a171-fd618e00d0f3 # Text
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  a7fe0148-8b00-4460-a902-c3df1fb3cba1: # Overlay Title
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: overlayTitle
+    instructions: ''
+    name: 'Overlay Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c76751a8-3111-4cda-a171-fd618e00d0f3: # Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Paragraphs.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field

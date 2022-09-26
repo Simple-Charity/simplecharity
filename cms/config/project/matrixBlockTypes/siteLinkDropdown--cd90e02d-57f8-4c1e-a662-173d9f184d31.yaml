@@ -1,0 +1,41 @@
+field: 96aa5e33-5392-4f29-84b8-97fea9f6d69d # Partner Dropdowns
+fieldLayouts:
+  f0b29892-16b4-4722-b0e1-7ae5a8fe4b5c:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: a328b612-4d50-40e8-bd65-46da54763177 # Dropdown Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  a328b612-4d50-40e8-bd65-46da54763177: # Dropdown Title
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: dropdownTitle
+    instructions: ''
+    name: 'Dropdown Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: Homepage
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: siteLinkDropdown
+name: 'Site Link Dropdown'
+sortOrder: 4

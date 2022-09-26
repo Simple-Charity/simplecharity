@@ -1,0 +1,61 @@
+fieldLayouts:
+  e94655d4-acfc-4aba-af51-31c7a578c5fb:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\AssetTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: f61a4ddd-c861-4510-bfb4-2f6252b46159 # Image Caption
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: blog
+hasUrls: true
+name: Blog
+settings:
+  addSubfolderToRootUrl: true
+  autoFocalPoint: ''
+  bucket: simple-charity
+  bucketSelectionMode: choose
+  cfDistributionId: $CLOUDFRONT_URL
+  cfPrefix: ''
+  expires: '30 days'
+  keyId: $S3_KEY_ID
+  makeUploadsPublic: ''
+  region: us-east-2
+  secret: $S3_SECRET
+  storageClass: ''
+  subfolder: site/blog
+sortOrder: 8
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+type: craft\awss3\Volume
+url: $CLOUDFRONT_URL

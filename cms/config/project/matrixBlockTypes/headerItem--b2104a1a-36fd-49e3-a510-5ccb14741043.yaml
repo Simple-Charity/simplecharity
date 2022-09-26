@@ -1,0 +1,101 @@
+field: 7644c07f-9f4e-4dab-b534-6a19e8cdb63e # Header Items
+fieldLayouts:
+  a6e02a05-b396-4c2e-9fda-fcd09cbac78c:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 2442a8ff-d47a-4f48-a334-a3cfa55bb07b # Item Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a363d579-386d-45c0-87df-0238f9368c14 # Item Reference
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0a10fc4e-d3e0-4f83-ab19-0624eb8f1a7f # External Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  0a10fc4e-d3e0-4f83-ab19-0624eb8f1a7f: # External Link
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: externalLink
+    instructions: 'Fill this out only if there is no internal reference. '
+    name: 'External Link'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  2442a8ff-d47a-4f48-a334-a3cfa55bb07b: # Item Name
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemName
+    instructions: ''
+    name: 'Item Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a363d579-386d-45c0-87df-0238f9368c14: # Item Reference
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemReference
+    instructions: ''
+    name: 'Item Reference'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: headerItem
+name: 'Header Item'
+sortOrder: 1

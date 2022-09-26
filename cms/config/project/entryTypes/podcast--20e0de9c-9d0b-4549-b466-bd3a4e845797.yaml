@@ -1,0 +1,321 @@
+fieldLayouts:
+  f522b421-4bf7-41b8-9fd9-a3941537015a:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+        name: Intro
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 7a633eca-bfc2-4150-9029-8866716a9600 # Page Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a15632d6-3fd3-4b9c-b1a5-89468da17a82 # Page Status
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 927a76f6-1e16-45da-998b-9795f552f597 # Light Background
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Page Data'
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: a3c41f31-66e6-4334-ba83-b9adf1d92ad3 # Podcast Page Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 39a34b14-4750-4b97-ab09-cbb4b9b231e6 # Podcast Page Subtitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 34653e60-0b03-49a2-9326-78d3aeb69815 # Tribal Pattern
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e7f0719a-8f15-4a2a-91c9-1d086575ff14 # Two Coins Main Art
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ff0ca01f-73f5-49b7-923f-c9808835ce7e # Blue Wave One
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 1: Header'
+        sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: 42b86188-6a7b-4fec-9436-a98389ef2d97 # Waveform Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 2: Waveform'
+        sortOrder: 4
+      -
+        elements:
+          -
+            fieldUid: 780a4832-29d8-4862-8173-8d76b264ce36 # Yellow Wave One
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b784d4d5-89c1-4cfd-8567-3813f30e6e32 # Podcast Cards
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 3: Storytelling'
+        sortOrder: 5
+      -
+        elements:
+          -
+            fieldUid: 29e6be9d-cc9f-4b63-909e-c04f5b2a9b9a # Podcast Episodes Banner Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: fa456c16-e228-4d2e-a30e-8d1e19737ed8 # Season One
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 4: Episodes'
+        sortOrder: 6
+      -
+        elements:
+          -
+            fieldUid: c70ab99d-8d3f-423f-bbc9-13f925f70e89 # Podcast Featured Testimonial
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4a8b9b05-085d-4268-ba7c-c6981afdf494 # Podcast Externals
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 322da581-68db-4999-a3f5-bd0517031909 # Yellow Wave 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 5: Featured Review'
+        sortOrder: 7
+      -
+        elements:
+          -
+            fieldUid: 92f3cbc3-1034-4da7-9a71-cf776cb99588 # Team Photo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 6: This is Two Coins'
+        sortOrder: 8
+      -
+        elements:
+          -
+            fieldUid: 15f8519a-b1fb-4c3e-a304-7d7f4f1f7ccc # Podcast About Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d5262d58-036f-4bd8-898c-a73b6f4fe4cf # Podcast About Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b7c1aaa6-52eb-4170-a794-80f380e11696 # Podcast Team
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 7: About Us'
+        sortOrder: 9
+      -
+        elements:
+          -
+            fieldUid: 2fcab67f-d14d-4402-ad34-8eb7e7500be3 # Podcast Reviews Banner Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d43861c3-1571-4dd5-a703-88e5bceacef4 # Blue Wave 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 60248cf4-38ba-46a2-9837-6fef5ea7d97d # Yellow Waveform
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1c0e13e8-3a49-4155-9c36-39259bed1d61 # Podcast Testimonials
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 8: Reviews'
+        sortOrder: 10
+      -
+        elements:
+          -
+            fieldUid: 3f67972d-4935-4a42-97d1-1dde8fcef588 # Podcast Experts Banner Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: dd94008c-c434-445b-99b4-4bd745b9281b # Experts
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ecc1944d-06a2-4221-9d9a-12e452d1f283 # Yellow Wave 3
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 9: Experts'
+        sortOrder: 11
+handle: podcast
+hasTitleField: false
+name: Podcast
+section: 5230dc1d-c1c0-40f2-bcab-796e7015580a # Podcast
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
