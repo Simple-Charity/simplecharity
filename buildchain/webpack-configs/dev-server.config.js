@@ -21,7 +21,9 @@ module.exports = (type = 'modern', settings) => {
             },
             firewall: false,
             headers: {
-                'Access-Control-Allow-Origin': '*'
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Origin': 'http://127.0.0.1:8000',
+
             },
             host: settings.host(),
             hot: true,
