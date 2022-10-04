@@ -96,10 +96,11 @@
 
             {% set sq1 = entry.internshipSquiggle0.one() %}
 
-
-            <div class="absolute -bottom-12 -left-32 md:-left-12 w-[25rem]">
-                <img class="" src="{{ sq1.getUrl() }}" alt="">
-            </div>
+            {% if false %}
+                <div class="absolute -bottom-12 -left-32 md:-left-12 w-[25rem]">
+                    <img class="" src="{{ sq1.getUrl() }}" alt="">
+                </div>
+            {% endif %}
         </div>
     </div>
     
