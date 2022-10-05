@@ -1,4 +1,4 @@
-baseUrl: $SITE_URL
+baseUrl: https://simplecharity.org
 enabled: true
 handle: default
 hasUrls: true
