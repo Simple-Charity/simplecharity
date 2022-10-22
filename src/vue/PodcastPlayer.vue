@@ -1,10 +1,15 @@
 <template>
-    <div class="hidden md:block">
+    <div class="">
         <!--Need to build a modal transcript viewer for small screens-->
-        <div class="pb-6">
-            <h1 class="text-blue text-2xl font-bold">Read the transcript</h1>
+        <div class="pb-6 hidden md:block">
+            <h1  class="text-blue text-2xl font-bold">Read the transcript</h1>
         </div>
-        <div class="h-[45rem] overflow-hidden relative rounded-lg bg-linen">
+        <div class="md:hidden">
+            <div v-on:click="launchTranscriptModal()" class="bluebutton hover:cursor-pointer max-w-[20rem] mx-auto">
+                Read the transcript
+            </div>
+        </div>
+        <div class="h-[45rem] overflow-hidden relative rounded-lg bg-linen hidden md:block">
             <div class="absolute left-0 right-0 top-0 h-[5rem] bg-linen z-20 flex justify-center items-center">
                 <div class="h-[2.5rem] w-full relative">
                     <input v-model="searchTerm" class="absolute inset-0 border-b-2 ml-12 mr-[3.15rem] border-blue text-lg" type="text" placeholder="Search">
@@ -13,7 +18,7 @@
                     </div>
                 </div>
             </div>
-            <div id="transcriptviewer" class="w-full h-[40rem] overflow-y-scroll bg-linen pl-12 pr-10 pt-4 relative mt-20 rounded-b-lg">
+            <div id="transcriptviewer" class="w-full h-[40rem] overflow-y-scroll bg-linen pl-6 md:pl-12 pr-4 md:pr-10 pt-4 relative mt-20 md:rounded-b-lg">
             
                 <div class="pb-8" v-for="transcriptBlock in selectedTranscriptBlocks">
                     <div class="flex items-center justify-between pb-2">
@@ -31,7 +36,38 @@
                         </div>
                     </div>
                 
-                    <div class="text-blue text-lg pl-14">
+                    <div class="text-blue text-lg md:pl-14">
+                        {{ transcriptBlock.text }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div :class="{ 'z-[-50] opacity-[0]': !transcriptModalOpen, 'z-[1000] opacity-[1]': transcriptModalOpen }" class="md:hidden overflow-hidden fixed inset-0 z-[-50] opacity-[0]  md:relative md:rounded-lg bg-linen">
+            <div v-on:click="deactivateTranscriptModal()" class="absolute top-4 right-4 w-8 h-8 z-[60] hover:cursor-pointer">
+                <h2 class="text-blue text-3xl font-bold">&#10005;</h2>
+            </div>
+            <div id="transcriptviewer" class="w-full h-full overflow-y-scroll bg-linen pl-6 pr-4 py-10 relative md:rounded-b-lg">
+            
+                <div class="pb-8" v-for="transcriptBlock in selectedTranscriptBlocks">
+                    <div class="flex items-center justify-between pb-4">
+                        <div class="flex items-center">
+                            <div class="pr-4">
+                                <img class="h-10 w-10 rounded-full" :src="transcriptBlock.speakerHeadshot" alt="HS">
+                            </div>
+                            <div class="text-blue text-lg font-bold">
+                                {{ transcriptBlock.speakerName }}
+                            </div>
+                        </div>
+                    
+                        <div class="text-blue text-lg opacity-[0.38]">
+                            {{ transcriptBlock.timestamp }}
+                        </div>
+                    </div>
+                
+                    <div class="text-blue text-md md:pl-14 leading-6">
                         {{ transcriptBlock.text }}
                     </div>
                 </div>
@@ -50,12 +86,19 @@
             return {
                 searchTerm: "",
                 transcriptBlocks: this.transcript,
+                transcriptModalOpen: false,
             } 
         },
 
         methods: {
             resetSearch() {
                 this.searchTerm = "";
+            },
+            launchTranscriptModal() {
+                this.transcriptModalOpen = true;
+            },
+            deactivateTranscriptModal() {
+                this.transcriptModalOpen = false;
             }
         },
         computed: {
