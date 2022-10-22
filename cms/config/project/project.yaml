@@ -1,4 +1,4 @@
-dateModified: 1666382665
+dateModified: 1666441474
 email:
   fromEmail: $SES_EMAIL
   fromName: $SES_FROM
@@ -532,6 +532,7 @@ meta:
     af1a173c-1914-4742-93ad-2c314db525d5: 'Button Reference' # Button Reference
     af1b583a-1963-4dae-8fb5-ffc663e80a3d: Text # Text
     af5e8b90-a2b3-40ee-8aab-1a12d4daea65: 'Support Icon' # Support Icon
+    b1add138-12b0-48d8-924d-c362482d4e30: 'Person Type' # Person Type
     b1f7a83b-3612-4f8a-9aaa-9a8a792dc88c: 'Stories Category Color' # Stories Category Color
     b1f58be3-d9fb-48fc-8e44-d83a9ec26cc3: 'Mission Promo Photo' # Mission Promo Photo
     b3fb0610-6be1-43e3-a0a9-03af2d21be96: 'Cell Image' # Cell Image

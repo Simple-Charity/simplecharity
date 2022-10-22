@@ -1,0 +1,68 @@
+columnSuffix: hffjlzrg
+contentColumnType: string
+fieldGroup: 266c6678-9669-488e-82b7-68601833935a # About
+handle: personType
+instructions: ''
+name: 'Person Type'
+searchable: false
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Staff
+        -
+          - value
+          - staff
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Board of Directors'
+        -
+          - value
+          - boardOfDirectors
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Advisory Board'
+        -
+          - value
+          - advisoryBoard
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Podcast Interviewee'
+        -
+          - value
+          - podcastInterviewee
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Other
+        -
+          - value
+          - other
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown
