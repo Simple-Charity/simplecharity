@@ -1,0 +1,14 @@
+columnSuffix: hbpptamp
+contentColumnType: boolean
+fieldGroup: 266c6678-9669-488e-82b7-68601833935a # About
+handle: transcriptActive
+instructions: 'Display a transcript (if one is available) on this podcast entry?'
+name: 'Transcript Active'
+searchable: false
+settings:
+  default: false
+  offLabel: 'No'
+  onLabel: 'Yes'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

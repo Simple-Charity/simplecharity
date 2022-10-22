@@ -9,7 +9,7 @@
 {% endblock headLinks %}
 
 {% set transcriptAvailable = true %}
-{% if entry.podcastTranscript.all()|length %}
+{% if entry.podcastTranscript.all()|length and entry.transcriptActive %}
     {% set transcript = [] %}
     {% set blocksPerSuperblock = 3 %}
     {% set i = 0 %}

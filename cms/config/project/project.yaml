@@ -1,4 +1,4 @@
-dateModified: 1666441474
+dateModified: 1666442441
 email:
   fromEmail: $SES_EMAIL
   fromName: $SES_FROM
@@ -73,6 +73,7 @@ meta:
     03f2dc36-27a7-46c9-b02d-e9f94c129600: Philosophy # Philosophy
     3f69d429-17b1-4f68-b67b-7aef1fd4dc86: 'Icon Blue Outline' # Icon Blue Outline
     3f737a61-b331-44cc-8630-575289df2601: Countries # Countries
+    3f4796cc-bfec-4fe3-b6cb-f7d8e04b4131: 'Transcript Active' # Transcript Active
     3f67972d-4935-4a42-97d1-1dde8fcef588: 'Podcast Experts Banner Header' # Podcast Experts Banner Header
     4a8b9b05-085d-4268-ba7c-c6981afdf494: 'Podcast Externals' # Podcast Externals
     4ae7dade-937e-4dfc-8e70-70973e3833f8: 'Monthly Amount Raised' # Monthly Amount Raised
