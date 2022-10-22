@@ -1,0 +1,109 @@
+field: a9906eff-f12c-4717-b737-a295dfa458d8 # Podcast Transcript
+fieldLayouts:
+  d61370dd-c5bb-4785-bf67-f59ad4287268:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 9c1d0a29-21c7-42ee-a2c1-0c3c7d7360d1 # Timestamp
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 68dfcf5a-e844-44c3-8eff-93cacf81615e # Speaker
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1870f9e6-a2af-4b6e-bfc5-d052d8d1c275 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  9c1d0a29-21c7-42ee-a2c1-0c3c7d7360d1: # Timestamp
+    columnSuffix: wepechem
+    contentColumnType: text
+    fieldGroup: null
+    handle: timestamp
+    instructions: ''
+    name: Timestamp
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  68dfcf5a-e844-44c3-8eff-93cacf81615e: # Speaker
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: speaker
+    instructions: ''
+    name: Speaker
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: false
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  1870f9e6-a2af-4b6e-bfc5-d052d8d1c275: # Text
+    columnSuffix: yswrmfex
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: transcriptSection
+name: 'Transcript Section'
+sortOrder: 1

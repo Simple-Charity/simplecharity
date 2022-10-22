@@ -1,4 +1,4 @@
-dateModified: 1664293773
+dateModified: 1666382665
 email:
   fromEmail: $SES_EMAIL
   fromName: $SES_FROM
@@ -16,6 +16,7 @@ meta:
     0b5315f5-9f03-4c6e-8f86-75e57495d62d: Home # Home
     0c8e18d6-a2e3-4367-90aa-b4c69a5eba4b: 'Team Member Longer Bio' # Team Member Longer Bio
     0c65e01e-98b0-4db1-ada2-e3708f2dad9a: 'Podcast Art Optimize' # Podcast Art Optimize
+    0c4846f4-5db6-4853-918b-92b32693236b: 'Transcript Section' # Transcript Section
     0c566290-11e0-4f22-9ac9-3ca9d3decd39: 'Episode Art' # Episode Art
     0cacf2de-0e4b-4e13-91b8-4c7525d7dfff: 'Last Updated' # Last Updated
     0d8f160a-b1e3-4be3-85ee-654fc07d937d: 'Team Member' # Team Member
@@ -24,6 +25,7 @@ meta:
     0f1d9fac-f684-4d07-8be6-850f2272757d: 'Cause Icons' # Cause Icons
     0f84852c-0852-469a-877e-42ab02751c54: 'Chapter Sprout' # Chapter Sprout
     0f93676b-20d0-4cf7-b83e-58f339ce9e3a: 'Summary Text' # Summary Text
+    1a9ab162-c12a-4491-bd43-65eff31adcba: People # People
     1b0533df-4b1a-44df-95a7-3b24062474ad: 'Item Description' # Item Description
     1b3dbf44-62af-4c60-98fb-1647e2f62a90: College # College
     1ba99be8-6267-40cf-a5e8-6e9dc5b5d264: 'Stat 2019' # Stat 2019
@@ -163,6 +165,7 @@ meta:
     8f76022a-df87-43cc-a9b9-aabd6c0def19: Text # Text
     8faf9072-1971-4266-9a2b-8f363288cb81: 'Item Icon Secondary' # Item Icon Secondary
     9a8b53e0-d059-4cc2-a8c8-a7d9ae41e68c: 'Icon Color' # Icon Color
+    9a9bd860-2cbd-4841-a53d-45e54fb711df: 'Person Headshot' # Person Headshot
     9a70a911-c438-4f3e-a2da-cd3e9b9aafee: 'Internship Squiggle 2' # Internship Squiggle 2
     9a814fcc-af5c-4283-9a7a-b9868bf252dd: 'Newsletter Copy' # Newsletter Copy
     9ac983f7-c715-4df5-a769-4a6a89ec1ac5: 'Why We Trust Them Header' # Why We Trust Them Header
@@ -171,6 +174,7 @@ meta:
     09bc9600-accc-495c-ad30-abef9a8f0968: Heading # Heading
     9c0b961d-e12c-4301-a3de-748129a32867: 'Cause Area' # Cause Area
     9c051f34-07ac-45aa-be8b-5b68c079a7f7: 'Table Data' # Table Data
+    9c1d0a29-21c7-42ee-a2c1-0c3c7d7360d1: Timestamp # Timestamp
     9c7ee0af-02a0-400a-90db-3d434fc0a2f4: 'South Asia' # South Asia
     9c87ef93-8c69-496a-9475-5358a97fb1e7: 'Icon Solid' # Icon Solid
     9caa7b62-2291-4441-8227-18be41eebee6: 'Item Name' # Item Name
@@ -255,6 +259,7 @@ meta:
     62df3d17-f617-4108-8e9c-14cfd20c33d8: 'Currently Accepting Applications' # Currently Accepting Applications
     066d4391-417c-4728-9dbb-3ac06e26e59c: Amount # Amount
     66dc8187-9793-4603-9c29-8c5defa64ac4: 'Application Instructions' # Application Instructions
+    68dfcf5a-e844-44c3-8eff-93cacf81615e: Speaker # Speaker
     68eaa55c-623b-4cb1-b9a8-a896a29ce173: 'Core Name' # Core Name
     69e0bf32-cb37-4055-ba13-26d6065222d3: Countries # Countries
     70ae35b5-fe92-42a1-b832-3a64d669a7bc: 'East Asia & Pacific' # East Asia & Pacific
@@ -366,8 +371,10 @@ meta:
     996be234-025e-4c2f-8619-25992877c1c5: 'Author Short Bio' # Author Short Bio
     998d7ea7-bb8f-4281-a99b-6097fd2967e4: 'Core Beliefs Background Image' # Core Beliefs Background Image
     1718beab-261a-4621-ba27-a60b0f6169e4: 'Overlay Title' # Overlay Title
+    1870f9e6-a2af-4b6e-bfc5-d052d8d1c275: Text # Text
     01987cda-f930-4e1f-99df-6bdd1fddaa3c: 'Large Text' # Large Text
     2188e671-8d1a-4e08-9aff-3c4076303ef1: Paragraphs # Paragraphs
+    2257a1d2-96ee-4acd-82f9-9780190459c1: 'Person Name' # Person Name
     2260e968-2f02-4e39-9c0e-6fa634902419: 'Homepage Start A Club Text' # Homepage Start A Club Text
     2442a8ff-d47a-4f48-a334-a3cfa55bb07b: 'Item Name' # Item Name
     2709bbbc-ac94-4b47-8a50-1612c7622383: 'Cross Icon' # Cross Icon
@@ -449,6 +456,7 @@ meta:
     0772494f-b92f-4074-a339-65e3a912e671: 'Donate Page Hero Text' # Donate Page Hero Text
     815278f2-ff88-40a3-a8e0-60f94693cffd: 'Featured Podcast Episode' # Featured Podcast Episode
     852293a0-2780-40b7-a388-de44cdfd2ea3: 'Charity Evaluation Report' # Charity Evaluation Report
+    1858880f-2901-4008-8801-ca86d92444af: Default # Default
     2472625f-f6bc-4b88-88bc-76a491e367a1: Middle # Middle
     3276197e-0ad1-470c-9006-a9cec2093618: 'Carousel Cell' # Carousel Cell
     3460734b-8b28-4bd3-a2c6-c213effe38e9: Amount # Amount
@@ -497,6 +505,7 @@ meta:
     a6185f63-d25b-40c3-8908-f4731cf179f9: Social # Social
     a7298a3c-8cb2-49ca-a13c-a36d13ca8a76: 'Transformative Icon' # Transformative Icon
     a8592c34-5948-4609-9e54-cd6e4d3d6713: 'About Promo Image 2' # About Promo Image 2
+    a9906eff-f12c-4717-b737-a295dfa458d8: 'Podcast Transcript' # Podcast Transcript
     a15632d6-3fd3-4b9c-b1a5-89468da17a82: 'Page Status' # Page Status
     a41134a7-7305-4eab-a699-85eeed70a2c2: 'Process Bracket 2' # Process Bracket 2
     a44879ea-12d8-4bac-96a8-860f95bd0fae: 'Modal Button Text' # Modal Button Text
@@ -574,6 +583,7 @@ meta:
     bfe522b4-6626-4b81-97ce-0cce4267a16f: 'Step Name' # Step Name
     c04f3b39-ddc8-44c5-aafb-e9073de48ae5: 'Homepage Hero Image 1' # Homepage Hero Image 1
     c1ced48b-72c9-48d0-bcff-592ef5b65a60: Category # Category
+    c2e30f3a-f335-4aad-960c-722722e40b07: 'Person Title' # Person Title
     c3af13d5-16b3-42c5-98b4-7a951164f598: 'Angela Kathia Joy' # Angela Kathia Joy
     c3b1f8ab-2e02-48eb-9139-88656ca3b182: 'Button Slug' # Button Slug
     c3d8e53d-a73e-4912-a16e-2dff005d9bbf: 'Partner Impact' # Partner Impact
@@ -590,6 +600,7 @@ meta:
     c11dbccc-6db1-49f7-bac9-d29548d3dd79: 'Theme Color' # Theme Color
     c18c4374-bd16-4250-8173-c6b8c45f2142: 'Home Faithful Copy' # Home Faithful Copy
     c29c3ac0-6424-4dc7-8a60-1d44e9906725: 'Simple Charity Address' # Simple Charity Address
+    c29fcad8-1400-4c5e-b6e8-baa931d3c48f: 'Long Bio' # Long Bio
     c70ab99d-8d3f-423f-bbc9-13f925f70e89: 'Podcast Featured Testimonial' # Podcast Featured Testimonial
     c129be46-1e6f-4c37-a877-b79649063042: 'Class Names' # Class Names
     c516a434-d927-4504-b29d-7f35c06273c1: 'About Banner 2' # About Banner 2
@@ -689,6 +700,7 @@ meta:
     e30856e5-fcc7-42da-ae6c-514fc2d30672: 'Contact Main Text' # Contact Main Text
     e892303f-f80c-4212-9137-8047a2d4c0f4: 'Newsletter Header' # Newsletter Header
     e1143709-efd8-451f-8abf-1b7c7b994234: 'Story Hero Image' # Story Hero Image
+    e7544278-2a48-4394-9513-2dc5e81dcd98: 'Person Email Address' # Person Email Address
     ea458e0c-0a24-400b-875d-21c6ef64d00c: Quote # Quote
     ea703e4f-5f99-4ddd-88e0-56ec3502494a: 'SC Icons' # SC Icons
     eabb9c1c-d89f-4b47-a047-d46b49617621: 'Partner Featured Image' # Partner Featured Image
@@ -743,6 +755,7 @@ meta:
     fe567d24-5d0b-4a0e-9073-b07d61a82015: 'Secondary Text' # Secondary Text
     fe3762fb-c042-4a4c-98fd-92b834600bea: 'Button Text' # Button Text
     ff0ca01f-73f5-49b7-923f-c9808835ce7e: 'Blue Wave One' # Blue Wave One
+    ffc188d5-68d2-4d02-b195-a66e07c13a46: 'Short Bio' # Short Bio
 plugins:
   amazon-ses:
     edition: standard

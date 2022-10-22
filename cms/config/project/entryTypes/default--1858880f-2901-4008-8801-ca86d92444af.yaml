@@ -1,0 +1,96 @@
+fieldLayouts:
+  a0b577f0-983e-4571-ba98-168337b610b6:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 2257a1d2-96ee-4acd-82f9-9780190459c1 # Person Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c2e30f3a-f335-4aad-960c-722722e40b07 # Person Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9a9bd860-2cbd-4841-a53d-45e54fb711df # Person Headshot
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e7544278-2a48-4394-9513-2dc5e81dcd98 # Person Email Address
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Basic Info'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: ffc188d5-68d2-4d02-b195-a66e07c13a46 # Short Bio
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c29fcad8-1400-4c5e-b6e8-baa931d3c48f # Long Bio
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Bio
+        sortOrder: 2
+handle: default
+hasTitleField: true
+name: Default
+section: 1a9ab162-c12a-4491-bd43-65eff31adcba # People
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,4 +1,4 @@
-baseUrl: https://simplecharity.org
+baseUrl: 'https://simplecharity.org'
 enabled: true
 handle: default
 hasUrls: true

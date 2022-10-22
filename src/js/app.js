@@ -28,6 +28,7 @@ const main = async() => {
             'carousel-quote': () => import('../vue/CarouselQuote.vue'),
             'carousel-review': () => import('../vue/CarouselReview.vue'),
             'partner-drop': () => import('../vue/PartnerDrop.vue'),
+            'podcast-player': () => import('../vue/PodcastPlayer.vue'),
         },
         data: {
             ajaxModal: {

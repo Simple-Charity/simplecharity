@@ -8,46 +8,112 @@
     {{ parent() }}
 {% endblock headLinks %}
 
+{% set transcriptAvailable = true %}
+{% if entry.podcastTranscript.all()|length %}
+    {% set transcript = [] %}
+    {% set blocksPerSuperblock = 3 %}
+    {% set i = 0 %}
+    {% set j = 0 %}
+    {% set temp = [] %}
+
+    {% for podBlock in entry.podcastTranscript.all() %}
+
+        {% set hs = "" %}
+
+        {% if podBlock.speaker.one().personHeadshot %}
+            {% set hs = podBlock.speaker.one().personHeadshot.one().getUrl() %}
+        {% endif %}
+
+        {% set temp = temp|merge([{
+            'timestamp': podBlock.timestamp, 
+            'speakerName': podBlock.speaker.one().personName,
+            'speakerHeadshot': hs,
+            'text': podBlock.text|striptags,
+        }]) %}
+
+        {% set i = i + 1 %}
+        {% set j = j + 1 %}
+        {% if i == blocksPerSuperblock or j == entry.podcastTranscript.all()|length %}
+            {% set transcript = transcript|merge([temp]) %}
+            {% set temp = [] %}
+            {% set i = 0 %}
+        {% endif %}
+    {% endfor %}
+{% else %}
+    {% set transcriptAvailable = false %}
+{% endif %}
+
 {% block contentborderless %}
 
-<div class="edge edge-t">
-    <div class="mx-auto max-w-screen-2xl">
-        <section class="justify-center">
-            <header class="w-full z-10 relative">
-                <a href="{{ craft.entries.slug('podcast').one().url }}" class="hover:text-yellow text-linen"> <p class="header-one text-linen">podcast <span class="tracking-overlap hidden sm:inline">–––––––––</span></p> </a>
-            </header>
-        </section>
+    <div class="edge edge-t md:hidden">
+        <div class="mx-auto max-w-screen-2xl relative">
+            <div class="w-full">
 
-        <section class="justify-center relative bg-deepnavy my-20 sm:mt-10 sm:mb-20">
-            <p class="leading-tight text-2xl sm:text-3xl lg:text-4xl font-semibold mt-26 mb-8 sm:mb-20 text-linen">
-                Episode {{ entry.episodeTitle }}
-            </p>
-            <div class="flex justify-center">
-                <div class="w-full sm:w-3/4 lg:w-1/2 max-w-[50rem] inline-block">
-                    <div class="w-full">
-                        {% set art = entry.episodeArt.one().podcastArtOptimize %}
-                        <picture>
-                            <source data-srcset="{{ art.srcset() }}"
-                                    data-sizes="(min-width: 1280) 25vw, (min-width: 768) 50vw, 100vw"
-                                    type="image/webp"/>
-                            <img src="{{ art.placeholderImage() }}"
-                                data-srcset="{{ art.srcset() }}"
-                                class="lazyload blur-up"
+                <p class="leading-tight text-2xl sm:text-3xl lg:text-4xl font-semibold mt-26 mb-10 text-linen">
+                    Episode {{ entry.episodeTitle }}
+                </p>
+
+                <div class="w-full pb-8">
+                    {% set art = entry.episodeArt.one().podcastArtOptimize %}
+                    <picture>
+                        <source data-srcset="{{ art.srcset() }}"
                                 data-sizes="(min-width: 1280) 25vw, (min-width: 768) 50vw, 100vw"
-                                alt="Episode art"
-                            />
-                        </picture>
-                    </div>
+                                type="image/webp"/>
+                        <img src="{{ art.placeholderImage() }}"
+                            data-srcset="{{ art.srcset() }}"
+                            class="lazyload blur-up"
+                            data-sizes="(min-width: 1280) 25vw, (min-width: 768) 50vw, 100vw"
+                            alt="Episode art"
+                        />
+                    </picture>
+                </div>
+
+                <div class="text-linen text-lg ">
+                    <p> {{ entry.episodeDescription }} </p>
                 </div>
             </div>
-                
-                
-                
+        </div>
+    </div>
 
+    <div class="edge h-screen min-h-[45rem] xl:min-h-[60rem] hidden md:block">
+        <div class="mx-auto max-w-screen-2xl relative h-screen min-h-[45rem] xl:min-h-[60rem]">
+            <div class="flex items-center absolute inset-0 xl:translate-y-[-3rem]">
+                <section class="justify-center flex">
+                    <div class="w-7/12 pr-8 md:pb-10">
+                        <header class="w-full z-10 relative pb-16">
+                            <a href="{{ craft.entries.slug('podcast').one().url }}" class="hover:text-yellow text-linen"> <p class="header-one text-linen">podcast <span class="tracking-overlap hidden sm:inline">–––––––––</span></p> </a>
+                        </header>
+                        <p class="leading-tight text-2xl sm:text-3xl lg:text-4xl font-semibold mt-26 mb-10 text-linen">
+                            Episode {{ entry.episodeTitle }}
+                        </p>
+                        <div class="text-linen text-lg xxl:text-xl">
+                            <p> {{ entry.episodeDescription }} </p>
+                        </div>
+                    </div>
+                    <div class="w-5/12">
+                        <div class="w-full max-w-[50rem] inline-block">
+                            <div class="w-full">
+                                {% set art = entry.episodeArt.one().podcastArtOptimize %}
+                                <picture>
+                                    <source data-srcset="{{ art.srcset() }}"
+                                            data-sizes="(min-width: 1280) 25vw, (min-width: 768) 50vw, 100vw"
+                                            type="image/webp"/>
+                                    <img src="{{ art.placeholderImage() }}"
+                                        data-srcset="{{ art.srcset() }}"
+                                        class="lazyload blur-up"
+                                        data-sizes="(min-width: 1280) 25vw, (min-width: 768) 50vw, 100vw"
+                                        alt="Episode art"
+                                    />
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
 
-        </section>
-
-        <section class="bg-deepnavy">
+        {# <section class="bg-deepnavy">
             <h1 class="section-hero-text font-serif text-linen leading-tight mt-4">
                 {{ entry.episodeHeroText|typogrify }}
             </h1>
@@ -71,16 +137,51 @@
                 <p> {{ entry.episodeDescription }} </p>
             </div>
 
-        </section>
+        </section> #}
 
-        <div class="w-full flex justify-center">
-            <div class="w-full sm:w-3/4 mt-32" id='buzzsprout-small-player-1046077-tags-{{ entry.slug }}'></div><script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/1046077.js?player=small&tags={{ entry.slug }}&container_id=buzzsprout-small-player-1046077-tags-{{ entry.slug }}'></script>
-        
+    <div class="edge bg-green">
+        <div class="mx-auto max-w-screen-2xl">
+            <div class="pb-4 sm:pb-8 w-2/3">
+                <p class="text-xs sm:text-sm lg:text-md text-blue font-semibold tracking-wider">LISTEN</p>
+            </div>
+            
+            <div class="md:flex my-8">
+                <div class="w-full md:w-1/2 md:pr-8">
+                    {% set img = entry.episodeFeatureImage.one().storyImagesOptimize %}
+                    <picture>
+                        <source data-srcset="{{ img.srcset() }}"
+                                data-sizes="(min-width: 1280) 25vw, (min-width: 768) 50vw, 100vw"
+                                type="image/webp"/>
+                        <img src="{{ img.placeholderImage() }}"
+                            data-srcset="{{ img.srcset() }}"
+                            class="lazyload blur-up"
+                            data-sizes="(min-width: 1280) 25vw, (min-width: 768) 50vw, 100vw"
+                            alt="Episode feature image"
+                        />
+                    </picture>
+                </div>
+                <h1 class="w-full md:w-1/2 text-2xl md:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif text-blue leading-tight mt-4 md:mt-0">
+                    {{ entry.episodeHeroText }}
+                </h1>
+            </div>
+            <div class="flex justify-center">
+                <div class="w-[60rem]">
+                    <div class="w-full my-20 md:px-[5.5rem] max-w-[60rem]" id='buzzsprout-small-player-1046077-tags-{{ entry.slug }}'></div><script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/1046077.js?player=small&tags={{ entry.slug }}&container_id=buzzsprout-small-player-1046077-tags-{{ entry.slug }}'></script>
+                    {% if transcriptAvailable %}
+                        <podcast-player :transcript="{{ transcript|json_encode }}"></podcast-player>
+                    {% endif %}
+                </div>
+            </div>
         </div>
-
-
-        <section class="relative bg-deepnavy sm:flex flex-wrap justify-center text-center sm:py-20 max-w-[50rem] mx-auto">
-                <div class="z-10 w-full sm:w-1/2 my-16 sm:mb-2 sm:mt-0">
+    </div>
+        
+    <div class="edge">
+        <div class="mx-auto max-w-screen-2xl">
+            <div class="pb-4 sm:pb-8">
+                <p class="text-xs text-center sm:text-sm lg:text-md text-linen font-semibold tracking-wider">CREDITS</p>
+            </div>
+            <section class="relative text-center sm:py-20 mx-auto">
+                <div class="z-10 w-full my-16 sm:mt-0 sm:mb-16">
                     <p class="text-xl sm:text-2xl lg:text-3xl xl:font-4xl font-bold leading-tight mb-4 text-linen text-xl sm:text-3xl">
                         People Interviewed
                     </p>
@@ -90,7 +191,7 @@
                         {% endfor %}
                     </div>
                 </div>
-                <div class="z-10 w-full sm:w-1/2">
+                <div class="z-10 w-full">
                     <p class="mt-4 sm:mt-0 text-xl sm:text-2xl lg:text-3xl xl:font-4xl font-bold leading-tight mb-4 text-linen text-xl sm:text-3xl">
                     Music
                     </p>
@@ -112,12 +213,66 @@
                         </p>
                     </content-toggle>
                 </div>
-            
-        </section>
+            </section>
+        </div>
+    </div>
 
-        <section class="bg-deepnavy">
+    <div class="edge bg-red">
+        <div class="mx-auto max-w-screen-2xl">
+            <div class="pb-4 sm:pb-8">
+                <p class="text-xs sm:text-sm lg:text-md text-blue font-semibold tracking-wider">HEAR MORE TWO COINS</p>
+            </div>
+            {% set randEpisode = random(craft.entries.section("seasonOne").id("not " ~ entry.id).all()) %}
 
-        <div class="flex flex-wrap justify-center my-20">
+            <div class="md:flex">
+                <div class="w-full md:w-5/12 xl:w-1/3">
+                    <a href="{{ randEpisode.url}}">
+                        <div class="w-full mb-8 relative group overflow-hidden hover:cursor-pointer">
+                            {% set art = randEpisode.episodeArt.one().podcastArtOptimize %}
+                            <picture>
+                                <source data-srcset="{{ art.srcset() }}"
+                                        data-sizes="(min-width: 1280) 25vw, (min-width: 768) 50vw, 100vw"
+                                        type="image/webp"/>
+                                <img src="{{ art.placeholderImage() }}"
+                                    data-srcset="{{ art.srcset() }}"
+                                    class="lazyload blur-up transition ease-in-out duration-300 transform group-hover:scale-105"
+                                    data-sizes="(min-width: 1280) 25vw, (min-width: 768) 50vw, 100vw"
+                                    alt="Episode art"
+                                />
+                            </picture>
+                            <div class="absolute inset-0 bg-deepnavy z-10 opacity-[0] transition-opacity ease-in-out duration-300 transform group-hover:opacity-[0.8]">
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="w-full md:w-7/12 xl:w-2/3 pl-8">
+                    <div class="">
+                        <a href="{{ randEpisode.url}}">
+                            <p class="leading-tight text-2xl sm:text-3xl lg:text-4xl font-semibold mb-10 text-linen underline">
+                                Episode {{ randEpisode.episodeTitle }}
+                            </p>
+                        </a>
+                        <div class="text-linen text-lg mb-10">
+                            <p> {{ randEpisode.episodeDescription }} </p>
+                        </div>
+                    </div>
+                    <div class="w-full hidden md:block">
+                        <h1 class="md:text-3xl lg:text-4xl xl:text-5xl font-serif text-linen leading-tight">
+                            {{ randEpisode.episodeHeroText|typogrify }}
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="edge">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="pb-4 sm:pb-8">
+                <p class="text-xs sm:text-sm lg:text-md text-yellow font-semibold tracking-wider">MORE WAYS TO LISTEN</p>
+            </div>
+            <div class="my-20 w-full flex justify-center flex-wrap">
                 <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDQ2MDc3LnJzcw?sa=X&ved=0CAYQrrcFahcKEwjgkLnbqsTtAhUAAAAAHQAAAAAQAQ"> 
                     <button type="button" class="whitebutton w-[15rem] mx-4 my-2">
                         Listen on Google
@@ -136,15 +291,8 @@
                     </button> 
                 </a>
             </div>
-
-        </section>
+        </div>
     </div>
-    
-</div>
-
-
-
-
 {% endblock %}
 
 {% block subcontent %}

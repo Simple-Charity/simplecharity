@@ -140,6 +140,19 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: a9906eff-f12c-4717-b737-a295dfa458d8 # Podcast Transcript
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Transcript
+        sortOrder: 3
 handle: seasonOne
 hasTitleField: true
 name: 'Season One'
