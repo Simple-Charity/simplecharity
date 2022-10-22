@@ -11,10 +11,6 @@
 {% set transcriptAvailable = true %}
 {% if entry.podcastTranscript.all()|length and entry.transcriptActive %}
     {% set transcript = [] %}
-    {% set blocksPerSuperblock = 3 %}
-    {% set i = 0 %}
-    {% set j = 0 %}
-    {% set temp = [] %}
 
     {% for podBlock in entry.podcastTranscript.all() %}
 
@@ -24,20 +20,13 @@
             {% set hs = podBlock.speaker.one().personHeadshot.one().getUrl() %}
         {% endif %}
 
-        {% set temp = temp|merge([{
+        {% set transcript = transcript|merge([{
             'timestamp': podBlock.timestamp, 
             'speakerName': podBlock.speaker.one().personName,
             'speakerHeadshot': hs,
             'text': podBlock.text|striptags,
         }]) %}
 
-        {% set i = i + 1 %}
-        {% set j = j + 1 %}
-        {% if i == blocksPerSuperblock or j == entry.podcastTranscript.all()|length %}
-            {% set transcript = transcript|merge([temp]) %}
-            {% set temp = [] %}
-            {% set i = 0 %}
-        {% endif %}
     {% endfor %}
 {% else %}
     {% set transcriptAvailable = false %}
@@ -45,13 +34,17 @@
 
 {% block contentborderless %}
 
+    {# BANNER 1: HEADER #}
+
     <div class="edge edge-t md:hidden">
         <div class="mx-auto max-w-screen-2xl relative">
             <div class="w-full">
 
-                <p class="leading-tight text-2xl sm:text-3xl lg:text-4xl font-semibold mt-26 mb-10 text-linen">
-                    Episode {{ entry.episodeTitle }}
-                </p>
+                <vue-typed-js :strings="['{{ entry.episodeTitle }}']" :typeSpeed="3000">
+                    <h1 class="leading-tight text-2xl sm:text-3xl lg:text-4xl font-semibold mt-26 mb-10 text-linen">
+                        Episode <span class="typing"></span>
+                    </h1>
+                </vue-typed-js>
 
                 <div class="w-full pb-8">
                     {% set art = entry.episodeArt.one().podcastArtOptimize %}
@@ -83,9 +76,11 @@
                         <header class="w-full z-10 relative pb-16">
                             <a href="{{ craft.entries.slug('podcast').one().url }}" class="hover:text-yellow text-linen"> <p class="header-one text-linen">podcast <span class="tracking-overlap hidden sm:inline">–––––––––</span></p> </a>
                         </header>
-                        <p class="leading-tight text-2xl sm:text-3xl lg:text-4xl font-semibold mt-26 mb-10 text-linen">
-                            Episode {{ entry.episodeTitle }}
-                        </p>
+                        <vue-typed-js :strings="['{{ entry.episodeTitle }}']" :typeSpeed="3000">
+                            <h1 class="leading-tight text-2xl sm:text-3xl lg:text-4xl font-semibold mt-26 mb-10 text-linen">
+                                Episode <span class="typing"></span>
+                            </h1>
+                        </vue-typed-js>
                         <div class="text-linen text-lg xxl:text-xl">
                             <p> {{ entry.episodeDescription }} </p>
                         </div>
@@ -101,6 +96,7 @@
                                     <img src="{{ art.placeholderImage() }}"
                                         data-srcset="{{ art.srcset() }}"
                                         class="lazyload blur-up"
+                                        data-aos="fade-up" data-aos-duration="1000"
                                         data-sizes="(min-width: 1280) 25vw, (min-width: 768) 50vw, 100vw"
                                         alt="Episode art"
                                     />
@@ -113,31 +109,7 @@
         </div>
     </div>
 
-        {# <section class="bg-deepnavy">
-            <h1 class="section-hero-text font-serif text-linen leading-tight mt-4">
-                {{ entry.episodeHeroText|typogrify }}
-            </h1>
-
-            <div class="w-full my-6 sm:my-20">
-                {% set img = entry.episodeFeatureImage.one().storyImagesOptimize %}
-                <picture>
-                    <source data-srcset="{{ img.srcset() }}"
-                            data-sizes="(min-width: 1280) 25vw, (min-width: 768) 50vw, 100vw"
-                            type="image/webp"/>
-                    <img src="{{ img.placeholderImage() }}"
-                        data-srcset="{{ img.srcset() }}"
-                        class="lazyload blur-up"
-                        data-sizes="(min-width: 1280) 25vw, (min-width: 768) 50vw, 100vw"
-                        alt="Episode feature image"
-                    />
-                </picture>
-            </div>
-
-            <div class="text-linen stories__block--sm-text redactor text-left sm:my-12">
-                <p> {{ entry.episodeDescription }} </p>
-            </div>
-
-        </section> #}
+    {# BANNER 2: LISTEN #}
 
     <div class="edge bg-green">
         <div class="mx-auto max-w-screen-2xl">
@@ -148,7 +120,7 @@
             <div class="md:flex my-8">
                 <div class="w-full md:w-1/2 md:pr-8">
                     {% set img = entry.episodeFeatureImage.one().storyImagesOptimize %}
-                    <picture>
+                    <picture >
                         <source data-srcset="{{ img.srcset() }}"
                                 data-sizes="(min-width: 1280) 25vw, (min-width: 768) 50vw, 100vw"
                                 type="image/webp"/>
@@ -156,6 +128,7 @@
                             data-srcset="{{ img.srcset() }}"
                             class="lazyload blur-up"
                             data-sizes="(min-width: 1280) 25vw, (min-width: 768) 50vw, 100vw"
+                            data-aos="fade-up" data-aos-duration="1000"
                             alt="Episode feature image"
                         />
                     </picture>
@@ -165,8 +138,9 @@
                 </h1>
             </div>
             <div class="flex justify-center">
-                <div class="w-[60rem]">
-                    <div class="w-full my-20 md:px-[5.5rem] max-w-[60rem]" id='buzzsprout-small-player-1046077-tags-{{ entry.slug }}'></div><script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/1046077.js?player=small&tags={{ entry.slug }}&container_id=buzzsprout-small-player-1046077-tags-{{ entry.slug }}'></script>
+                <div class="w-[60rem] mt-10">
+                    <h1 class="text-blue text-2xl font-bold mb-6">Listen to the episode</h1>
+                    <div class="w-full mb-20 max-w-[60rem]" id='buzzsprout-small-player-1046077-tags-{{ entry.slug }}'></div><script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/1046077.js?player=small&tags={{ entry.slug }}&container_id=buzzsprout-small-player-1046077-tags-{{ entry.slug }}'></script>
                     {% if transcriptAvailable %}
                         <podcast-player :transcript="{{ transcript|json_encode }}"></podcast-player>
                     {% endif %}
@@ -174,6 +148,8 @@
             </div>
         </div>
     </div>
+
+    {# BANNER 3: CREDITS #}
         
     <div class="edge">
         <div class="mx-auto max-w-screen-2xl">
@@ -216,6 +192,8 @@
             </section>
         </div>
     </div>
+
+    {# BANNER 4: HEAR MORE #}
 
     <div class="edge bg-red">
         <div class="mx-auto max-w-screen-2xl">
@@ -267,29 +245,23 @@
         </div>
     </div>
 
+    {# BANNER 5: MORE WAYS TO LISTEN #}
+
     <div class="edge">
         <div class="max-w-screen-2xl mx-auto">
             <div class="pb-4 sm:pb-8">
                 <p class="text-xs sm:text-sm lg:text-md text-yellow font-semibold tracking-wider">MORE WAYS TO LISTEN</p>
             </div>
             <div class="my-20 w-full flex justify-center flex-wrap">
-                <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDQ2MDc3LnJzcw?sa=X&ved=0CAYQrrcFahcKEwjgkLnbqsTtAhUAAAAAHQAAAAAQAQ"> 
-                    <button type="button" class="whitebutton w-[15rem] mx-4 my-2">
-                        Listen on Google
-                    </button> 
-                </a>
-
-                <a href="https://podcasts.apple.com/us/podcast/two-coins/id1510423830">
-                    <button type="button" class="whitebutton w-[15rem] mx-4 my-2">
-                        Listen on Apple
-                    </button>
-                </a>
-
-                <a href="https://open.spotify.com/show/6ibUbGEewMeNnu7gITnQ1c?si=xHNtWdIzS7Gn2rRpZueFbw">
-                    <button type="button" class="whitebutton w-[15rem] mx-4 my-2">
-                        Listen on Spotify
-                    </button> 
-                </a>
+                {% set i = 0 %}
+                {% for external in craft.entries.slug("podcast").one().podcastExternals.all() %}
+                    <a href="{{ external.externalLink }}">
+                        <button data-aos="fade-up" data-aos-duration="1000" data-aos-delay="{{i}}" type="button" class="whitebutton w-[16rem] mx-4 my-2">
+                            {{ external.externalName }}
+                        </button>
+                    </a>
+                    {% set i = i + 200 %}
+                {% endfor %}
             </div>
         </div>
     </div>
