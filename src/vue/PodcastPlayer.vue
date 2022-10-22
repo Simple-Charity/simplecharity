@@ -19,7 +19,7 @@
                     <div class="flex items-center justify-between pb-2">
                         <div class="flex items-center">
                             <div class="pr-4">
-                                <img class="h-12 w-12 rounded-full" :src="transcriptBlock.speakerHeadshot" alt="HS">
+                                <img class="h-10 w-10 rounded-full" :src="transcriptBlock.speakerHeadshot" alt="HS">
                             </div>
                             <div class="text-blue text-xl font-bold">
                                 {{ transcriptBlock.speakerName }}
@@ -31,7 +31,7 @@
                         </div>
                     </div>
                 
-                    <div class="text-blue text-lg">
+                    <div class="text-blue text-lg pl-14">
                         {{ transcriptBlock.text }}
                     </div>
                 </div>
