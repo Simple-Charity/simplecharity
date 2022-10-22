@@ -9,7 +9,7 @@
                 Read the transcript
             </div>
         </div>
-        <div class="h-[45rem] overflow-hidden relative rounded-lg bg-linen hidden md:block">
+        <div class="transcriptcontainer h-[45rem] overflow-hidden relative rounded-lg bg-linen hidden md:block">
             <div class="absolute left-0 right-0 top-0 h-[5rem] bg-linen z-20 flex justify-center items-center">
                 <div class="h-[2.5rem] w-full relative">
                     <input v-model="searchTerm" class="absolute inset-0 border-b-2 ml-12 mr-[3.15rem] border-blue text-lg" type="text" placeholder="Search">
@@ -45,7 +45,7 @@
 
 
 
-        <div :class="{ 'z-[-50] opacity-[0]': !transcriptModalOpen, 'z-[1000] opacity-[1]': transcriptModalOpen }" class="md:hidden overflow-hidden fixed inset-0 z-[-50] opacity-[0]  md:relative md:rounded-lg bg-linen">
+        <div :class="{ 'z-[-50] opacity-[0]': !transcriptModalOpen, 'z-[1000] opacity-[1]': transcriptModalOpen }" class="transcriptcontainer md:hidden overflow-hidden fixed inset-0 z-[-50] opacity-[0]  md:relative md:rounded-lg bg-linen">
             <div v-on:click="deactivateTranscriptModal()" class="absolute top-4 right-4 w-8 h-8 z-[60] hover:cursor-pointer">
                 <h2 class="text-blue text-3xl font-bold">&#10005;</h2>
             </div>
