@@ -1,0 +1,22 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 266c6678-9669-488e-82b7-68601833935a # About
+handle: podcastOverride
+instructions: 'The podcast entry page normally picks a random episode to feature in the "Hear more two coins" banner. However, if you would like to override this and pick a specific episode to feature, fill out this field. '
+name: 'Podcast Override'
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: '1'
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: true
+  source: null
+  sources:
+    - 'section:948bb758-9a40-4dbc-8ea7-a4ac9c2d3df0' # Season One
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

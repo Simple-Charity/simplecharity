@@ -2,11 +2,11 @@
     <div class="">
         <!--Need to build a modal transcript viewer for small screens-->
         <div class="pb-6 hidden md:block">
-            <h1  class="text-blue text-2xl font-bold">Read the transcript</h1>
+            <h1  class="text-blue text-2xl font-bold">{{ header }}</h1>
         </div>
         <div class="md:hidden">
             <div v-on:click="launchTranscriptModal()" class="bluebutton hover:cursor-pointer max-w-[20rem] mx-auto">
-                Read the transcript
+                {{ header }}
             </div>
         </div>
         <div class="transcriptcontainer h-[45rem] overflow-hidden relative rounded-lg bg-linen hidden md:block">
@@ -81,7 +81,7 @@
     import VueAxios from '../js/modules/vue-axios';
 
     export default {
-        props: ["transcript"],
+        props: ["header", "transcript"],
         data: function() {
             return {
                 searchTerm: "",

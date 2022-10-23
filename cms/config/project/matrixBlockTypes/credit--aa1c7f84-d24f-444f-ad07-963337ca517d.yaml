@@ -1,0 +1,78 @@
+field: 9fda4d0f-88f7-4fd5-9c19-262099d2666f # Podcast Credits
+fieldLayouts:
+  102721e6-89a5-478f-a2a1-efeba0afde64:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 04fa1b23-f82e-415c-9d00-11096c234fbc # Credit Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 762d2a22-9013-4edb-af8c-29f84b444a77 # Credit Contents
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  04fa1b23-f82e-415c-9d00-11096c234fbc: # Credit Header
+    columnSuffix: veudbivv
+    contentColumnType: text
+    fieldGroup: null
+    handle: creditHeader
+    instructions: ''
+    name: 'Credit Header'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  762d2a22-9013-4edb-af8c-29f84b444a77: # Credit Contents
+    columnSuffix: sjarwcqg
+    contentColumnType: text
+    fieldGroup: null
+    handle: creditContents
+    instructions: ''
+    name: 'Credit Contents'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: credit
+name: Credit
+sortOrder: 1

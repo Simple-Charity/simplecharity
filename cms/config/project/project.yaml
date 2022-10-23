@@ -1,4 +1,4 @@
-dateModified: 1666442441
+dateModified: 1666533632
 email:
   fromEmail: $SES_EMAIL
   fromName: $SES_FROM
@@ -56,7 +56,9 @@ meta:
     2e9028ad-d3e4-4f65-ad46-1432e2aebf6c: 'Philosophy Images Crop' # Philosophy Images Crop
     2fcab67f-d14d-4402-ad34-8eb7e7500be3: 'Podcast Reviews Banner Header' # Podcast Reviews Banner Header
     3a3e4df0-9f3d-4ebf-b3a2-34f84143f75a: 'Item Description' # Item Description
+    3b67cd9a-7408-40d2-b67c-19fbf57e0cb4: 'Hidden Credit' # Hidden Credit
     3b5012b6-8415-4b1e-8653-516c6dea2f4e: Icon # Icon
+    3bfa9a72-d3b5-4b7a-be32-215d6d0e1da9: 'Credit Contents' # Credit Contents
     3c9b7cea-9893-4567-ac09-36ce15305bd8: 'Short Text' # Short Text
     3cf44beb-7d3a-4341-9fc0-b1f0a6794d39: 'Button Internal Reference' # Button Internal Reference
     3d85e4d6-b045-4c4c-86e7-9cf561e8c9e5: 'Image Carousel' # Image Carousel
@@ -83,14 +85,17 @@ meta:
     4c000fc6-a674-41f0-8978-8671d5e8d0d5: 'Map Popdown' # Map Popdown
     4c3b2893-31d9-4694-b088-cfb381121155: 'About Squiggle 1' # About Squiggle 1
     4d5ad442-6650-4df2-af66-6fb7227e0c97: Heading # Heading
+    4d314446-7281-4926-a7a1-8b7a27f4e32b: 'Episode Number' # Episode Number
     4df31025-d439-4fb2-af7f-3d3f63ec8880: 'About Images Optimize' # About Images Optimize
     4dffa13f-0ba5-4eba-92ab-b7b82a1fc5c8: 'About Mission Images' # About Mission Images
     4e3b9df7-3bea-4445-be1a-a2481f2f4bc0: 'Social Media Icons' # Social Media Icons
     4e4a3721-3a3f-40e3-860a-ba1da4738a40: 'Podcast External Buttons' # Podcast External Buttons
     4e76373d-ccba-4537-9825-605a71ae9afd: 'Current Core Giving' # Current Core Giving
     4ec05108-97b0-4c88-b647-a837d8d42c51: 'Book Image' # Book Image
+    04fa1b23-f82e-415c-9d00-11096c234fbc: 'Credit Header' # Credit Header
     4ff5c659-06c9-4f1e-85be-e4bc5792c681: Colleges # Colleges
     5a8c6cfc-3a45-4834-90c2-df2104585a87: 'First Description' # First Description
+    5a177aa1-a238-44c2-a6fb-7f62483aa7aa: 'Credit Header' # Credit Header
     5aa9b210-8916-449c-95bc-1423daa59428: 'Popdown Title' # Popdown Title
     5ae2b8a7-1c8b-4403-8519-bc8e4401cfc3: Stories # Stories
     5b18df65-ba57-4e2b-8e3d-8e722790aa62: 'Accent Color' # Accent Color
@@ -125,6 +130,7 @@ meta:
     7a28bd04-bc9c-457e-bb12-a455cbf01865: 'Liturgy Icon' # Liturgy Icon
     7a633eca-bfc2-4150-9029-8866716a9600: 'Page Description' # Page Description
     7a785146-8ae4-44d6-9d4f-46e0a32de039: 'Homepage Primary Banner' # Homepage Primary Banner
+    7b22e565-86d0-4305-9806-fe7234928e4e: 'Read Header Text' # Read Header Text
     7b23a5df-dd1b-4d80-aa2a-7991632a193a: 'Dark Blue Wave 1' # Dark Blue Wave 1
     7ba86e8f-9c96-4a43-a163-1c01e03f3f54: Description # Description
     7c22f283-70c7-4285-a852-c805bf6bcce8: 'Testimonial Quote' # Testimonial Quote
@@ -160,6 +166,7 @@ meta:
     8db84fc5-85cd-4236-8ad4-fff879963174: Translation # Translation
     8dc0f459-1205-4e5b-b0ef-c44e4cea4c5d: Stories # Stories
     8dcd782a-7d99-4b63-bf6c-cddce618ddcb: 'Button External Link' # Button External Link
+    8dfaf97c-62b4-4a0a-a03b-f8d1efd75ecb: 'Banner 4 Header' # Banner 4 Header
     8dfeb5a7-d073-4127-9026-5afb204f6b81: Art # Art
     8f5ce5a0-fa1c-40f8-ab00-da3de67e0d89: College # College
     8f948b19-be04-49df-9d73-c8947fe20bcf: 'Card Description' # Card Description
@@ -191,6 +198,7 @@ meta:
     9f58f508-7b8f-46e5-917d-146a22d5525a: 'Second Subtitle' # Second Subtitle
     9f372e50-74fb-450b-8696-7fb2c7a7630d: 'Group Photo' # Group Photo
     09f2366e-67eb-49cd-80b8-6e0061a94eeb: 'Maintenance Message' # Maintenance Message
+    9fda4d0f-88f7-4fd5-9c19-262099d2666f: 'Podcast Credits' # Podcast Credits
     10d4ff4b-25d0-47dc-8b0e-8a87637ad8a6: 'Sun Icon' # Sun Icon
     11ac932b-77db-46ef-a914-8718e3ed9588: 'Every Dollar Goes Toward The Text' # Every Dollar Goes Toward The Text
     11f3a3e0-88db-45d3-9679-9a73feae4a86: 'SC Tabling At Duke' # SC Tabling At Duke
@@ -244,6 +252,7 @@ meta:
     50e24144-f3e9-4257-8760-a53f4ff16a2a: Core # Core
     52bab6c5-c7ef-4253-9d67-3406ac646035: 'Episode Feature Image' # Episode Feature Image
     52e0f93c-d81a-4364-bbcb-18927f6afdd4: 'Dropdown Title' # Dropdown Title
+    53b8a532-49f8-42da-81fc-58a956e8dcbe: 'Banner 1 Header' # Banner 1 Header
     53b21488-cc9f-401c-9506-acf450bd7b09: 'Simple Charity EIN' # Simple Charity EIN
     53d8c3b0-63c1-4abf-9789-39d79799fb47: 'Homepage Secondary Banner' # Homepage Secondary Banner
     53d39b3e-f4b6-4106-a6f2-e16a93f58998: 'Charity Home Icon' # Charity Home Icon
@@ -349,6 +358,7 @@ meta:
     739e10b8-75ae-4b6d-97b6-8faa6010e1e9: 'Core Squiggle Border' # Core Squiggle Border
     748d21dd-5938-4b48-9bd0-348e624ce0c7: 'Episode Slug' # Episode Slug
     752f49b3-26b8-4350-8a3d-22b7ac4815d9: FAQ # FAQ
+    762d2a22-9013-4edb-af8c-29f84b444a77: 'Credit Contents' # Credit Contents
     780a4832-29d8-4862-8173-8d76b264ce36: 'Yellow Wave One' # Yellow Wave One
     793b474d-138f-4cf5-8bab-ba6467f18951: 'Home Give Freely Copy' # Home Give Freely Copy
     795d66df-2ed7-456a-a0aa-d45125561824: 'Class Year' # Class Year
@@ -400,6 +410,7 @@ meta:
     6915f4fe-d223-4ade-bf1b-bb3f168ab027: 'Table Entry' # Table Entry
     7080da80-574b-4ed4-95ac-af04333bac4c: 'Accent Color' # Accent Color
     7166d0be-82e2-40e7-b035-12aed26d9e3e: Systems # Systems
+    7408fb13-95c3-469f-bf05-45f80680ab76: 'Banner 3 Header' # Banner 3 Header
     7449a45b-119c-4e2b-9b31-b62a8912d84b: Card # Card
     7644c07f-9f4e-4dab-b534-6a19e8cdb63e: 'Header Items' # Header Items
     07752de2-e91f-43cf-ac88-93ac33b9dde4: 'Icon Name' # Icon Name
@@ -432,6 +443,7 @@ meta:
     36089fbf-0472-47f4-af69-c4a9be278a7d: Icon # Icon
     45047fe7-3135-44cc-ad13-42648d74d3ac: 'Attribute Description' # Attribute Description
     46036b1b-21eb-4b9f-952c-f7d466ce38ac: Verses # Verses
+    47537bf3-e4a9-4a0c-8a3f-ea2a6de8eda1: 'Banner 5 Header' # Banner 5 Header
     49266c81-7658-4038-b516-a89e6ae4e869: 'Phil Image' # Phil Image
     52235fd1-b2a5-4585-a988-426968bb5053: 'Club Main Text' # Club Main Text
     55172a7b-da24-421a-80e1-2c8b289eef96: 'About Promo Image 1' # About Promo Image 1
@@ -513,6 +525,7 @@ meta:
     a53319d7-a065-4006-b797-59fa46291543: 'Internship Squiggle 0' # Internship Squiggle 0
     a136443b-de0e-47bb-aa45-3546f7e8fc66: 'John Kang' # John Kang
     a745549a-588d-4f18-aa98-95d0f6bf5a9c: 'External Url' # External Url
+    aa1c7f84-d24f-444f-ad07-963337ca517d: Credit # Credit
     aa8a2b07-b3e4-4833-a49e-68d91e1ccf2a: 'Support Description' # Support Description
     aaf98e9d-1a9e-49ba-af19-56257b19f8d7: Verse # Verse
     ab5fbaa7-ae30-44ad-9fd4-66628d56806d: 'Fundraise Copy' # Fundraise Copy
@@ -583,6 +596,7 @@ meta:
     bf892b8a-72dc-46a1-a085-d41af6cf163b: 'Small Text' # Small Text
     bfa3569c-ee9a-4d53-8d98-d00f60cba909: 'Blue Caret' # Blue Caret
     bfe522b4-6626-4b81-97ce-0cce4267a16f: 'Step Name' # Step Name
+    c0de5f9a-3be3-4c39-a906-291164ccd493: 'Podcast Override' # Podcast Override
     c04f3b39-ddc8-44c5-aafb-e9073de48ae5: 'Homepage Hero Image 1' # Homepage Hero Image 1
     c1ced48b-72c9-48d0-bcff-592ef5b65a60: Category # Category
     c2e30f3a-f335-4aad-960c-722722e40b07: 'Person Title' # Person Title
@@ -664,6 +678,7 @@ meta:
     db36dfb2-31b4-447a-8c5b-1cb7538143bf: Stripe # Stripe
     dc4d703d-b9bc-4fa1-a157-61c1b6a6ba60: Card # Card
     dc613c25-a26c-41da-8b1f-cf6fb6f4c47a: 'Thank You Image' # Thank You Image
+    dcf00203-52d9-4bda-96c9-c83dca3f13aa: 'Banner 2 Header' # Banner 2 Header
     dd9ec74c-6229-47ff-af8c-4815ee3820ed: 'Sub-Saharan Africa' # Sub-Saharan Africa
     dd94008c-c434-445b-99b4-4bd745b9281b: Experts # Experts
     ddb45738-72fb-4660-9fe7-da02e7669077: Process # Process
@@ -713,6 +728,7 @@ meta:
     ebfb5ef3-d0ba-44a0-97b0-79f7069059f3: 'Homepage Hero Image 2' # Homepage Hero Image 2
     ec35b4d0-59fb-4edd-a497-2eb365d47f14: 'Social Media Podcast Link' # Social Media Podcast Link
     ec558d5a-9742-4d68-a6d1-8ace88af1344: 'Internship Images Optimize' # Internship Images Optimize
+    ec8788a2-72a0-4477-857d-1433696b0457: 'Listen Header Text' # Listen Header Text
     ecb7a392-a8d6-4b91-8a68-7b5a7fdd93dd: 'Charity Cross Icon' # Charity Cross Icon
     ecc1944d-06a2-4221-9d9a-12e452d1f283: 'Yellow Wave 3' # Yellow Wave 3
     ece95a97-075d-4715-9fd6-99a2e89e8a22: 'Site Wide Assets' # Site Wide Assets
