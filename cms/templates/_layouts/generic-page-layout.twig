@@ -89,5 +89,7 @@
         <transition enter-active-class="animated fadeIn menuAnimate" leave-active-class="animated fadeOut menuAnimate">
             <site-menu @close="toggleMenu" v-cloak v-if="menuIsVisible" :navs="{{ navList|json_encode }}" :ca="{{ cats|json_encode }}"></site-menu>
         </transition>
+</script>
+
     </div>
 {% endblock bodyHtml %}
