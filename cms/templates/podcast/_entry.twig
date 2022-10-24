@@ -141,10 +141,10 @@
             </div>
             <div class="flex justify-center">
                 <div class="w-[60rem] mt-10">
-                    <h1 class="text-blue text-2xl font-bold mb-6 text-center md:text-left">{{ entry.listenHeaderText }}</h1>
+                    <h1 class="text-blue text-2xl font-bold mb-6 text-center md:text-left">Listen to the episode</h1>
                     <div class="w-full mb-20 max-w-[60rem]" id='buzzsprout-small-player-1046077-tags-{{ entry.slug }}'></div><script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/1046077.js?player=small&tags={{ entry.slug }}&container_id=buzzsprout-small-player-1046077-tags-{{ entry.slug }}'></script>
                     {% if transcriptAvailable %}
-                        <podcast-player header="{{ entry.readHeaderText }}" :transcript="{{ transcript|json_encode }}"></podcast-player>
+                        <podcast-player :transcript="{{ transcript|json_encode }}"></podcast-player>
                     {% endif %}
                 </div>
             </div>
@@ -156,6 +156,18 @@
     {% if relatedPartner|length and false %}
         <div class="edge bg-red">
             <div class="mx-auto max-w-screen-2xl">
+                <div class="pb-4 sm:pb-8 w-2/3">
+                    <p class="text-xs sm:text-sm lg:text-md text-blue font-semibold tracking-wider">THIS EPISODE'S PARTNER</p>
+                </div>
+                <div class="pb-6">
+                    <h1 class="header-one text-blue">{{ relatedPartner.title }}</h1>
+                </div>
+                <div class="flex">
+                    <div class="w-1/3 mr-6">
+                        <img class="w-full" src="{{ relatedPartner.partnerIcon.one().getUrl() }}" alt="">
+                    </div>
+                    <div class="w-2/3 text-xl text-blue redactor">{{ relatedPartner.partnerDescriptiveText }}</div>
+                </div>
                 
             </div>
         </div>

@@ -124,28 +124,10 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-          -
-            fieldUid: ec8788a2-72a0-4477-857d-1433696b0457 # Listen Header Text
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
         name: 'Banner 2: Listen'
         sortOrder: 3
       -
         elements:
-          -
-            fieldUid: 7b22e565-86d0-4305-9806-fe7234928e4e # Read Header Text
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
           -
             fieldUid: a9906eff-f12c-4717-b737-a295dfa458d8 # Podcast Transcript
             instructions: null
@@ -168,7 +150,7 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Banner 2.1: Related Partner'
+        name: 'Banner 3: Related Partner'
         sortOrder: 5
       -
         elements:
@@ -181,7 +163,7 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Banner 3: Credits'
+        name: 'Banner 4: Credits'
         sortOrder: 6
       -
         elements:
@@ -194,39 +176,8 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Banner 4: Hear More'
+        name: 'Banner 5: Hear More'
         sortOrder: 7
-      -
-        elements:
-          -
-            fieldUid: db7a0d8d-c7c7-4c77-8fca-3f4db8ebc734 # People Interviewed
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: ab259ab3-d2e1-46c5-b745-800b41bb48af # Music
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 1f492acd-31a5-4af5-a949-81fe77ba735e # Sound Effects
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-        name: Legacy
-        sortOrder: 8
 handle: seasonOne
 hasTitleField: true
 name: 'Season One'
