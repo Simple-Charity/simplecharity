@@ -98,15 +98,6 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: dcf00203-52d9-4bda-96c9-c83dca3f13aa # Banner 2 Header
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
             fieldUid: 52bab6c5-c7ef-4253-9d67-3406ac646035 # Episode Feature Image
             instructions: null
             label: null
@@ -182,15 +173,6 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 7408fb13-95c3-469f-bf05-45f80680ab76 # Banner 3 Header
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
             fieldUid: 9fda4d0f-88f7-4fd5-9c19-262099d2666f # Podcast Credits
             instructions: null
             label: null
@@ -204,15 +186,6 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 8dfaf97c-62b4-4a0a-a03b-f8d1efd75ecb # Banner 4 Header
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
             fieldUid: c0de5f9a-3be3-4c39-a906-291164ccd493 # Podcast Override
             instructions: null
             label: null
@@ -223,19 +196,6 @@ fieldLayouts:
             width: 100
         name: 'Banner 4: Hear More'
         sortOrder: 7
-      -
-        elements:
-          -
-            fieldUid: 47537bf3-e4a9-4a0c-8a3f-ea2a6de8eda1 # Banner 5 Header
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-        name: 'Banner 5: More Ways'
-        sortOrder: 8
       -
         elements:
           -
@@ -266,7 +226,7 @@ fieldLayouts:
             warning: null
             width: 100
         name: Legacy
-        sortOrder: 9
+        sortOrder: 8
 handle: seasonOne
 hasTitleField: true
 name: 'Season One'
