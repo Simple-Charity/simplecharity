@@ -6,7 +6,7 @@
 
 {% block headMeta %}
     {% if entry.pageDescription|length %}
-        <meta name="description" content={{ entry.pageDescription }}>
+        <meta name="description" content="{{ entry.pageDescription }}">
     {% endif %}
 {% endblock %}
 
@@ -90,19 +90,19 @@
         <charity-search :partners="{{ charities | json_encode }}" caret="{{ entry.charityCaret.one().getUrl() }}" barecaret="{{ entry.bareCaret.one().getUrl() }}" bulb="{{bulb}}" home="{{home}}" dollar="{{dollar}}" heart="{{heart}}" cross="{{cross}}"></charity-search>
         {% set wave = entry.blueWaveOne.one() %}
     </div>
-    <div class="relative h-[5rem] bg-lightgreen">
+    <div class="relative h-[5rem] bg-green w-full">
         <div class="absolute left-0 right-0 top-0">
-            <img src="{{wave.getUrl()}}" alt="">
+            <img class="w-full" src="{{wave.getUrl()}}" alt="">
         </div>
     </div>
     
 
     
 
-    <div class="edge sm:pt-[10rem] md:pt-[10rem] lg:pt-[12rem] lg:pb-[10rem] xl:pt-[16rem] xxl:pt-[24rem] bg-lightgreen">
+    <div class="edge sm:pt-[8rem] md:pt-[8rem] lg:pt-[8rem] lg:pb-[8rem] xl:pt-[16rem] xxl:pt-[16rem] bg-green">
         <div class="mx-auto max-w-screen-xl">
-            <h5 class="headercaps pb-6">DONATE WITH CONFIDENCE</h5>
-            <p class="text-lg sm:text-2xl font-semibold pb-6">We selected the above <span class="text-red">24 charities*</span> from a group of 628. We did the work to vet them so that you can give with confidence to help the poor.</p>
+            <h5 class="headercaps text-linen pb-6">DONATE WITH CONFIDENCE</h5>
+            <p class="text-lg sm:text-2xl font-semibold pb-6">We selected the above <span class="text-linen">24 charities*</span> from a group of 628. We did the work to vet them so that you can give with confidence to help the poor.</p>
             <p class="text-lg pb-6">100% of your gift will go where you choose.</p>
             <p class="text-md pb-6"><strong>Note</strong>: This is by no means an exhaustive list. It's just a launching point to make things a little less intimidating for you, in the same way an essay prompt helps narrow your focus enough to clear your writer's block. Although our recommendations stand out for their trustworthiness and effectiveness, there are still many, many other Christian organizations that we evaluated that we would heartily endorse. In any case, we encourage you to do your due diligence and ultimately give wherever you feel called to give.</p>
             <p class="text-md pb-6">*Simple Charity does not receive compensation from any of these organizations.</p>
