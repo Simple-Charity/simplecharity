@@ -1,4 +1,4 @@
-dateModified: 1666621103
+dateModified: 1666828520
 email:
   fromEmail: $SES_EMAIL
   fromName: $SES_FROM
@@ -234,6 +234,7 @@ meta:
     37cb872c-de66-491f-819e-ff4a10180399: Verse # Verse
     38a71d71-d3f8-4b59-a0e7-a0eec7b009ae: 'Philosophy Image' # Philosophy Image
     39a34b14-4750-4b97-ab09-cbb4b9b231e6: 'Podcast Page Subtitle' # Podcast Page Subtitle
+    39ad442e-3c84-4cac-9243-1ac5e12c322a: 'Episode Audio' # Episode Audio
     42b7661d-3ea5-4392-9e4d-9f1b0472137d: 'Stories Main Page' # Stories Main Page
     42b86188-6a7b-4fec-9436-a98389ef2d97: 'Waveform Image' # Waveform Image
     42ca8644-e860-481d-82fa-0dae13cf6078: 'Transparency Docs' # Transparency Docs

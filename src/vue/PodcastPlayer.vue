@@ -1,6 +1,16 @@
 <template>
     <div class="">
-        <!--Need to build a modal transcript viewer for small screens-->
+        
+        <div>
+            <div class="pb-6">
+                <h1  class="text-blue text-2xl font-bold">Listen to the episode</h1>
+            </div>
+            <audio class="w-full mb-12" id="audioPlayer" controls @timeupdate="onTimeUpdate">
+                <source :src="audio" type="audio/mp3">
+            </audio>
+        </div>
+
+
         <div class="pb-6 hidden md:block">
             <h1  class="text-blue text-2xl font-bold">Read the transcript</h1>
         </div>
@@ -20,7 +30,7 @@
             </div>
             <div id="transcriptviewer" class="w-full h-[40rem] overflow-y-scroll bg-linen pl-6 md:pl-12 pr-4 md:pr-10 pt-4 relative mt-20 md:rounded-b-lg">
             
-                <div class="pb-8" v-for="transcriptBlock in selectedTranscriptBlocks">
+                <div :id="'tblock-' + transcriptBlock.timestamp" class="pb-8" v-for="transcriptBlock in selectedTranscriptBlocks">
                     <div class="flex items-center justify-between pb-2">
                         <div class="flex items-center">
                             <div class="pr-4">
@@ -78,15 +88,18 @@
 
 <script>
 
+
+
     import VueAxios from '../js/modules/vue-axios';
 
     export default {
-        props: ["transcript"],
+        props: ["audio", "transcript"],
         data: function() {
             return {
                 searchTerm: "",
                 transcriptBlocks: this.transcript,
                 transcriptModalOpen: false,
+                currentTime: 0,
             } 
         },
 
@@ -99,12 +112,22 @@
             },
             deactivateTranscriptModal() {
                 this.transcriptModalOpen = false;
+            },
+            onTimeUpdate () {
+                this.currentTime = document.getElementById('audioPlayer').currentTime;
+
+                for (var i = 0; i < this.transcriptBlocks.length-1; i++) {
+                    if (this.currentTime > this.transcriptBlocks[i].seconds && this.currentTime < this.transcriptBlocks[i+1].seconds) {
+                        document.getElementById('transcriptviewer').scrollTo({top: document.getElementById('tblock-' + this.transcriptBlocks[i].timestamp).offsetTop, behavior: 'smooth'});
+                        break;
+                    }
+                }
             }
         },
         computed: {
             selectedTranscriptBlocks() {
                 return this.transcriptBlocks.filter(transcriptBlock => transcriptBlock.text.toLowerCase().indexOf(this.searchTerm.toLowerCase()) != -1 || transcriptBlock.speakerName.toLowerCase().indexOf(this.searchTerm.toLowerCase()) != -1);
-            }
+            },
         }
     }
 
