@@ -1,0 +1,42 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+{% set entry = craft.entries.slug('thank-you').one() %}
+
+{% block headMeta %}
+    {% if entry.pageDescription|length %}
+        <meta name="description" content="{{ entry.pageDescription }}">
+    {% endif %}
+{% endblock %}
+
+{% block headLinks %}
+    {{ parent() }}
+{% endblock headLinks %}
+    
+{% block contentborderless %}
+    <div class="edge h-screen min-h-[40rem] sm:min-h-[40rem] lg:min-h-[56rem]">
+        <div class="max-w-screen-2xl h-full flex items-center justify-center">
+            <div class="text-center pt-6 sm:pt-0">
+                <div class="w-full flex justify-center">
+                    <img class="w-full sm:w-auto sm:h-[10rem] lg:h-[15rem]" src="{{ entry.thankYouCelebrationImage.one().getUrl() }}" alt="">
+                </div>
+                <div class="my-8 lg:my-14">
+                    <h2 class="text-5xl sm:text-6xl lg:text-7xl font-serif">{{ entry.thankYouHeaderText }}</h2>
+                </div>
+                <div class="my-8 lg:my-14 w-full lg:w-7/12 mx-auto">
+                    <h3 class="text-xl">{{ entry.thankYouCopy }}</h3>
+                </div>
+                <div class="flex justify-center">
+                    <a href="/donate">
+                        <div class="bluebutton text-xs sm:text-lg">
+                            {{ entry.thankYouButtonText }}
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block bodyJs %}
+    {{ parent() }}
+{% endblock bodyJs %}

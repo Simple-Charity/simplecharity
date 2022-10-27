@@ -1,4 +1,4 @@
-dateModified: 1666621103
+dateModified: 1666888828
 email:
   fromEmail: $SES_EMAIL
   fromName: $SES_FROM
@@ -20,6 +20,7 @@ meta:
     0c566290-11e0-4f22-9ac9-3ca9d3decd39: 'Episode Art' # Episode Art
     0cacf2de-0e4b-4e13-91b8-4c7525d7dfff: 'Last Updated' # Last Updated
     0d8f160a-b1e3-4be3-85ee-654fc07d937d: 'Team Member' # Team Member
+    0d470d19-b1a5-4ae3-81c7-843af4744ff7: 'Thank You Header Text' # Thank You Header Text
     0e10f9da-dbf1-4646-9334-ce1fa21b9543: 'External Url' # External Url
     0e595d14-742b-4de7-9fc6-42365855aee2: 'External URL' # External URL
     0f1d9fac-f684-4d07-8be6-850f2272757d: 'Cause Icons' # Cause Icons
@@ -54,6 +55,7 @@ meta:
     002db005-6b93-4da0-9ab0-006da3ec35c4: Bio # Bio
     2e19f39e-6e49-4e40-830a-df9ed9db43fd: 'Summary Image' # Summary Image
     2e9028ad-d3e4-4f65-ad46-1432e2aebf6c: 'Philosophy Images Crop' # Philosophy Images Crop
+    2f208078-005f-4a37-8c0a-f012c2b57aa9: 'Thank You' # Thank You
     2fcab67f-d14d-4402-ad34-8eb7e7500be3: 'Podcast Reviews Banner Header' # Podcast Reviews Banner Header
     3a3e4df0-9f3d-4ebf-b3a2-34f84143f75a: 'Item Description' # Item Description
     3b67cd9a-7408-40d2-b67c-19fbf57e0cb4: 'Hidden Credit' # Hidden Credit
@@ -355,6 +357,7 @@ meta:
     711c1b80-185f-417c-ae0b-89b58e3d4aa7: 'Card Title' # Card Title
     726f5b33-91a4-4a42-80e2-43f8c933a92b: 'Podcast Quote' # Podcast Quote
     728b96c0-af4f-473c-b03b-13eb42cd4a7c: 'Mission Statement' # Mission Statement
+    736daac5-ed3b-448c-b97c-63367c9a8e47: 'Thank You Copy' # Thank You Copy
     739e10b8-75ae-4b6d-97b6-8faa6010e1e9: 'Core Squiggle Border' # Core Squiggle Border
     748d21dd-5938-4b48-9bd0-348e624ce0c7: 'Episode Slug' # Episode Slug
     752f49b3-26b8-4350-8a3d-22b7ac4815d9: FAQ # FAQ
@@ -398,6 +401,7 @@ meta:
     4210c650-0ff5-41d2-b2c6-2581b010e6dd: 'Contact Hero Text' # Contact Hero Text
     4381d30a-d92c-4101-8a04-20a81f01ca0a: Solidarity # Solidarity
     4692a00e-7d38-4661-bff7-7a6647f5c9a6: 'Doc Link' # Doc Link
+    5032a864-e570-4cd5-9926-4c4dd832e3b5: 'Thank You' # Thank You
     5230dc1d-c1c0-40f2-bcab-796e7015580a: Podcast # Podcast
     6292ee1a-6685-4798-aecd-d3b75d4ceef3: 'Transportive Icon' # Transportive Icon
     6323dc5f-e9e6-4bce-aa8b-4119273191be: 'Full Name' # Full Name
@@ -426,6 +430,7 @@ meta:
     9207a6b9-2db9-4277-ac3c-e97c4c6a4350: 'Partner Focus' # Partner Focus
     9254ac33-f448-44eb-962d-f3c5c713bc89: 'Item Icon' # Item Icon
     9334a6a7-c99f-44ee-a619-26303237f362: 'Core Values' # Core Values
+    9447be29-613f-4884-86c9-9c3219c7b3b4: 'Thank You Celebration Image' # Thank You Celebration Image
     9596c2e0-a292-453a-b988-78bb9ed4a696: 'Dropdown Text' # Dropdown Text
     09719ad6-9903-4fd7-b8c0-46549b68d45c: 'Season One' # Season One
     9719ec4f-e8c7-42a9-9517-3e2def8c6a6b: 'Featured Donor Partners' # Featured Donor Partners
@@ -502,6 +507,7 @@ meta:
     a6a1d6b5-9948-4464-aea9-a2d06f034513: 'Internship Swoop Border' # Internship Swoop Border
     a7b6ce52-2079-4db7-a87d-f94391373a11: 'One Hundred Percent Circle' # One Hundred Percent Circle
     a7fe0148-8b00-4460-a902-c3df1fb3cba1: 'Overlay Title' # Overlay Title
+    a8a891ad-66eb-44f2-a559-8941eca89754: 'Thank You Button Text' # Thank You Button Text
     a9fdcfd7-326c-4d09-bd1f-7f5baed95d32: reference # reference
     a54aea08-fc1d-426b-bea6-07f49083bdb8: Subheading # Subheading
     a71d79a0-7b37-4753-a9c4-76c7663a70dd: 'Intern Class' # Intern Class
