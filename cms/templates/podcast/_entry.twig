@@ -26,6 +26,7 @@
             'speakerName': podBlock.speaker.one().personName,
             'speakerHeadshot': hs,
             'text': podBlock.text|striptags,
+            'active': 'no',
         }]) %}
 
     {% endfor %}

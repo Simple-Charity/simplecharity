@@ -93,6 +93,15 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+          -
+            fieldUid: 6b842010-c19b-4dac-b845-4e0eaa188da9 # Episode Audio
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: 'Banner 1'
         sortOrder: 2
       -
@@ -117,15 +126,6 @@ fieldLayouts:
             width: 100
           -
             fieldUid: 648d2f86-d27a-4fc6-967d-630454bd4e9e # Episode Hero Text
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 39ad442e-3c84-4cac-9243-1ac5e12c322a # Episode Audio
             instructions: null
             label: null
             required: false

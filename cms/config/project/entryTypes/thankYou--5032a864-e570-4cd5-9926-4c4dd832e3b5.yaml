@@ -1,0 +1,96 @@
+fieldLayouts:
+  9f6c7d3a-993d-4cbb-84de-2dbfe72082e1:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: a15632d6-3fd3-4b9c-b1a5-89468da17a82 # Page Status
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 927a76f6-1e16-45da-998b-9795f552f597 # Light Background
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Page Data'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 9447be29-613f-4884-86c9-9c3219c7b3b4 # Thank You Celebration Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0d470d19-b1a5-4ae3-81c7-843af4744ff7 # Thank You Header Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 736daac5-ed3b-448c-b97c-63367c9a8e47 # Thank You Copy
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a8a891ad-66eb-44f2-a559-8941eca89754 # Thank You Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 2
+handle: thankYou
+hasTitleField: false
+name: 'Thank You'
+section: 2f208078-005f-4a37-8c0a-f012c2b57aa9 # Thank You
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
