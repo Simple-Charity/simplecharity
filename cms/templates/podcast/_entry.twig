@@ -15,15 +15,17 @@
     {% for podBlock in entry.podcastTranscript.all() %}
 
         {% set hs = "" %}
+        {% set nm = "" %}
 
-        {% if podBlock.speaker.one().personHeadshot %}
+        {% if podBlock.speaker|length %}
             {% set hs = podBlock.speaker.one().personHeadshot.one().getUrl() %}
+            {% set nm = podBlock.speaker.one().personName %}
         {% endif %}
 
         {% set transcript = transcript|merge([{
             'timestamp': podBlock.timestamp, 
             'seconds': ((podBlock.timestamp|split(":")[0]|number_format) * 60) + (podBlock.timestamp|split(":")[1]|number_format),
-            'speakerName': podBlock.speaker.one().personName,
+            'speakerName': nm,
             'speakerHeadshot': hs,
             'text': podBlock.text|striptags,
             'active': 'no',
