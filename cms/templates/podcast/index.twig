@@ -16,9 +16,9 @@
                 <div class="pt-28 lg:pt-48 relative z-30">
                     <p class="header-one text-linen ">{{ entry.podcastPageTitle|lower }} <span class="tracking-overlap hidden sm:inline">–––––––––</span></p>
                 </div>
-                {{ svg(tribal)|attr({class:'w-full absolute z-20 text-linen fill-current inset-x-0 top-0 opacity-10'}) }}
-                {{ svg(tribal)|attr({class:'w-full absolute z-20 text-linen fill-current inset-x-0 top-0 opacity-10 translate-y-[54vw]'}) }}
-                {{ svg(tribal)|attr({class:'w-full absolute z-20 text-linen fill-current inset-x-0 top-0 opacity-10 translate-y-[108vw]'}) }}
+                <img class="absolute left-0 z-20 right-0 top-0" src="{{ tribal.url }}" alt="">
+                <img class="absolute left-0 z-20 right-0 top-0 translate-y-[54vw]" src="{{ tribal.url }}" alt="">
+                <img class="absolute left-0 z-20 right-0 top-0 translate-y-[108vw]" src="{{ tribal.url }}" alt="">
 
                 <div>
                     <div class="w-1/2 sm:w-1/4 xxl:w-1/3 relative z-30 my-8 md:my-20 md:ml-32 max:ml-48">
