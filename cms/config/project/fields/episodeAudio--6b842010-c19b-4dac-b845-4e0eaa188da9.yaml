@@ -15,9 +15,9 @@ settings:
   limit: '1'
   localizeRelations: false
   previewMode: full
-  restrictFiles: '1'
+  restrictFiles: ''
   selectionLabel: ''
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   singleUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site

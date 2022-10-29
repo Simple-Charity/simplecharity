@@ -1,4 +1,4 @@
-dateModified: 1666902099
+dateModified: 1667064685
 email:
   fromEmail: $SES_EMAIL
   fromName: $SES_FROM
@@ -218,7 +218,7 @@ meta:
     21bab37d-048d-4648-9ab4-af627955413c: 'Light Mint Wave 1' # Light Mint Wave 1
     22aebf80-99c7-499b-b53a-b6855f469046: 'Homepage Tertiary Banner' # Homepage Tertiary Banner
     22b2f4d0-cbad-4629-86e1-b156684ef9a9: 'Homepage Squiggle 1' # Homepage Squiggle 1
-    24b90193-7fa0-409f-8a4e-e5d09f2f1cad: 'Action Button 2 Link ' # Action Button 2 Link
+    24b90193-7fa0-409f-8a4e-e5d09f2f1cad: 'Action Button 2 Link ' # Action Button 2 Link 
     26d16a04-97b8-418a-9a96-a79dc7669fda: 'Positive Text' # Positive Text
     27d7b930-7b1f-4843-aba9-f88f97aaabd5: 'Team Member Square' # Team Member Square
     28ec04f3-9b85-4bce-82d5-3e611c99266c: Countries # Countries
@@ -306,7 +306,7 @@ meta:
     95fdc90d-c8b3-417e-a570-fd13e13f387f: Question # Question
     96a3a2bf-3ba6-4971-bdac-424836af4fd6: 'Card Title' # Card Title
     96aa5e33-5392-4f29-84b8-97fea9f6d69d: 'Partner Dropdowns' # Partner Dropdowns
-    97a7725b-bca8-4548-8839-a9e841182eed: 'Blog Credit ' # Blog Credit
+    97a7725b-bca8-4548-8839-a9e841182eed: 'Blog Credit ' # Blog Credit 
     97cb017f-6d32-4bf0-ae0d-b11397163644: Icon # Icon
     100cab40-4c4d-413a-8aac-e57f02ad1c2b: 'Icon Name' # Icon Name
     105f3eee-f090-40d5-b726-43feece5f10d: 'Site Wide Assets' # Site Wide Assets
@@ -382,7 +382,7 @@ meta:
     961b40f0-ded9-4d93-8c05-eb3de1f084fd: Area # Area
     964ba1ea-d37d-417c-8aef-e33b16491675: Footer # Footer
     972e83d1-5fbc-4d0f-b1f1-674d47402fbd: $SITE_NAME # $SITE_NAME
-    982eed06-88ba-43bb-b6e0-dcb12419fa2b: 'Action Button 1 Text ' # Action Button 1 Text
+    982eed06-88ba-43bb-b6e0-dcb12419fa2b: 'Action Button 1 Text ' # Action Button 1 Text 
     996be234-025e-4c2f-8619-25992877c1c5: 'Author Short Bio' # Author Short Bio
     998d7ea7-bb8f-4281-a99b-6097fd2967e4: 'Core Beliefs Background Image' # Core Beliefs Background Image
     1718beab-261a-4621-ba27-a60b0f6169e4: 'Overlay Title' # Overlay Title
@@ -408,7 +408,7 @@ meta:
     6323dc5f-e9e6-4bce-aa8b-4119273191be: 'Full Name' # Full Name
     6359ae54-3c98-459f-bf83-5b3c83ce16b0: 'Thought Text' # Thought Text
     6366bfff-897e-466c-b6cb-63affba25b24: Podcast # Podcast
-    6415bf37-543d-46b2-8a98-5f2d4856f4b8: 'Action Button 2 Text ' # Action Button 2 Text
+    6415bf37-543d-46b2-8a98-5f2d4856f4b8: 'Action Button 2 Text ' # Action Button 2 Text 
     6507f3d2-51bb-4f9d-9902-c7ddf2c89f37: 'Club Hero Image' # Club Hero Image
     6595a515-a141-4ddd-99b6-acf3414e197f: 'Our Team' # Our Team
     6597ee4f-ee31-4b87-aa82-d4c9f895e057: 'Blog Content' # Blog Content
@@ -490,7 +490,7 @@ meta:
     37144696-ae8f-40ea-bb17-fad909b634ce: 'Chapter Map' # Chapter Map
     39189489-8c7f-401e-a0ac-2fc3430cdaf4: Step # Step
     39205281-87b8-4023-91d2-3b900c603c92: 'Home Faithful Icon' # Home Faithful Icon
-    44084278-ac70-4e5b-81b4-dcb94b7d84aa: 'Action Button 3 Text ' # Action Button 3 Text
+    44084278-ac70-4e5b-81b4-dcb94b7d84aa: 'Action Button 3 Text ' # Action Button 3 Text 
     44252114-6051-4262-855e-a40350926842: 'Navigation Item' # Navigation Item
     54021256-04e1-4c54-9eff-89d856cc1ae8: 'Icon Range Outline' # Icon Range Outline
     58601665-7b46-4231-bafc-7fb4b421301f: 'Student Image' # Student Image
@@ -632,7 +632,7 @@ meta:
     c713d171-07a9-4b71-9b79-d9ec2d05c852: External # External
     c24063b5-7216-4828-88bc-474023b1d215: 'Donate USA Map' # Donate USA Map
     c76751a8-3111-4cda-a171-fd618e00d0f3: Text # Text
-    c81104d0-434b-4653-93f4-3d13c6f5851d: 'Action Button 3 Link ' # Action Button 3 Link
+    c81104d0-434b-4653-93f4-3d13c6f5851d: 'Action Button 3 Link ' # Action Button 3 Link 
     c690230b-1890-4cd7-a738-86b862529836: Core # Core
     ca0ab8ea-a3b8-4bb7-a0dd-4b975059ba37: 'Dropdown Title' # Dropdown Title
     ca2d6983-f57c-4e6c-8c65-7a6dbfd1c867: Internship # Internship
@@ -669,7 +669,7 @@ meta:
     d4c1d637-d996-4e25-a33b-c460f1cefb7c: 'Stat 2021' # Stat 2021
     d5c418ff-724c-4b17-a97f-27fde8e1159c: 'Liturgy Step' # Liturgy Step
     d7f7380c-11e9-4300-85f2-5160054980db: 'Liturgy Icons' # Liturgy Icons
-    d9b11d9d-c239-448e-942e-9d52914a559b: 'Action Button 1 Link ' # Action Button 1 Link
+    d9b11d9d-c239-448e-942e-9d52914a559b: 'Action Button 1 Link ' # Action Button 1 Link 
     d537f25e-c395-43f3-9cd8-c60a3e9deb35: 'Large Text' # Large Text
     d596af57-f7d1-4e43-8a3b-c188e6bc5c62: 'Public Schema' # Public Schema
     d5262d58-036f-4bd8-898c-a73b6f4fe4cf: 'Podcast About Text' # Podcast About Text
@@ -730,7 +730,7 @@ meta:
     eabb9c1c-d89f-4b47-a047-d46b49617621: 'Partner Featured Image' # Partner Featured Image
     eacf78ba-71bd-4792-9bf6-d9c631600319: 'Instagram Icon' # Instagram Icon
     eaf86304-0ad2-4f84-af2d-9b942aab2c25: 'Challenge Steps' # Challenge Steps
-    eb4b0a5c-ec8c-4c06-a6a4-c5f5f1a2d047: 'Info Cards ' # Info Cards
+    eb4b0a5c-ec8c-4c06-a6a4-c5f5f1a2d047: 'Info Cards ' # Info Cards 
     ebe51366-4c4a-4429-9ed8-af3cd535cd5e: 'Coming Soon Message' # Coming Soon Message
     ebfb5ef3-d0ba-44a0-97b0-79f7069059f3: 'Homepage Hero Image 2' # Homepage Hero Image 2
     ec35b4d0-59fb-4edd-a497-2eb365d47f14: 'Social Media Podcast Link' # Social Media Podcast Link
