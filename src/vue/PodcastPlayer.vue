@@ -19,7 +19,7 @@
                 Read the transcript
             </div>
         </div>
-        <div class="w-full flex justify-end pb-4">
+        <div v-if="false" class="w-full flex justify-end pb-4">
             <div :class="{ 'bg-linen text-blue' :autoplayOn }" v-on:click="toggleAutoplay()" class="whitebutton hover:cursor-pointer">
                 Autoplay
             </div>
