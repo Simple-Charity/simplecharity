@@ -1,4 +1,4 @@
-dateModified: 1667064685
+dateModified: 1667065805
 email:
   fromEmail: $SES_EMAIL
   fromName: $SES_FROM
@@ -893,5 +893,6 @@ system:
   edition: pro
   live: true
   name: $SITE_NAME
+  retryDuration: null
   schemaVersion: 3.7.33
   timeZone: America/New_York
