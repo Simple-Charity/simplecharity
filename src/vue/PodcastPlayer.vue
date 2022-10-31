@@ -2,10 +2,11 @@
     <div class="">
         
         <div>
-            <div class="pb-6">
+            <div v-if="false" class="pb-6">
                 <h1  class="text-blue text-2xl font-bold">Listen to the episode</h1>
             </div>
-            <audio class="w-full mb-12" id="audioPlayer" controls @timeupdate="onTimeUpdate">
+            
+            <audio v-if="false" class="w-full mb-12" id="audioPlayer" controls @timeupdate="onTimeUpdate">
                 <source :src="audio" type="audio/mp3">
             </audio>
         </div>
@@ -108,7 +109,7 @@
                 transcriptBlocks: this.transcript,
                 transcriptModalOpen: false,
                 currentTime: 0,
-                autoplayOn: true,
+                autoplayOn: false,
             } 
         },
 

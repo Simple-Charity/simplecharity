@@ -145,6 +145,10 @@
             </div>
             <div class="flex justify-center">
                 <div class="w-[60rem] mt-10">
+                    <div>
+                        <h1 class="text-blue text-2xl font-bold mb-6 text-center md:text-left">Listen to the episode</h1>
+                        <div class="w-full mb-20 max-w-[60rem]" id='buzzsprout-small-player-1046077-tags-{{ entry.slug }}'></div><script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/1046077.js?player=small&tags={{ entry.slug }}&container_id=buzzsprout-small-player-1046077-tags-{{ entry.slug }}'></script>
+                    </div>
                     {% if transcriptAvailable %}
                         <podcast-player audio="{{ entry.episodeAudio.one().getUrl() }}" :transcript="{{ transcript|json_encode }}"></podcast-player>
                     {% endif %}
