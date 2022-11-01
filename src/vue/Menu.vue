@@ -5,7 +5,7 @@
 				<span class="absolute right-0 pr-8 pt-6 text-2xl transition-all cursor-pointer" @click="$emit('close')">
 					&#10005;
 				</span>
-        		<div data-scroll-lock-scrollable class="overflow-y-auto h-full py-12 px-14">
+        		<div data-scroll-lock-scrollable class="overflow-y-auto overflow-x-hidden h-full py-12 px-14">
 					<div class="sm:flex sm:flex-wrap content-start" v-for="cat in c">
 						<div class="text-2xl sm:text-3xl font-serif w-1/2">
 							<h1 class="sm:border-b-2 border-blue font-bold">{{ cat }}</h1> 
