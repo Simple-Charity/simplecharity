@@ -180,25 +180,24 @@
 
     {# BANNER 5: QUOTES USING FLICKITY #}
 
-        {% set johnquote = entry.quotes.one() %}
+    {% set johnquote = entry.quotes.one() %}
 
-        {% set quotes = [] %}
+    {% set quotes = [] %}
 
-        {% for q in entry.quotes.all() %}
-            {% set quotes = quotes|merge([{
-                quoteIcon: q.icon.one().getUrl(),
-                quoteText: q.quoteText,
-                name: q.fullName,
-                description: q.description,
-            }]) %}
-        {% endfor %}
+    {% for q in entry.quotes.all() %}
+        {% set quotes = quotes|merge([{
+            quoteIcon: q.icon.one().getUrl(),
+            quoteText: q.quoteText,
+            name: q.fullName,
+            description: q.description,
+        }]) %}
+    {% endfor %}
 
-        <div class="edge relative z-20 overflow-hidden">
-            <div class="max-w-screen-2xl mx-auto ">
-                <carousel-quote :quotes="{{ quotes|json_encode }}" qicon="{{ johnquote.quotesIcon.one().getUrl() }}"></carousel-quote>
-            </div>
+    <div class="edge relative z-20 overflow-hidden">
+        <div class="max-w-screen-2xl mx-auto ">
+            <carousel-quote :quotes="{{ quotes|json_encode }}" qicon="{{ johnquote.quotesIcon.one().getUrl() }}"></carousel-quote>
         </div>
-
+    </div>
 
     {# BANNER 6: TAKE ACTION #}
 
