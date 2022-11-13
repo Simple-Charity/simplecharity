@@ -58,15 +58,6 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 9719ec4f-e8c7-42a9-9517-3e2def8c6a6b # Featured Donor Partners
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
             fieldUid: 0772494f-b92f-4074-a339-65e3a912e671 # Donate Page Hero Text
             instructions: null
             label: null
@@ -88,78 +79,6 @@ fieldLayouts:
         sortOrder: 2
       -
         elements:
-          -
-            fieldUid: acf0645e-0078-40b1-8fed-fe4848a4299d # Charity Bulb Icon
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: ecb7a392-a8d6-4b91-8a68-7b5a7fdd93dd # Charity Cross Icon
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: c669f297-d354-4da9-a80f-05f4e692b208 # Charity Dollar Icon
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: c6d38d1b-8811-4fcf-a703-33aee65066b8 # Charity Heart Icon
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 53d39b3e-f4b6-4106-a6f2-e16a93f58998 # Charity Home Icon
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 11686273-6915-47d4-b1eb-7136d72e21e9 # Donate All Icons
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: c24063b5-7216-4828-88bc-474023b1d215 # Donate USA Map
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: cf1e109b-14f8-4ba4-ac60-4135f90aa1f9 # Charity Check
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
           -
             fieldUid: 6f3ff85b-f587-4d66-8a80-7140ff5edca2 # Sample Image
             instructions: null

@@ -101,8 +101,15 @@
 
         {% set charities = [] %}
 
-        {% for item in craft.entries.section('partners').all() %}
+        {% for item in craft.entries.section('partners').orderBy('title').all() %}
             {% if item.isFeaturedOnCharitiesPage %}
+
+                {% set url = '' %}
+
+                {% if item.partnerIcon|length %}
+                    {% set url = item.partnerIcon.one().getUrl() %}
+                {% endif %}
+
                 {% set charities = charities|merge([
                     {
                         name:item.title,
@@ -121,7 +128,7 @@
 
                         topSeven:item.topSeven,
 
-                        icon:item.partnerIcon.one().getUrl(),
+                        icon:url,
                         motto:item.partnerMotto,
                         focus:item.partnerFocus,
                         impact:item.partnerImpact|striptags,
