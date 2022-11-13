@@ -1,0 +1,14 @@
+columnSuffix: eimvtxog
+contentColumnType: boolean
+fieldGroup: 266c6678-9669-488e-82b7-68601833935a # About
+handle: isFeaturedOnCharitiesPage
+instructions: 'Indicate "Yes" if this partner is to be displayed on the Charities page. '
+name: 'Is Featured On Charities Page'
+searchable: false
+settings:
+  default: true
+  offLabel: 'No'
+  onLabel: 'Yes'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

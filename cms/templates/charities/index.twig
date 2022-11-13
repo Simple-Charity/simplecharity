@@ -101,34 +101,36 @@
 
         {% set charities = [] %}
 
-        {% for item in entry.featuredDonorPartners.all() %}
-            {% set charities = charities|merge([
-                {
-                    name:item.title,
-                    url:"/partners/" ~ item.slug,
-                    color: "bg-" ~ item.partnerColor.handle|default('linen') ,
+        {% for item in craft.entries.section('partners').all() %}
+            {% if item.isFeaturedOnCharitiesPage %}
+                {% set charities = charities|merge([
+                    {
+                        name:item.title,
+                        url:"/partners/" ~ item.slug,
+                        color: "bg-" ~ item.partnerColor.handle|default('linen') ,
 
-                    healthIsCause:item.causeArea.contains("health"),
-                    educationIsCause:item.causeArea.contains("education"),
-                    ministryIsCause:item.causeArea.contains("ministry"),
-                    capitalIsCause:item.causeArea.contains("capital"),
-                    safetyIsCause:item.causeArea.contains("safety"),
+                        healthIsCause:item.causeArea.contains("health"),
+                        educationIsCause:item.causeArea.contains("education"),
+                        ministryIsCause:item.causeArea.contains("ministry"),
+                        capitalIsCause:item.causeArea.contains("capital"),
+                        safetyIsCause:item.causeArea.contains("safety"),
 
-                    nineteenIsYear:item.yearRecommended.contains("20192020"),
-                    twentyIsYear:item.yearRecommended.contains("20202021"),
-                    twentyOneIsYear:item.yearRecommended.contains("20212022"),
+                        nineteenIsYear:item.yearRecommended.contains("20192020"),
+                        twentyIsYear:item.yearRecommended.contains("20202021"),
+                        twentyOneIsYear:item.yearRecommended.contains("20212022"),
 
-                    topSeven:item.topSeven,
+                        topSeven:item.topSeven,
 
-                    icon:item.partnerIcon.one().getUrl(),
-                    motto:item.partnerMotto,
-                    focus:item.partnerFocus,
-                    impact:item.partnerImpact|striptags,
+                        icon:item.partnerIcon.one().getUrl(),
+                        motto:item.partnerMotto,
+                        focus:item.partnerFocus,
+                        impact:item.partnerImpact|striptags,
 
-                    opened: false,
-                    visible: true,
-                }
-            ]) %}
+                        opened: false,
+                        visible: true,
+                    }
+                ]) %}
+            {% endif %}
         {% endfor %}
     </div>
     <div class="bg-deepnavy relative edge-x">
