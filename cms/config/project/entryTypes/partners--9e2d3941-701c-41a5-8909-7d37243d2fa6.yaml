@@ -119,6 +119,15 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+          -
+            fieldUid: d0da9db0-d6c7-4a34-92f7-dfb6ea5c4065 # Top Seven Classification
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: 'Partner Search Data'
         sortOrder: 3
       -

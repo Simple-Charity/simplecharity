@@ -1,4 +1,4 @@
-dateModified: 1667065805
+dateModified: 1668362683
 email:
   fromEmail: $SES_EMAIL
   fromName: $SES_FROM
@@ -75,6 +75,7 @@ meta:
     3ecc7748-3ba2-4a36-8209-7161827eca77: 'Transparency Full Text' # Transparency Full Text
     03f1b323-dc07-4777-b2d0-6c9719c1bbac: 'Item Icon' # Item Icon
     03f2dc36-27a7-46c9-b02d-e9f94c129600: Philosophy # Philosophy
+    3f6fa691-ef5a-4938-92f7-5e2f6c43755f: 'Cause Area Name' # Cause Area Name
     3f69d429-17b1-4f68-b67b-7aef1fd4dc86: 'Icon Blue Outline' # Icon Blue Outline
     3f737a61-b331-44cc-8630-575289df2601: Countries # Countries
     3f4796cc-bfec-4fe3-b6cb-f7d8e04b4131: 'Transcript Active' # Transcript Active
@@ -114,6 +115,7 @@ meta:
     6a4dc85a-8987-4fe8-8956-9ebf50d6f86b: 'Doc Name' # Doc Name
     6a47c200-952d-46e2-a08e-27d996e7ce7a: Verses # Verses
     6b0d2f05-4788-48d7-ba9a-6c649a489d79: Donate # Donate
+    6b13c894-3329-41ba-a08e-3e942bffc522: 'Top Seven Category' # Top Seven Category
     6b3450bf-cbf1-4724-9946-576c1893ff99: 'Small Text' # Small Text
     6b4827de-4f95-4753-a795-7df4cf10ae21: 'Footer Red Buttons' # Footer Red Buttons
     6b842010-c19b-4dac-b845-4e0eaa188da9: 'Episode Audio' # Episode Audio
@@ -412,6 +414,7 @@ meta:
     6507f3d2-51bb-4f9d-9902-c7ddf2c89f37: 'Club Hero Image' # Club Hero Image
     6595a515-a141-4ddd-99b6-acf3414e197f: 'Our Team' # Our Team
     6597ee4f-ee31-4b87-aa82-d4c9f895e057: 'Blog Content' # Blog Content
+    6914c33a-450b-4954-8a0d-379e5ea1dda2: 'Cause Area Icon Range' # Cause Area Icon Range
     6915f4fe-d223-4ade-bf1b-bb3f168ab027: 'Table Entry' # Table Entry
     7080da80-574b-4ed4-95ac-af04333bac4c: 'Accent Color' # Accent Color
     7166d0be-82e2-40e7-b035-12aed26d9e3e: Systems # Systems
@@ -480,7 +483,9 @@ meta:
     3276197e-0ad1-470c-9006-a9cec2093618: 'Carousel Cell' # Carousel Cell
     3460734b-8b28-4bd3-a2c6-c213effe38e9: Amount # Amount
     3608342f-809f-4a60-a72c-774d736f09c3: 'Doc Name' # Doc Name
+    4942630e-0193-4f9a-959a-fdedb05f0843: 'Cause Area Icon Color' # Cause Area Icon Color
     5201702c-adb5-43f4-a49d-2d240a4c4d4a: 'Europe & Central Asia' # Europe & Central Asia
+    5688869c-1287-4687-9b50-abf34a13caf8: 'Cause Areas' # Cause Areas
     07384164-a723-461a-971c-56a0b97ffbf5: 'About Hero Image' # About Hero Image
     8503601d-73c9-4354-9cf0-016e990467d6: Translation # Translation
     11686273-6915-47d4-b1eb-7136d72e21e9: 'Donate All Icons' # Donate All Icons
@@ -498,6 +503,7 @@ meta:
     73621214-6b58-493c-b837-db6b4a521385: 'USA Map Outline' # USA Map Outline
     74284365-7a11-44ce-89c8-f0d2cdd8fc9d: Stats # Stats
     75613124-d8c0-4155-ae38-4264e3ab0c53: 'Mission Teaser Text' # Mission Teaser Text
+    96430616-69dc-4527-a931-278353c4c6a0: Default # Default
     a050e10f-27ff-425f-8157-697fd1e26cb8: 'Third Subtitle' # Third Subtitle
     a08f5fc8-9695-4020-ac3b-70a6fbb63354: 'Partner Icon' # Partner Icon
     a2c77353-8003-4e4d-8d04-a0658785192f: Reference # Reference
@@ -546,6 +552,7 @@ meta:
     acf0645e-0078-40b1-8fed-fe4848a4299d: 'Charity Bulb Icon' # Charity Bulb Icon
     acf958ac-7f36-438f-bf25-ef3e8b3b251f: 'Grow Icon' # Grow Icon
     ad5f00e4-1b48-494f-a2c3-b66eb3c64b3e: 'Partner Motto' # Partner Motto
+    ade2e580-b2db-469f-8b5a-3975f431fd8d: 'Top Seven Group' # Top Seven Group
     ae1c1d48-b88b-45d5-b301-44dbd0c9a868: 'About Andrew Lee' # About Andrew Lee
     ae5f5c29-ba86-4550-932d-66a8ce8d824a: 'About Globe' # About Globe
     ae86ffb3-35ab-4066-8e33-755aa600854d: Answer # Answer
@@ -659,6 +666,7 @@ meta:
     cf6df6e4-5170-4f09-9262-ee12d74dedf7: Description # Description
     cf8db1a1-7d87-4bf3-b0fd-d2d3759e7755: 'Doc Slug' # Doc Slug
     cfb0632d-25e2-41d9-85de-8dd0459f75f4: 'Class year' # Class year
+    d0da9db0-d6c7-4a34-92f7-dfb6ea5c4065: 'Top Seven Classification' # Top Seven Classification
     d0e6a1da-6091-4c05-af4d-dd0e2678169a: Icon # Icon
     d0ef30cb-6567-44dd-aa01-ad11766c21a6: 'Text Dropdown' # Text Dropdown
     d0257079-2b4e-4bbd-9ae8-949394717773: Salary # Salary
@@ -681,6 +689,7 @@ meta:
     da27690b-c3a8-4a29-b91c-6d1dd7ad6641: Stat # Stat
     dac1d3ae-8fbe-415b-9fff-5e3b911296dc: 'Third Description' # Third Description
     dadc93de-9c35-4c95-964a-4b88ff41510e: 'Site Wide Assets' # Site Wide Assets
+    db001ed9-33a1-4297-b51c-1520257f99f8: 'Cause Area Color' # Cause Area Color
     db7a0d8d-c7c7-4c77-8fca-3f4db8ebc734: 'People Interviewed' # People Interviewed
     db36dfb2-31b4-447a-8c5b-1cb7538143bf: Stripe # Stripe
     dc4d703d-b9bc-4fa1-a157-61c1b6a6ba60: Card # Card
@@ -719,6 +728,7 @@ meta:
     e91dc8a2-648d-42e0-be86-c119aa12abda: 'LinkedIn Icon Light' # LinkedIn Icon Light
     e94c67d3-609d-4147-88b3-d5e42a95c76b: Homepage # Homepage
     e497ee2d-0ac8-485d-9d8c-3e886c3b9a5c: 'Release Date' # Release Date
+    e627c063-00db-4d47-bffb-eaeb4672f5a9: 'Cause Area Icon Outline' # Cause Area Icon Outline
     e705ed43-9fed-433d-9a96-81d59f425766: 'Episode Title' # Episode Title
     e774b400-f1ee-4b99-b55d-f0ab1510d6b3: 'Homepage Core Beliefs Promo Text' # Homepage Core Beliefs Promo Text
     e30856e5-fcc7-42da-ae6c-514fc2d30672: 'Contact Main Text' # Contact Main Text

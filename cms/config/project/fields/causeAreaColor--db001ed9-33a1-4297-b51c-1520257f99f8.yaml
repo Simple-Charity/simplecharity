@@ -1,0 +1,90 @@
+columnSuffix: oolkhbdy
+contentColumnType: string
+fieldGroup: 266c6678-9669-488e-82b7-68601833935a # About
+handle: causeAreaColor
+instructions: ''
+name: 'Cause Area Color'
+searchable: false
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Red
+        -
+          - value
+          - red
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Yellow
+        -
+          - value
+          - yellow
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Pink
+        -
+          - value
+          - pink
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Green
+        -
+          - value
+          - green
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Teal
+        -
+          - value
+          - teal
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Blue
+        -
+          - value
+          - blue
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Navy
+        -
+          - value
+          - navy
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

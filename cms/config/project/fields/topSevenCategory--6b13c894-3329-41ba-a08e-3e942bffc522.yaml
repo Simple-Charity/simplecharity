@@ -1,0 +1,101 @@
+columnSuffix: pttgvxoy
+contentColumnType: string
+fieldGroup: 266c6678-9669-488e-82b7-68601833935a # About
+handle: topSevenCategory
+instructions: ''
+name: 'Top Seven Category'
+searchable: false
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - None
+        -
+          - value
+          - none
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Health
+        -
+          - value
+          - health
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Education
+        -
+          - value
+          - education
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Safety
+        -
+          - value
+          - safety
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Capital
+        -
+          - value
+          - capital
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Ministry
+        -
+          - value
+          - ministry
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'All Causes'
+        -
+          - value
+          - allCauses
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Domestic
+        -
+          - value
+          - domestic
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown
