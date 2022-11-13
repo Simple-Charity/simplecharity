@@ -79,6 +79,15 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+          -
+            fieldUid: d949679b-e425-4fc7-9e11-0f22c667f029 # Is Featured On Charities Page
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: 'Generic Data'
         sortOrder: 2
       -
@@ -110,6 +119,10 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+        name: 'Partner Search Data'
+        sortOrder: 3
+      -
+        elements:
           -
             fieldUid: 92b7c23b-f33d-44bb-8103-52b878fbf8ee # Top Seven
             instructions: null
@@ -128,8 +141,17 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Partner Search Data'
-        sortOrder: 3
+          -
+            fieldUid: a6b351ca-2dfd-43da-bc62-502ee73da8da # Top Seven Sort Index
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Top Seven'
+        sortOrder: 4
       -
         elements:
           -
@@ -192,7 +214,7 @@ fieldLayouts:
             warning: null
             width: 100
         name: 'Title Banner'
-        sortOrder: 4
+        sortOrder: 5
       -
         elements:
           -
@@ -214,7 +236,7 @@ fieldLayouts:
             warning: null
             width: 100
         name: 'Dollar Impact Banner'
-        sortOrder: 5
+        sortOrder: 6
       -
         elements:
           -
@@ -236,7 +258,7 @@ fieldLayouts:
             warning: null
             width: 100
         name: 'Overall Impact Banner'
-        sortOrder: 6
+        sortOrder: 7
       -
         elements:
           -
@@ -249,7 +271,7 @@ fieldLayouts:
             warning: null
             width: 100
         name: 'Dropdowns Banner'
-        sortOrder: 7
+        sortOrder: 8
       -
         elements:
           -
@@ -289,7 +311,7 @@ fieldLayouts:
             warning: null
             width: 100
         name: 'Story Banner'
-        sortOrder: 8
+        sortOrder: 9
       -
         elements:
           -
@@ -311,7 +333,7 @@ fieldLayouts:
             warning: null
             width: 100
         name: 'Why We Trust Them Banner'
-        sortOrder: 9
+        sortOrder: 10
 handle: partners
 hasTitleField: true
 name: Partners

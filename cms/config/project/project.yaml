@@ -1,4 +1,4 @@
-dateModified: 1668364842
+dateModified: 1668381090
 email:
   fromEmail: $SES_EMAIL
   fromName: $SES_FROM
@@ -515,6 +515,7 @@ meta:
     a4eb416d-e2ac-407e-bc0c-a362690e842a: 'Challenge Supports' # Challenge Supports
     a4ee6689-71e0-41c4-b7c4-851661cabd19: 'Process Target 3' # Process Target 3
     a6a1d6b5-9948-4464-aea9-a2d06f034513: 'Internship Swoop Border' # Internship Swoop Border
+    a6b351ca-2dfd-43da-bc62-502ee73da8da: 'Top Seven Sort Index' # Top Seven Sort Index
     a7b6ce52-2079-4db7-a87d-f94391373a11: 'One Hundred Percent Circle' # One Hundred Percent Circle
     a7fe0148-8b00-4460-a902-c3df1fb3cba1: 'Overlay Title' # Overlay Title
     a8a891ad-66eb-44f2-a559-8941eca89754: 'Thank You Button Text' # Thank You Button Text
@@ -688,6 +689,7 @@ meta:
     d8929f03-7be0-40ce-bd93-0ef4b7c9505a: 'Sprout Icon Color' # Sprout Icon Color
     d43861c3-1571-4dd5-a703-88e5bceacef4: 'Blue Wave 2' # Blue Wave 2
     d373921b-98ca-4344-8300-d6315989af07: 'Testimonial Name Description' # Testimonial Name Description
+    d949679b-e425-4fc7-9e11-0f22c667f029: 'Is Featured On Charities Page' # Is Featured On Charities Page
     d2909213-6972-48ca-8186-7c77cdaa3d66: 'Address Line 2' # Address Line 2
     da27690b-c3a8-4a29-b91c-6d1dd7ad6641: Stat # Stat
     dac1d3ae-8fbe-415b-9fff-5e3b911296dc: 'Third Description' # Third Description
