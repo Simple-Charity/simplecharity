@@ -1,4 +1,4 @@
-dateModified: 1668362683
+dateModified: 1668364842
 email:
   fromEmail: $SES_EMAIL
   fromName: $SES_FROM
@@ -54,6 +54,7 @@ meta:
     2d870c1f-4963-4d65-ab54-4576efc26fb7: 'Modal Text' # Modal Text
     002db005-6b93-4da0-9ab0-006da3ec35c4: Bio # Bio
     2e19f39e-6e49-4e40-830a-df9ed9db43fd: 'Summary Image' # Summary Image
+    2e31dc24-46d1-459f-aa24-ac8e093bb6b7: 'Donate Information Text' # Donate Information Text
     2e9028ad-d3e4-4f65-ad46-1432e2aebf6c: 'Philosophy Images Crop' # Philosophy Images Crop
     2f208078-005f-4a37-8c0a-f012c2b57aa9: 'Thank You' # Thank You
     2fcab67f-d14d-4402-ad34-8eb7e7500be3: 'Podcast Reviews Banner Header' # Podcast Reviews Banner Header
@@ -153,6 +154,7 @@ meta:
     7f3bf0b3-9fff-4b46-baa7-d0dba0ff7071: 'Phil Image' # Phil Image
     7f92b4f5-ee87-418d-81d6-850a633333de: 'Big Quotes' # Big Quotes
     7f151a83-a974-41ef-b0fb-7f099f4caca5: 'Fundraise Icon' # Fundraise Icon
+    7f879e5d-085c-4c59-9280-fb94e6207449: 'Donate Information Hero Text' # Donate Information Hero Text
     7fbd0b43-da01-4a49-8257-fcbce21c40ab: 'Add Image Header Background' # Add Image Header Background
     8a06e679-8b4d-4916-a154-b2aa33d1c9a4: Photo # Photo
     8a1c4e40-a5ab-4593-a923-0f62b45a6dcb: Countries # Countries
@@ -443,6 +445,7 @@ meta:
     011489e7-5ebd-4cbd-8ecf-41512a00a694: 'FAQ Caret' # FAQ Caret
     14904d51-bbcf-4d04-9539-5432cc5b31ef: 'Stories Category Text Color' # Stories Category Text Color
     15451df2-df54-4268-af0b-30882b173880: 'First Subtitle' # First Subtitle
+    20781fbf-26f1-4969-b3af-7ce378434395: 'Donate Information Header' # Donate Information Header
     21326ee3-1880-4180-b8af-aec1bcd0d24f: 'Class Photo' # Class Photo
     21755b33-f5ef-4d44-90e7-1a08696530e0: Angelique # Angelique
     22719c53-1950-419d-9fcf-6889e131a46e: Page # Page

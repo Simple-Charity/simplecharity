@@ -1,20 +1,14 @@
 <template>
     <div>
         <div class="max-w-screen-2xl mx-auto">
-
-
-
-            <div class="grid grid-cols-6 " v-for="partner in topsevendata">
-
-
-
+            <div class="grid grid-cols-6 " v-for="partner in tsd">
                 <div class="flex flex-col lg:flex-row items-center justify-center lg:justify-start lg:col-span-2">
                     <img class="h-12 w-12 sm:h-16 sm:w-16 mr-4" :src="partner.categoryIcon" alt="">
                     <span :class="partner.textcolor" class="text-xl lg:text-3xl font-semibold mr-4 mt-1 lg:mt-0 hidden sm:inline">{{ partner.categoryName }}</span>
                 </div>
                 <div :class="partner.bgcolor" class="rounded-md col-span-5 lg:col-span-4 sm:px-2 mx-2 my-3 ">
-                    <div class="overflow-hidden transition-height duration-500 ease-in-out transform" :class="{ 'h-96': opened1 , 'h-28': !(opened1) }">
-                        <div class="h-28 flex items-center">
+                    <div class="overflow-hidden transition-height duration-500 ease-in-out transform" :class="{ 'h-96': partner.open == 'yes' , 'h-28': !(partner.open == 'yes') }">
+                        <div v-on:click="togglePartnerOpen(partner)" class="h-28 flex items-center hover:cursor-pointer">
                             <div class="flex items-center">
                                 <div class="rounded-md overflow-hidden h-24 w-24 hidden sm:block">
                                     <img :src="partner.icon" alt="">
@@ -30,7 +24,7 @@
                                 </div>
                                 <div class="ml-auto w-10 h-28"></div>
                                 <div class="absolute right-1">
-                                    <div v-on:click="opened1 = !(opened1)" class="mr-5 w-3 sm:w-4 transition duration-500 ease-in-out transform" v-bind:class="{ 'rotate-90': opened1 }">
+                                    <div class="mr-5 w-3 sm:w-4 transition duration-500 ease-in-out transform" v-bind:class="{ 'rotate-90': partner.open == 'yes' }">
                                         <img class="w-full h-full" :src="caret" alt="">
                                     </div>
                                 </div>
@@ -55,13 +49,9 @@
                         </div>
                     </div>
                 </div>
-                
-
-
             </div>
         </div>
     </div>
-    
 </template>
 
 <script>
@@ -69,16 +59,20 @@
 import VueAxios from '../js/modules/vue-axios';
 
 export default {
-    props: ["topsevendata"],
+    props: ["topsevendata",'caret'],
     data: function() {
         return {
-            opened1: false,
-            opened2: false,
-            opened3: false,
-            opened4: false,
-            opened5: false,
-            opened6: false,
-            opened7: false,
+            tsd: this.topsevendata,
+        }
+    },
+    methods: {
+        togglePartnerOpen(p) {
+            if (p.open == 'yes') {
+                p.open = 'no';
+            } else {
+                p.open = 'yes';
+            }
+            
         }
     },
 };

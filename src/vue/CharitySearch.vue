@@ -299,7 +299,7 @@
 
                     <div v-for="item in filteredCharities" class="pt-6">
                         <div class="overflow-hidden rounded-md bg-blue relative transition-height duration-500 ease-in-out transform" v-bind:class="{ 'h-[27rem] sm:h-96': item.opened , 'h-32 sm:h-28': !(item.opened) }" >
-                            <div class="h-32 sm:h-28 flex items-center">
+                            <div v-on:click="item.opened = !(item.opened)" class="h-32 sm:h-28 flex items-center hover:cursor-pointer">
                                 <div class="h-32 sm:h-28 w-28 min-w-[7rem] p-0 m-0 hidden md:block">
                                     <img class="h-32 sm:h-28 w-28 min-w-[7rem]" :src="item.icon" alt="">
                                 </div>
@@ -315,7 +315,7 @@
                                     </div>
                                 </div>
                                 <div class="ml-auto mr-6">
-                                    <div v-on:click="item.opened = !(item.opened)" class="ml-2 caretmarker w-3 sm:w-4 transition duration-500 ease-in-out transform" v-bind:class="{ 'rotate-90': item.opened }">
+                                    <div  class="ml-2 caretmarker w-3 sm:w-4 transition duration-500 ease-in-out transform" v-bind:class="{ 'rotate-90': item.opened }">
                                         <button><img class="w-full h-full" :src="barecaret" alt=""></button>
                                     </div>
                                 </div>

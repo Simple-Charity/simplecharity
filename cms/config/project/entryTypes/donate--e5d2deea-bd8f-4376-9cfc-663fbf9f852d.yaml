@@ -198,6 +198,37 @@ fieldLayouts:
             width: 100
         name: Assets
         sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: 20781fbf-26f1-4969-b3af-7ce378434395 # Donate Information Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7f879e5d-085c-4c59-9280-fb94e6207449 # Donate Information Hero Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 2e31dc24-46d1-459f-aa24-ac8e093bb6b7 # Donate Information Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 3: Information'
+        sortOrder: 4
 handle: donate
 hasTitleField: false
 name: Donate
