@@ -38,7 +38,7 @@
 
             {% set topSevenData = [] %}
 
-            {% for partner in craft.entries.section('partners').all() %}
+            {% for partner in craft.entries.section('partners').orderBy('topSevenSortIndex').all() %}
                 {% if partner.topSeven %}
 
                     {% set textcolor = 'text-red' %}

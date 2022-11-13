@@ -1,0 +1,20 @@
+columnSuffix: isydgtqb
+contentColumnType: smallint(1)
+fieldGroup: 266c6678-9669-488e-82b7-68601833935a # About
+handle: topSevenSortIndex
+instructions: ''
+name: 'Top Seven Sort Index'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: 1
+  max: 7
+  min: 1
+  prefix: null
+  previewCurrency: ''
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number
