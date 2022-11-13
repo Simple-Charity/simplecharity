@@ -1,5 +1,5 @@
 
-{% if entry.lightBackground %}
+{% if (not (entry.pageStatus == 'downForMaintenance' or entry.pageStatus == 'underConstruction')) and entry.lightBackground %}
     {% set textColor = "text-blue" %}
 {% else %}
     {% set textColor = "text-linen" %}
