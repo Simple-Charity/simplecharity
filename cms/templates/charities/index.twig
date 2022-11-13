@@ -34,23 +34,68 @@
                 <hr class="pt-8 pb-4">
             </div>
 
-            {% set bulb = entry.charityBulbIcon.one().getUrl() %}
-            {% set home = entry.charityHomeIcon.one().getUrl() %}
-            {% set dollar = entry.charityDollarIcon.one().getUrl() %}
-            {% set heart = entry.charityHeartIcon.one().getUrl() %}
-            {% set cross = entry.charityCrossIcon.one().getUrl() %}
-            {% set all = entry.donateAllIcons.one().getUrl() %}
-            {% set usa = entry.donateUsaMap.one().getUrl() %}
 
-            {% set ci1 = craft.entries.section("Partners").title("Blessings International").one().partnerIcon.one().getUrl() %}
-            {% set ci2 = craft.entries.section("Partners").title("Edify").one().partnerIcon.one().getUrl() %}
-            {% set ci3 = craft.entries.section("Partners").title("Love Justice International").one().partnerIcon.one().getUrl() %}
-            {% set ci4 = craft.entries.section("Partners").title("HOPE International").one().partnerIcon.one().getUrl() %}
-            {% set ci5 = craft.entries.section("Partners").title("Children in Christ").one().partnerIcon.one().getUrl() %}
-            {% set ci6 = craft.entries.section("Partners").title("Tearfund").one().partnerIcon.one().getUrl() %}
-            {% set ci7 = craft.entries.section("Partners").title("The Bowery Mission").one().partnerIcon.one().getUrl() %}
 
-            <top-seven bulb="{{bulb}}" home="{{home}}" dollar="{{dollar}}" heart="{{heart}}" cross="{{cross}}" all="{{all}}" usa="{{usa}}" caret="{{ entry.charityCaret.one().getUrl() }}" barecaret="{{ entry.bareCaret.one().getUrl() }}" ci1="{{ ci1 }}" ci2="{{ ci2 }}" ci3="{{ ci3 }}" ci4="{{ ci4 }}" ci5="{{ ci5 }}" ci6="{{ ci6 }}" ci7="{{ ci7 }}"></top-seven>
+            {% set topSevenData = [] %}
+
+            {% for partner in craft.entries.section('partners').all() %}
+                {% if partner.topSeven %}
+
+                    {% set textcolor = 'text-red' %}
+                    {% set bgcolor = 'bg-red' %}
+                    {% set accentcolor = 'text-blue' %}
+
+                    {% switch partner.topSevenClassification.one().causeAreaColor.value %}
+                        {% case 'red'%}
+                            {% set textcolor = 'text-red' %}
+                            {% set bgcolor = 'bg-red' %}
+                        {% case 'yellow'%}
+                            {% set textcolor = 'text-yellow' %}
+                            {% set bgcolor = 'bg-yellow' %}
+                        {% case 'pink'%}
+                            {% set textcolor = 'text-pink' %}
+                            {% set bgcolor = 'bg-pink' %}
+                        {% case 'green'%}
+                            {% set textcolor = 'text-green' %}
+                            {% set bgcolor = 'bg-green' %}
+                        {% case 'teal'%}
+                            {% set textcolor = 'text-teal' %}
+                            {% set bgcolor = 'bg-teal' %}
+                            {% set accentcolor = 'text-linen' %}
+                        {% case 'blue'%}
+                            {% set textcolor = 'text-blue' %}
+                            {% set bgcolor = 'bg-blue' %}
+                            {% set accentcolor = 'text-linen' %}
+                        {% case 'navy'%}
+                            {% set textcolor = 'text-deepnavy' %}
+                            {% set bgcolor = 'bg-deepnavy' %}
+                            {% set accentcolor = 'text-linen' %}
+                    {% endswitch %}
+
+
+                    {% set topSevenData = topSevenData|merge([
+                        {
+                            'areaIcon':'AREAICON',
+                            'focus': partner.partnerFocus,
+                            'motto': partner.partnerMotto,
+                            'name': partner.title,
+                            'open':'no',
+                            'textcolor': textcolor,
+                            'bgcolor': bgcolor,
+                            'accentcolor': accentcolor,
+                            'dollarImpact':partner.partnerImpact|striptags,
+                            'icon':partner.partnerIcon.one().getUrl(),
+                            'categoryName': partner.topSevenClassification.one().causeAreaName,
+                            'categoryIcon': partner.topSevenClassification.one().causeAreaIconRange.one().getUrl(),
+                            'url': partner.url,
+                        }
+                    ]) %}
+                {% endif %}
+            {% endfor %}
+
+
+
+            <top-seven :topsevendata="{{ topSevenData|json_encode }}" caret="{{ entry.charityCaret.one().getUrl() }}"></top-seven>
 
         </div>
 
@@ -87,7 +132,7 @@
         {% endfor %}
     </div>
     <div class="bg-deepnavy relative edge-x">
-        <charity-search :partners="{{ charities | json_encode }}" caret="{{ entry.charityCaret.one().getUrl() }}" barecaret="{{ entry.bareCaret.one().getUrl() }}" bulb="{{bulb}}" home="{{home}}" dollar="{{dollar}}" heart="{{heart}}" cross="{{cross}}"></charity-search>
+        <charity-search :partners="{{ charities | json_encode }}" caret="{{ entry.charityCaret.one().getUrl() }}" barecaret="{{ entry.bareCaret.one().getUrl() }}"></charity-search>
         {% set wave = entry.blueWaveOne.one() %}
     </div>
     <div class="relative h-[5rem] bg-green w-full">
@@ -101,11 +146,14 @@
 
     <div class="edge sm:pt-[8rem] md:pt-[8rem] lg:pt-[8rem] lg:pb-[8rem] xl:pt-[16rem] xxl:pt-[16rem] bg-green">
         <div class="mx-auto max-w-screen-xl">
-            <h5 class="headercaps text-linen pb-6">DONATE WITH CONFIDENCE</h5>
-            <p class="text-lg sm:text-2xl font-semibold pb-6">We selected the above <span class="text-linen">24 charities*</span> from a group of 628. We did the work to vet them so that you can give with confidence to help the poor.</p>
-            <p class="text-lg pb-6">100% of your gift will go where you choose.</p>
-            <p class="text-md pb-6"><strong>Note</strong>: This is by no means an exhaustive list. It's just a launching point to make things a little less intimidating for you, in the same way an essay prompt helps narrow your focus enough to clear your writer's block. Although our recommendations stand out for their trustworthiness and effectiveness, there are still many, many other Christian organizations that we evaluated that we would heartily endorse. In any case, we encourage you to do your due diligence and ultimately give wherever you feel called to give.</p>
-            <p class="text-md pb-6">*Simple Charity does not receive compensation from any of these organizations.</p>
+            <h5 class="headercaps text-linen pb-6">{{ entry.donateInformationHeader|upper }}</h5>
+            <div class="redactor text-lg sm:text-2xl font-semibold pb-6">
+                {{ entry.donateInformationHeroText }}
+            </div>
+            <div class="redactor text-lg pb-6">
+                {{ entry.donateInformationText }}
+            </div>
+            
 
             <a href="{{ craft.entries.slug('process').one().url }}">
                 <button>
