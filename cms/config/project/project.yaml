@@ -1,4 +1,4 @@
-dateModified: 1668381415
+dateModified: 1668398611
 email:
   fromEmail: $SES_EMAIL
   fromName: $SES_FROM
@@ -59,6 +59,7 @@ meta:
     2f208078-005f-4a37-8c0a-f012c2b57aa9: 'Thank You' # Thank You
     2fcab67f-d14d-4402-ad34-8eb7e7500be3: 'Podcast Reviews Banner Header' # Podcast Reviews Banner Header
     3a3e4df0-9f3d-4ebf-b3a2-34f84143f75a: 'Item Description' # Item Description
+    3b0e9b39-a800-43ae-9b7f-943ab727aac5: 'Careers Hero Text' # Careers Hero Text
     3b67cd9a-7408-40d2-b67c-19fbf57e0cb4: 'Hidden Credit' # Hidden Credit
     3b5012b6-8415-4b1e-8653-516c6dea2f4e: Icon # Icon
     3bfa9a72-d3b5-4b7a-be32-215d6d0e1da9: 'Credit Contents' # Credit Contents
@@ -132,6 +133,7 @@ meta:
     6f1f3895-7bf1-4729-800b-82700ff99637: 'Two Coins Team Optimize' # Two Coins Team Optimize
     6f3ff85b-f587-4d66-8a80-7140ff5edca2: 'Sample Image' # Sample Image
     6f54c990-2740-4ae8-9f0e-4b7e2f8b4d09: 'Subscription Quantity' # Subscription Quantity
+    6f97fc8c-0ed3-498e-8985-752d02ef8701: 'Job Openings' # Job Openings
     6fa64151-393e-4fd3-a13c-5e56cdd3decf: Contact # Contact
     7a28bd04-bc9c-457e-bb12-a455cbf01865: 'Liturgy Icon' # Liturgy Icon
     7a633eca-bfc2-4150-9029-8866716a9600: 'Page Description' # Page Description
@@ -274,6 +276,7 @@ meta:
     62bac7f0-a418-45fb-a062-b73e51fadf14: 'Home Embrace Copy' # Home Embrace Copy
     62cc5d82-146e-47f5-89c5-8c5e6678e88b: 'Step Name' # Step Name
     62df3d17-f617-4108-8e9c-14cfd20c33d8: 'Currently Accepting Applications' # Currently Accepting Applications
+    65a79333-97f4-4764-8341-66feafbd48f8: 'Careers Info Text' # Careers Info Text
     066d4391-417c-4728-9dbb-3ac06e26e59c: Amount # Amount
     66dc8187-9793-4603-9c29-8c5defa64ac4: 'Application Instructions' # Application Instructions
     68dfcf5a-e844-44c3-8eff-93cacf81615e: Speaker # Speaker
@@ -340,6 +343,7 @@ meta:
     414b2084-be47-492d-a203-c249c554d284: Process # Process
     418e5a19-bfdc-4e3a-9862-0a144f0db3c3: 'Core Description' # Core Description
     425e5b68-ae98-4f03-98a1-9b6dde959711: 'External Item' # External Item
+    455aeeb4-313f-4c2a-b0b1-e61602c2db78: Careers # Careers
     458fe4ea-e5d8-43b6-8487-73aea6780cb3: 'Display Area' # Display Area
     461f1417-744e-40be-b1ed-e69448dc83e2: Category # Category
     474a3676-ce7f-4411-a1a0-4e63837c3db8: 'Button Text' # Button Text
@@ -354,9 +358,11 @@ meta:
     612b1ae7-4b35-40a3-8ac3-c8cba9814589: 'Stats Description 2' # Stats Description 2
     615d572c-d197-481e-b1be-c9e1a35a546d: Icon # Icon
     0628a6e8-7a0b-4136-aa98-cc3e00da522b: 'Philosophy Image' # Philosophy Image
+    629b2208-b054-44fe-a12e-b2bbc09a0047: 'Job Short Description' # Job Short Description
     641cdb99-2645-4b17-898a-343418e41a46: Homepage # Homepage
     648d2f86-d27a-4fc6-967d-630454bd4e9e: 'Episode Hero Text' # Episode Hero Text
     651bb86d-37a4-4df0-bfe7-cdf4aaa5554b: Practice # Practice
+    660a5129-704c-4f7c-9e66-3a92d9fe3400: Default # Default
     672aacbd-70db-4a50-9a5d-23356cb8566c: 'Primary Text' # Primary Text
     672fb184-450f-4775-937c-05936a3baa7e: 'Step Description' # Step Description
     711c1b80-185f-417c-ae0b-89b58e3d4aa7: 'Card Title' # Card Title
@@ -376,6 +382,7 @@ meta:
     851f9533-e0d9-4e77-8e60-da47639ca3a6: 'social Media Icon Light' # social Media Icon Light
     868c698a-287e-4a26-ba83-da8f75ef2693: 'Core Value' # Core Value
     869e991c-fb49-4ad3-92ee-0bc957793e08: 'System Icons Popdown' # System Icons Popdown
+    898afe9c-061b-4fc1-b44d-452b64a938c3: 'Job Application Instructions' # Job Application Instructions
     905bfe24-6de1-48cb-a89a-1b7f658d65cb: 'Interns 2021' # Interns 2021
     908cf83d-274b-47ba-8163-451b437ae5e7: 'Address Line 1' # Address Line 1
     909bdf7b-e62e-4961-8cd7-564af4437d02: Seed # Seed
@@ -491,6 +498,7 @@ meta:
     5688869c-1287-4687-9b50-abf34a13caf8: 'Cause Areas' # Cause Areas
     07384164-a723-461a-971c-56a0b97ffbf5: 'About Hero Image' # About Hero Image
     8503601d-73c9-4354-9cf0-016e990467d6: Translation # Translation
+    9241738d-1c66-444f-a289-99004da14fdb: Careers # Careers
     11686273-6915-47d4-b1eb-7136d72e21e9: 'Donate All Icons' # Donate All Icons
     16608739-7d15-4a79-bfe0-489e36e7e924: 'Student Blog' # Student Blog
     22313373-aba7-4cd1-80b3-e3737bbb05ac: 'Middle East & North Africa' # Middle East & North Africa
@@ -516,6 +524,7 @@ meta:
     a4ee6689-71e0-41c4-b7c4-851661cabd19: 'Process Target 3' # Process Target 3
     a6a1d6b5-9948-4464-aea9-a2d06f034513: 'Internship Swoop Border' # Internship Swoop Border
     a6b351ca-2dfd-43da-bc62-502ee73da8da: 'Top Seven Sort Index' # Top Seven Sort Index
+    a7a29875-cfef-40b5-be31-d1939acf04c6: 'Careers Hero Image' # Careers Hero Image
     a7b6ce52-2079-4db7-a87d-f94391373a11: 'One Hundred Percent Circle' # One Hundred Percent Circle
     a7fe0148-8b00-4460-a902-c3df1fb3cba1: 'Overlay Title' # Overlay Title
     a8a891ad-66eb-44f2-a559-8941eca89754: 'Thank You Button Text' # Thank You Button Text
@@ -531,6 +540,7 @@ meta:
     a363d579-386d-45c0-87df-0238f9368c14: 'Item Reference' # Item Reference
     a481eae2-2105-4649-849c-f555e67e8187: 'Modal Title' # Modal Title
     a773b31a-744d-47d2-b844-6e31a966ea18: 'External Link' # External Link
+    a813e691-df0c-4f8d-bff5-fc8c60e70130: 'Job Title' # Job Title
     a920f479-b8c4-466e-99f7-2c50b6d7937f: 'Giver Image' # Giver Image
     a6185f63-d25b-40c3-8908-f4731cf179f9: Social # Social
     a7298a3c-8cb2-49ca-a13c-a36d13ca8a76: 'Transformative Icon' # Transformative Icon
@@ -662,6 +672,7 @@ meta:
     cd90e02d-57f8-4c1e-a662-173d9f184d31: 'Site Link Dropdown' # Site Link Dropdown
     cd91f2cf-1a0f-4de4-a251-d24a7565b1f6: Countries # Countries
     cd126289-1bb0-4785-92be-a267f9418c8f: Practice # Practice
+    cdc61ad5-83e2-4a49-a833-98f99b97d936: Careers # Careers
     cddd1056-766f-44c4-af53-502cb0a44f29: Practice # Practice
     cdf00e69-1d33-4808-949a-dcdd1f0c7bfc: 'Our Team' # Our Team
     cdf8de34-cb9f-4618-a06c-d7fc7b4c661b: 'Display Area' # Display Area
@@ -740,6 +751,7 @@ meta:
     e892303f-f80c-4212-9137-8047a2d4c0f4: 'Newsletter Header' # Newsletter Header
     e1143709-efd8-451f-8abf-1b7c7b994234: 'Story Hero Image' # Story Hero Image
     e7544278-2a48-4394-9513-2dc5e81dcd98: 'Person Email Address' # Person Email Address
+    e8097484-6a7b-4478-ad5c-703ec1ead567: 'Job Long Description' # Job Long Description
     ea458e0c-0a24-400b-875d-21c6ef64d00c: Quote # Quote
     ea703e4f-5f99-4ddd-88e0-56ec3502494a: 'SC Icons' # SC Icons
     eabb9c1c-d89f-4b47-a047-d46b49617621: 'Partner Featured Image' # Partner Featured Image
