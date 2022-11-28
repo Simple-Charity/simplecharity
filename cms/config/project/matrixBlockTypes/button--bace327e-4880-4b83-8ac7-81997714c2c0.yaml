@@ -1,0 +1,70 @@
+field: 46e8486b-00d8-487f-9bee-0541ae0474d7 # Banner One Button
+fieldLayouts:
+  306f149f-8cb2-4158-993c-25891b25b661:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: a0f0647d-ad32-4706-84ce-612fac5aceca # Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5fe2c921-cc1a-4052-960b-1d956ae3dacf # Button Internal Reference
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  5fe2c921-cc1a-4052-960b-1d956ae3dacf: # Button Internal Reference
+    columnSuffix: kojcdjpt
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonInternalReference
+    instructions: ''
+    name: 'Button Internal Reference'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a0f0647d-ad32-4706-84ce-612fac5aceca: # Button Text
+    columnSuffix: rrzikfgy
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: ''
+    name: 'Button Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: button
+name: Button
+sortOrder: 1

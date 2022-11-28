@@ -1,0 +1,101 @@
+field: 9baa0f02-a614-43d3-9d28-46ba9252d1bf # Generic Button 2
+fieldLayouts:
+  081a2d5f-d9bc-4cb5-961a-3403a8721f9d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 9c95b43e-aaaf-422a-969f-4cd0338f925a # Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f1b2c133-48f6-404e-be23-ab08977141f8 # Button Internal Reference
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 29349998-355b-4ce5-b55c-a94865b13b20 # Button External Reference
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  9c95b43e-aaaf-422a-969f-4cd0338f925a: # Button Text
+    columnSuffix: baljqavo
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: ''
+    name: 'Button Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  29349998-355b-4ce5-b55c-a94865b13b20: # Button External Reference
+    columnSuffix: saohadtt
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonExternalReference
+    instructions: 'Fill this out only if there is no internal reference. '
+    name: 'Button External Reference'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  f1b2c133-48f6-404e-be23-ab08977141f8: # Button Internal Reference
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttonInternalReference
+    instructions: ''
+    name: 'Button Internal Reference'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: button
+name: Button
+sortOrder: 1

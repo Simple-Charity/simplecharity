@@ -33,14 +33,22 @@
                     Generosity can be a struggle. <br class="hidden sm:block"> But what might your life be like if <br class="hidden lg:block"> you <br class="hidden md:block lg:hidden"> could give without <span class="w-[10rem] min-w-[10rem] inline-block"><span class="text-red"><span class="typing"></span></span>?</span>
                 </h1>
             </vue-typed-js>
+            <div class="redactor text-linen pb-8 xl:pb-12 text-lg lg:text-lg xl:text-xl w-full sm:w-3/4 md:w-2/3">
+                {{ entry.bannerOneSubheading }}
             
-            <p class="text-linen pb-8 xl:pb-12 text-lg lg:text-lg xl:text-xl w-full sm:w-3/4 md:w-2/3">Providing Christians with community and tools they can use to <br class="hidden lg:visible">become carefree, confident givers that look more like Christ.</p>
+            </div>
 
+            {% if entry.genericButton.one().buttonInternalReference|length %}
+                {% set reference = entry.genericButton.one().buttonInternalReference.one().url %}
+            {% else %}
+                {% set reference = entry.genericButton.one().buttonExternalReference %}
+            {% endif %}
+            
             <div class="flex justify-center sm:justify-start">
                 <button class="">
-                    <a href="{{ craft.entries.slug('solidarity-resolution').one().url }}">
+                    <a href="{{ reference }}">
                         <div class="redbutton h-14">
-                            <p>Check out our tools</p>
+                            <p>{{ entry.genericButton.one().buttonText }}</p>
                         </div>
                     </a>
                 </button>
@@ -50,10 +58,6 @@
 
     {# BANNER 2: A MOVEMENT TO HELP CHRISTIANS #}
 
-    {% set i1 = entry.homeGiveFreelyIcon.one() %}
-    {% set i2 = entry.homeEmbraceIcon.one() %}
-    {% set i3 = entry.homeFaithfulIcon.one() %}
-
     <div class="edge relative z-20">
 
         <div class="max-w-screen-2xl mx-auto">
@@ -61,28 +65,21 @@
             <delayed-type></delayed-type>
 
             <div class="text-center pb-10 md:pb-16 lg:pb-20">
-                <h2 class="text-xl lg:text-2xl text-blue">A movement to help Christians:</h2>
+                <h2 class="text-xl lg:text-2xl text-blue">{{ entry.banner2Header }}</h2>
             </div>
 
             <div class="sm:grid sm:grid-cols-3 justify-center w-3/4 sm:w-full mx-auto">
-                <div class="text-center sm:px-5">
-                    <div class="flex justify-center pb-[2.25rem] lg:pb-[3.25rem]">
-                        <img class="w-24 h-24 lg:w-40 lg:h-32" src="{{ i1.getUrl() }}" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+
+                {% set delay = 0 %}
+                {% for card in entry.homepageBannerTwoCards.all() %}
+                    <div class="text-center sm:px-5">
+                        <div class="flex justify-center pb-[2.25rem] lg:pb-[3.25rem]">
+                            <img class="w-24 h-24 lg:w-40 lg:h-32" src="{{ card.cardIcon.one().getUrl() }}" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="{{ delay }}">
+                        </div>
+                        <div class="text-md md:text-lg lg:text-2xl text-blue pb-8 sm:pb-0 redactor">{{ card.cardText }}</div>
                     </div>
-                    <h2 class="text-md md:text-lg lg:text-2xl text-blue pb-8 sm:pb-0">{{ entry.homeGiveFreelyCopy }}</h2>
-                </div>
-                <div class="text-center sm:px-5">
-                    <div class="flex justify-center pb-[2.25rem] lg:pb-[3.25rem]">
-                        <img class="w-24 h-24 lg:w-40 lg:h-32" src="{{ i2.getUrl() }}" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    </div>
-                    <h2 class="text-md md:text-lg lg:text-2xl text-blue pb-8 sm:pb-0">Embrace the abundance mindset found in Christ.</h2>
-                </div>
-                <div class="text-center sm:px-5">
-                    <div class="flex justify-center pb-5">
-                        <img class="w-28 h-28 lg:w-40 lg:h-40" src="{{ i3.getUrl() }}" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                    </div>
-                    <h2 class="text-md md:text-lg lg:text-2xl text-blue pb-8 sm:pb-0">{{ entry.homeFaithfulCopy }}</h2>
-                </div>
+                    {% set delay = delay + 200 %}
+                {% endfor %} 
             </div>
         </div>
     </div>
@@ -96,16 +93,22 @@
         <div class="max-w-screen-2xl mx-auto relative z-10">
             <div>
                 <div class="pb-4 sm:pb-8">
-                    <p class="text-xs sm:text-sm lg:text-md text-red font-semibold tracking-wider md:pt-10">WHO WE ARE</p>
+                    <p class="text-xs sm:text-sm lg:text-md text-red font-semibold tracking-wider md:pt-10">{{ entry.banner3Header|upper }}</p>
                 </div>
                 <div class="pb-8 sm:pb-12">
                     <p class="text-[11pt] sm:text-xl lg:text-2xl xl:text-3xl text-blue font-semibold leading-2">We are a community of practice that lives out<br class="hidden lg:block"><span class="text-red"> solidarity with the poor.</span></p>
                 </div>
 
+                {% if entry.genericButton2.one().buttonInternalReference|length %}
+                    {% set reference = entry.genericButton2.one().buttonInternalReference.one().url %}
+                {% else %}
+                    {% set reference = entry.genericButton2.one().buttonExternalReference %}
+                {% endif %}
+
                 <button class="lg:pb-[40rem] xl:pb-[60rem]">
-                    <a href="{{ craft.entries.slug('about').one().url }}">
+                    <a href="{{ reference }}">
                         <div class="bluebutton">
-                            <p>About us</p>
+                            <p>{{ entry.genericButton2.one().buttonText }}</p>
                         </div>
                     </a>
                 </button>
@@ -184,18 +187,18 @@
 
     {% set quotes = [] %}
 
-    {% for q in entry.quotes.all() %}
+    {% for q in entry.testimonialCarousel.all() %}
         {% set quotes = quotes|merge([{
-            quoteIcon: q.icon.one().getUrl(),
-            quoteText: q.quoteText,
-            name: q.fullName,
-            description: q.description,
+            quoteIcon: q.testimonialReference.one().testimonialHeadshot.one().getUrl(),
+            quoteText: q.testimonialReference.one().testimonialQuote|striptags,
+            name: q.testimonialReference.one().testimonialName,
+            description: q.testimonialReference.one().testimonialNameDescription,
         }]) %}
     {% endfor %}
 
     <div class="edge relative z-20 overflow-hidden">
         <div class="max-w-screen-2xl mx-auto ">
-            <carousel-quote :quotes="{{ quotes|json_encode }}" qicon="{{ johnquote.quotesIcon.one().getUrl() }}"></carousel-quote>
+            <carousel-quote :quotes="{{ quotes|json_encode }}" qicon="{{ craft.entries.slug('site-wide-assets').one().genericQuoteIcon.one().getUrl() }}"></carousel-quote>
         </div>
     </div>
 

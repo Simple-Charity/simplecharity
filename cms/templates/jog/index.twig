@@ -1,0 +1,26 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% set pageBackground = pageBackground|default('linen') %}
+{% set navigationColor = navigationColor|default('blue') %}
+{% set storyCategories = craft.categories.group('stories').level(1).all() %}
+
+{% block headMeta %}
+    {% if entry.pageDescription|length %}
+        <meta name="description" content={{ entry.pageDescription }}>
+    {% endif %}
+{% endblock %}
+
+{% block headLinks %}
+    {{ parent() }}
+{% endblock headLinks %}
+
+{% block contentborderless %}
+
+    
+    
+{% endblock %}
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+    {{ parent() }}
+{% endblock bodyJs %}

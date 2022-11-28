@@ -1,0 +1,91 @@
+field: 3a731d89-ac1f-4578-9725-c56ec44da677 # Homepage Banner Two Cards
+fieldLayouts:
+  08c0eec9-32d4-41f3-b497-b0d265c34e38:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 4d0136c2-7eb4-491c-8e2d-de4a7715ed25 # Card Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c4ae2019-e7aa-4b21-a476-685d83dac06d # Card Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  4d0136c2-7eb4-491c-8e2d-de4a7715ed25: # Card Icon
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: cardIcon
+    instructions: ''
+    name: 'Card Icon'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  c4ae2019-e7aa-4b21-a476-685d83dac06d: # Card Text
+    columnSuffix: cfweblim
+    contentColumnType: text
+    fieldGroup: null
+    handle: cardText
+    instructions: ''
+    name: 'Card Text'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: card
+name: Card
+sortOrder: 1

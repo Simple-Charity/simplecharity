@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: journeyOfGenerosity
+name: 'Journey of Generosity'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  972e83d1-5fbc-4d0f-b1f1-674d47402fbd: # $SITE_NAME
+    enabledByDefault: true
+    hasUrls: true
+    template: jog/index
+    uriFormat: journey-of-generosity
+type: single
