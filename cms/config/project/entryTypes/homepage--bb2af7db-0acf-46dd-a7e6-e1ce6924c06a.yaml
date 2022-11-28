@@ -140,15 +140,6 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-          -
-            fieldUid: 3d351861-9bdd-4332-96ad-00a59755f771 # Quotes
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
         name: 'Banner 5: Testimonials'
         sortOrder: 6
       -
