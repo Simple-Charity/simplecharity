@@ -29,6 +29,7 @@ const main = async() => {
             'carousel-review': () => import('../vue/CarouselReview.vue'),
             'partner-drop': () => import('../vue/PartnerDrop.vue'),
             'podcast-player': () => import('../vue/PodcastPlayer.vue'),
+            'solidarity-resolution-splash': () => import('../vue/SolidarityResolutionSplash.vue'),
         },
         data: {
             ajaxModal: {

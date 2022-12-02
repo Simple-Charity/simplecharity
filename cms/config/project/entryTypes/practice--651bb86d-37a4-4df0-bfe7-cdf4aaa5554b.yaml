@@ -68,6 +68,19 @@ fieldLayouts:
             width: 100
         name: 'Beliefs Pages'
         sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 40ee1de0-1cbb-4ebd-9215-9699ed5f8862 # Cross Only Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Assets
+        sortOrder: 3
 handle: practice
 hasTitleField: false
 name: Practice

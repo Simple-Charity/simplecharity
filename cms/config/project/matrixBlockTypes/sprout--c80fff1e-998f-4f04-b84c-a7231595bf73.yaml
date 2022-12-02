@@ -1,0 +1,96 @@
+field: 84e10fff-d9d6-4bf0-bdf1-35f64a666581 # Simple Charity Sprouts
+fieldLayouts:
+  df437230-e3cd-47a5-b471-87c64b606876:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: cd6a9d07-d9bd-4d73-b09f-3a32c84cfdb2 # Color Sprout
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 49a0106a-3664-411c-b02f-77e75536fb77 # Outline Sprout
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  49a0106a-3664-411c-b02f-77e75536fb77: # Outline Sprout
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: outlineSprout
+    instructions: ''
+    name: 'Outline Sprout'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  cd6a9d07-d9bd-4d73-b09f-3a32c84cfdb2: # Color Sprout
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: colorSprout
+    instructions: ''
+    name: 'Color Sprout'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: sprout
+name: Sprout
+sortOrder: 1

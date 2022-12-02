@@ -1,4 +1,4 @@
-dateModified: 1669664158
+dateModified: 1669944389
 email:
   fromEmail: $SES_EMAIL
   fromName: $SES_FROM
@@ -251,6 +251,7 @@ meta:
     37cb872c-de66-491f-819e-ff4a10180399: Verse # Verse
     38a71d71-d3f8-4b59-a0e7-a0eec7b009ae: 'Philosophy Image' # Philosophy Image
     39a34b14-4750-4b97-ab09-cbb4b9b231e6: 'Podcast Page Subtitle' # Podcast Page Subtitle
+    40ee1de0-1cbb-4ebd-9215-9699ed5f8862: 'Cross Only Icon' # Cross Only Icon
     42b2e143-03d5-4fb9-9164-69bea66fb46c: 'Journey of Generosity' # Journey of Generosity
     42b7661d-3ea5-4392-9e4d-9f1b0472137d: 'Stories Main Page' # Stories Main Page
     42b86188-6a7b-4fec-9436-a98389ef2d97: 'Waveform Image' # Waveform Image
@@ -267,6 +268,7 @@ meta:
     46e8486b-00d8-487f-9bee-0541ae0474d7: 'Banner One Button' # Banner One Button
     46ecc13c-116c-43e6-91f8-6e9686958eae: 'Primary Text' # Primary Text
     47a5e597-de28-4a21-bd8e-7d6849507248: 'Countries of Operation' # Countries of Operation
+    49a0106a-3664-411c-b02f-77e75536fb77: 'Outline Sprout' # Outline Sprout
     49ceeea8-8619-4a4c-8989-4606aa5cf8fe: 'Process Target 1' # Process Target 1
     50e24144-f3e9-4257-8760-a53f4ff16a2a: Core # Core
     52bab6c5-c7ef-4253-9d67-3406ac646035: 'Episode Feature Image' # Episode Feature Image
@@ -307,6 +309,7 @@ meta:
     81bf5031-7eba-4796-b240-4589cc5af132: 'Global Mission Statement' # Global Mission Statement
     82da0b2a-882e-4544-8995-92ec1607efbf: 'Mission Full Text' # Mission Full Text
     83bad041-0076-42a7-8027-88ec8faca8f3: 'Text Block' # Text Block
+    84e10fff-d9d6-4bf0-bdf1-35f64a666581: 'Simple Charity Sprouts' # Simple Charity Sprouts
     84e64693-a1cb-4ec1-a08e-4bded3602c99: Blog # Blog
     84f3e056-261d-49ce-90e7-4110bf94fe18: 'Blog Main Page' # Blog Main Page
     85a993a9-f7d1-43b2-82e0-3258a95cc0c4: 'Social Media Icon Dark' # Social Media Icon Dark
@@ -447,6 +450,7 @@ meta:
     7909aed5-381b-437e-bf82-394caf136412: 'Compliance Documents' # Compliance Documents
     7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d: Site # Site
     8331a3e6-8842-49e6-a0b9-36dcef15d9c6: 'Support Description' # Support Description
+    8375a6ad-4de3-452d-9081-a886eb3fa6f4: Sprout # Sprout
     8431f895-23fd-4c1b-b42e-a8c9c10f1e9c: 'Homepage Hero Image 3' # Homepage Hero Image 3
     8547fd4a-a1b3-4ba5-a182-697b4f50fa75: Description # Description
     8632fd0b-243b-4503-ba0b-94d375eb5951: 'Simple Charity Books' # Simple Charity Books
@@ -666,6 +670,7 @@ meta:
     c29c3ac0-6424-4dc7-8a60-1d44e9906725: 'Simple Charity Address' # Simple Charity Address
     c29fcad8-1400-4c5e-b6e8-baa931d3c48f: 'Long Bio' # Long Bio
     c70ab99d-8d3f-423f-bbc9-13f925f70e89: 'Podcast Featured Testimonial' # Podcast Featured Testimonial
+    c80fff1e-998f-4f04-b84c-a7231595bf73: Sprout # Sprout
     c129be46-1e6f-4c37-a877-b79649063042: 'Class Names' # Class Names
     c516a434-d927-4504-b29d-7f35c06273c1: 'About Banner 2' # About Banner 2
     c646dfb1-9670-4f85-9cba-fa087e668a5f: Sprout # Sprout
@@ -690,6 +695,7 @@ meta:
     cbfa6fb7-5034-466c-ba5a-a1c5ce9a179a: Testimonial # Testimonial
     cbfd2273-dd67-489b-a2a2-db9fb5e7eb62: Challenge # Challenge
     cc936a94-70f8-45e2-9668-473c7c3c03dc: 'Simple Mission Statement' # Simple Mission Statement
+    cd6a9d07-d9bd-4d73-b09f-3a32c84cfdb2: 'Color Sprout' # Color Sprout
     cd57c8f8-52b0-4963-b4e3-bdf2f686f7f7: Member # Member
     cd90e02d-57f8-4c1e-a662-173d9f184d31: 'Site Link Dropdown' # Site Link Dropdown
     cd91f2cf-1a0f-4de4-a251-d24a7565b1f6: Countries # Countries
@@ -771,6 +777,7 @@ meta:
     e627c063-00db-4d47-bffb-eaeb4672f5a9: 'Cause Area Icon Outline' # Cause Area Icon Outline
     e705ed43-9fed-433d-9a96-81d59f425766: 'Episode Title' # Episode Title
     e774b400-f1ee-4b99-b55d-f0ab1510d6b3: 'Homepage Core Beliefs Promo Text' # Homepage Core Beliefs Promo Text
+    e7531ee5-8dd2-4e17-a280-d1519a3c6b56: Sprout # Sprout
     e30856e5-fcc7-42da-ae6c-514fc2d30672: 'Contact Main Text' # Contact Main Text
     e892303f-f80c-4212-9137-8047a2d4c0f4: 'Newsletter Header' # Newsletter Header
     e1143709-efd8-451f-8abf-1b7c7b994234: 'Story Hero Image' # Story Hero Image
