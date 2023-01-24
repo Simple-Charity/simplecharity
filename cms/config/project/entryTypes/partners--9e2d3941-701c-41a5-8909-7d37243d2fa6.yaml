@@ -30,6 +30,15 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+          -
+            fieldUid: 5242fbea-5bab-4d7b-ad4e-dbb0c388d7d9 # Complete Page
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: 'Page Data'
         sortOrder: 1
       -

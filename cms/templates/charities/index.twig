@@ -72,6 +72,12 @@
                             {% set accentcolor = 'text-linen' %}
                     {% endswitch %}
 
+                    {% set p_url = partner.url %}
+
+                    {% if not partner.completePage %}
+                        {% set p_url = partner.partnerLink %}
+                    {% endif %}
+
 
                     {% set topSevenData = topSevenData|merge([
                         {
@@ -87,7 +93,8 @@
                             'icon':partner.partnerIcon.one().getUrl(),
                             'categoryName': partner.topSevenClassification.one().causeAreaName,
                             'categoryIcon': partner.topSevenClassification.one().causeAreaIconRange.one().getUrl(),
-                            'url': partner.url,
+                            'url': p_url,
+                            'kindful': partner.kindfulCampaignPage,
                         }
                     ]) %}
                 {% endif %}
@@ -110,6 +117,12 @@
                     {% set url = item.partnerIcon.one().getUrl() %}
                 {% endif %}
 
+                {% set p_url = item.url %}
+
+                {% if not item.completePage %}
+                    {% set p_url = item.partnerLink %}
+                {% endif %}
+
                 {% set charities = charities|merge([
                     {
                         name:item.title,
@@ -127,6 +140,10 @@
                         twentyOneIsYear:item.yearRecommended.contains("20212022"),
 
                         topSeven:item.topSeven,
+
+                        url:p_url,
+
+                        kindful: item.kindfulCampaignPage,
 
                         icon:url,
                         motto:item.partnerMotto,

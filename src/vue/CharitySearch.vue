@@ -170,7 +170,7 @@
                     </div>
 
                     <div v-for="item in filteredCharities" class="pt-6">
-                        <div class="overflow-hidden rounded-md bg-blue relative transition-height duration-500 ease-in-out transform" v-bind:class="{ 'h-[27rem] sm:h-96': item.opened , 'h-32 sm:h-28': !(item.opened) }" >
+                        <div class="overflow-hidden rounded-md bg-blue relative transition-height duration-500 ease-in-out transform" v-bind:class="{ 'h-[32rem] sm:h-96': item.opened , 'h-32 sm:h-28': !(item.opened) }" >
                             <div v-on:click="item.opened = !(item.opened)" class="h-32 sm:h-28 flex items-center hover:cursor-pointer">
                                 <div class="h-32 sm:h-28 w-28 min-w-[7rem] p-0 m-0 hidden md:block">
                                     <img class="h-32 sm:h-28 w-28 min-w-[7rem]" :src="item.icon" alt="">
@@ -192,7 +192,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="h-[20rem] sm:h-68 bg-darkblue p-5 px-6 sm:px-20 flex items-center">
+                            <div class="h-[25rem] sm:h-68 bg-darkblue p-5 px-6 sm:px-20 flex items-center">
                                 <div>
                                     <div class="xl:hidden">
                                         <p class="text-md font-semibold text-linen pb-2">FOCUS: {{ item.focus }}</p>
@@ -201,9 +201,16 @@
                                     <h5 class="text-linen text-xs sm:text-sm lg:text-lg pb-6 max-w-screen-lg">{{ item.impact }}</h5>
 
                                     <a :href="item.url">
-                                        <button class="">
+                                        <button class="mr-4 mb-4 sm:mb-0 w-[10rem] sm:w-auto">
                                             <div class="redbutton">
                                                 Learn more
+                                            </div>
+                                        </button>
+                                    </a>
+                                    <a :href="item.kindful">
+                                        <button class="w-[10rem] sm:w-auto">
+                                            <div class="redbutton">
+                                                Donate
                                             </div>
                                         </button>
                                     </a>
