@@ -30,7 +30,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="px-6 sm:px-10 relative h-[23rem] flex items-center">
+                        <div class="px-6 lg:px-10 relative h-[23rem] flex items-center">
                             <div class="">
                                 <div class="lg:hidden">
                                     <p :class="partner.accentcolor" class="text-md font-semibold">FOCUS: {{ partner.focus }}</p>
@@ -39,7 +39,7 @@
                                 <h5 :class="partner.accentcolor" class="text-xs sm:text-sm lg:text-lg pb-6 max-w-screen-lg">{{ partner.dollarImpact }}</h5>
                                 <div v-if="partner.accentcolor == 'text-linen'">
                                     <a :href="partner.url">
-                                        <button class="mr-4 mb-4 sm:mb-0 w-[10rem] sm:w-auto">
+                                        <button class="mr-4 mb-4 sm:mb-2 w-[10rem] sm:w-auto">
                                             <div class="whitebutton">
                                                 Learn more
                                             </div>
@@ -55,7 +55,7 @@
                                 </div>
                                 <div v-if="partner.accentcolor == 'text-blue'">
                                     <a :href="partner.url">
-                                        <button class="mr-4 mb-4 sm:mb-0 w-[10rem] sm:w-auto">
+                                        <button class="mr-4 mb-4 sm:mb-2 w-[10rem] sm:w-auto">
                                             <div class="bluebutton">
                                                 Learn more
                                             </div>

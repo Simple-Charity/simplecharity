@@ -2,7 +2,7 @@
     <div class=" pt-6 pb-12 bg-deepnavy w-full">
         <div class="max-w-screen-2xl mx-auto">
             <div id="" class="flex sm:min-h-lg">
-                <div class="hidden md:block">
+                <div class="hidden lg:block">
                     <div :class="{fixedSidebar:isScrolled & !(isScrolled2),fixedSidebar2:isScrolled2}" class="pt-10">
 
                         <div class="flex items-center justify-between">
@@ -55,7 +55,7 @@
                     </div>
                 </div>
 
-                <div class="sm:pr-4 pt-10 w-full md:w-2/3 md:ml-auto">
+                <div class="sm:pr-4 pt-10 w-full lg:w-2/3 md:ml-auto">
 
                     <div class="flex items-center justify-between">
                         <h1 class="text-md font-semibold text-md text-linen pb-5">SEARCH</h1>
@@ -176,10 +176,10 @@
                                     <img class="h-32 sm:h-28 w-28 min-w-[7rem]" :src="item.icon" alt="">
                                 </div>
                                 <div class="xl:flex items-center">
-                                    <h1 class="text-bare text-md lg:text-lg xl:w-52 py-2 pl-5 pr-0 font-semibold text-linen" >{{ item.name }}</h1>
+                                    <h1 class="text-bare text-md lg:text-lg xl:w-44 py-2 pl-5 pr-0 font-semibold text-linen" >{{ item.name }}</h1>
                                     <div class="pl-5 pr-3 xl:pl-2">
                                         <div>
-                                            <p class="text-linen text-xs sm:text-sm xl:w-52 xl:w-72 py-2">"{{ item.motto }}"</p>
+                                            <p class="text-linen text-xs sm:text-sm xl:w-[20rem] py-2">"{{ item.motto }}"</p>
                                         </div>
                                         <div class="hidden xl:block">
                                             <p class="text-md font-semibold text-linen pb-2">FOCUS: {{ item.focus }}</p>
@@ -192,7 +192,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="h-[25rem] sm:h-68 bg-darkblue p-5 px-6 sm:px-20 flex items-center">
+                            <div class="h-[25rem] sm:h-68 bg-darkblue p-5 px-6 lg:px-20 flex items-center">
                                 <div>
                                     <div class="xl:hidden">
                                         <p class="text-md font-semibold text-linen pb-2">FOCUS: {{ item.focus }}</p>
@@ -201,7 +201,7 @@
                                     <h5 class="text-linen text-xs sm:text-sm lg:text-lg pb-6 max-w-screen-lg">{{ item.impact }}</h5>
 
                                     <a :href="item.url">
-                                        <button class="mr-4 mb-4 sm:mb-0 w-[10rem] sm:w-auto">
+                                        <button class="mr-4 mb-4 sm:mb-2 w-[10rem] sm:w-auto">
                                             <div class="redbutton">
                                                 Learn more
                                             </div>
