@@ -30,6 +30,7 @@ const main = async() => {
             'partner-drop': () => import('../vue/PartnerDrop.vue'),
             'podcast-player': () => import('../vue/PodcastPlayer.vue'),
             'solidarity-resolution-splash': () => import('../vue/SolidarityResolutionSplash.vue'),
+            'solidarity-interactive': () => import('../vue/SolidarityInteractive.vue'),
         },
         data: {
             ajaxModal: {

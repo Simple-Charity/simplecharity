@@ -67,6 +67,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: 270ec404-d7e1-47a5-9ce0-cc7f6deaadbe # Extra Photo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: 3b0e9b39-a800-43ae-9b7f-943ab727aac5 # Careers Hero Text
             instructions: null
             label: null

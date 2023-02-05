@@ -16,7 +16,7 @@
 import VueAxios from '../js/modules/vue-axios';
 
 export default {
-    props: ['sprouts','cross'],
+    props: ['sprouts'],
     data: function() {
         return {
             spr: this.sprouts,

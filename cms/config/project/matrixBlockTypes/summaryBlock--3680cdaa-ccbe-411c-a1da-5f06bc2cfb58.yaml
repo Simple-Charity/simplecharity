@@ -1,0 +1,147 @@
+field: 5a2f733d-1989-42d5-a505-43b56ed11043 # Solidarity Resolution Summary
+fieldLayouts:
+  1a638bba-c41d-4992-aae6-46d2718b73c1:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 82d4656a-dc82-4a3f-8726-ba0913cc5a90 # Summary Type
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7ab01018-5272-44f3-8863-5de0bf39c73b # Summary Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0974218b-43d1-4d9b-87ec-1ecc4caeee3c # Summary Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  7ab01018-5272-44f3-8863-5de0bf39c73b: # Summary Icon
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: summaryIcon
+    instructions: ''
+    name: 'Summary Icon'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  82d4656a-dc82-4a3f-8726-ba0913cc5a90: # Summary Type
+    columnSuffix: dyeqlmih
+    contentColumnType: string
+    fieldGroup: null
+    handle: summaryType
+    instructions: ''
+    name: 'Summary Type'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Commitment
+            -
+              - value
+              - commitment
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Aspiration
+            -
+              - value
+              - aspiration
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Solidarity
+            -
+              - value
+              - solidarity
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  0974218b-43d1-4d9b-87ec-1ecc4caeee3c: # Summary Text
+    columnSuffix: tfifvxds
+    contentColumnType: text
+    fieldGroup: null
+    handle: summaryText
+    instructions: ''
+    name: 'Summary Text'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: summaryBlock
+name: 'Summary Block'
+sortOrder: 1

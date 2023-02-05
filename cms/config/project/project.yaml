@@ -1,4 +1,4 @@
-dateModified: 1674570932
+dateModified: 1675453077
 email:
   fromEmail: $SES_EMAIL
   fromName: $SES_FROM
@@ -19,6 +19,7 @@ meta:
     0c4846f4-5db6-4853-918b-92b32693236b: 'Transcript Section' # Transcript Section
     0c566290-11e0-4f22-9ac9-3ca9d3decd39: 'Episode Art' # Episode Art
     0cacf2de-0e4b-4e13-91b8-4c7525d7dfff: 'Last Updated' # Last Updated
+    0d6a0484-809d-4823-8648-691cb91d6564: Body # Body
     0d8f160a-b1e3-4be3-85ee-654fc07d937d: 'Team Member' # Team Member
     0d470d19-b1a5-4ae3-81c7-843af4744ff7: 'Thank You Header Text' # Thank You Header Text
     0e10f9da-dbf1-4646-9334-ce1fa21b9543: 'External Url' # External Url
@@ -102,6 +103,7 @@ meta:
     4ec05108-97b0-4c88-b647-a837d8d42c51: 'Book Image' # Book Image
     04fa1b23-f82e-415c-9d00-11096c234fbc: 'Credit Header' # Credit Header
     4ff5c659-06c9-4f1e-85be-e4bc5792c681: Colleges # Colleges
+    5a2f733d-1989-42d5-a505-43b56ed11043: 'Solidarity Resolution Summary' # Solidarity Resolution Summary
     5a8c6cfc-3a45-4834-90c2-df2104585a87: 'First Description' # First Description
     5a177aa1-a238-44c2-a6fb-7f62483aa7aa: 'Credit Header' # Credit Header
     5aa9b210-8916-449c-95bc-1423daa59428: 'Popdown Title' # Popdown Title
@@ -143,6 +145,7 @@ meta:
     7a28bd04-bc9c-457e-bb12-a455cbf01865: 'Liturgy Icon' # Liturgy Icon
     7a633eca-bfc2-4150-9029-8866716a9600: 'Page Description' # Page Description
     7a785146-8ae4-44d6-9d4f-46e0a32de039: 'Homepage Primary Banner' # Homepage Primary Banner
+    7ab01018-5272-44f3-8863-5de0bf39c73b: 'Summary Icon' # Summary Icon
     7b22e565-86d0-4305-9806-fe7234928e4e: 'Read Header Text' # Read Header Text
     7b23a5df-dd1b-4d80-aa2a-7991632a193a: 'Dark Blue Wave 1' # Dark Blue Wave 1
     7ba86e8f-9c96-4a43-a163-1c01e03f3f54: Description # Description
@@ -236,6 +239,7 @@ meta:
     27d7b930-7b1f-4843-aba9-f88f97aaabd5: 'Team Member Square' # Team Member Square
     28ec04f3-9b85-4bce-82d5-3e611c99266c: Countries # Countries
     29a23e86-9a33-483d-a618-ebf945d1ca3f: 'Process Target 5' # Process Target 5
+    29bc269e-347b-40f2-bb82-8327d2d466c5: 'SR Name' # SR Name
     29e6be9d-cc9f-4b63-909e-c04f5b2a9b9a: 'Podcast Episodes Banner Header' # Podcast Episodes Banner Header
     30a99fdf-5b65-4e1b-97ae-e5da56bd6ca8: 'Generic Modal' # Generic Modal
     30afedc5-1eac-4f1d-b4d1-6c184ccd0a46: 'Giver Testimonial' # Giver Testimonial
@@ -280,6 +284,7 @@ meta:
     53e37d07-3eed-485f-9e9b-35ef70bd5ce6: 'Partner Popdowns' # Partner Popdowns
     55e2d4bb-5cc2-4750-a15b-6663637c690c: Doc # Doc
     55fc8afb-61c0-47d9-8f1a-6fbef8c06709: Text # Text
+    56eedd1f-d862-426e-983e-dd981f2794b6: 'Solidarity Resolution Pages' # Solidarity Resolution Pages
     057a724a-9942-43e3-b99a-0238d3cd0a4c: 'Modal Button Link' # Modal Button Link
     57badb1e-15c6-47d0-881e-6822f9ac336f: 'Stat 2020' # Stat 2020
     58e0a7ab-2660-4d86-b83f-f70d9265baca: Verses # Verses
@@ -289,6 +294,7 @@ meta:
     62cc5d82-146e-47f5-89c5-8c5e6678e88b: 'Step Name' # Step Name
     62df3d17-f617-4108-8e9c-14cfd20c33d8: 'Currently Accepting Applications' # Currently Accepting Applications
     65a79333-97f4-4764-8341-66feafbd48f8: 'Careers Info Text' # Careers Info Text
+    66a4c9f3-3d5e-4379-a7cc-52bf64f99148: Solidarity # Solidarity
     066d4391-417c-4728-9dbb-3ac06e26e59c: Amount # Amount
     66dc8187-9793-4603-9c29-8c5defa64ac4: 'Application Instructions' # Application Instructions
     68dfcf5a-e844-44c3-8eff-93cacf81615e: Speaker # Speaker
@@ -307,6 +313,7 @@ meta:
     80faa1b6-8eb7-4dee-9f9e-3dc599ea5d43: 'Social Media Link' # Social Media Link
     81bce76b-b274-46c4-9fae-74182379b6e2: 'External Name' # External Name
     81bf5031-7eba-4796-b240-4589cc5af132: 'Global Mission Statement' # Global Mission Statement
+    82d4656a-dc82-4a3f-8726-ba0913cc5a90: 'Summary Type' # Summary Type
     82da0b2a-882e-4544-8995-92ec1607efbf: 'Mission Full Text' # Mission Full Text
     83bad041-0076-42a7-8027-88ec8faca8f3: 'Text Block' # Text Block
     84e10fff-d9d6-4bf0-bdf1-35f64a666581: 'Simple Charity Sprouts' # Simple Charity Sprouts
@@ -346,6 +353,7 @@ meta:
     0268a746-7ca6-401f-abee-87e90bc26be9: 'Stories Main Page Hero Text' # Stories Main Page Hero Text
     269f96df-2a0b-428b-a9fd-ccca81728d66: 'Tori Image' # Tori Image
     270a37fb-0986-4a76-86d7-5cc30897e838: Text # Text
+    270ec404-d7e1-47a5-9ce0-cc7f6deaadbe: 'Extra Photo' # Extra Photo
     279a1bfc-7be2-4591-960f-0d2f491a192a: 'Stat 2019' # Stat 2019
     282ed9d4-497e-479d-bef6-4855c8ddc68c: 'Overall Impact Header' # Overall Impact Header
     292ceb18-cf32-4c21-8d19-83ee6e85a265: 'Grow Copy' # Grow Copy
@@ -424,6 +432,7 @@ meta:
     3079a75c-fb21-4964-9838-733d14d29365: 'About Squiggle 2' # About Squiggle 2
     3131ab8a-287a-4efa-9cf8-5c2dd0c0b0ce: Reference # Reference
     3262eafb-9b9e-4185-a5de-14f36eb122ea: Icon # Icon
+    3680cdaa-ccbe-411c-a1da-5f06bc2cfb58: 'Summary Block' # Summary Block
     4007a874-0135-4417-89e3-72c8cdd49f73: 'Process Target 4' # Process Target 4
     4210c650-0ff5-41d2-b2c6-2581b010e6dd: 'Contact Hero Text' # Contact Hero Text
     4381d30a-d92c-4101-8a04-20a81f01ca0a: Solidarity # Solidarity
@@ -466,6 +475,7 @@ meta:
     9719ec4f-e8c7-42a9-9517-3e2def8c6a6b: 'Featured Donor Partners' # Featured Donor Partners
     9797dc0b-6a4d-4ffa-8517-fc86ce9a35c9: Support # Support
     9897b2e2-b82a-49e2-a754-5c5a26c06421: 'Latin America & Caribbean' # Latin America & Caribbean
+    9912e171-0071-45c7-9c3b-03bea6e86fbd: Icon # Icon
     011489e7-5ebd-4cbd-8ecf-41512a00a694: 'FAQ Caret' # FAQ Caret
     14904d51-bbcf-4d04-9539-5432cc5b31ef: 'Stories Category Text Color' # Stories Category Text Color
     15451df2-df54-4268-af0b-30882b173880: 'First Subtitle' # First Subtitle
@@ -505,6 +515,7 @@ meta:
     0772494f-b92f-4074-a339-65e3a912e671: 'Donate Page Hero Text' # Donate Page Hero Text
     815278f2-ff88-40a3-a8e0-60f94693cffd: 'Featured Podcast Episode' # Featured Podcast Episode
     852293a0-2780-40b7-a388-de44cdfd2ea3: 'Charity Evaluation Report' # Charity Evaluation Report
+    0974218b-43d1-4d9b-87ec-1ecc4caeee3c: 'Summary Text' # Summary Text
     1858880f-2901-4008-8801-ca86d92444af: Default # Default
     2472625f-f6bc-4b88-88bc-76a491e367a1: Middle # Middle
     3276197e-0ad1-470c-9006-a9cec2093618: 'Carousel Cell' # Carousel Cell
@@ -658,6 +669,7 @@ meta:
     c4ae2019-e7aa-4b21-a476-685d83dac06d: 'Card Text' # Card Text
     c4d1089e-63e8-4bf5-af34-5d2399541e97: Image # Image
     c4e4267b-234b-4025-a20e-06ba7954b5d1: 'Investment Image' # Investment Image
+    c4ebac1e-5891-4dee-974b-d4d3f01c41b7: Icon # Icon
     c5ae0723-b14d-4da2-b164-fcaf2bc81710: 'Squiggly World Map' # Squiggly World Map
     c6a4ae52-a235-473e-86b3-9df81fc860c0: 'Author Photo' # Author Photo
     c6b2511a-4a2b-435f-a55d-3d317270146e: 'Icon Outline' # Icon Outline
@@ -722,6 +734,7 @@ meta:
     d5c418ff-724c-4b17-a97f-27fde8e1159c: 'Liturgy Step' # Liturgy Step
     d7f7380c-11e9-4300-85f2-5160054980db: 'Liturgy Icons' # Liturgy Icons
     d9b11d9d-c239-448e-942e-9d52914a559b: 'Action Button 1 Link ' # Action Button 1 Link 
+    d10bc38d-a7a5-4474-a0c5-b030842135d7: Summary # Summary
     d537f25e-c395-43f3-9cd8-c60a3e9deb35: 'Large Text' # Large Text
     d596af57-f7d1-4e43-8a3b-c188e6bc5c62: 'Public Schema' # Public Schema
     d5262d58-036f-4bd8-898c-a73b6f4fe4cf: 'Podcast About Text' # Podcast About Text
@@ -730,6 +743,7 @@ meta:
     d43861c3-1571-4dd5-a703-88e5bceacef4: 'Blue Wave 2' # Blue Wave 2
     d373921b-98ca-4344-8300-d6315989af07: 'Testimonial Name Description' # Testimonial Name Description
     d949679b-e425-4fc7-9e11-0f22c667f029: 'Is Featured On Charities Page' # Is Featured On Charities Page
+    d2302093-d90e-4070-b30b-ac043a79a0a8: Resolution # Resolution
     d2909213-6972-48ca-8186-7c77cdaa3d66: 'Address Line 2' # Address Line 2
     da27690b-c3a8-4a29-b91c-6d1dd7ad6641: Stat # Stat
     dac1d3ae-8fbe-415b-9fff-5e3b911296dc: 'Third Description' # Third Description
@@ -738,6 +752,7 @@ meta:
     db7a0d8d-c7c7-4c77-8fca-3f4db8ebc734: 'People Interviewed' # People Interviewed
     db36dfb2-31b4-447a-8c5b-1cb7538143bf: Stripe # Stripe
     dc4d703d-b9bc-4fa1-a157-61c1b6a6ba60: Card # Card
+    dc13d666-0081-4d11-a56a-f5ee4e3dbe1a: Commitment # Commitment
     dc613c25-a26c-41da-8b1f-cf6fb6f4c47a: 'Thank You Image' # Thank You Image
     dcf00203-52d9-4bda-96c9-c83dca3f13aa: 'Banner 2 Header' # Banner 2 Header
     dd9ec74c-6229-47ff-af8c-4815ee3820ed: 'Sub-Saharan Africa' # Sub-Saharan Africa
@@ -767,6 +782,7 @@ meta:
     e33f7a99-b415-4409-96c9-fad173501756: Reference # Reference
     e44a1e2c-81bc-4b6c-bc42-306ce58de4a9: Contact # Contact
     e67d26f7-3b44-4fc9-bcff-8bbfe72b180e: 'Testimonial Reference' # Testimonial Reference
+    e69ac00d-f93e-4287-94a7-a9d5baec33e2: 'SR Page' # SR Page
     e70e500c-bd32-43da-b036-382ee5ece484: 'Dropdown Reference' # Dropdown Reference
     e73f75de-459c-405a-b05e-3e6c9a95f31b: 'Stories Main Block' # Stories Main Block
     e73fa75b-89d4-4c02-b4cc-8d4c2fec7d7f: 'Quote Text' # Quote Text

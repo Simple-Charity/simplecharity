@@ -16,24 +16,49 @@
 
 {% block contentborderless %}
 
-    <div class="edge-x relative h-[32rem] md:h-[40rem] lg:h-[50rem] xl:h-[60rem] bg-top bg-cover" style="background-image: url('{{ entry.careersHeroImage.one().getUrl() }}');">
-        <div class="pt-24 sm:pt-28 lg:pt-40 relative">
-            <h2 class="header-one">Careers <span class="tracking-overlap hidden sm:inline">–––––––––</span></h2>
+    <div class="overflow-hidden relative">
+        <div class="translate-y-[2rem] lg:translate-y-[4rem] scale-[1.10]">
+            <div v-prlx.mobile="{ reverse: true, speed: 0.05, preserveInitialPosition: false, }" class="h-screen sm:min-h-[60rem] lg:min-h-[80rem] xxl:min-h-[100rem] bg-center bg-cover" style="background-image: url('{{ entry.careersHeroImage.one().getUrl() }}');">
+                
+            </div>
+        </div>
+
+        <div class="absolute inset-0">
+            <div class="edge mt-12 sm:mt-24 relative">
+                <h2 class="header-one text-linen">Careers <span class="tracking-overlap hidden sm:inline">–––––––––</span></h2>
+            </div>
         </div>
     </div>
 
+
+    
+
     <div class="edge">
         <div class="max-w-screen-2xl mx-auto">
-            <div class="flex">
-                <div class="w-1/2 pr-8">
-                    <div class="redactor text-2xl sm:text-3xl lg:text-4xl font-bold">
+            <div class="sm:flex">
+                <div class="sm:w-7/12 sm:pr-8">
+                    <div class="redactor text-2xl sm:text-3xl lg:text-4xl font-bold pb-6">
                         {{ entry.careersHeroText }}
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" class="w-full">
+                        <img class="w-full" src="{{ entry.extraPhoto.one().getUrl() }}" alt="">
                     </div>
                     <div class="redactor pt-10 text-lg sm:text-xl">
                         {{ entry.careersInfoText }}
                     </div>
+                    <div class="flex justify-center sm:block">
+                        <button class="">
+                            <a href="{{ craft.entries.slug('ourteam').one().url }}">
+                                <div class="bluebutton">
+                                    Learn more
+                                </div>
+                            </a>
+                        </button>
+                    </div>
+                    
                 </div>
-                <div class="w-1/2 pl-8">
+                <div class="sm:w-5/12 sm:pl-8 mt-12 sm:mt-0">
+                    <div class="redactor text-2xl sm:text-3xl lg:text-4xl font-bold">Openings</div>
                     {% if craft.entries.section('jobOpenings').all()|length > 0 %}
                         <div class="w-full">
                             {% for job in craft.entries.section('jobOpenings').all() %}
@@ -52,21 +77,64 @@
                             {% endfor %}
                         </div>
                     {% else %}  
-                        <div class="flex items-center justify-center w-full h-full">
-                            <h2 class="text-xl font-bold">No openings</h2>
+                        <div class="flex justify-center w-full h-full pt-8">
+                            <h2 class="text-xl">We don't have any openings at the moment - check back soon!</h2>
                         </div>
                     {% endif %}
                 </div>
             </div>
-        
         </div>
-
-        
     </div>
 
-    <div class="edge bg-red">
+    <div class="edge bg-red hidden lg:block">
         <div class="max-w-screen-2xl mx-auto">
-            
+            <div class="relative">
+                <h1 class="text-5xl text-blue font-serif font-bold pb-16">summer internship program  <span class="tracking-overlap hidden sm:inline">–––––––––</span></h1>
+                <div class="lg:flex relative">
+                    <div class="w-1/3 mr-6">
+                        <h5 class="headercaps pb-6">YOU'RE INVITED</h5>
+                        <p class="text-2xl text-blue leading-normal font-bold">Grow professionally and spiritually in a Christian community of practice.</p>
+                        <a href="{{ craft.entries.slug('internship').one().url }}">
+                            <button class="my-6 pt-4">
+                                <div class="bluebutton hover:bg-linen hover:text-blue">
+                                    <div class="">Learn More</div>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="w-2/3">
+                        <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" class="w-full" src="{{ craft.entries.slug('internship').one().interns2021.one().getUrl() }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lg:hidden pb-20 relative bg-red">
+        <div class="edge-x relative bg-red">
+            <h1 class="text-3xl sm:text-4xl text-blue font-serif font-bold pt-16 pb-16">summer internship <br> program <span class="tracking-overlap hidden sm:inline">–––––––––</span></h1>
+            <div class="w-full">
+                <img class="" src="{{ craft.entries.slug('internship').one().interns2021.one().getUrl() }}" alt="" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+            </div>
+
+            <div class="relative">
+                <div class="text-center">
+                    <h5 class="headercaps text-linen pb-6 pt-10">YOU'RE INVITED</h5>
+                    <div class="md:w-2/3 mx-auto">
+                        <p class="text-xl sm:text-2xl md:text-3xl text-blue leading-relaxed font-bold">Grow professionally and spiritually in a Christian community of <span class="text-red">practice.</span></p>
+                    </div>
+                    <div class="w-full flex items-center">
+                        <div class="mx-auto">
+                            <a href="{{ craft.entries.slug('internship').one().url }}">
+                                <button class="my-6 pt-4">
+                                    <div class="hover:bg-linen hover:text-blue bluebutton">Learn more</div>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     

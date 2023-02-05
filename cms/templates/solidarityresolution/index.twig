@@ -30,97 +30,65 @@
     {% endfor %}
     
     <div class="w-full">
-        <solidarity-resolution-splash :sprouts="{{ sprouts|json_encode }}" cross="{{ entry.crossOnlyIcon.one().getUrl() }}"></solidarity-resolution-splash>
+        <solidarity-resolution-splash :sprouts="{{ sprouts|json_encode }}"></solidarity-resolution-splash>
     
-        <div class="bg-deepnavy edge pt-[15rem]">
-            <div class="max-w-screen-lg mx-auto">
-                <div class="flex flex-wrap pb-20">
-                    <div class="w-1/2 pr-4">
-                        <h2 class="text-4xl font-serif text-linen border-b-2 border-linen">Introduction</h2>
-                        <div class="pt-[2rem] text-red pr-[5rem] font-[100] tracking-tight">
-                            {% filter typogrify %}
-                                <p class="pb-2 text-2xl typogrify">"Little children, let us not love in word or talk but in deed and in truth."</p>
-                            {% endfilter %}
-                            <p class="text-lg text-linen">1 JOHN 3:18</p>
-                        </div>
-                    </div>
-                    <div class="w-1/2 pt-[2.25rem]">
-                        <p class="text-linen text-2xl font-bold pb-6">This resolution was written to help you put words into action and live in solidarity with the poor. We are inspired and directed by the Word of God. The Bible is the basis of the standards in this resolution.</p>
-                        <p class="text-linen text-xl pb-4">We offer this as a tool for accountability and community, not as a legalistic requirement. Christ has freed us for joyful obedience. And from that freedom (not obligation or shame), we can extend his love.</p>
-                        <p class="text-linen text-xl pb-4">His love was not distant, but up close and personal. Through the incarnation, Jesus took on flesh and moved into the neighborhood. Christians are called to put faith into action through this incarnational, real-world, on-the-ground love.</p>
-                        <p class="text-linen text-xl pb-4">If you would like to join this community of love, please read through the resolution with care and sign your name at the end. Simple Charity will then walk with you to remind, support and exhort you as you practice liturgies of solidarity with the poor.</p>
-                    </div>
-                </div>
+        
+    </div>
 
-                <div class="flex flex-wrap">
-                    <div class="w-1/2 pr-4">
-                        <h2 class="text-4xl font-serif text-linen border-b-2 border-linen">Liturgies of Solidarity</h2>
-                        
-                    </div>
-                    <div class="w-1/2 pt-[2.25rem]">
-                        <p class="text-linen text-xl pb-4">James K. A. Smith writes in You Are What You Love that liturgies are “habit-forming, love-shaping rituals that get hold of our hearts and aim our loves” (p. 38). Liturgies are things that we do that “do something to us” (p. 46). Solidarity is a term common in Catholic social teaching. It’s a word of unity that says, “I see you. I won’t turn aside from your suffering or oppression. I am with you.” In solidarity, we “rejoice with those who rejoice; mourn with those who mourn” (Romans 12:15). This solidarity resolution calls Christians to practice liturgies of solidarity with people experiencing poverty and injustice.</p>
-                        <p class="text-linen text-xl pb-4">Liturgies of solidarity have daily, weekly, monthly and yearly rhythms. They are acts of worship to God and with people. Liturgies of solidarity are how we see the image of God, marred by suffering, in the lives of the vulnerable and respond with love.</p>
-                        <p class="text-linen text-xl pb-4">Six spiritual disciplines, derived from the teachings of Jesus, invite us into solidarity with the vulnerable: giving (Matthew 6:1-4), prayer (Matthew 6:5-15), fasting (Matthew 6:16-18), gratitude (Matthew 6:19-24), faith (Matthew 6:25-34), and service (Matthew 25:31-46). As acts of worship, each practice must be shaped by the essential Christian virtues of humility, community and love.</p>
-                    </div>
-                </div>
+    {% set pgs = [] %}
+    {% set index = 0 %}
+
+    {% for page in entry.solidarityResolutionPages %}
+
+        {% if index == 0 %}
+            {% set alignment = 'left-[25%] top-[0%]' %}
+        {% elseif index == 1 %}
+            {% set alignment = 'left-[75%] top-[0%]' %}
+        {% elseif index == 2 %}
+            {% set alignment = 'left-[0%] top-[43.30%]' %}
+        {% elseif index == 3 %}
+            {% set alignment = 'left-[100%] top-[43.30%]' %}
+        {% elseif index == 4 %}
+            {% set alignment = 'left-[25%] top-[86.60%]' %}
+        {% elseif index == 5 %}
+            {% set alignment = 'left-[75%] top-[86.60%]' %}
+        {% endif %}
+
+        {% set b = [] %}
+
+        {% for paragraph in page.body|split("</p>") %}
+            {% set b = b|merge([paragraph|striptags]) %}
+        {% endfor %}
+
+        {% set pgs = pgs|merge([
+            {
+                name: page.srName,
+                icon: page.icon.one().getUrl(),
+                body: b,
+                commitment: page.commitment|striptags,
+                aspiration: page.resolution|striptags,
+                solidarity: page.solidarity|striptags,
+                align: alignment,
+            }
+        ]) %}
+
+        {% set body = [] %}
+        {% set index = index + 1 %}
+    {% endfor %}
+    <div class="bg-deepnavy edge pb-[15rem]">
+        <solidarity-interactive :srpages="{{ pgs|json_encode }}"></solidarity-interactive>
+    </div>  
+    
+    <div class="edge">
+        <h3 class="font-sans font-semibold text-4xl mb-20">
+            Make the commitment.
+        </h3>
+        <div class="max-w-screen-md mx-auto">
+            <div>
+                <div data-tf-widget="Xaz3LbWD" data-tf-opacity="0" data-tf-iframe-props="title=Solidarity Resolution Interest Form" data-tf-medium="snippet" style="width:100%;height:500px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
             </div>
         </div>
     </div>
-
-    <div class="bg-deepnavy edge pt-[15rem]">
-        <div class="max-w-screen-lg mx-auto">
-
-            <div class="flex flex-wrap items-center justify-center">
-                <!--?xml version="1.0" encoding="UTF-8"?-->
-                <div class="h-[15rem] w-[15rem] mx-[3rem]">
-                    <svg id="svg1" class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 827.04 922.24" width="827.0399780273438" height="922.239990234375">
-                        <defs>
-
-                        </defs>
-                        <g id="Layer_2" data-name="Layer 2">
-                            <g id="Layer_1-2" data-name="Layer 1">
-                            <path class="cls-1 svg-elem-1" d="M283.87,147.34C298,109.55,314,72.55,328,34.55a38.05,38.05,0,0,1,9-13,41,41,0,0,1,34-10c9,2,19,7,19,17,1,201,1,401,0,602,0,5-2,10-4,15a48.75,48.75,0,0,0-3,7c-14,25-29,46-45,70-6,9-12,16-18,25a34.56,34.56,0,0,1-5.67,6.53"></path>
-                            <path class="cls-1 svg-elem-2" d="M176.15,611.93c1.84-2.38,3.84-2.38,6.84-3.38,13-7,24-15,34-26,5-5,6-12,5-19-10-56-24-106-32-162-2-18,4-34,12-49,1-2,0-3,1-5,4-9,9-18,12-27s7-18,11-27c1-2,0-3,1-5,12-28,22-56,33.81-83.14"></path>
-                            <path class="cls-1 svg-elem-3" d="M305,415.27V311a77.9,77.9,0,0,1,77.67-77.67h0"></path>
-                            <rect class="cls-1 svg-elem-4" x="103.46" y="583.37" width="107.92" height="346.93" rx="23.61" transform="matrix(0.74, -0.67, 0.67, 0.74, -468.31, 302.91)"></rect>
-                            <path class="cls-1 svg-elem-5" d="M650.89,611.27c-15.15-9.32-49.54-27.65-46.5-45.17l27.9-136.83c3.51-20.24,9.11-39.86,1.12-58.78C602.38,297,528.13,108.84,499.25,35.43a39.11,39.11,0,0,0-48.31-23C443,15,437,24.74,437,28.06v596.1c0,12.41,4.34,24.16,11,34.65,26.23,41.47,59.44,89.3,64.75,94.61"></path>
-                            <path class="cls-1 svg-elem-6" d="M522,414.61V310.32a77.9,77.9,0,0,0-77.67-77.67h0"></path>
-                            <rect class="cls-1 svg-elem-7" x="615.66" y="582.71" width="107.92" height="346.93" rx="23.61" transform="translate(656.11 1766.13) rotate(-137.71)"></rect>
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-
-                <div class="h-[15rem] w-[15rem]">
-                    <!--?xml version="1.0" encoding="UTF-8"?-->
-                    <svg id="svg2" class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 941.07 456.1" width="941.0700073242188" height="456.1000061035156">
-                        <defs>
-                            <style>.cls-1{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:21.1px;}</style>
-                        </defs>
-                        <g id="Layer_2" data-name="Layer 2">
-                            <g id="Layer_1-2" data-name="Layer 1">
-                            <path class="cls-1 svg-2-elem-1" d="M885.91,146.22C834.66,65.33,744.35,11.33,642,11.33H299c-158.66,0-288.48,129.82-288.48,288.49V322c0,67.93,55.58,123.51,123.51,123.51H807c67.93,0,123.51-55.58,123.51-123.51V299.82a286.22,286.22,0,0,0-14.16-89"></path>
-                            <path class="cls-1 svg-2-elem-2" d="M370.75,11.67c-20.94-.48-41.74-1.18-62.68-.1l-1,0L199,119.7a45.77,45.77,0,0,0,0,64.53h0a45.77,45.77,0,0,0,64.53,0l172-172C413.93,12.48,392.34,12.17,370.75,11.67Z"></path>
-                            <path class="cls-1 svg-2-elem-3" d="M505.17,12.72C467.31,50,430,84.78,393.87,124.72c-18,21.9-9,55.4,15.46,68.29,23.19,11.6,47.68,1.29,62.06-17.47"></path>
-                            <path class="cls-1 svg-2-elem-4" d="M507.26,140.18c42.52-43.81,87.61-85,129.26-129.63"></path>
-                            <path class="cls-1 svg-2-elem-5" d="M757.12,34.32c-6.7-2.09-13.31-4.44-19.87-7-11.88-2.49-23.73-5.08-35.61-7.5l-100,100a45.74,45.74,0,0,0,0,64.52h0a45.76,45.76,0,0,0,64.52,0L793.49,57c-11.31-6.64-22.28-13.86-33.38-20.84C759.12,35.55,758.11,34.94,757.12,34.32Z"></path>
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-
-
-
-            </div>
-        </div>
-    </div>
-    
-
-        
-        
-        
-
-                
 
     {% if false %}
         <div class="edge bg-deepnavy">
@@ -212,10 +180,6 @@
                 </div>
             </section>
         </div>
-        
-        <transition enter-active-class="animated fadeIn fast" leave-active-class="animated fadeOut fast">
-            <ajax-modal :target="ajaxModal.clickTarget" @close="toggleAjaxModal" v-if="ajaxModal.isActive"></ajax-modal>
-        </transition>
     {% endif %}
 
 {% endblock %}
@@ -238,7 +202,22 @@
 {% endblock bodyJs %}
 
 {% block bodyCss %}
-    <style>.cls-1{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:15px;}</style>
+
+    <style>
+        svg {
+            fill: white;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        .noscroll::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+
+    {# <style>.cls-1{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:15px;}</style>
     <style>.d{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:15px;}</style>
 
     <style>
@@ -385,5 +364,5 @@
 
         
 
-    </style>
+    </style> #}
 {% endblock bodyCss %}
