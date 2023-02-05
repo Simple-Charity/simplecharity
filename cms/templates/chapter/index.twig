@@ -2,12 +2,6 @@
 
 {% set pageBackground = pageBackground|default('linen') %}
 
-{% block headMeta %}
-    {% if entry.pageDescription|length %}
-        <meta name="description" content={{ entry.pageDescription }}>
-    {% endif %}
-{% endblock %}
-
 {% block headLinks %}
     {{ parent() }}
 {% endblock headLinks %}

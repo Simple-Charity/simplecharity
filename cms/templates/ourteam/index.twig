@@ -3,12 +3,6 @@
 
 {% set pageBackground = pageBackground|default('green') %}
 
-{% block headMeta %}
-    {% if entry.pageDescription|length %}
-        <meta name="description" content={{ entry.pageDescription }}>
-    {% endif %}
-{% endblock %}
-
 
 {% block headLinks %}
     {{ parent() }}
