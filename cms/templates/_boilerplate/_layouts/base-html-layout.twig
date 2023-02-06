@@ -9,6 +9,18 @@
 
 {# -- Page content that should be included in the <head> -- #}
 {% block headContent %}
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-26TT43CZWQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-26TT43CZWQ');
+    </script>
+
+
     {# -- Any <meta> tags that should be included in the <head> #}
     {% block headMeta %}
         {% if entry.pageDescription|length %}
@@ -26,17 +38,10 @@
 
     {# -- Any JavaScript that should be included before </head> -- #}
     {% block headJs %}
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-26TT43CZWQ"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', 'G-26TT43CZWQ');
-        </script>
+        
     {% endblock headJs %}
+
+
 
     {# Iubenda cookie widget for GDPR compliance, only appears for European IP addresses #}
     <script type="text/javascript">
@@ -45,13 +50,17 @@
     </script>   
     <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
 
+
+
     {# -- Inline and critical CSS #}
+
     <style>
         [v-cloak] {display: none !important;}
         {# -- Any CSS that should be included before </head> -- #}
         {% block headCss %}
         {% endblock headCss %}
     </style>
+
     {% include "_boilerplate/_partials/critical-css.twig" %}
 
 {% endblock headContent %}
