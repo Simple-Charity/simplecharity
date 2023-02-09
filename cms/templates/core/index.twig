@@ -17,8 +17,8 @@
     <div class="relative z-10 bg-linen bg-cover bg-right-top lg:bg-bottom overflow-hidden h-screen min-h-[20rem] lg:min-h-[60rem] xl:min-h-[60rem] xxl:min-h-[70rem]" style="background-image: url('{{ bf }}')">
 
         <div class="edge edge-t">
-            <h1 class="header-one relative z-20" data-aos="fade-up" data-aos-duration="1000" >become a <br> core supporter <span class="tracking-overlap hidden sm:inline">–––––––––</span> </h1>
-            <p class="text-lg sm:text-xl lg:text-2xl text-blue font-sans pt-6 sm:pt-12 relative z-20 font-semibold" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Join our community by <a class="underline text-red" href="https://simplecharity.kindful.com">pledging</a> to give monthly!</p>   
+            <h1 class="relative z-20 header-one" data-aos="fade-up" data-aos-duration="1000" >become a <br> core supporter <span class="hidden tracking-overlap sm:inline">–––––––––</span> </h1>
+            <p class="relative z-20 pt-6 font-sans text-lg font-semibold sm:text-xl lg:text-2xl text-blue sm:pt-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Join our community by <a class="underline text-red" href="https://simplecharity.kindful.com">pledging</a> to give monthly!</p>   
         </div>
 
         <div class="hidden xxl:block xxl:h-60"></div>
@@ -32,12 +32,12 @@
 
     <div class="relative">
         <div class="bg-[#081a27] edge text-linen relative">
-            <div class="lg:flex relative z-20 max-w-screen-2xl mx-auto">
+            <div class="relative z-20 mx-auto lg:flex max-w-screen-2xl">
                 <div class="">
-                    <h5 class="text-red tracking-wider font-semibold pb-6 text-sm sm:text-md">FUEL OUR CORE</h5>
-                    <h5 class="text-2xl sm:text-3xl lg:text-4xl font-semibold pb-6 text-linen">Help our team continue to do good!</h5>
+                    <h5 class="pb-6 text-sm font-semibold tracking-wider text-red sm:text-md">FUEL OUR CORE</h5>
+                    <h5 class="pb-6 text-2xl font-semibold sm:text-3xl lg:text-4xl text-linen">Help our team continue to do good!</h5>
 
-                    <p class="text-linen text-md sm:text-lg lg:text-xl pb-6" data-aos="fade-up" data-aos-duration="1000" >Enjoy invitations to exclusive quarterly updates with the CEO, opportunities to meet other core supporters and the occasional gift from our team as a demonstration of our gratitude.</p>
+                    <p class="pb-6 text-linen text-md sm:text-lg lg:text-xl" data-aos="fade-up" data-aos-duration="1000" >Enjoy invitations to exclusive quarterly updates with the CEO, opportunities to meet other core supporters and the occasional gift from our team as a demonstration of our gratitude.</p>
                     <p class="text-linen text-md sm:text-lg lg:text-xl sm:pb-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" >We believe in hiring excellent people. Your consistent giving allows us to grow our team so that we can work 9-5 to help Christians practice solidarity with the global poor. Thank you for supporting our team!</p>
 
                     <div class="flex-shrink sm:hidden">
@@ -46,11 +46,11 @@
                                 given="{{ entry.monthlyAmountRaised }}"
                                 total="{{ entry.monthlyGoal }}">
                             </my-donut>
-                            <p class="text-md sm:text-lg lg:text-xl text-center pt-4 mx-auto"> <b>{{ entry.monthlyAmountRaised|currency('USD', stripZeros=true) }}</b> /month raised so far.<br>Our goal is <b>{{ entry.monthlyGoal|currency('USD', stripZeros=true) }}</b> /month by {{ entry.coreGoalEndDate }} </p>
+                            <p class="pt-4 mx-auto text-center text-md sm:text-lg lg:text-xl"> <b>{{ entry.monthlyAmountRaised|currency('USD', stripZeros=true) }}</b> /month raised so far.<br>Our goal is <b>{{ entry.monthlyGoal|currency('USD', stripZeros=true) }}</b> /month by {{ entry.coreGoalEndDate }} </p>
                         </div>
                     </div>
 
-                    <div class="flex lg:block justify-center pt-10">
+                    <div class="flex justify-center pt-10 lg:block">
                         <a href="https://simplecharity.kindful.com/?campaign=1185238">
                             <button class="redbutton hover:text-red">
                                 Join Today
@@ -58,8 +58,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="hidden sm:block flex-shrink">
-                    <div class="text-linen text-center lg:ml-20">                    
+                <div class="flex-shrink hidden sm:block">
+                    <div class="text-center text-linen lg:ml-20">                    
                         <my-donut
                             given="{{ entry.monthlyAmountRaised }}"
                             total="{{ entry.monthlyGoal }}">
@@ -71,7 +71,7 @@
         </div>
 
         {% set bw = entry.coreSquiggleBorder.one() %}
-        <img class="absolute -bottom-20 xl:-bottom-40 super:-bottom-60 z-0 scale-x-105" src="{{ bw.geturl() }}" alt="">
+        <img class="absolute z-0 scale-x-105 -bottom-20 xl:-bottom-40 super:-bottom-60" src="{{ bw.geturl() }}" alt="">
     </div>
 
     
@@ -79,25 +79,25 @@
     {# BANNER 3 #}
 
     <div class="edge pt-36 xl:pt-52 bg-linen">
-        <div class="max-w-screen-2xl mx-auto">
-            <h5 class="text-red font-semibold tracking-wider pb-6 text-sm sm:text-md super:pt-20">AN INVALUABLE PARTNERSHIP</h5>
-            <h5 class="text-2xl sm:text-3xl lg:text-4xl font-semibold pb-6 text-blue">Make an impact with us.</h5>
+        <div class="mx-auto max-w-screen-2xl">
+            <h5 class="pb-6 text-sm font-semibold tracking-wider text-red sm:text-md super:pt-20">AN INVALUABLE PARTNERSHIP</h5>
+            <h5 class="pb-6 text-2xl font-semibold sm:text-3xl lg:text-4xl text-blue">Make an impact with us.</h5>
 
             <div class="lg:w-2/3">
-                <p class="text-blue text-md sm:text-xl lg:text-2xl" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Update copy: “Your monthly giving fuels all of Simple Charity: our college chapters, Two Coins podcast, charity evaluation research, summer internship program, online store, and devotional content. Help us have the biggest year of impact yet in 2023!”</p>
+                <p class="text-blue text-md sm:text-xl lg:text-2xl" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Your monthly giving fuels all of Simple Charity: our college chapters, Two Coins podcast, charity evaluation research, summer internship program, online store, and devotional content. Help us have the biggest year of impact yet in 2023!</p>
             </div>
             <div>
             </div>
             <table class="mx-auto mt-12">
                 <thead class="pb-4">
-                    <tr class="text-3xl font-serif font-bold">
+                    <tr class="font-serif text-3xl font-bold">
                 <th></th>
                 <th>
 
                 {% set seed = entry.seed.one() %}
 
                 <div class="">
-                    <img class="w-4 lg:w-4 mx-auto mt-auto" src="{{seed.getUrl()}}" alt="">
+                    <img class="w-4 mx-auto mt-auto lg:w-4" src="{{seed.getUrl()}}" alt="">
                 </div>
                 
 
@@ -117,13 +117,13 @@
             </tr>
             </thead>
             <thead class="pb-4">
-            <tr class="text-xxs lg:text-md font-sans">
+            <tr class="font-sans text-xxs lg:text-md">
                 <th></th>
                 <th class="px-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0">YEAR <span class="hidden sm:inline">ONE</span><span class="sm:hidden">1</span></th>
                 <th class="px-4"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">YEAR <span class="hidden sm:inline">TWO</span><span class="sm:hidden">2</span></th>
                 <th class="px-4"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">YEAR <span class="hidden sm:inline">THREE</span><span class="sm:hidden">3</span></th>
             </tr>
-            <tr class="text-md sm:text-2xl font-serif font-bold border-b-green border-b-2">
+            <tr class="font-serif font-bold border-b-2 text-md sm:text-2xl border-b-green">
                 <th class="pb-4">impact metric</th>
                 <th data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0" class="pb-4 text-sm sm:text-lg">2019</th>
                 <th data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" class="pb-4 text-sm sm:text-lg">2020</th>
@@ -131,7 +131,7 @@
             </tr>
             </thead>
             
-            <tbody class="text-sm sm:text-lg  lg:text-xl">
+            <tbody class="text-sm sm:text-lg lg:text-xl">
 
             <tr class="h-4"></tr>
             {% for item in entry.tableData.all() %}
@@ -139,11 +139,11 @@
                     <tr class="">
                         <td class="text-center px-1 text-xs sm:text-sm lg:text-md xl:text-lg font-semibold sm:px-8 py-4 border-r-green border-r max-w-[5rem] sm:max-w-none">{{ item.rowTitle }}</td>
                 {% elseif item.type == "stat2019" %}
-                        <td data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0" class="border-r-green border-r text-center px-1 sm:px-8 py-4">{{ item.stat2019 }}</td>
+                        <td data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0" class="px-1 py-4 text-center border-r border-r-green sm:px-8">{{ item.stat2019 }}</td>
                 {% elseif item.type == "stat2020" %}
-                        <td data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0" class=" border-r-green border-r text-center px-1 sm:px-8 py-4">{{ item.stat2020 }}</td>
+                        <td data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0" class="px-1 py-4 text-center border-r  border-r-green sm:px-8">{{ item.stat2020 }}</td>
                 {% elseif item.type == "stat2021" %}
-                        <td data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0" class="text-center px-1 sm:px-8 py-4">{{ item.stat2021 }}</td>
+                        <td data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0" class="px-1 py-4 text-center sm:px-8">{{ item.stat2021 }}</td>
                     </tr>
                 {% endif %}
 
@@ -165,8 +165,8 @@
 
     {# BANNER 5 #}
 
-    <div class="edge max-w-screen-2xl mx-auto">
-        <h5 class="text-red text-sm sm:text-md font-semibold tracking-wider pl-4">LET'S CHAT</h5>
+    <div class="mx-auto edge max-w-screen-2xl">
+        <h5 class="pl-4 text-sm font-semibold tracking-wider text-red sm:text-md">LET'S CHAT</h5>
         <div data-tf-widget="Ez34aCbo" data-tf-opacity="0" data-tf-chat data-tf-medium="snippet" style="width:100%;height:400px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
     </div>
     </div>
