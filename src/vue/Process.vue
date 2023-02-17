@@ -73,9 +73,9 @@
 
             <div id="info4" class="relative z-30 mb-32 lg:mb-60 w-full sm:w-[85%] md:w-[90%] lg:w-full">
                 <p class="text-blue font-semibold text-lg lg:text-xl xl:text-3xl">We selected</p>
-                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" class="text-blue font-semibold text-6xl xl:text-8xl xxl:text-9xl font-serif">24</p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" class="text-blue font-semibold text-6xl xl:text-8xl xxl:text-9xl font-serif">25</p>
                 <p class="text-blue font-normal text-lg lg:text-xl xl:text-3xl pb-12">charities.</p>
-                <p class="text-sm md:text-md lg:text-lg xl:text-2xl text-blue">We rated each of the seven qualities we look for from poor to excellent for all 72 charities that we interviewed. Then, we selected our top 24 charities by comparing clusters of charities that work in similar causes with each other and choosing the best charity from each cluster.</p>
+                <p class="text-sm md:text-md lg:text-lg xl:text-2xl text-blue">We rated each of the seven qualities we look for from poor to excellent for all 72 charities that we interviewed. Then, we selected our top 25 charities by comparing clusters of charities that work in similar causes with each other and choosing the best charity from each cluster.</p>
             </div>
 
             <div>
