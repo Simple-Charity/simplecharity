@@ -157,7 +157,7 @@
                                     </h3>
                                 </section>
                                 <div>
-                                    <div data-tf-widget="Xaz3LbWD" data-tf-opacity="0" data-tf-iframe-props="title=Solidarity Resolution Interest Form" data-tf-medium="snippet" style="width:100%;height:500px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+                                    <div data-tf-widget="Xaz3LbWD" data-tf-opacity="0" data-tf-iframe-props="title=Solidarity Resolution Interest Form" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;height:500px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
                                 </div>
                             </div>
                             
@@ -166,15 +166,6 @@
                     </div>
 
                 {% endfor %}
-
-                <div class="flex mx-auto max-w-screen-md pb-12">
-                    <p @click="beliefsPreviousChunk" v-if="currentChunk > 1" class="cursor-pointer p-4 inline-block">
-                        <span class="text-blue text-7xl">&#8592;</span>
-                    </p>
-                    <p @click="beliefsNextChunk" v-if="currentChunk != beliefTotalChunks" class="cursor-pointer p-4 inline-block ml-auto">
-                        <span class="text-blue text-7xl">&#8594;</span>
-                    </p>
-                </div>
             </section>
         </div>
     {% endif %}
