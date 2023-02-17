@@ -10,81 +10,84 @@
 
 {% block contentborderless %}
 
+    {% if false %}
 
-    {% set sprouts = [] %}
-    {% set i = 0 %}
+        {% set sprouts = [] %}
+        {% set i = 0 %}
 
-    {% for sprout in craft.entries.slug('site-wide-assets').one().simpleCharitySprouts.all() %}
-        {% set sprouts = sprouts|merge([{
-            "sproutRef": sprout.colorSprout.one().getUrl(),
-            "index": i + 1,
-            "isVisible": i == 0,
-        }]) %}
-        {% set i = i + 1 %}
-    {% endfor %}
-    
-    <div class="w-full">
-        <solidarity-resolution-splash :sprouts="{{ sprouts|json_encode }}"></solidarity-resolution-splash>
-    
-        
-    </div>
-
-    {% set pgs = [] %}
-    {% set index = 0 %}
-
-    {% for page in entry.solidarityResolutionPages %}
-
-        {% if index == 0 %}
-            {% set alignment = 'left-[25%] top-[0%]' %}
-        {% elseif index == 1 %}
-            {% set alignment = 'left-[75%] top-[0%]' %}
-        {% elseif index == 2 %}
-            {% set alignment = 'left-[0%] top-[43.30%]' %}
-        {% elseif index == 3 %}
-            {% set alignment = 'left-[100%] top-[43.30%]' %}
-        {% elseif index == 4 %}
-            {% set alignment = 'left-[25%] top-[86.60%]' %}
-        {% elseif index == 5 %}
-            {% set alignment = 'left-[75%] top-[86.60%]' %}
-        {% endif %}
-
-        {% set b = [] %}
-
-        {% for paragraph in page.body|split("</p>") %}
-            {% set b = b|merge([paragraph|striptags]) %}
+        {% for sprout in craft.entries.slug('site-wide-assets').one().simpleCharitySprouts.all() %}
+            {% set sprouts = sprouts|merge([{
+                "sproutRef": sprout.colorSprout.one().getUrl(),
+                "index": i + 1,
+                "isVisible": i == 0,
+            }]) %}
+            {% set i = i + 1 %}
         {% endfor %}
+        
+        <div class="w-full">
+            <solidarity-resolution-splash :sprouts="{{ sprouts|json_encode }}"></solidarity-resolution-splash>
+        
+            
+        </div>
 
-        {% set pgs = pgs|merge([
-            {
-                name: page.srName,
-                icon: page.icon.one().getUrl(),
-                body: b,
-                commitment: page.commitment|striptags,
-                aspiration: page.resolution|striptags,
-                solidarity: page.solidarity|striptags,
-                align: alignment,
-            }
-        ]) %}
+        {% set pgs = [] %}
+        {% set index = 0 %}
 
-        {% set body = [] %}
-        {% set index = index + 1 %}
-    {% endfor %}
-    <div class="bg-deepnavy edge pb-[15rem]">
-        <solidarity-interactive :srpages="{{ pgs|json_encode }}"></solidarity-interactive>
-    </div>  
-    
-    <div class="edge">
-        <h3 class="font-sans font-semibold text-4xl mb-20">
-            Make the commitment.
-        </h3>
-        <div class="max-w-screen-md mx-auto">
-            <div>
-                <div data-tf-widget="Xaz3LbWD" data-tf-opacity="0" data-tf-iframe-props="title=Solidarity Resolution Interest Form" data-tf-medium="snippet" style="width:100%;height:500px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+        {% for page in entry.solidarityResolutionPages %}
+
+            {% if index == 0 %}
+                {% set alignment = 'left-[25%] top-[0%]' %}
+            {% elseif index == 1 %}
+                {% set alignment = 'left-[75%] top-[0%]' %}
+            {% elseif index == 2 %}
+                {% set alignment = 'left-[0%] top-[43.30%]' %}
+            {% elseif index == 3 %}
+                {% set alignment = 'left-[100%] top-[43.30%]' %}
+            {% elseif index == 4 %}
+                {% set alignment = 'left-[25%] top-[86.60%]' %}
+            {% elseif index == 5 %}
+                {% set alignment = 'left-[75%] top-[86.60%]' %}
+            {% endif %}
+
+            {% set b = [] %}
+
+            {% for paragraph in page.body|split("</p>") %}
+                {% set b = b|merge([paragraph|striptags]) %}
+            {% endfor %}
+
+            {% set pgs = pgs|merge([
+                {
+                    name: page.srName,
+                    icon: page.icon.one().getUrl(),
+                    body: b,
+                    commitment: page.commitment|striptags,
+                    aspiration: page.resolution|striptags,
+                    solidarity: page.solidarity|striptags,
+                    align: alignment,
+                }
+            ]) %}
+
+            {% set body = [] %}
+            {% set index = index + 1 %}
+        {% endfor %}
+        <div class="bg-deepnavy edge pb-[15rem]">
+            <solidarity-interactive :srpages="{{ pgs|json_encode }}"></solidarity-interactive>
+        </div>  
+        
+        <div class="edge">
+            <h3 class="font-sans font-semibold text-4xl mb-20">
+                Make the commitment.
+            </h3>
+            <div class="max-w-screen-md mx-auto">
+                <div>
+                    <div data-tf-widget="Xaz3LbWD" data-tf-opacity="0" data-tf-iframe-props="title=Solidarity Resolution Interest Form" data-tf-medium="snippet" style="width:100%;height:500px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+                </div>
             </div>
         </div>
-    </div>
 
-    {% if false %}
+    {% endif %}
+
+    {% if true %}
         <div class="edge bg-deepnavy">
             <section class="edge-t content-ctn mx-auto relative">
                 <header class="w-full z-10 relative mx-auto max-w-screen-md">
@@ -211,152 +214,5 @@
         }
     </style>
 
-    {# <style>.cls-1{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:15px;}</style>
-    <style>.d{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:15px;}</style>
-
-    <style>
-        svg .svg-elem-1 {
-        stroke-dashoffset: 951.3115234375px;
-        stroke-dasharray: 951.3115234375px;
-        -webkit-transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0s;
-                transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0s;
-        }
-
-        svg.active .svg-elem-1 {
-        stroke-dashoffset: 0;
-        }
-
-        svg .svg-elem-2 {
-        stroke-dashoffset: 448.43792724609375px;
-        stroke-dasharray: 448.43792724609375px;
-        -webkit-transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0.15s;
-                transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0.15s;
-        }
-
-        svg.active .svg-elem-2 {
-        stroke-dashoffset: 0;
-        }
-
-        svg .svg-elem-3 {
-        stroke-dashoffset: 228.19264221191406px;
-        stroke-dasharray: 228.19264221191406px;
-        -webkit-transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0.24s;
-                transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0.24s;
-        }
-
-        svg.active .svg-elem-3 {
-        stroke-dashoffset: 0;
-        }
-
-        svg .svg-elem-4 {
-        stroke-dashoffset: 871.187744140625px;
-        stroke-dasharray: 871.187744140625px;
-        -webkit-transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0.36s;
-                transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0.36s;
-        }
-
-        svg.active .svg-elem-4 {
-        stroke-dashoffset: 0;
-        }
-
-        svg .svg-elem-5 {
-        stroke-dashoffset: 1458.407470703125px;
-        stroke-dasharray: 1458.407470703125px;
-        -webkit-transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0.48s;
-                transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0.48s;
-        }
-
-        svg.active .svg-elem-5 {
-        stroke-dashoffset: 0;
-        }
-
-        svg .svg-elem-6 {
-        stroke-dashoffset: 228.2125244140625px;
-        stroke-dasharray: 228.2125244140625px;
-        -webkit-transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
-                transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
-        }
-
-        svg.active .svg-elem-6 {
-        stroke-dashoffset: 0;
-        }
-
-        svg .svg-elem-7 {
-        stroke-dashoffset: 871.1876831054688px;
-        stroke-dasharray: 871.1876831054688px;
-        -webkit-transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0.75s;
-                transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0.75s;
-        }
-
-        svg.active .svg-elem-7 {
-            stroke-dashoffset: 0;
-        }
-
-
-                /***************************************************
-        * Generated by SVG Artista on 12/2/2022, 4:19:00 PM
-        * MIT license (https://opensource.org/licenses/MIT)
-        * W. https://svgartista.net
-        **************************************************/
-
-        svg .svg-2-elem-1 {
-        stroke-dashoffset: 2284.431884765625px;
-        stroke-dasharray: 2284.431884765625px;
-        -webkit-transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0s;
-                transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0s;
-        }
-
-        svg.active .svg-2-elem-1 {
-        stroke-dashoffset: 0;
-        }
-
-        svg .svg-2-elem-2 {
-        stroke-dashoffset: 669.8536987304688px;
-        stroke-dasharray: 669.8536987304688px;
-        -webkit-transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0.15s;
-                transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0.15s;
-        }
-
-        svg.active .svg-2-elem-2 {
-        stroke-dashoffset: 0;
-        }
-
-        svg .svg-2-elem-3 {
-        stroke-dashoffset: 309.8710632324219px;
-        stroke-dasharray: 309.8710632324219px;
-        -webkit-transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0.24s;
-                transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0.24s;
-        }
-
-        svg.active .svg-2-elem-3 {
-        stroke-dashoffset: 0;
-        }
-
-        svg .svg-2-elem-4 {
-        stroke-dashoffset: 185.0760040283203px;
-        stroke-dasharray: 185.0760040283203px;
-        -webkit-transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0.36s;
-                transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0.36s;
-        }
-
-        svg.active .svg-2-elem-4 {
-        stroke-dashoffset: 0;
-        }
-
-        svg .svg-2-elem-5 {
-        stroke-dashoffset: 567.0663452148438px;
-        stroke-dasharray: 567.0663452148438px;
-        -webkit-transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0.48s;
-                transition: stroke-dashoffset 5s cubic-bezier(0.19, 1, 0.22, 1) 0.48s;
-        }
-
-        svg.active .svg-2-elem-5 {
-        stroke-dashoffset: 0;
-        }
-
-
-
-        
-
-    </style> #}
+    
 {% endblock bodyCss %}
