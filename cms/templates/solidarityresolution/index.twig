@@ -88,16 +88,16 @@
     {% endif %}
 
     {% if true %}
-        <div class="edge bg-deepnavy">
+        <div class="edge bg-linen">
             <section class="edge-t content-ctn mx-auto relative">
                 <header class="w-full z-10 relative mx-auto max-w-screen-md">
-                    <h1 class="header-one text-linen mb-20 sm:mb-32 whitespace-nowrap">
+                    <h1 class="header-one text-blue mb-20 sm:mb-32 whitespace-nowrap">
                          solidarity resolution <span class="tracking-overlap hidden sm:inline">–––––––</span>
                     </h1>
                 </header>
             </section>
 
-            <section class="text-linen">
+            <section class="text-blue">
                 {% for page in entry.beliefsPages.all() %}
                     <div class="mb-40" id="story-{{ loop.index }}" class="">
                         {% for block in page.page.all() %}
@@ -164,7 +164,6 @@
                         {% endif %}
 
                     </div>
-
                 {% endfor %}
             </section>
         </div>
