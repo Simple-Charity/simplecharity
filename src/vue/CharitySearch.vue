@@ -285,25 +285,11 @@ export default {
             document.getElementById("capital").checked = false;
             document.getElementById("ministry").checked = false;
 
-            document.getElementById("africa").checked = false;
-            document.getElementById("asia").checked = false;
-            document.getElementById("australia").checked = false;
-            document.getElementById("europe").checked = false;
-            document.getElementById("northamerica").checked = false;
-            document.getElementById("southamerica").checked = false;
-
             this.healthChecked = false;
             this.educationChecked = false;
             this.safetyChecked = false;
             this.ministryChecked = false;
             this.capitalChecked = false;
-
-            this.africaChecked = false;
-            this.asiaChecked = false;
-            this.australiaChecked = false;
-            this.europeChecked = false;
-            this.northAmericaChecked = false;
-            this.southAmericaChecked = false;
 
             this.topSevenChecked = false;
 
