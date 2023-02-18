@@ -1,0 +1,101 @@
+field: cda21934-3ad9-4596-9100-be0a9cfacae9 # Banner 7 Buttons
+fieldLayouts:
+  d1972e75-8d55-436a-8ddd-513972c29be6:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: df0f5d0b-aa53-4fb1-96fa-40c43813210e # Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0010d1e4-fd2b-4e62-b1f9-02625c4b4b3c # Internal Reference
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 818e9181-483f-4158-ab8b-8900e8d8152b # External Reference
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  0010d1e4-fd2b-4e62-b1f9-02625c4b4b3c: # Internal Reference
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: internalReference
+    instructions: ''
+    name: 'Internal Reference'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: ''
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: false
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  818e9181-483f-4158-ab8b-8900e8d8152b: # External Reference
+    columnSuffix: qsnokhqk
+    contentColumnType: text
+    fieldGroup: null
+    handle: externalReference
+    instructions: ''
+    name: 'External Reference'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  df0f5d0b-aa53-4fb1-96fa-40c43813210e: # Button Text
+    columnSuffix: yereivpe
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: ''
+    name: 'Button Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: button
+name: Button
+sortOrder: 1

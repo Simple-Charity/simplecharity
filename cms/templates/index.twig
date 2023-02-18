@@ -1,12 +1,7 @@
 {% extends "_layouts/generic-page-layout.twig" %}
 
 {% set entry = craft.entries.slug('homepage').one() %}
-
-{% import "_macros/blog" as blog %}
-
-{% set main = craft.entries.slug('site-wide-assets').one() %}
-{% set navItems = main.navigationItems.all() %}
-
+{% set navItems = craft.entries.slug('site-wide-assets').one().navigationItems.all() %}
 {% block headLinks %}
     {{ parent() }}
 {% endblock headLinks %}
@@ -29,7 +24,6 @@
             </vue-typed-js>
             <div class="redactor text-linen pb-8 xl:pb-12 text-lg lg:text-lg xl:text-xl w-full sm:w-3/4 md:w-2/3">
                 {{ entry.bannerOneSubheading }}
-            
             </div>
 
             {% if entry.genericButton.one().buttonInternalReference|length %}
@@ -202,19 +196,19 @@
         <div v-prlx.mobile="{ speed: 0.07, preserveInitialPosition: false, }" class="absolute top-[-5rem] left-0 right-0 bottom-0 z-10 bg-cover bg-center" style="background-image: url('{{ banner3.getUrl() }}');"></div>
         <div class="relative z-20">
             <div class="text-center pb-[15rem] sm:pb-[30rem]">
-                <p class="text-red text-sm tracking-wider font-semibold pb-4">TAKE ACTION</p>
-                <p class="text-linen text-xl sm:text-2xl xl:text-3xl font-semibold pb-3 sm:w-[30rem] xl:w-[38rem] mx-auto">“Only they asked us to remember the poor, the very thing I was eager to do.”</p>
-                <p class="text-linen text-md tracking-wider">GALATIANS 2:10</p>
+                <p class="text-red text-sm tracking-wider font-semibold pb-4">{{ entry.banner6Header|upper }}</p>
+                <p class="text-linen text-xl sm:text-2xl xl:text-3xl font-semibold pb-3 sm:w-[30rem] xl:w-[38rem] mx-auto">"{{ entry.banner6Verse.one().verse.one().text }}"</p>
+                <p class="text-linen text-md tracking-wider">{{ entry.banner6Verse.one().title|upper }}</p>
             </div>
     
             <div class="flex justify-center text-sm hidden sm:block">
-                <div data-tf-widget="T6L3dgkL" data-tf-opacity="0" data-tf-hide-headers data-tf-iframe-props="title=Sign Up for Remember the Poor" style="width:100%;height:500px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+                <div data-tf-widget="{{ entry.banner6Typeform.one().dataTFWidget }}" data-tf-opacity="0" data-tf-hide-headers style="width:100%;height:500px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
             </div>
             <div class="flex justify-center text-sm sm:hidden">
                 <button class="px-3">
-                    <a href="https://simplecharity.typeform.com/to/T6L3dgkL">
+                    <a href="{{ entry.banner6Typeform.one().shareUrl }}">
                         <div class="flex items-center justify-center rounded-full border-2 border-deepnavy bg-deepnavy h-12 w-40 text-linen text-lg font-semibold transition ease-in-out duration-200 transform hover:bg-transparent hover:text-linen">
-                            <p>Sign up</p>
+                            <p>{{ entry.banner6Typeform.one().buttonText }}</p>
                         </div>
                     </a>
                 </button>
@@ -232,25 +226,22 @@
         </div>
 
         <div class="text-center pb-10 sm:pb-6">
-            <p class="text-sm text-linen tracking-wider font-semibold">MORE WAYS TO ENGAGE</p>
+            <p class="text-sm text-linen tracking-wider font-semibold">{{ entry.banner7Header|upper }}</p>
         </div>
 
         <div class="flex flex-wrap justify-center pb-5">
-            <button class="px-3 mb-5 sm:m-0">
-                <a href="https://shop.simplecharity.org">
-                    <div class="redbutton w-40 text-red bg-transparent hover:text-linen hover:bg-red">
-                        <p>Shop</p>
-                    </div>
-                </a>
-            </button>
 
-            <button class="px-3 mb-5 sm:m-0">
-                <a href="{{ craft.entries.slug('charities').one().url }}">
-                    <div class="redbutton w-40 hover:text-red">
-                        <p>Donate</p>
-                    </div>
-                </a>
-            </button>
+            {% set i = 0 %}
+            {% for b in entry.banner7Buttons.all() %}
+                <button class="px-3 mb-5 sm:m-0">
+                    <a href="{% if entry.internalReference|length %}{{ entry.internalReference.one().url }}{% else %}{{ entry.externalReference }}{% endif %}">
+                        <div class="redbutton w-40 {% if i == 0 %} text-red bg-transparent hover:text-linen hover:bg-red {% else %} hover:text-red {% endif %}">
+                            <p>{{ b.buttonText }}</p>
+                        </div>
+                    </a>
+                </button>
+                {% set i = i + 1 %}
+            {% endfor %}
         </div>
     </div>
 {% endblock %}

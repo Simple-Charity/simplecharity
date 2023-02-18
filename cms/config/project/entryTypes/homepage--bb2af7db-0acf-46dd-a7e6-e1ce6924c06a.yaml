@@ -4,6 +4,29 @@ fieldLayouts:
       -
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
             fieldUid: 7a633eca-bfc2-4150-9029-8866716a9600 # Page Description
             instructions: null
             label: null
@@ -145,30 +168,65 @@ fieldLayouts:
       -
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
-            id: null
+            fieldUid: 6783b347-f702-4ac7-baab-8f95f23223e7 # Banner 6 Header
             instructions: null
             label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            readonly: false
-            requirable: false
-            size: null
-            step: null
+            required: false
             tip: null
-            title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0cd6d5ff-d599-4ca6-9cac-c8f764e389a7 # Banner 6 Verse
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: aac43d31-1173-4e0f-a26f-b7fb6a683b20 # Banner 6 Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b1d8a32f-a5c9-4759-911b-73c371b756f7 # Banner 6 Typeform
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
           -
             fieldUid: 22aebf80-99c7-499b-b53a-b6855f469046 # Homepage Tertiary Banner
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 6: Remember the Poor'
+        sortOrder: 7
+      -
+        elements:
+          -
+            fieldUid: 17cec983-8b56-4935-aef1-f03f508fbac4 # Banner 7 Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: cda21934-3ad9-4596-9100-be0a9cfacae9 # Banner 7 Buttons
             instructions: null
             label: null
             required: false
@@ -185,8 +243,8 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: Legacy
-        sortOrder: 7
+        name: 'Banner 7: More Ways'
+        sortOrder: 8
 handle: homepage
 hasTitleField: false
 name: Homepage

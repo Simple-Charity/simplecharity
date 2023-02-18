@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 266c6678-9669-488e-82b7-68601833935a # About
+handle: banner7Buttons
+instructions: ''
+name: 'Banner 7 Buttons'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_banner7buttons}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

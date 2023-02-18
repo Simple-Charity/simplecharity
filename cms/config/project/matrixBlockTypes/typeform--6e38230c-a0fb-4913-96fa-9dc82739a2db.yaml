@@ -1,0 +1,99 @@
+field: b1d8a32f-a5c9-4759-911b-73c371b756f7 # Banner 6 Typeform
+fieldLayouts:
+  0a414d3c-4c7b-4584-8648-934b356b1491:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 1c370e9e-f034-45c8-8cf0-9855cb1dd1b1 # Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 688459fb-dd83-4d7d-b645-ae5b0382fc8e # Data tf Widget
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 90d88c19-28f5-4df0-b6f5-872ec960f101 # Share Url
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  1c370e9e-f034-45c8-8cf0-9855cb1dd1b1: # Button Text
+    columnSuffix: efacfbwh
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: ''
+    name: 'Button Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  90d88c19-28f5-4df0-b6f5-872ec960f101: # Share Url
+    columnSuffix: kqontipu
+    contentColumnType: text
+    fieldGroup: null
+    handle: shareUrl
+    instructions: ''
+    name: 'Share Url'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  688459fb-dd83-4d7d-b645-ae5b0382fc8e: # Data tf Widget
+    columnSuffix: kuccxlwg
+    contentColumnType: text
+    fieldGroup: null
+    handle: dataTFWidget
+    instructions: ''
+    name: 'Data tf Widget'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: typeform
+name: Typeform
+sortOrder: 1
