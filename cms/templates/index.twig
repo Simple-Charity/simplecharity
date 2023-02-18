@@ -234,7 +234,7 @@
             {% set i = 0 %}
             {% for b in entry.banner7Buttons.all() %}
                 <button class="px-3 mb-5 sm:m-0">
-                    <a href="{% if entry.internalReference|length %}{{ entry.internalReference.one().url }}{% else %}{{ entry.externalReference }}{% endif %}">
+                    <a href="{% if b.internalReference|length %}{{ b.internalReference.one().url }}{% else %}{{ b.externalReference }}{% endif %}">
                         <div class="redbutton w-40 {% if i == 0 %} text-red bg-transparent hover:text-linen hover:bg-red {% else %} hover:text-red {% endif %}">
                             <p>{{ b.buttonText }}</p>
                         </div>
