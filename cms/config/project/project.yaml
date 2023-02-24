@@ -1,4 +1,4 @@
-dateModified: 1677202206
+dateModified: 1677277220
 email:
   fromEmail: $SES_EMAIL
   fromName: $SES_FROM
@@ -115,7 +115,6 @@ meta:
     5aa9b210-8916-449c-95bc-1423daa59428: 'Popdown Title' # Popdown Title
     5ae2b8a7-1c8b-4403-8519-bc8e4401cfc3: Stories # Stories
     5b18df65-ba57-4e2b-8e3d-8e722790aa62: 'Accent Color' # Accent Color
-    5b37ad79-d165-41d8-85ea-9e637b3d907b: Contact # Contact
     5bff095b-3448-4b93-9c59-8da6c7740dfa: 'Text Block' # Text Block
     5c23a019-9bee-420b-a594-2f450cc00477: 'Sprout Image' # Sprout Image
     5d5950b1-f8ab-436a-a7bc-f35bf1c65993: 'Icon Range' # Icon Range
@@ -149,7 +148,6 @@ meta:
     6f3ff85b-f587-4d66-8a80-7140ff5edca2: 'Sample Image' # Sample Image
     6f54c990-2740-4ae8-9f0e-4b7e2f8b4d09: 'Subscription Quantity' # Subscription Quantity
     6f97fc8c-0ed3-498e-8985-752d02ef8701: 'Job Openings' # Job Openings
-    6fa64151-393e-4fd3-a13c-5e56cdd3decf: Contact # Contact
     7a28bd04-bc9c-457e-bb12-a455cbf01865: 'Liturgy Icon' # Liturgy Icon
     7a633eca-bfc2-4150-9029-8866716a9600: 'Page Description' # Page Description
     7a785146-8ae4-44d6-9d4f-46e0a32de039: 'Homepage Primary Banner' # Homepage Primary Banner
@@ -272,7 +270,6 @@ meta:
     38d9e130-0a40-4ee7-924f-afb743cde8cd: 'Title Text' # Title Text
     39a34b14-4750-4b97-ab09-cbb4b9b231e6: 'Podcast Page Subtitle' # Podcast Page Subtitle
     40ee1de0-1cbb-4ebd-9215-9699ed5f8862: 'Cross Only Icon' # Cross Only Icon
-    42b2e143-03d5-4fb9-9164-69bea66fb46c: 'Journey of Generosity' # Journey of Generosity
     42b7661d-3ea5-4392-9e4d-9f1b0472137d: 'Stories Main Page' # Stories Main Page
     42b86188-6a7b-4fec-9436-a98389ef2d97: 'Waveform Image' # Waveform Image
     42ca8644-e860-481d-82fa-0dae13cf6078: 'Transparency Docs' # Transparency Docs
@@ -843,7 +840,6 @@ meta:
     e8097484-6a7b-4478-ad5c-703ec1ead567: 'Job Long Description' # Job Long Description
     ea458e0c-0a24-400b-875d-21c6ef64d00c: Quote # Quote
     ea703e4f-5f99-4ddd-88e0-56ec3502494a: 'SC Icons' # SC Icons
-    eaa51e5e-c1df-4906-a045-615fd14aa108: 'Journey of Generosity' # Journey of Generosity
     eabb9c1c-d89f-4b47-a047-d46b49617621: 'Partner Featured Image' # Partner Featured Image
     eacf78ba-71bd-4792-9bf6-d9c631600319: 'Instagram Icon' # Instagram Icon
     eaf86304-0ad2-4f84-af2d-9b942aab2c25: 'Challenge Steps' # Challenge Steps
