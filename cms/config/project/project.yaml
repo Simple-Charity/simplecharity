@@ -1,4 +1,4 @@
-dateModified: 1676735023
+dateModified: 1677202206
 email:
   fromEmail: $SES_EMAIL
   fromName: $SES_FROM
@@ -29,6 +29,7 @@ meta:
     0f84852c-0852-469a-877e-42ab02751c54: 'Chapter Sprout' # Chapter Sprout
     0f93676b-20d0-4cf7-b83e-58f339ce9e3a: 'Summary Text' # Summary Text
     1a9ab162-c12a-4491-bd43-65eff31adcba: People # People
+    1b0037e7-9f72-45a3-97e5-d9b55415929e: 'Text Panel' # Text Panel
     1b0533df-4b1a-44df-95a7-3b24062474ad: 'Item Description' # Item Description
     1b3dbf44-62af-4c60-98fb-1647e2f62a90: College # College
     1ba99be8-6267-40cf-a5e8-6e9dc5b5d264: 'Stat 2019' # Stat 2019
@@ -46,6 +47,7 @@ meta:
     1feed2cd-4e40-4f20-b46c-ced7034d5322: 'Document Name' # Document Name
     2ad4d2bf-b1e7-41d1-b8a1-b6dcc10577d1: 'Address Line 3' # Address Line 3
     2ad11603-cf37-4fae-b67e-7b7ba4984732: Verses # Verses
+    2af57884-ba7e-4014-bcdf-93c6fb695a9a: 'Panel Title' # Panel Title
     2b1d6476-49e2-48d6-a867-87f7d83ddbbc: Partners # Partners
     2b5e5440-8437-43f4-8c6d-8628e9b5bdc6: Challenge # Challenge
     2bb8b581-1984-4924-ae34-0fa0264d6d0e: Squiggle # Squiggle
@@ -62,6 +64,7 @@ meta:
     2f208078-005f-4a37-8c0a-f012c2b57aa9: 'Thank You' # Thank You
     2fcab67f-d14d-4402-ad34-8eb7e7500be3: 'Podcast Reviews Banner Header' # Podcast Reviews Banner Header
     3a3e4df0-9f3d-4ebf-b3a2-34f84143f75a: 'Item Description' # Item Description
+    3a105c93-51be-48c3-8a6d-99e0a7672d7a: 'Body Text' # Body Text
     3a731d89-ac1f-4578-9725-c56ec44da677: 'Homepage Banner Two Cards' # Homepage Banner Two Cards
     3b0e9b39-a800-43ae-9b7f-943ab727aac5: 'Careers Hero Text' # Careers Hero Text
     3b67cd9a-7408-40d2-b67c-19fbf57e0cb4: 'Hidden Credit' # Hidden Credit
@@ -106,6 +109,7 @@ meta:
     04fa1b23-f82e-415c-9d00-11096c234fbc: 'Credit Header' # Credit Header
     4ff5c659-06c9-4f1e-85be-e4bc5792c681: Colleges # Colleges
     5a2f733d-1989-42d5-a505-43b56ed11043: 'Solidarity Resolution Summary' # Solidarity Resolution Summary
+    5a6d8eff-375a-43ad-8e08-f75c827cb849: 'Button Text' # Button Text
     5a8c6cfc-3a45-4834-90c2-df2104585a87: 'First Description' # First Description
     5a177aa1-a238-44c2-a6fb-7f62483aa7aa: 'Credit Header' # Credit Header
     5aa9b210-8916-449c-95bc-1423daa59428: 'Popdown Title' # Popdown Title
@@ -174,6 +178,7 @@ meta:
     8a1c4e40-a5ab-4593-a923-0f62b45a6dcb: Countries # Countries
     8a948f67-f9a8-460b-9f84-041576334d4f: Document # Document
     8aa3e0ac-3075-4ea3-acd2-d7a85db97d3c: Careers # Careers
+    08ac0714-85f1-4394-a0cc-a806a49cb91a: 'Background Image Panel' # Background Image Panel
     8b1a1e19-371e-4532-b357-91173284eb7d: 'Stat 2021' # Stat 2021
     8b135a51-a55c-487d-a5c3-aae230faf2c6: 'About Promo Image 3' # About Promo Image 3
     8bb1ccc5-29c3-4de1-a315-2cf3efa32019: 'Attribute Description' # Attribute Description
@@ -181,6 +186,7 @@ meta:
     8beec3f1-3000-47f5-a8fa-1bd1358fd7a8: 'Document Reference' # Document Reference
     8c28625f-d630-4247-a0d5-6040b47514fd: Continents # Continents
     8cadffce-d139-483d-b9a7-2e2ac9f3172d: 'Job Description' # Job Description
+    8cb726c9-5788-4ded-b9e3-0a7cbdfdda3c: 'Title Text' # Title Text
     8d1ae711-2db4-4e29-8be1-32f478a5cd30: Footer # Footer
     8d6edbc4-482b-4b3e-842b-091224462c49: 'Student Question' # Student Question
     08d66bf8-3c98-44fc-bce4-5eeccc3262f0: 'Chapters Cards' # Chapters Cards
@@ -242,6 +248,7 @@ meta:
     22aebf80-99c7-499b-b53a-b6855f469046: 'Homepage Tertiary Banner' # Homepage Tertiary Banner
     22b2f4d0-cbad-4629-86e1-b156684ef9a9: 'Homepage Squiggle 1' # Homepage Squiggle 1
     24b90193-7fa0-409f-8a4e-e5d09f2f1cad: 'Action Button 2 Link ' # Action Button 2 Link 
+    24c511ad-7e00-4cca-83f2-eaa0b8a43882: 'Flickity Panel' # Flickity Panel
     26d16a04-97b8-418a-9a96-a79dc7669fda: 'Positive Text' # Positive Text
     27d7b930-7b1f-4843-aba9-f88f97aaabd5: 'Team Member Square' # Team Member Square
     28ec04f3-9b85-4bce-82d5-3e611c99266c: Countries # Countries
@@ -254,6 +261,7 @@ meta:
     30f15e9d-f57d-4b2b-808f-9bd63c6ed07b: 'Chapter Squiggle 1' # Chapter Squiggle 1
     31c69751-2869-46a7-8948-2ebeaba8d0d4: 'Generic Button' # Generic Button
     31f4c251-8869-4ad2-83b9-0f2058068310: 'Full Name' # Full Name
+    33f2ba70-7b17-428b-b3a9-924a381f2bed: 'Paragraph Text' # Paragraph Text
     34c3a52a-ffdd-4336-9d7a-738968ffa86f: 'Coming Soon Background' # Coming Soon Background
     34cedc06-4ba4-47ac-8671-4ca9e64856ea: Episodes # Episodes
     34f3efc6-bb42-4753-9070-44343a080070: 'Student Chapters' # Student Chapters
@@ -261,6 +269,7 @@ meta:
     37bb932f-3a73-4891-8677-64ff0b60b6b7: 'Yellow Wave Three' # Yellow Wave Three
     37cb872c-de66-491f-819e-ff4a10180399: Verse # Verse
     38a71d71-d3f8-4b59-a0e7-a0eec7b009ae: 'Philosophy Image' # Philosophy Image
+    38d9e130-0a40-4ee7-924f-afb743cde8cd: 'Title Text' # Title Text
     39a34b14-4750-4b97-ab09-cbb4b9b231e6: 'Podcast Page Subtitle' # Podcast Page Subtitle
     40ee1de0-1cbb-4ebd-9215-9699ed5f8862: 'Cross Only Icon' # Cross Only Icon
     42b2e143-03d5-4fb9-9164-69bea66fb46c: 'Journey of Generosity' # Journey of Generosity
@@ -281,6 +290,7 @@ meta:
     47a5e597-de28-4a21-bd8e-7d6849507248: 'Countries of Operation' # Countries of Operation
     49a0106a-3664-411c-b02f-77e75536fb77: 'Outline Sprout' # Outline Sprout
     49ceeea8-8619-4a4c-8989-4606aa5cf8fe: 'Process Target 1' # Process Target 1
+    50bf27a7-8d0b-486b-a146-1dddb15e81c3: 'Text Image Panel' # Text Image Panel
     50e24144-f3e9-4257-8760-a53f4ff16a2a: Core # Core
     52bab6c5-c7ef-4253-9d67-3406ac646035: 'Episode Feature Image' # Episode Feature Image
     52e0f93c-d81a-4364-bbcb-18927f6afdd4: 'Dropdown Title' # Dropdown Title
@@ -300,6 +310,7 @@ meta:
     62bac7f0-a418-45fb-a062-b73e51fadf14: 'Home Embrace Copy' # Home Embrace Copy
     62cc5d82-146e-47f5-89c5-8c5e6678e88b: 'Step Name' # Step Name
     62df3d17-f617-4108-8e9c-14cfd20c33d8: 'Currently Accepting Applications' # Currently Accepting Applications
+    63ebac98-bcbf-491e-82c6-8e9ed9b14eaf: 'Panel Title' # Panel Title
     65a79333-97f4-4764-8341-66feafbd48f8: 'Careers Info Text' # Careers Info Text
     66a4c9f3-3d5e-4379-a7cc-52bf64f99148: Solidarity # Solidarity
     066d4391-417c-4728-9dbb-3ac06e26e59c: Amount # Amount
@@ -558,10 +569,12 @@ meta:
     73621214-6b58-493c-b837-db6b4a521385: 'USA Map Outline' # USA Map Outline
     74284365-7a11-44ce-89c8-f0d2cdd8fc9d: Stats # Stats
     75613124-d8c0-4155-ae38-4264e3ab0c53: 'Mission Teaser Text' # Mission Teaser Text
+    91538023-7219-4718-be32-9afb302568a7: 'Generic Page Panels' # Generic Page Panels
     96430616-69dc-4527-a931-278353c4c6a0: Default # Default
     a0f0647d-ad32-4706-84ce-612fac5aceca: 'Button Text' # Button Text
     a050e10f-27ff-425f-8157-697fd1e26cb8: 'Third Subtitle' # Third Subtitle
     a08f5fc8-9695-4020-ac3b-70a6fbb63354: 'Partner Icon' # Partner Icon
+    a1ca6890-9f0b-4bfa-8514-939ff54e3df4: 'Text Y-Alignment' # Text Y-Alignment
     a2c77353-8003-4e4d-8d04-a0658785192f: Reference # Reference
     a3c41f31-66e6-4334-ba83-b9adf1d92ad3: 'Podcast Page Title' # Podcast Page Title
     a4d3154b-c781-4675-900e-c803fe19146e: 'Support Name' # Support Name
@@ -616,6 +629,7 @@ meta:
     ae1c1d48-b88b-45d5-b301-44dbd0c9a868: 'About Andrew Lee' # About Andrew Lee
     ae5f5c29-ba86-4550-932d-66a8ce8d824a: 'About Globe' # About Globe
     ae86ffb3-35ab-4066-8e33-755aa600854d: Answer # Answer
+    ae3552b1-3747-4cab-a2e3-1c3866e56bb0: 'Panel Title' # Panel Title
     aebd3596-f0c5-4f10-8b22-74c079f120e0: About # About
     af1a173c-1914-4742-93ad-2c314db525d5: 'Button Reference' # Button Reference
     af1b583a-1963-4dae-8fb5-ffc663e80a3d: Text # Text
@@ -635,8 +649,10 @@ meta:
     b9a83f59-50be-4899-b345-7223ac9e46a5: 'External Name' # External Name
     b9e5bc7c-3ac8-4151-b8be-d1ec4df59303: Question # Question
     b12f20f4-f852-4043-838a-e95425a73a5b: Button # Button
+    b16a94d4-cbc1-4d4d-a80b-9c2dd9214e3d: 'Panel Title Style' # Panel Title Style
     b23dcc49-c08d-46f8-b0e3-3ce8f14cece2: Legacy # Legacy
     b25c70a0-4aa9-4bec-b207-39f8f041f086: Month # Month
+    b53e64ae-63c3-4bc5-b257-c527cca1a09d: 'Panel Title Style' # Panel Title Style
     b58ea504-992d-4384-8117-40c73cb12d10: Photo # Photo
     b70afe92-f19f-45eb-b090-05700fa87ae9: Default # Default
     b91e077e-3da3-42ea-bb90-27c3b1ada32c: 'Process Hexagons Small' # Process Hexagons Small
@@ -692,14 +708,17 @@ meta:
     c6f029bd-449e-4d0f-82fa-facb5e78cc80: 'Giver Question' # Giver Question
     c8b0b5fc-f91a-4e26-831d-8d94ac4d9acd: 'Card Button Text' # Card Button Text
     c9bd13d6-716f-424c-b64d-5112d53c1581: 'Small Text' # Small Text
+    c9e147dc-433e-4015-9c2b-7058f73529d4: 'Button Internal Reference' # Button Internal Reference
     c11a4541-3158-40e5-a5ca-edd013d68aff: Podcast # Podcast
     c11dbccc-6db1-49f7-bac9-d29548d3dd79: 'Theme Color' # Theme Color
     c18c4374-bd16-4250-8173-c6b8c45f2142: 'Home Faithful Copy' # Home Faithful Copy
     c29c3ac0-6424-4dc7-8a60-1d44e9906725: 'Simple Charity Address' # Simple Charity Address
     c29fcad8-1400-4c5e-b6e8-baa931d3c48f: 'Long Bio' # Long Bio
+    c49b544c-1b15-448e-877c-9be8fff9ded8: 'Button External Reference' # Button External Reference
     c70ab99d-8d3f-423f-bbc9-13f925f70e89: 'Podcast Featured Testimonial' # Podcast Featured Testimonial
     c80fff1e-998f-4f04-b84c-a7231595bf73: Sprout # Sprout
     c129be46-1e6f-4c37-a877-b79649063042: 'Class Names' # Class Names
+    c201b8e7-402f-4b3c-afb0-147060ccf895: 'Panel Title' # Panel Title
     c516a434-d927-4504-b29d-7f35c06273c1: 'About Banner 2' # About Banner 2
     c646dfb1-9670-4f85-9cba-fa087e668a5f: Sprout # Sprout
     c669f297-d354-4da9-a80f-05f4e692b208: 'Charity Dollar Icon' # Charity Dollar Icon
@@ -738,6 +757,7 @@ meta:
     cf6df6e4-5170-4f09-9262-ee12d74dedf7: Description # Description
     cf8db1a1-7d87-4bf3-b0fd-d2d3759e7755: 'Doc Slug' # Doc Slug
     cfb0632d-25e2-41d9-85de-8dd0459f75f4: 'Class year' # Class year
+    cfedf6ac-2d35-4210-8626-91a1b69701c8: 'Background Image' # Background Image
     d0da9db0-d6c7-4a34-92f7-dfb6ea5c4065: 'Top Seven Classification' # Top Seven Classification
     d0e6a1da-6091-4c05-af4d-dd0e2678169a: Icon # Icon
     d0ef30cb-6567-44dd-aa01-ad11766c21a6: 'Text Dropdown' # Text Dropdown
@@ -748,6 +768,7 @@ meta:
     d4a70001-7043-457f-82b0-deb2155045e5: 'Big Red Button' # Big Red Button
     d4c1d637-d996-4e25-a33b-c460f1cefb7c: 'Stat 2021' # Stat 2021
     d5c418ff-724c-4b17-a97f-27fde8e1159c: 'Liturgy Step' # Liturgy Step
+    d6c394f3-272d-4007-91d9-006d798ff36f: 'Text Image Button Panel' # Text Image Button Panel
     d7f7380c-11e9-4300-85f2-5160054980db: 'Liturgy Icons' # Liturgy Icons
     d9b11d9d-c239-448e-942e-9d52914a559b: 'Action Button 1 Link ' # Action Button 1 Link 
     d10bc38d-a7a5-4474-a0c5-b030842135d7: Summary # Summary
@@ -763,6 +784,7 @@ meta:
     d2302093-d90e-4070-b30b-ac043a79a0a8: Resolution # Resolution
     d2909213-6972-48ca-8186-7c77cdaa3d66: 'Address Line 2' # Address Line 2
     da27690b-c3a8-4a29-b91c-6d1dd7ad6641: Stat # Stat
+    dac00c8f-1f48-4c8b-b768-e61c93d3a0da: 'Panel Height' # Panel Height
     dac1d3ae-8fbe-415b-9fff-5e3b911296dc: 'Third Description' # Third Description
     dadc93de-9c35-4c95-964a-4b88ff41510e: 'Site Wide Assets' # Site Wide Assets
     db001ed9-33a1-4297-b51c-1520257f99f8: 'Cause Area Color' # Cause Area Color
@@ -811,6 +833,7 @@ meta:
     e497ee2d-0ac8-485d-9d8c-3e886c3b9a5c: 'Release Date' # Release Date
     e627c063-00db-4d47-bffb-eaeb4672f5a9: 'Cause Area Icon Outline' # Cause Area Icon Outline
     e705ed43-9fed-433d-9a96-81d59f425766: 'Episode Title' # Episode Title
+    e764b440-8b16-4ae1-ab5a-18ddabe0ee21: 'Background Color' # Background Color
     e774b400-f1ee-4b99-b55d-f0ab1510d6b3: 'Homepage Core Beliefs Promo Text' # Homepage Core Beliefs Promo Text
     e7531ee5-8dd2-4e17-a280-d1519a3c6b56: Sprout # Sprout
     e30856e5-fcc7-42da-ae6c-514fc2d30672: 'Contact Main Text' # Contact Main Text
@@ -845,6 +868,7 @@ meta:
     f09216d7-902a-4b74-9e8e-fa67f6803222: 'Newsletter Signup Link' # Newsletter Signup Link
     f1b2c133-48f6-404e-be23-ab08977141f8: 'Button Internal Reference' # Button Internal Reference
     f1f24ae3-77ca-448e-9f19-50c4683a78d0: Translation # Translation
+    f2c67d8a-dae7-40cc-8be4-3a380fef8f81: 'Panel Title' # Panel Title
     f3aca6da-5684-4fb5-9035-644cbbb4f044: 'Site Wide Assets' # Site Wide Assets
     f5daa784-4c38-43a5-a482-46267106f63f: 'Philosophy Image Cropped 1' # Philosophy Image Cropped 1
     f5e01fe1-0eb3-4014-bba4-c54e2393d631: 'Button Text' # Button Text
@@ -853,6 +877,7 @@ meta:
     f6ff699c-9876-4f80-bb5b-8e5f493503cb: 'Process Hexagons' # Process Hexagons
     f33e41f4-6ba1-4281-ad9a-941307c33608: Description # Description
     f39de907-66b6-48cd-b329-0cb0114af282: 'Image Alignment' # Image Alignment
+    f52b1541-1d72-4c61-9e2a-8836ca274c3f: 'Background Image Alignment' # Background Image Alignment
     f61a4ddd-c861-4510-bfb4-2f6252b46159: 'Image Caption' # Image Caption
     f92d1fc6-15a1-4acd-9de9-27c68d607d0a: 'Transparent Icon' # Transparent Icon
     f142e8e1-4444-4fe8-a82c-db613d763863: Color # Color
@@ -868,6 +893,7 @@ meta:
     fa9c9936-e645-4ef5-915c-82bd3d356f21: 'Card Icon' # Card Icon
     fa456c16-e228-4d2e-a30e-8d1e19737ed8: 'Season One' # Season One
     fb7ab469-3f2f-40e0-9e76-169d3dc63b82: 'External Link' # External Link
+    fbb85200-bdf7-4b0c-8679-35c4ddbd8307: 'Text X-Alignment' # Text X-Alignment
     fc416d40-4fbe-43c9-9b27-48ad297e5f7b: 'Attribute Name' # Attribute Name
     fd6e3b6d-7d3d-4ff1-8f5f-4c1c6807f60f: 'Button Internal Reference' # Button Internal Reference
     fd585df9-c9ee-4479-ad2b-e90f5c413d52: 'Inline Image' # Inline Image

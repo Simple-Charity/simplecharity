@@ -5,18 +5,18 @@
             <div class="flex h-full items-center relative overflow-hidden transition-all duration-200 ease-in-out transform">
                 <div class="">
 
-                    <div class="hidden sm:block relative z-20 w-[10rem] h-[10rem] lg:w-[16rem] lg:h-[16rem]"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                    <div class="hidden sm:block relative z-20 w-[10rem] h-[10rem] lg:w-[16rem] lg:h-[16rem]">
                         <img class="" :src="quote.quoteIcon" alt="">
                     </div>
                     </div>
                     <div class="sm:pl-12">
                     <img class="w-10 h-10 sm:w-16 sm:h-16 mb-6" :src="qicon" alt="">
                     <div class="w-full">
-                        <p class="text-blue text-md lg:text-lg xl:text-xl pb-4 md:pb-6 leading-6 md:leading-relaxed" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">{{ quote.quoteText }}</p>
+                        <p class="text-blue text-md lg:text-lg xl:text-xl pb-4 md:pb-6 leading-6 md:leading-relaxed">{{ quote.quoteText }}</p>
 
 
                         <div class="sm:hidden flex items-center">
-                            <div class="relative z-20 pr-4"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                            <div class="relative z-20 pr-4">
                                 <img class="w-20" :src="quote.quoteIcon" alt="">
                             </div>
                             <div>

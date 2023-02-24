@@ -1,0 +1,41 @@
+field: 91538023-7219-4718-be32-9afb302568a7 # Generic Page Panels
+fieldLayouts:
+  f49421fc-a425-4393-a574-761b28a504dc:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: f2c67d8a-dae7-40cc-8be4-3a380fef8f81 # Panel Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  f2c67d8a-dae7-40cc-8be4-3a380fef8f81: # Panel Title
+    columnSuffix: cwwacmrn
+    contentColumnType: text
+    fieldGroup: null
+    handle: panelTitle
+    instructions: ''
+    name: 'Panel Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: textImagePanel
+name: 'Text Image Panel'
+sortOrder: 3

@@ -1,0 +1,41 @@
+field: 91538023-7219-4718-be32-9afb302568a7 # Generic Page Panels
+fieldLayouts:
+  46140d5e-2d0e-48b1-be75-e76d85c5a5f4:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: c201b8e7-402f-4b3c-afb0-147060ccf895 # Panel Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  c201b8e7-402f-4b3c-afb0-147060ccf895: # Panel Title
+    columnSuffix: rkzcgovj
+    contentColumnType: text
+    fieldGroup: null
+    handle: panelTitle
+    instructions: ''
+    name: 'Panel Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: flickityPanel
+name: 'Flickity Panel'
+sortOrder: 5

@@ -1,0 +1,431 @@
+field: 91538023-7219-4718-be32-9afb302568a7 # Generic Page Panels
+fieldLayouts:
+  58fe971c-109e-46fa-9f61-455b1b0e2897:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 63ebac98-bcbf-491e-82c6-8e9ed9b14eaf # Panel Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b16a94d4-cbc1-4d4d-a80b-9c2dd9214e3d # Panel Title Style
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e764b440-8b16-4ae1-ab5a-18ddabe0ee21 # Background Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8cb726c9-5788-4ded-b9e3-0a7cbdfdda3c # Title Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3a105c93-51be-48c3-8a6d-99e0a7672d7a # Body Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: fbb85200-bdf7-4b0c-8679-35c4ddbd8307 # Text X-Alignment
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a1ca6890-9f0b-4bfa-8514-939ff54e3df4 # Text Y-Alignment
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: dac00c8f-1f48-4c8b-b768-e61c93d3a0da # Panel Height
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  3a105c93-51be-48c3-8a6d-99e0a7672d7a: # Body Text
+    columnSuffix: bjmrdydt
+    contentColumnType: text
+    fieldGroup: null
+    handle: bodyText
+    instructions: ''
+    name: 'Body Text'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  8cb726c9-5788-4ded-b9e3-0a7cbdfdda3c: # Title Text
+    columnSuffix: wrpjrlvg
+    contentColumnType: text
+    fieldGroup: null
+    handle: titleText
+    instructions: ''
+    name: 'Title Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  63ebac98-bcbf-491e-82c6-8e9ed9b14eaf: # Panel Title
+    columnSuffix: hwlzimkz
+    contentColumnType: text
+    fieldGroup: null
+    handle: panelTitle
+    instructions: ''
+    name: 'Panel Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a1ca6890-9f0b-4bfa-8514-939ff54e3df4: # Text Y-Alignment
+    columnSuffix: pxoeghbw
+    contentColumnType: string
+    fieldGroup: null
+    handle: textYAlignment
+    instructions: ''
+    name: 'Text Y-Alignment'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Top
+            -
+              - value
+              - top
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Middle
+            -
+              - value
+              - middle
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Bottom
+            -
+              - value
+              - bottom
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  b16a94d4-cbc1-4d4d-a80b-9c2dd9214e3d: # Panel Title Style
+    columnSuffix: gbfqxtqu
+    contentColumnType: string
+    fieldGroup: null
+    handle: panelTitleStyle
+    instructions: ''
+    name: 'Panel Title Style'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Big Serif'
+            -
+              - value
+              - bigSerif
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Medium Sans'
+            -
+              - value
+              - mediumSans
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Small Sans Caps'
+            -
+              - value
+              - smallSansCaps
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  dac00c8f-1f48-4c8b-b768-e61c93d3a0da: # Panel Height
+    columnSuffix: qcbowhyf
+    contentColumnType: string
+    fieldGroup: null
+    handle: panelHeight
+    instructions: ''
+    name: 'Panel Height'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Fit to Content'
+            -
+              - value
+              - fitToContent
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - 'Fit to Content With Extra Space'
+            -
+              - value
+              - fitToContentWithExtraSpace
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Fit To Screen'
+            -
+              - value
+              - fitToScreen
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  e764b440-8b16-4ae1-ab5a-18ddabe0ee21: # Background Color
+    columnSuffix: lecuaqns
+    contentColumnType: string
+    fieldGroup: null
+    handle: backgroundColor
+    instructions: 'See Simple Charity brand guide for color key. '
+    name: 'Background Color'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Mint
+            -
+              - value
+              - mint
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - 'Light Mint'
+            -
+              - value
+              - lightMint
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Peach
+            -
+              - value
+              - peach
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Canary
+            -
+              - value
+              - canary
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Zeal
+            -
+              - value
+              - zeal
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Quartz
+            -
+              - value
+              - quartz
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Dusk
+            -
+              - value
+              - dusk
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  fbb85200-bdf7-4b0c-8679-35c4ddbd8307: # Text X-Alignment
+    columnSuffix: pvvqrojt
+    contentColumnType: string
+    fieldGroup: null
+    handle: textXAlignment
+    instructions: ''
+    name: 'Text X-Alignment'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Left
+            -
+              - value
+              - left
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Center
+            -
+              - value
+              - center
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Right
+            -
+              - value
+              - right
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+handle: textPanel
+name: 'Text Panel'
+sortOrder: 2

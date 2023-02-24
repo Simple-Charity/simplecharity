@@ -1,0 +1,405 @@
+field: 91538023-7219-4718-be32-9afb302568a7 # Generic Page Panels
+fieldLayouts:
+  d7f078c6-da7a-4c4a-b4e1-3b2bf1843df6:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: ae3552b1-3747-4cab-a2e3-1c3866e56bb0 # Panel Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b53e64ae-63c3-4bc5-b257-c527cca1a09d # Panel Title Style
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: cfedf6ac-2d35-4210-8626-91a1b69701c8 # Background Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f52b1541-1d72-4c61-9e2a-8836ca274c3f # Background Image Alignment
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 38d9e130-0a40-4ee7-924f-afb743cde8cd # Title Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 33f2ba70-7b17-428b-b3a9-924a381f2bed # Paragraph Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5a6d8eff-375a-43ad-8e08-f75c827cb849 # Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c9e147dc-433e-4015-9c2b-7058f73529d4 # Button Internal Reference
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c49b544c-1b15-448e-877c-9be8fff9ded8 # Button External Reference
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  5a6d8eff-375a-43ad-8e08-f75c827cb849: # Button Text
+    columnSuffix: udxghaxi
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: ''
+    name: 'Button Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  33f2ba70-7b17-428b-b3a9-924a381f2bed: # Paragraph Text
+    columnSuffix: xdjrleai
+    contentColumnType: text
+    fieldGroup: null
+    handle: paragraphText
+    instructions: ''
+    name: 'Paragraph Text'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  38d9e130-0a40-4ee7-924f-afb743cde8cd: # Title Text
+    columnSuffix: dmlxymmx
+    contentColumnType: text
+    fieldGroup: null
+    handle: titleText
+    instructions: ''
+    name: 'Title Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ae3552b1-3747-4cab-a2e3-1c3866e56bb0: # Panel Title
+    columnSuffix: khkkmehb
+    contentColumnType: text
+    fieldGroup: null
+    handle: panelTitle
+    instructions: 'This will display in the top-left hand corner of the screen if filled out. '
+    name: 'Panel Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b53e64ae-63c3-4bc5-b257-c527cca1a09d: # Panel Title Style
+    columnSuffix: matggtfz
+    contentColumnType: string
+    fieldGroup: null
+    handle: panelTitleStyle
+    instructions: ''
+    name: 'Panel Title Style'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Big Serif'
+            -
+              - value
+              - bigSerif
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Medium Sans'
+            -
+              - value
+              - mediumSans
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Small Sans-Serif Caps'
+            -
+              - value
+              - smallSansSerifCaps
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  c9e147dc-433e-4015-9c2b-7058f73529d4: # Button Internal Reference
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttonInternalReference
+    instructions: ''
+    name: 'Button Internal Reference'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: false
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  c49b544c-1b15-448e-877c-9be8fff9ded8: # Button External Reference
+    columnSuffix: aovowmzn
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonExternalReference
+    instructions: 'Only fill out this field is the button does not link to an internal reference.'
+    name: 'Button External Reference'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  cfedf6ac-2d35-4210-8626-91a1b69701c8: # Background Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: backgroundImage
+    instructions: ''
+    name: 'Background Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  f52b1541-1d72-4c61-9e2a-8836ca274c3f: # Background Image Alignment
+    columnSuffix: fmwyqrzm
+    contentColumnType: string
+    fieldGroup: null
+    handle: backgroundImageAlignment
+    instructions: ''
+    name: 'Background Image Alignment'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Top
+            -
+              - value
+              - top
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Top Right'
+            -
+              - value
+              - topRight
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Right
+            -
+              - value
+              - right
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Bottom Right'
+            -
+              - value
+              - bottomRight
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Bottom
+            -
+              - value
+              - bottom
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Bottom Left'
+            -
+              - value
+              - bottomLeft
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Left
+            -
+              - value
+              - left
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Top Left'
+            -
+              - value
+              - topLeft
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+handle: backgroundImagePanel
+name: 'Background Image Panel'
+sortOrder: 1

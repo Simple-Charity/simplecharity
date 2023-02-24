@@ -23,9 +23,6 @@
 
     {# -- Any <meta> tags that should be included in the <head> #}
     {% block headMeta %}
-        {% if entry.pageDescription|length %}
-            <meta name="description" content='{{ entry.pageDescription }}'>
-        {% endif %}
     {% endblock headMeta %}
 
     {# -- Any <link> tags that should be included in the <head> #}
