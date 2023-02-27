@@ -96,6 +96,7 @@
       },
       screens: {
         'xs':"375px",
+        '3xl':'2000px',
       },
       fontSize: {
         "menusmall":".65rem"
