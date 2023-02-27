@@ -35,7 +35,7 @@
            
             {# Blue menu items to right #}
             {% for item in main.headerItems.all() %}
-                <li class="hidden lg:inline px-4 transition-opacity ease-in-out duration-300 transform hover:opacity-75 transition-all">
+                <li class="hidden lg:inline px-4 transition-opacity ease-in-out duration-300 transform transition-all">
                     <a href="{% if item.itemReference.one()|length %}{{ item.itemReference.one().url }}{% else %}{{ item.externalLink }}{% endif %}">
                         {{ item.itemName|title }}
                     </a>
@@ -43,8 +43,8 @@
             {% endfor %}
 
             {# Big red header button #}
-            <li class="hidden lg:inline px-4 hover:opacity-75 transition-all">
-                <button class="text-linen {% if transformButtonText %} hover:text-blue {% endif %} {{buttonColor}} font-semibold rounded-full border-2 px-10 py-2 transition duration-200 ease-in-out transform hover:bg-transparent">
+            <li class="hidden lg:inline px-4 transition-all">
+                <button class="text-linen {% if transformButtonText %} hover:text-blue {% endif %} {{buttonColor}} font-semibold rounded-full border-2 px-10 py-2 transition duration-200 ease-in-out transform hover:bg-transparent hover:{{ textColor }}">
                     <a class="" href="{% if main.bigRedButton.one()|length %}{{ main.bigRedButton.one().buttonReference.one().url }}{% else %}{{ main.bigRedButton.one().buttonExternalLink }}{% endif %}">
                         {{ main.bigRedButton.one().buttonText }}
                     </a>
