@@ -17,7 +17,7 @@
                         <li><a href="{{ craft.entries.slug('stories-main-page').one().url }}" class="font-semibold font-sans uppercase tracking-widest text-sm text-red mb-3"> Stories</a></li>
                     </ol>
                 </nav>
-                <h1 class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-serif font-bold">
+                <h1 class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-serif font-bold">
                     <span class="{% if entry.addImageHeaderBackground %} pb-6 lg:pb-12 pr-6 lg:pr-12{% endif %}">
                         {{ entry.title }}
                     </span>
@@ -27,7 +27,7 @@
         
         {# HEADER IMAGE #}
 
-        <div class="mx-auto max-w-screen-md">
+        <div class="mx-auto max-w-[70rem]">
             <div class="mt-10" data-aos="fade-up" data-aos-offset="0" data-aos-duration="450" data-aos-delay="450">
                 {% set heroImg = entry.storyHeroImage.one().getUrl %}
                 <div class="flex items-center justify-center">
@@ -49,22 +49,35 @@
 
         {# PAGE BODY #}
 
-        <div class="mx-auto max-w-screen-md">
+        <div class="">
             {% for block in entry.storiesMainBlock.all() %}
                 {% set loopIndex = loop.index %}
 
                 <div class="{% if loop.last and (not entry.storiesHiddenBlock|length) %} mb-12 md:mb-24 lg:mb-32{% endif %}">
                     {% switch block.type %}
-
                         {% case "largeText" %}
-                            <div class="text-{{ textColor }} font-semibold text-xl sm:text-2xl md:text-3xl redactor my-10">
-                                {{ block.text }}
+                            <div class="mx-auto max-w-screen-md">
+                                <div class="text-{{ textColor }} font-semibold text-xl sm:text-2xl md:text-3xl redactor my-20">
+                                    {{ block.text }}
+                                </div>
                             </div>
+                            
 
                         {% case "smallText" %}
-                            <div class="text-{{ textColor }} text-lg sm:text-2xl redactor">
-                                {{ block.text }}
+
+                            <div class="mx-auto max-w-screen-md">
+                                <div class="text-{{ textColor }} text-lg sm:text-2xl redactor">
+                                    {{ block.text }}
+                                </div>
                             </div>
+
+                        {% case "videoEmbed" %}
+                        <div class="mx-auto max-w-[70rem] my-20">
+                            <div class="w-full">
+                                <iframe class="w-full h-[50vw] sm:h-[30rem] lg:h-[40rem] xl:h-[45rem]" allowtransparency="true" title="Wistia video player" allowFullscreen frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed"  src="{{ block.embedLink }}"></iframe>
+                            </div>
+                        </div>
+
                     {% endswitch %}
                 </div>
             {% endfor %}
@@ -86,6 +99,8 @@
                                     <div class="text-{{ textColor }} text-lg sm:text-2xl redactor">
                                         {{ block.text }}
                                     </div>
+
+                                
 
                                 {% case "smallImage" %}
                                         <figure class="mt-8 md:mt-16 mb-8 md:mb-16 w-full md:mx-auto">

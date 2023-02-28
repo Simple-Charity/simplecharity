@@ -16,16 +16,16 @@
                         <img class="mx-auto w-full lg:w-[80%] transition-all ease-in-out duration-500 transform" :src="map" alt="">
                         <div v-for="c in block.continents">
                             <div class="group overflow-hidden">
-                                <div :class="c.style2" class="absolute transition ease-in-out duration-500 transform">
-                                    <div class="px-2 md:border-b-[0.2rem] border-deepnavy text-lg bg-red text-blue font-semibold my-1 absolute top-0 left-0 transition ease-in-out duration-500 transform z-10">
+                                <div :class="[c.style2, { 'z-50': c.isOpen, 'z-10': !(c.isOpen) }]" class="absolute transition ease-in-out duration-500 transform">
+                                    <div  class="px-2 md:border-b-[0.2rem] border-deepnavy text-lg bg-red text-blue font-semibold my-1 absolute top-0 left-0 transition ease-in-out duration-500 transform">
                                         <div v-bind:class="{ 'hover:cursor-pointer': !(c.no_listing) }" v-on:click="openCountryDropdown(block,c)" class=" flex items-center relative">
-                                            <span class="absolute w-3 h-3 sm:w-4 sm:h-4 bg-red rounded-full absolute top-[-0.5rem] z-20" :class="c.style3" >
+                                            <span class="absolute w-3 h-3 sm:w-4 sm:h-4 bg-red rounded-full absolute top-[-0.5rem]" :class="c.style3" >
                                                 <span v-bind:class="{ 'animate-ping': !(c.no_listing) }" class=" absolute w-3 h-3 sm:w-4 sm:h-4 bg-red rounded-full"></span>
                                             </span>
                                             <img v-if="!(c.no_listing)" v-bind:class="{ 'rotate-90': c.isOpen }" class=" h-4 transition ease-in-out duration-500 transform mr-2 hidden md:block" :src="bc" alt=""> <span class="whitespace-nowrap pr-6 text-sm hidden md:block">{{ c.name }}</span>
                                         </div>
                                         <div v-bind:class="{ 'max-h-0': !c.isOpen, 'max-h-80': c.isOpen }" 
-                                             class="font-normal text-sm transition-all ease-in-out duration-500 transform overflow-hidden ml-[1.25rem]" 
+                                             class="hidden md:block font-normal text-sm transition-all ease-in-out duration-500 transform overflow-hidden ml-[1.25rem]" 
                                              v-for="country in c.countries">
                                             {{ country }}
                                         </div>

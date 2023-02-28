@@ -1,4 +1,4 @@
-dateModified: 1677277220
+dateModified: 1677610822
 email:
   fromEmail: $SES_EMAIL
   fromName: $SES_FROM
@@ -253,6 +253,7 @@ meta:
     29a23e86-9a33-483d-a618-ebf945d1ca3f: 'Process Target 5' # Process Target 5
     29bc269e-347b-40f2-bb82-8327d2d466c5: 'SR Name' # SR Name
     29e6be9d-cc9f-4b63-909e-c04f5b2a9b9a: 'Podcast Episodes Banner Header' # Podcast Episodes Banner Header
+    29e58a6a-ce1d-4814-9f11-b127a78182ef: 'Embed Link' # Embed Link
     30a99fdf-5b65-4e1b-97ae-e5da56bd6ca8: 'Generic Modal' # Generic Modal
     30afedc5-1eac-4f1d-b4d1-6c184ccd0a46: 'Giver Testimonial' # Giver Testimonial
     30e22d82-8d17-45ce-98ce-76dfb091b8e8: Front # Front
@@ -303,6 +304,7 @@ meta:
     57badb1e-15c6-47d0-881e-6822f9ac336f: 'Stat 2020' # Stat 2020
     58e0a7ab-2660-4d86-b83f-f70d9265baca: Verses # Verses
     59c6208b-8f0d-4dc6-b35b-20538e63fa9f: Beliefs # Beliefs
+    60b691bf-61c2-4dc2-b6cd-de3402577d10: 'Video Embed' # Video Embed
     60df2f7f-f012-4cf7-87cd-0ed206992865: Heading # Heading
     62bac7f0-a418-45fb-a062-b73e51fadf14: 'Home Embrace Copy' # Home Embrace Copy
     62cc5d82-146e-47f5-89c5-8c5e6678e88b: 'Step Name' # Step Name

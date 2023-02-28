@@ -1,0 +1,41 @@
+field: e73f75de-459c-405a-b05e-3e6c9a95f31b # Stories Main Block
+fieldLayouts:
+  1da3277a-a068-49b7-adec-aaacc529cde2:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 29e58a6a-ce1d-4814-9f11-b127a78182ef # Embed Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  29e58a6a-ce1d-4814-9f11-b127a78182ef: # Embed Link
+    columnSuffix: morjhdrh
+    contentColumnType: text
+    fieldGroup: null
+    handle: embedLink
+    instructions: ''
+    name: 'Embed Link'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: videoEmbed
+name: 'Video Embed'
+sortOrder: 3
