@@ -60,7 +60,7 @@
                             {% case 'buttonBlock' %}
 
                                 <button>
-                                    <a class="" href="{% if item.internalReference|length %}{{ item.internalReference.url }}{% else %}{{ item.externalReference }}{% endif %}">
+                                    <a class="" href="{% if item.internalReference|length %}{{ item.buttonInternalReference.one().url }}{% else %}{{ item.buttonExternalReference }}{% endif %}">
                                         <div class="relative my-10 overflow-hidden">
                                             <div class="{% if item.buttonColor == 'navy' %}bluebutton{% elseif item.buttonColor == 'white' %}whitebutton{% endif %}">
                                                 Join Today
