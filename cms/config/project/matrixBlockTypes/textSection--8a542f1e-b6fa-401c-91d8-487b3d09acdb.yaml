@@ -1,0 +1,141 @@
+field: a6c6e855-bc41-4a8d-8e0a-2c38d165b727 # Multi-Color Text
+fieldLayouts:
+  311a9211-35a8-4e1f-8d75-c248337fc3f3:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 570772ad-1a3a-46de-a1bf-2c9a92083b34 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 06eddb0d-48b8-49ff-82dc-f20b41cd4144 # Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  06eddb0d-48b8-49ff-82dc-f20b41cd4144: # Color
+    columnSuffix: ynsbzqkz
+    contentColumnType: string
+    fieldGroup: null
+    handle: color
+    instructions: ''
+    name: Color
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Blue
+            -
+              - value
+              - blue
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Navy
+            -
+              - value
+              - navy
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - White
+            -
+              - value
+              - white
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Red
+            -
+              - value
+              - red
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Mint
+            -
+              - value
+              - mint
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Teal
+            -
+              - value
+              - teal
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Yellow
+            -
+              - value
+              - yellow
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  570772ad-1a3a-46de-a1bf-2c9a92083b34: # Text
+    columnSuffix: vpulgkgm
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: textSection
+name: 'Text Section'
+sortOrder: 1

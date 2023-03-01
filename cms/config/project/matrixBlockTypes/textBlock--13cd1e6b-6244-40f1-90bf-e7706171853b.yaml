@@ -1,0 +1,253 @@
+field: ac13ecfd-6684-4106-a18f-4d100d6fc7f2 # Content Blocks
+fieldLayouts:
+  902cb0b5-efd0-4647-9212-98733d163748:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 65724ce4-b040-4516-b41e-89b81ec1ee05 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 708ffb21-530b-4ac9-a3b6-fdca5b405789 # Size
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 01e25dfc-f2c0-48bf-85ea-24057025670f # Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8af81fa9-c652-4081-ac36-696082e5cad7 # Bolded
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 96f8bcf3-c586-40dc-923c-a0b12bcd41f0 # Italicized
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  01e25dfc-f2c0-48bf-85ea-24057025670f: # Color
+    columnSuffix: khogmisr
+    contentColumnType: string
+    fieldGroup: null
+    handle: color
+    instructions: ''
+    name: Color
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Blue
+            -
+              - value
+              - blue
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Navy
+            -
+              - value
+              - navy
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - White
+            -
+              - value
+              - white
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Red
+            -
+              - value
+              - red
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Mint
+            -
+              - value
+              - mint
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Yellow
+            -
+              - value
+              - yellow
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Teal
+            -
+              - value
+              - teal
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  8af81fa9-c652-4081-ac36-696082e5cad7: # Bolded
+    columnSuffix: zpqmmaes
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: bolded
+    instructions: ''
+    name: Bolded
+    searchable: false
+    settings:
+      default: false
+      offLabel: 'No'
+      onLabel: 'Yes'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  96f8bcf3-c586-40dc-923c-a0b12bcd41f0: # Italicized
+    columnSuffix: tmbtiafk
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: italicized
+    instructions: ''
+    name: Italicized
+    searchable: false
+    settings:
+      default: false
+      offLabel: 'No'
+      onLabel: 'Yes'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  708ffb21-530b-4ac9-a3b6-fdca5b405789: # Size
+    columnSuffix: ytusicoc
+    contentColumnType: string
+    fieldGroup: null
+    handle: size
+    instructions: ''
+    name: Size
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Small
+            -
+              - value
+              - small
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Medium
+            -
+              - value
+              - medium
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Large
+            -
+              - value
+              - large
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  65724ce4-b040-4516-b41e-89b81ec1ee05: # Text
+    columnSuffix: tgbzppwt
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: textBlock
+name: 'Text Block'
+sortOrder: 1

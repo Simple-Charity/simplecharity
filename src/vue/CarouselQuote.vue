@@ -6,7 +6,7 @@
                 <div class="">
 
                     <div class="hidden sm:block relative z-20 w-[10rem] h-[10rem] lg:w-[16rem] lg:h-[16rem]">
-                        <img class="" :src="quote.quoteIcon" alt="">
+                        <img class="rounded-full" :src="quote.quoteIcon" alt="">
                     </div>
                     </div>
                     <div class="sm:pl-12">
@@ -17,7 +17,7 @@
 
                         <div class="sm:hidden flex items-center">
                             <div class="relative z-20 pr-4">
-                                <img class="w-20" :src="quote.quoteIcon" alt="">
+                                <img class="w-20 rounded-full" :src="quote.quoteIcon" alt="">
                             </div>
                             <div>
                                 <p class="text-red text-sm tracking-wider">{{ quote.name }}</p>

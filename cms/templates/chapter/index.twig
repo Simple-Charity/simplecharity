@@ -8,61 +8,131 @@
 
 {% block contentborderless %}
 
-  {% set tori = entry.toriImage.one().getUrl() %}
+    {% set tori = entry.toriImage.one().getUrl() %}
 
     <div class="relative edge-x edge-t pt-20 h-screen min-h-[42rem] xl:min-h-[46rem] xxl:min-h-[50rem]">
         <div v-prlx.mobile="{ speed: 0.3, preserveInitialPosition: false, }" class="absolute top-[-16rem] left-0 right-0 bottom-0 z-0 bg-cover bg-bottom xxl:bg-center" style="background-image: url('{{ tori }}');"></div>
         <div class="w-full relative -mt-20 sm:-mt-6 mx-auto z-10">
             <div class="relative z-10">
-                <h1 class="header-one pt-8 pb-10 sm:pb-12">student chapters <span class="tracking-overlap hidden sm:inline">–––––––––</span></h1>
-                <h1 class="text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl lg:leading-normal font-bold font-sans text-blue leading-snug">Want to grow in your faith and <br class="hidden sm:block">in your love towards others?</h1>
-                <h1 class="text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl lg:leading-normal text-red font-bold leading-snug pb-6 lg:pb-10 pt-1">You’re not alone.</h1>
-                <h1 class="text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-blue">We'd love for you to join <br> our community!</h1>
-            </div>
-            <div>
-                <button>
-                    <a class="" href="#connect">
-                        <div class="relative mt-10 sm:mt-16 overflow-hidden">
-                            <div class="bluebutton">
-                                Join Today
-                            </div>
-                        </div>
-                    </a>
-                </button>
+                <h1 class="header-one pt-8 pb-10 sm:pb-12">{{ entry.banner1Header|lower }} <span class="tracking-overlap hidden sm:inline">–––––––––</span></h1>
+                
+                <div class="w-full sm:w-3/4 lg:w-1/2 max-w-[40rem]">
+                    {% for item in entry.contentBlocks %}
+                        {% switch item.type %}
+                            {% case 'textBlock' %}
+                                {% if item.size == 'small' %}
+                                    {% set sizes = 'text-sm sm:text-md md:text-md lg:text-lg xl:text-xl' %}
+                                {% elseif item.size == 'medium' %}
+                                    {% set sizes = 'text-md sm:text-lg md:text-lg lg:text-xl xl:text-2xl' %}
+                                {% elseif item.size == 'large' %}
+                                    {% set sizes = 'text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl' %}
+                                {% endif %}
+
+                                {% if item.color == 'blue' %}
+                                    {% set tColor = 'text-blue' %}
+                                {% elseif item.color == 'navy' %}
+                                    {% set tColor = 'text-deepnavy' %}
+                                {% elseif item.color == 'white' %}
+                                    {% set tColor = 'text-linen' %}
+                                {% elseif item.color == 'red' %}
+                                    {% set tColor = 'text-red' %}
+                                {% elseif item.color == 'mint' %}
+                                    {% set tColor = 'text-green' %}
+                                {% elseif item.color == 'teal' %}
+                                    {% set tColor = 'text-teal' %}
+                                {% elseif item.color == 'yellow' %}
+                                    {% set tColor = 'text-yellow' %}
+                                {% endif %}
+
+                                {% if item.bolded %}
+                                    {% set boldStyle = 'font-bold' %}
+                                {% else %}
+                                    {% set boldStyle = 'font-normal' %}
+                                {% endif %}
+
+                                {% if item.italicized %}
+                                    {% set italicStyle = 'italic' %}
+                                {% else %}
+                                    {% set italicStyle = '' %}
+                                {% endif %}
+
+                                <div class="{{ sizes }} {{ boldStyle }} {{ italicStyle }} {{ tColor }} pb-3">{{ item.text }}</div>
+                            {% case 'buttonBlock' %}
+
+                                <button>
+                                    <a class="" href="{% if item.internalReference|length %}{{ item.internalReference.url }}{% else %}{{ item.externalReference }}{% endif %}">
+                                        <div class="relative my-10 overflow-hidden">
+                                            <div class="{% if item.buttonColor == 'navy' %}bluebutton{% elseif item.buttonColor == 'white' %}whitebutton{% endif %}">
+                                                Join Today
+                                            </div>
+                                        </div>
+                                    </a>
+                                </button>
+                                
+                        {% endswitch %}
+                    {% endfor %}
+                </div>
+                
             </div>
         </div>
     </div>
 
-  {% set squiggle1 = entry.chapterSquiggle1.one() %}
-  {% set sprout = entry.chapterSprout.one() %}
+    {% set squiggle1 = entry.chapterSquiggle1.one() %}
+    {% set sprout = entry.chapterSprout.one() %}
 
     <div class="edge bg-red bg-no-repeat text-center bkg-custom-1 relative overflow-hidden">
         <img class="absolute top-[-0.5rem] left-[-2.5rem] w-[20rem] sm:w-[25rem] md:w-[28rem] lg:w-[35rem] xxl:w-[40rem]" src="{{ squiggle1.getUrl() }}" alt="">
         <img class="w-10 mx-auto pt-80 pb-10 lg:w-16" src="{{ sprout.getUrl() }}" alt="">
         <div class="mx-auto">
-            <h1 data-aos="fade-up" data-aos-duration="1000" class="text-xl sm:text-2xl font-semibold font-sans text-blue leading-normal sm:px-20 pb-20 lg:text-3xl max-w-screen-lg mx-auto">Join a <span class="text-linen">community of practice</span> that will give you lifelong friendships and spur you on toward love and good deeds.</span></h1>
+            <h1 data-aos="fade-up" data-aos-duration="1000" class="text-xl sm:text-2xl font-semibold font-sans text-blue leading-normal sm:px-20 pb-20 lg:text-3xl max-w-screen-lg mx-auto">
+            
+                {% for item in entry.multiColorText %}
+
+                    {% if item.color == 'blue' %}
+                        {% set tColor = 'text-blue' %}
+                    {% elseif item.color == 'navy' %}
+                        {% set tColor = 'text-deepnavy' %}
+                    {% elseif item.color == 'white' %}
+                        {% set tColor = 'text-linen' %}
+                    {% elseif item.color == 'red' %}
+                        {% set tColor = 'text-red' %}
+                    {% elseif item.color == 'mint' %}
+                        {% set tColor = 'text-green' %}
+                    {% elseif item.color == 'teal' %}
+                        {% set tColor = 'text-teal' %}
+                    {% elseif item.color == 'yellow' %}
+                        {% set tColor = 'text-yellow' %}
+                {% endif %}
+
+                    <span class="{{ tColor }}">{{ item.text }} </span>
+                {% endfor %}
+            
+            </h1>
         </div>
     </div>
 
-  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/671511502?h=1e8d22e8cf&color=f68e6d&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="{{ entry.vimeoEmbedLink }}" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 
-  {% set map = entry.chapterMap.one() %}
-  {% set map2 = entry.usaMapOutline.one() %}
+    {% set map = entry.chapterMap.one() %}
+    {% set map2 = entry.usaMapOutline.one() %}
 
     <div class="relative z-[60] bg-linen w-full">
         <div class="edge">
-            <h1 class="text-md text-red tracking-wider font-semibold pb-8">WHO WE ARE</h1>
+            <h1 class="text-md text-red tracking-wider font-semibold pb-8">{{ entry.banner4Header|upper }}</h1>
 
             <div class="sm:flex  max-w-screen-lg">
                 <div class="pb-20 w-11/12 mr-8 ">
-                    <p class="text-blue text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl pb-8">Simple Charity college chapters are a movement of Christian college students learning from, standing with and sacrificing for the poor together. We do it, not out of guilt or obligation, but from a place of joy because we believe the poor are King Jesus in disguise.</p>
-                    <p class="text-blue text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl">Currently, we have 6 active chapters at campuses across the US.</p>
+                    {% for item in entry.chaptersDescriptiveText|split('</p>') %}
+                        <div class="text-blue text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl pb-8">
+                            {{ item|striptags }}
+                        </div>
+                    {% endfor %}
                 </div>
                 <div class="hidden sm:block">
                     <div class="border-l-4 border-r-4 border-red w-64 text-center">
-                        <span class="font-serif font-bold"  style="font-size: 120pt;">6</span>
-                        <p class="text-blue font-semibold text-2xl">active college<br>chapters</p>
+                        <span class="font-serif font-bold"  style="font-size: 120pt;">{{ entry.currentChapters }}</span>
+                        <p class="text-blue font-semibold text-2xl">{{ entry.activeChaptersText }}</p>
                     </div>
                 </div>
             </div>
@@ -176,7 +246,7 @@
         <div class="edge-x">
             <div v-prlx="{ speed: 0.15, preserveInitialPosition: false, }" class="hidden sm:block absolute top-[-20rem] left-0 right-0 bottom-0 bg-top bg-cover" style="background-image: url({{sctable}})"></div>
             <div class="mx-auto max-w-screen-2xl">
-                <h1 class="headercaps text-xl pt-60 pb-28 lg:pt-96 lg:pb-32 hidden sm:block relative z-[70]">JOIN THE MOVEMENT.</h1>
+                <h1 class="headercaps text-xl pt-60 pb-28 lg:pt-96 lg:pb-32 hidden sm:block relative z-[70]">{{ entry.banner5Header|upper }}</h1>
             </div>
         </div>
         <div class="sm:flex sm:flex-wrap justify-center mx-auto ">
@@ -214,75 +284,58 @@
         </div>
     </div>
 
-    {# BANNER 5 #}
+    {% set quotes = [] %}
 
-    {% set q = entry.quotes.one() %}
+    {% for q in entry.testimonialCarousel.all() %}
+        {% set quotes = quotes|merge([{
+            quoteIcon: q.testimonialReference.one().testimonialHeadshot.one().getUrl(),
+            quoteText: q.testimonialReference.one().testimonialQuote|striptags,
+            name: q.testimonialReference.one().testimonialName,
+            description: q.testimonialReference.one().testimonialNameDescription,
+        }]) %}
+    {% endfor %}
 
-
-    <div class="bg-yellow relative overflow-hidden ">
-        <div class="hidden xl:block">
-            <img class="absolute w-[60rem] xl:top-12 xl:left-[-10rem] -left-0 z-10" src="{{ q.squiggle.one().getUrl() }}" alt="">
-        </div>
-        <div class="hidden sm:block xl:hidden">
-            <img class="absolute w-[40rem] top-12 md:w-[48rem] md:top-16 lg:w-[60rem] lg:top-10 xl:top-0 xl:left-[-10rem] -left-20 z-10" src="{{ q.squiggle.one().getUrl() }}" alt="">
-        </div>
-        <div class="sm:hidden">
-            <img class="absolute z-10 -bottom-24 -left-6 w-[26rem]" src="{{ q.squiggle.one().getUrl() }}" alt="">
-        </div>
-
-        <div class="edge relative z-50" >
-            {% include "_partials/quote.twig" %}
+    <div class="edge relative bg-yellow z-20 overflow-hidden">
+        <div class="max-w-screen-2xl mx-auto ">
+            <carousel-quote :quotes="{{ quotes|json_encode }}" qicon="{{ craft.entries.slug('site-wide-assets').one().genericQuoteIcon.one().getUrl() }}"></carousel-quote>
         </div>
     </div>
 
+
     <div class="bg-linen relative z-[60] edge">
         <div id="connect" class="max-w-screen-2xl mx-auto ">
-            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-blue pb-6">connect with us</h1>
-            <p class="text-lg sm:text-xl lg:text-2xl pb-6">Fill out the form below to get plugged into a college chapter on your campus, or to learn about how you can start one!</p>
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-blue pb-6">{{ entry.banner7Header }}</h1>
+            <div class="text-lg sm:text-xl lg:text-2xl pb-6">{{ entry.banner7Description }}</div>
             <div>
                 <div data-tf-widget="AnEbWoja" data-tf-opacity="0" data-tf-iframe-props="title=Student Chapters Interest Form" data-tf-medium="snippet" style="width:100%;height:600px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
             </div>
         </div>
     </div>
     
-    {# BANNER 6 #}
-
-    {% set sun = entry.sunIcon.one().getUrl() %}
-    {% set mountain = entry.mountainIcon.one().getUrl() %}
-
     <div class="relative bg-red edge-x py-20 overflow-hidden">
         <img class="absolute top-[-0.5rem] left-[-2.5rem] w-[15rem] sm:w-[20rem] md:w-[24rem] lg:w-[26rem] xxl:w-[32rem]" src="{{ squiggle1.getUrl() }}" alt="">
 
         <div class="max-w-screen-2xl mx-auto">
             <div class="text-center mb-12 xl:mb-20 xxl:mb-24">
-                <h2 class="text-lg text-linen tracking-wider font-semibold">EXPLORE MORE <br class="lg:hidden"> OPPORTUNITIES</h2>
+                <h2 class="text-lg text-linen tracking-wider font-semibold">{{ entry.banner8Header|upper }}</h2>
             </div>
             <div class="sm:flex justify-center">
-                <div class="sm:mr-6 lg:mr-10 mb-12 sm:mb-0">
-                    <div class="flex items-center justify-center">
-                        <img class="w-40 h-40" src="{{ sun }}" alt="">
+
+                {% for item in entry.exploreCards %}
+                    <div class="sm:mr-6 lg:mr-10 mb-12 sm:mb-0">
+
+                        <div class="flex items-center justify-center">
+                            <img class="w-40 h-40" src="{{ item.cardIcon.one().getUrl() }}" alt="">
+                        </div>
+                        <div class="flex items-center justify-center sm:block">
+                            <a href="{% if item.buttonInternalReference|length %}{{ item.buttonInternalReference.one().url }}{% else %}{{ item.buttonExternalReference }}{% endif %}">
+                                <button>
+                                    <div class="bluebutton w-[16rem] text-sm sm:text-lg">{{ item.buttonText }}</div>
+                                </button>
+                            </a>
+                        </div>
                     </div>
-                    <div class="flex items-center justify-center sm:block">
-                        <a href="{{ craft.entries.slug('internship').one().url }}">
-                            <button>
-                                <div class="bluebutton w-[16rem] text-sm sm:text-lg">Summer Internship</div>
-                            </button>
-                        </a>
-                    </div>
-                    
-                </div>
-                <div class="sm:ml-6 lg:ml-10">
-                    <div class="flex items-center justify-center">
-                        <img class="w-40 h-40" src="{{ mountain }}" alt="">
-                    </div>
-                    <div class="flex items-center justify-center sm:block">
-                        <a href="{{ craft.entries.slug('challenge').one().url }}">
-                            <button>
-                                <div class="bluebutton w-[16rem]  text-sm sm:text-lg">Charity Challenge</div>
-                            </button>
-                        </a>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>

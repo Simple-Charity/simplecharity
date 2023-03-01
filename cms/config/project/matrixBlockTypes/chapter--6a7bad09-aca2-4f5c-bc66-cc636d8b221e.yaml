@@ -1,0 +1,70 @@
+field: 469f10e1-1d53-4625-b0c7-98fe1c15185f # Current College Chapters
+fieldLayouts:
+  82a1c5dd-5d8c-4c64-acc2-23be2f2f9637:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 35b024d4-4441-4050-8c37-f8a823785919 # School
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d0fc9819-6d74-4924-8773-ea69601c77b7 # Location
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  35b024d4-4441-4050-8c37-f8a823785919: # School
+    columnSuffix: dvlfdajj
+    contentColumnType: text
+    fieldGroup: null
+    handle: school
+    instructions: ''
+    name: School
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d0fc9819-6d74-4924-8773-ea69601c77b7: # Location
+    columnSuffix: alfsugeu
+    contentColumnType: text
+    fieldGroup: null
+    handle: location
+    instructions: ''
+    name: Location
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: chapter
+name: Chapter
+sortOrder: 1

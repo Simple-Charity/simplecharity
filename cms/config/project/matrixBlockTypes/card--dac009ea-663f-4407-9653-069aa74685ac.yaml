@@ -1,0 +1,143 @@
+field: 54cb5542-5786-4939-9306-37181974550b # Explore Cards
+fieldLayouts:
+  8885b9df-18de-4093-8f58-2c47cd6bda1d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7403df4a-4bff-4f34-9e17-40913baa261a # Card Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 96ce2b08-fc3e-4391-abb6-217c4d2fa918 # Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0f1f1a5d-6cfe-4512-8322-b21dcc11a797 # Button Internal Reference
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1feb1cc7-f276-41c2-b913-f2ae8111174a # Button External Reference
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  0f1f1a5d-6cfe-4512-8322-b21dcc11a797: # Button Internal Reference
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttonInternalReference
+    instructions: ''
+    name: 'Button Internal Reference'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: false
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  1feb1cc7-f276-41c2-b913-f2ae8111174a: # Button External Reference
+    columnSuffix: txtiyhlb
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonExternalReference
+    instructions: 'Only fill this out if there is no internal reference. '
+    name: 'Button External Reference'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  96ce2b08-fc3e-4391-abb6-217c4d2fa918: # Button Text
+    columnSuffix: dotbyolx
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: ''
+    name: 'Button Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  7403df4a-4bff-4f34-9e17-40913baa261a: # Card Icon
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: cardIcon
+    instructions: ''
+    name: 'Card Icon'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: card
+name: Card
+sortOrder: 1

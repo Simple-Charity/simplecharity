@@ -1,0 +1,146 @@
+field: ac13ecfd-6684-4106-a18f-4d100d6fc7f2 # Content Blocks
+fieldLayouts:
+  509376c3-073c-4ad7-895a-87df9a0ee07a:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7c36ed6d-871a-424b-8835-e8b13f06a917 # Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9151c044-3190-4258-a8d9-670556e5f2b9 # Button Internal Reference
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0d235f59-c0f9-4db7-8fc5-3f108693c7f3 # Button External Reference
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 463f7d45-cca7-4565-9965-ba21cab0c48c # Button Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  0d235f59-c0f9-4db7-8fc5-3f108693c7f3: # Button External Reference
+    columnSuffix: ycydcbdu
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonExternalReference
+    instructions: 'Fill this out only if there is no internal reference. '
+    name: 'Button External Reference'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  7c36ed6d-871a-424b-8835-e8b13f06a917: # Button Text
+    columnSuffix: usdkuwip
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: ''
+    name: 'Button Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  463f7d45-cca7-4565-9965-ba21cab0c48c: # Button Color
+    columnSuffix: cakbryle
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttonColor
+    instructions: ''
+    name: 'Button Color'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Navy
+            -
+              - value
+              - navy
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - White
+            -
+              - value
+              - white
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  9151c044-3190-4258-a8d9-670556e5f2b9: # Button Internal Reference
+    columnSuffix: xziyfsdl
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttonInternalReference
+    instructions: ''
+    name: 'Button Internal Reference'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: buttonBlock
+name: 'Button Block'
+sortOrder: 2
