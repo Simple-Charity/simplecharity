@@ -26,10 +26,6 @@ fieldLayouts:
             type: craft\fieldlayoutelements\EntryTitleField
             warning: null
             width: 100
-        name: Content
-        sortOrder: 1
-      -
-        elements:
           -
             fieldUid: 7a633eca-bfc2-4150-9029-8866716a9600 # Page Description
             instructions: null
@@ -58,11 +54,91 @@ fieldLayouts:
             warning: null
             width: 100
         name: 'Page Data'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: a7a14ce9-6fe8-4de9-bd97-4903128112f5 # Page Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 53b8a532-49f8-42da-81fc-58a956e8dcbe # Banner 1 Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 70fd18c6-5135-4159-8fb7-f5c23ea9deda # About Banner 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 1'
         sortOrder: 2
       -
         elements:
           -
-            fieldUid: 70fd18c6-5135-4159-8fb7-f5c23ea9deda # About Banner 1
+            fieldUid: dcf00203-52d9-4bda-96c9-c83dca3f13aa # Banner 2 Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a6c6e855-bc41-4a8d-8e0a-2c38d165b727 # Multi-Color Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4c3b2893-31d9-4694-b088-cfb381121155 # About Squiggle 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 2'
+        sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: 7408fb13-95c3-469f-bf05-45f80680ab76 # Banner 3 Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 29b81f71-d2ef-4982-9f12-708ed09a0e6f # Banner 3 Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: eb4b0a5c-ec8c-4c06-a6a4-c5f5f1a2d047 # Info Cards 
             instructions: null
             label: null
             required: false
@@ -80,37 +156,6 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: f9768f5e-1df5-4ddd-8256-116dac854281 # About Graph
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: ae1c1d48-b88b-45d5-b301-44dbd0c9a868 # About Andrew Lee
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-        name: Assets
-        sortOrder: 3
-      -
-        elements:
-          -
-            fieldUid: 4c3b2893-31d9-4694-b088-cfb381121155 # About Squiggle 1
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
             fieldUid: 3079a75c-fb21-4964-9838-733d14d29365 # About Squiggle 2
             instructions: null
             label: null
@@ -119,12 +164,12 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: Squiggles
+        name: 'Banner 3'
         sortOrder: 4
       -
         elements:
           -
-            fieldUid: 42ca8644-e860-481d-82fa-0dae13cf6078 # Transparency Docs
+            fieldUid: 8dfaf97c-62b4-4a0a-a03b-f8d1efd75ecb # Banner 4 Header
             instructions: null
             label: null
             required: false
@@ -132,12 +177,39 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: Docs
+          -
+            fieldUid: 5f09d71d-422d-4f03-a82e-5d466ac4e095 # Banner 4 Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: aecefbe8-8cf4-4e49-ae57-8e062840a3cf # Banner 4 Transition Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9334a6a7-c99f-44ee-a619-26303237f362 # Core Values
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 4'
         sortOrder: 5
       -
         elements:
           -
-            fieldUid: 5f75385e-f53b-48ce-aa9d-8db8ad51e29d # Stats Description 1
+            fieldUid: 47537bf3-e4a9-4a0c-8a3f-ea2a6de8eda1 # Banner 5 Header
             instructions: null
             label: null
             required: false
@@ -146,7 +218,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 612b1ae7-4b35-40a3-8ac3-c8cba9814589 # Stats Description 2
+            fieldUid: 5f75385e-f53b-48ce-aa9d-8db8ad51e29d # Stats Description 1
             instructions: null
             label: null
             required: false
@@ -163,12 +235,21 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: Stats
+          -
+            fieldUid: ae1c1d48-b88b-45d5-b301-44dbd0c9a868 # Impact Feature Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 5'
         sortOrder: 6
       -
         elements:
           -
-            fieldUid: 9334a6a7-c99f-44ee-a619-26303237f362 # Core Values
+            fieldUid: 6783b347-f702-4ac7-baab-8f95f23223e7 # Banner 6 Header
             instructions: null
             label: null
             required: false
@@ -176,12 +257,8 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: Values
-        sortOrder: 7
-      -
-        elements:
           -
-            fieldUid: eb4b0a5c-ec8c-4c06-a6a4-c5f5f1a2d047 # Info Cards 
+            fieldUid: 5de1c29f-0c4c-4ac6-88f7-e0a600245d8f # Banner 6 Description
             instructions: null
             label: null
             required: false
@@ -189,8 +266,35 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Info Cards'
-        sortOrder: 8
+          -
+            fieldUid: 42ca8644-e860-481d-82fa-0dae13cf6078 # Transparency Docs
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 48974ec9-2d08-400f-9611-5b4d209215fe # Graph Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f9768f5e-1df5-4ddd-8256-116dac854281 # About Graph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 6'
+        sortOrder: 7
 handle: about
 hasTitleField: false
 name: About

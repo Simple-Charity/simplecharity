@@ -1,0 +1,27 @@
+columnSuffix: ujjnyyno
+contentColumnType: text
+fieldGroup: 266c6678-9669-488e-82b7-68601833935a # About
+handle: banner6Description
+instructions: ''
+name: 'Banner 6 Description'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

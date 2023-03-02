@@ -1,9 +1,9 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: 266c6678-9669-488e-82b7-68601833935a # About
-handle: aboutAndrewLee
+handle: impactFeatureImage
 instructions: ''
-name: 'About Andrew Lee'
+name: 'Impact Feature Image'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -16,7 +16,7 @@ settings:
   previewMode: full
   restrictFiles: ''
   selectionLabel: ''
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   singleUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site

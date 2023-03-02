@@ -41,6 +41,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: 8d9e9e6c-d51d-43e6-a0e0-230340bd06f7 # Button External Url
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: 504dbfeb-fe5a-45d3-add1-6909303dfcb7 # Background Color
             instructions: null
             label: null
@@ -52,6 +61,26 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
+  8d9e9e6c-d51d-43e6-a0e0-230340bd06f7: # Button External Url
+    columnSuffix: sqywwwds
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonExternalUrl
+    instructions: 'Only fill this out if the ''button slug'' field is empty.'
+    name: 'Button External Url'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   46ecc13c-116c-43e6-91f8-6e9686958eae: # Primary Text
     columnSuffix: null
     contentColumnType: text

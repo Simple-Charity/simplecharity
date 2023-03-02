@@ -1,4 +1,4 @@
-dateModified: 1677707970
+dateModified: 1677783191
 email:
   fromEmail: $SES_EMAIL
   fromName: $SES_FROM
@@ -126,7 +126,9 @@ meta:
     5d5950b1-f8ab-436a-a7bc-f35bf1c65993: 'Icon Range' # Icon Range
     5d17801d-3b99-402e-9fdc-ffbb9f65f84d: Countries # Countries
     5dd468fa-bf80-407c-b62b-8dd95c699f15: Text # Text
+    5de1c29f-0c4c-4ac6-88f7-e0a600245d8f: 'Banner 6 Description' # Banner 6 Description
     5e5fa934-3a3b-46d4-989a-0142a0b42cbe: Text # Text
+    5f09d71d-422d-4f03-a82e-5d466ac4e095: 'Banner 4 Description' # Banner 4 Description
     5f891ab1-442b-40ab-a894-d2e476de80ef: Button # Button
     5f2142b7-83d1-4e74-8b6c-ce34b2a5496d: 'Modal Body Text' # Modal Body Text
     5f75385e-f53b-48ce-aa9d-8db8ad51e29d: 'Stats Description 1' # Stats Description 1
@@ -198,6 +200,7 @@ meta:
     8cb726c9-5788-4ded-b9e3-0a7cbdfdda3c: 'Title Text' # Title Text
     8d1ae711-2db4-4e29-8be1-32f478a5cd30: Footer # Footer
     8d6edbc4-482b-4b3e-842b-091224462c49: 'Student Question' # Student Question
+    8d9e9e6c-d51d-43e6-a0e0-230340bd06f7: 'Button External Url' # Button External Url
     08d66bf8-3c98-44fc-bce4-5eeccc3262f0: 'Chapters Cards' # Chapters Cards
     8db84fc5-85cd-4236-8ad4-fff879963174: Translation # Translation
     8dc0f459-1205-4e5b-b0ef-c44e4cea4c5d: Stories # Stories
@@ -263,6 +266,7 @@ meta:
     27d7b930-7b1f-4843-aba9-f88f97aaabd5: 'Team Member Square' # Team Member Square
     28ec04f3-9b85-4bce-82d5-3e611c99266c: Countries # Countries
     29a23e86-9a33-483d-a618-ebf945d1ca3f: 'Process Target 5' # Process Target 5
+    29b81f71-d2ef-4982-9f12-708ed09a0e6f: 'Banner 3 Description' # Banner 3 Description
     29bc269e-347b-40f2-bb82-8327d2d466c5: 'SR Name' # SR Name
     29e6be9d-cc9f-4b63-909e-c04f5b2a9b9a: 'Podcast Episodes Banner Header' # Podcast Episodes Banner Header
     29e58a6a-ce1d-4814-9f11-b127a78182ef: 'Embed Link' # Embed Link
@@ -533,6 +537,7 @@ meta:
     45047fe7-3135-44cc-ad13-42648d74d3ac: 'Attribute Description' # Attribute Description
     46036b1b-21eb-4b9f-952c-f7d466ce38ac: Verses # Verses
     47537bf3-e4a9-4a0c-8a3f-ea2a6de8eda1: 'Banner 5 Header' # Banner 5 Header
+    48974ec9-2d08-400f-9611-5b4d209215fe: 'Graph Header' # Graph Header
     49266c81-7658-4038-b516-a89e6ae4e869: 'Phil Image' # Phil Image
     52235fd1-b2a5-4585-a988-426968bb5053: 'Club Main Text' # Club Main Text
     55172a7b-da24-421a-80e1-2c8b289eef96: 'About Promo Image 1' # About Promo Image 1
@@ -607,6 +612,7 @@ meta:
     a6a1d6b5-9948-4464-aea9-a2d06f034513: 'Internship Swoop Border' # Internship Swoop Border
     a6b351ca-2dfd-43da-bc62-502ee73da8da: 'Top Seven Sort Index' # Top Seven Sort Index
     a6c6e855-bc41-4a8d-8e0a-2c38d165b727: 'Multi-Color Text' # Multi-Color Text
+    a7a14ce9-6fe8-4de9-bd97-4903128112f5: 'Page Title' # Page Title
     a7a29875-cfef-40b5-be31-d1939acf04c6: 'Careers Hero Image' # Careers Hero Image
     a7b6ce52-2079-4db7-a87d-f94391373a11: 'One Hundred Percent Circle' # One Hundred Percent Circle
     a7fe0148-8b00-4460-a902-c3df1fb3cba1: 'Overlay Title' # Overlay Title
@@ -654,11 +660,12 @@ meta:
     ad5f00e4-1b48-494f-a2c3-b66eb3c64b3e: 'Partner Motto' # Partner Motto
     adadbb9b-b86d-41d5-b3fc-f687a73e7d68: 'Banner 7 Description' # Banner 7 Description
     ade2e580-b2db-469f-8b5a-3975f431fd8d: 'Top Seven Group' # Top Seven Group
-    ae1c1d48-b88b-45d5-b301-44dbd0c9a868: 'About Andrew Lee' # About Andrew Lee
+    ae1c1d48-b88b-45d5-b301-44dbd0c9a868: 'Impact Feature Image' # Impact Feature Image
     ae5f5c29-ba86-4550-932d-66a8ce8d824a: 'About Globe' # About Globe
     ae86ffb3-35ab-4066-8e33-755aa600854d: Answer # Answer
     ae3552b1-3747-4cab-a2e3-1c3866e56bb0: 'Panel Title' # Panel Title
     aebd3596-f0c5-4f10-8b22-74c079f120e0: About # About
+    aecefbe8-8cf4-4e49-ae57-8e062840a3cf: 'Banner 4 Transition Text' # Banner 4 Transition Text
     af1a173c-1914-4742-93ad-2c314db525d5: 'Button Reference' # Button Reference
     af1b583a-1963-4dae-8fb5-ffc663e80a3d: Text # Text
     af5e8b90-a2b3-40ee-8aab-1a12d4daea65: 'Support Icon' # Support Icon
