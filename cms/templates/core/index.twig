@@ -20,13 +20,16 @@
             <h1 class="relative z-20 header-one" data-aos="fade-up" data-aos-duration="1000" >{{ entry.pageTitle }} <span class="hidden tracking-overlap sm:inline">–––––––––</span> </h1>
             <div class="relative z-20 pt-6 pb-6 font-sans text-lg font-semibold sm:text-xl lg:text-2xl text-blue sm:pt-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">{{ entry.banner1Description }}</div>   
 
-            <button data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+            <div class="flex justify-center sm:block">
+                <button class="sm:block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
                 <a href="{% if entry.genericButton.one().buttonInternalReference|length %}{{ entry.genericButton.one().buttonInternalReference.url }}{% else %}{{ entry.genericButton.one().buttonExternalReference }}{% endif %}">
                     <div class="bluebutton">
                         {{ entry.genericButton.one().buttonText }}
                     </div>
                 </a>
             </button>
+            </div>
+            
         </div>
 
         <div class="hidden xxl:block xxl:h-60"></div>
@@ -61,13 +64,15 @@
                         </div>
                     </div>
 
-                    <button>
-                        <a href="{% if entry.genericButton2.one().buttonInternalReference|length %}{{ entry.genericButton2.one().buttonInternalReference.url }}{% else %}{{ entry.genericButton2.one().buttonExternalReference }}{% endif %}">
-                            <div class="redbutton">
-                                {{ entry.genericButton2.one().buttonText }}
-                            </div>
-                        </a>
-                    </button>
+                    <div class="flex justify-center md:block pt-6 sm:pt-0">
+                        <button>
+                            <a href="{% if entry.genericButton2.one().buttonInternalReference|length %}{{ entry.genericButton2.one().buttonInternalReference.url }}{% else %}{{ entry.genericButton2.one().buttonExternalReference }}{% endif %}">
+                                <div class="redbutton">
+                                    {{ entry.genericButton2.one().buttonText }}
+                                </div>
+                            </a>
+                        </button>
+                    </div>
                 </div>
                 <div class="flex-shrink hidden sm:block">
                     <div class="text-center text-linen lg:ml-20">                    
