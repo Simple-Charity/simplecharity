@@ -17,8 +17,16 @@
     <div class="relative z-10 bg-linen bg-cover bg-right-top lg:bg-bottom overflow-hidden h-screen min-h-[20rem] lg:min-h-[60rem] xl:min-h-[60rem] xxl:min-h-[70rem]" style="background-image: url('{{ bf }}')">
 
         <div class="edge edge-t">
-            <h1 class="relative z-20 header-one" data-aos="fade-up" data-aos-duration="1000" >become a <br> core supporter <span class="hidden tracking-overlap sm:inline">–––––––––</span> </h1>
-            <p class="relative z-20 pt-6 font-sans text-lg font-semibold sm:text-xl lg:text-2xl text-blue sm:pt-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Join our community by <a class="underline text-red" href="https://simplecharity.kindful.com">pledging</a> to give monthly!</p>   
+            <h1 class="relative z-20 header-one" data-aos="fade-up" data-aos-duration="1000" >{{ entry.pageTitle }} <span class="hidden tracking-overlap sm:inline">–––––––––</span> </h1>
+            <div class="relative z-20 pt-6 pb-6 font-sans text-lg font-semibold sm:text-xl lg:text-2xl text-blue sm:pt-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">{{ entry.banner1Description }}</div>   
+
+            <button data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                <a href="{% if entry.genericButton.one().buttonInternalReference|length %}{{ entry.genericButton.one().buttonInternalReference.url }}{% else %}{{ entry.genericButton.one().buttonExternalReference }}{% endif %}">
+                    <div class="bluebutton">
+                        {{ entry.genericButton.one().buttonText }}
+                    </div>
+                </a>
+            </button>
         </div>
 
         <div class="hidden xxl:block xxl:h-60"></div>
@@ -34,11 +42,14 @@
         <div class="bg-[#081a27] edge text-linen relative">
             <div class="relative z-20 mx-auto lg:flex max-w-screen-2xl">
                 <div class="">
-                    <h5 class="pb-6 text-sm font-semibold tracking-wider text-red sm:text-md">FUEL OUR CORE</h5>
-                    <h5 class="pb-6 text-2xl font-semibold sm:text-3xl lg:text-4xl text-linen">Help our team continue to do good!</h5>
+                    <h5 class="pb-6 text-sm font-semibold tracking-wider text-red sm:text-md">{{ entry.banner2Header|upper }}</h5>
+                    <h5 class="pb-6 text-2xl font-semibold sm:text-3xl lg:text-4xl text-linen">{{ entry.banner2Title }}</h5>
 
-                    <p class="pb-6 text-linen text-md sm:text-lg lg:text-xl" data-aos="fade-up" data-aos-duration="1000" >Enjoy invitations to exclusive quarterly updates with the CEO, opportunities to meet other core supporters and the occasional gift from our team as a demonstration of our gratitude.</p>
-                    <p class="text-linen text-md sm:text-lg lg:text-xl sm:pb-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" >We believe in hiring excellent people. Your consistent giving allows us to grow our team so that we can work 9-5 to help Christians practice solidarity with the global poor. Thank you for supporting our team!</p>
+                    <div>
+                        {% for item in entry.banner2Description|split('</p>') %}
+                            <div data-aos="fade-up" data-aos-duration="1000" class="pb-6 text-linen text-md sm:text-lg lg:text-xl" data-aos="fade-up" data-aos-duration="1000" >{{ item|striptags }}</div>
+                        {% endfor %}
+                    </div>
 
                     <div class="flex-shrink sm:hidden">
                         <div class="text-linen sm:text-center lg:ml-20">                    
@@ -50,13 +61,13 @@
                         </div>
                     </div>
 
-                    <div class="flex justify-center pt-10 lg:block">
-                        <a href="https://simplecharity.kindful.com/?campaign=1185238">
-                            <button class="redbutton hover:text-red">
-                                Join Today
-                            </button>
+                    <button>
+                        <a href="{% if entry.genericButton2.one().buttonInternalReference|length %}{{ entry.genericButton2.one().buttonInternalReference.url }}{% else %}{{ entry.genericButton2.one().buttonExternalReference }}{% endif %}">
+                            <div class="redbutton">
+                                {{ entry.genericButton2.one().buttonText }}
+                            </div>
                         </a>
-                    </div>
+                    </button>
                 </div>
                 <div class="flex-shrink hidden sm:block">
                     <div class="text-center text-linen lg:ml-20">                    
@@ -80,11 +91,11 @@
 
     <div class="edge pt-36 xl:pt-52 bg-linen">
         <div class="mx-auto max-w-screen-2xl">
-            <h5 class="pb-6 text-sm font-semibold tracking-wider text-red sm:text-md super:pt-20">AN INVALUABLE PARTNERSHIP</h5>
-            <h5 class="pb-6 text-2xl font-semibold sm:text-3xl lg:text-4xl text-blue">Make an impact with us.</h5>
+            <h5 class="pb-6 text-sm font-semibold tracking-wider text-red sm:text-md super:pt-20">{{ entry.banner3Header|upper }}</h5>
+            <h5 class="pb-6 text-2xl font-semibold sm:text-3xl lg:text-4xl text-blue">{{ entry.banner3Title }}</h5>
 
             <div class="lg:w-2/3">
-                <p class="text-blue text-md sm:text-xl lg:text-2xl" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Your monthly giving fuels all of Simple Charity: our college chapters, Two Coins podcast, charity evaluation research, summer internship program, online store, and devotional content. Help us have the biggest year of impact yet in 2023!</p>
+                <div class="text-blue text-md sm:text-xl lg:text-2xl" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">{{ entry.banner3Description }}</div>
             </div>
             <div>
             </div>
@@ -156,18 +167,29 @@
 
     {# BANNER 4 #}
 
-    {% set q = entry.quotes.one() %}
-    <div class="relative overflow-hidden bg-lightgreen edge">
-        {% include "_partials/quote" %}
+    {% set quotes = [] %}
+
+    {% for q in entry.testimonialCarousel.all() %}
+        {% set quotes = quotes|merge([{
+            quoteIcon: q.testimonialReference.one().testimonialHeadshot.one().getUrl(),
+            quoteText: q.testimonialReference.one().testimonialQuote|striptags,
+            name: q.testimonialReference.one().testimonialName,
+            description: q.testimonialReference.one().testimonialNameDescription,
+        }]) %}
+    {% endfor %}
+
+    <div class="edge relative bg-lightgreen z-20 overflow-hidden">
+        <div class="max-w-screen-2xl mx-auto ">
+            <carousel-quote :quotes="{{ quotes|json_encode }}" qicon="{{ craft.entries.slug('site-wide-assets').one().genericQuoteIcon.one().getUrl() }}"></carousel-quote>
+        </div>
     </div>
-    
     
 
     {# BANNER 5 #}
 
     <div class="mx-auto edge max-w-screen-2xl">
-        <h5 class="pl-4 text-sm font-semibold tracking-wider text-red sm:text-md">LET'S CHAT</h5>
-        <div data-tf-widget="Ez34aCbo" data-tf-opacity="0" data-tf-chat data-tf-medium="snippet" style="width:100%;height:400px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+        <h5 class="pl-4 text-sm font-semibold tracking-wider text-red sm:text-md">{{ entry.banner5Header|upper }}</h5>
+        <div data-tf-widget="{{ entry.banner6Typeform.one().dataTFWidget }}" data-tf-opacity="0" data-tf-chat data-tf-medium="snippet" style="width:100%;height:400px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
     </div>
     </div>
 

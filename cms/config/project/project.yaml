@@ -1,4 +1,4 @@
-dateModified: 1677783191
+dateModified: 1678217975
 email:
   fromEmail: $SES_EMAIL
   fromName: $SES_FROM
@@ -40,6 +40,7 @@ meta:
     1c3bf04c-a4a6-4874-9f37-b79685da9799: 'Facebook Icon Light' # Facebook Icon Light
     1c35d7d5-014b-440a-87e3-71474a14c44c: 'Item Name' # Item Name
     1c370e9e-f034-45c8-8cf0-9855cb1dd1b1: 'Button Text' # Button Text
+    1c7830fe-aa7d-4830-a076-cef1f4188c38: 'Banner 1 Description' # Banner 1 Description
     1c433501-849e-4007-9a69-fc35860450d5: 'Story Short Title' # Story Short Title
     1ceca99e-e5ae-45f5-b9a7-2dd94d94501d: 'Why We Trust Them Text' # Why We Trust Them Text
     1d95ac42-00ba-46e0-831d-c3324e74ff64: 'Brian Jesse Skydiving' # Brian Jesse Skydiving
@@ -114,6 +115,7 @@ meta:
     4ec05108-97b0-4c88-b647-a837d8d42c51: 'Book Image' # Book Image
     04fa1b23-f82e-415c-9d00-11096c234fbc: 'Credit Header' # Credit Header
     4ff5c659-06c9-4f1e-85be-e4bc5792c681: Colleges # Colleges
+    4fffda6c-5a56-4409-8fba-b6a250cb40e8: 'Banner 2 Description' # Banner 2 Description
     5a2f733d-1989-42d5-a505-43b56ed11043: 'Solidarity Resolution Summary' # Solidarity Resolution Summary
     5a6d8eff-375a-43ad-8e08-f75c827cb849: 'Button Text' # Button Text
     5a8c6cfc-3a45-4834-90c2-df2104585a87: 'First Description' # First Description
@@ -659,6 +661,7 @@ meta:
     acf958ac-7f36-438f-bf25-ef3e8b3b251f: 'Grow Icon' # Grow Icon
     ad5f00e4-1b48-494f-a2c3-b66eb3c64b3e: 'Partner Motto' # Partner Motto
     adadbb9b-b86d-41d5-b3fc-f687a73e7d68: 'Banner 7 Description' # Banner 7 Description
+    adae44ac-cb6d-4632-b124-3850a4fa67de: 'Banner 2 Title' # Banner 2 Title
     ade2e580-b2db-469f-8b5a-3975f431fd8d: 'Top Seven Group' # Top Seven Group
     ae1c1d48-b88b-45d5-b301-44dbd0c9a868: 'Impact Feature Image' # Impact Feature Image
     ae5f5c29-ba86-4550-932d-66a8ce8d824a: 'About Globe' # About Globe
@@ -732,6 +735,7 @@ meta:
     c2e30f3a-f335-4aad-960c-722722e40b07: 'Person Title' # Person Title
     c3af13d5-16b3-42c5-98b4-7a951164f598: 'Angela Kathia Joy' # Angela Kathia Joy
     c3b1f8ab-2e02-48eb-9139-88656ca3b182: 'Button Slug' # Button Slug
+    c3c7d690-94d0-4104-af1b-d1aed964af38: 'Banner 3 Title' # Banner 3 Title
     c3d8e53d-a73e-4912-a16e-2dff005d9bbf: 'Partner Impact' # Partner Impact
     c4ae2019-e7aa-4b21-a476-685d83dac06d: 'Card Text' # Card Text
     c4d1089e-63e8-4bf5-af34-5d2399541e97: Image # Image
