@@ -16,7 +16,7 @@
                     <div class="">
 
                         <div v-on:click="toggleActive(stat)"  class="flex items-center hover:cursor-pointer py-2 ">
-                            <div class="text-3xl pr-4 pb-1 transition ease-in-out duration-300 transform" :class="stat.text">
+                            <div class="text-2xl pr-4 pb-1 transition ease-in-out duration-300 transform" :class="stat.text">
                                 By year
                             </div>
                             <div :class="{ 'rotate-90': stat.is_active }" class="scale-y-[1.5] pb-1 origin-center text-2xl transition ease-in-out duration-300"> 
