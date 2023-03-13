@@ -7,7 +7,7 @@
                     <div class="text-2xl pb-6 lg:max-w-[20rem] transition ease-in-out duration-300 transform" :class="stat.text">
                         {{ stat.name }}
                     </div>
-                    <div :class="{ 'sm:text-7xl lg:text-8xl': stat.is_active }" class="text-5xl sm:group-hover:text-7xl lg:group-hover:text-8xl font-serif pb-6 transition-size ease-in-out duration-300 transform">
+                    <div :class="{ 'text-6xl lg:text-8xl': stat.is_active, 'text-5xl sm:group-hover:text-6xl lg:group-hover:text-8xl ': !(stat.is_active) }" class="font-serif pb-6 transition-size ease-in-out duration-300 transform">
                         <div class="transition ease-in-out duration-300 transform" :class="stat.text">
                             {{ stat.amount }}
                         </div>
@@ -45,7 +45,7 @@
                             <div v-if="!(stat.button_reference == '')" class="flex justify-center">
                                 <button>
                                     <a :href="stat.button_reference">
-                                        <div class="border-2 rounded-full px-6 py-3 transition ease-in-out duration-300 transform hover:bg-red hover:border-red group-hover:text-linen group-hover:border-linen">
+                                        <div class="border-2 rounded-full px-6 py-3 transition ease-in-out duration-300 transform hover:bg-red hover:border-red sm:group-hover:text-linen sm:group-hover:border-linen">
                                             {{ stat.button_text }}
                                         </div>
                                     </a>

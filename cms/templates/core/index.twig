@@ -120,20 +120,20 @@
                 {% set bgColor = '' %}
 
                 {% if stat.backgroundColor == 'blue' %}
-                    {% set bgColor = 'bg-blue group-hover:bg-navy' %}
+                    {% set bgColor = 'bg-blue sm:group-hover:bg-navy' %}
                 {% elseif stat.backgroundColor == 'navy' %}
-                    {% set bgColor = 'bg-navy group-hover:bg-navy' %}
+                    {% set bgColor = 'bg-navy sm:group-hover:bg-navy' %}
                 {% elseif stat.backgroundColor == 'green' %}
-                    {% set bgColor = 'bg-green group-hover:bg-navy' %}
+                    {% set bgColor = 'bg-green sm:group-hover:bg-navy' %}
                 {% elseif stat.backgroundColor == 'red' %}
-                    {% set bgColor = 'bg-red group-hover:bg-navy' %}
+                    {% set bgColor = 'bg-red sm:group-hover:bg-navy' %}
                 {% elseif stat.backgroundColor == 'yellow' %}
-                    {% set bgColor = 'bg-yellow group-hover:bg-navy' %}
+                    {% set bgColor = 'bg-yellow sm:group-hover:bg-navy' %}
                 {% elseif stat.backgroundColor == 'teal' %}
-                    {% set bgColor = 'bg-teal group-hover:bg-navy' %}
+                    {% set bgColor = 'bg-teal sm:group-hover:bg-navy' %}
                 {% endif %}
 
-                {% set textColor = 'text-blue group-hover:text-linen' %}
+                {% set textColor = 'text-blue sm:group-hover:text-linen' %}
 
                 {% if stat.buttonInternalReference|length %}
                     {% set ref = stat.buttonInternalReference.one().url %}
