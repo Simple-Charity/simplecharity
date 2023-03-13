@@ -201,42 +201,6 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 909bdf7b-e62e-4961-8cd7-564af4437d02 # Seed
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: c646dfb1-9670-4f85-9cba-fa087e668a5f # Sprout
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 64280c7d-f198-4a4c-893f-d9822f650daf # Tree
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 9c051f34-07ac-45aa-be8b-5b68c079a7f7 # Table Data
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
             fieldUid: 9b2e1c42-74f9-44d1-999b-06178679243e # Core Stats
             instructions: null
             label: null
