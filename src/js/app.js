@@ -31,6 +31,7 @@ const main = async() => {
             'podcast-player': () => import('../vue/PodcastPlayer.vue'),
             'solidarity-resolution-splash': () => import('../vue/SolidarityResolutionSplash.vue'),
             'solidarity-interactive': () => import('../vue/SolidarityInteractive.vue'),
+            'stats-grid': () => import('../vue/StatsGrid.vue'),
         },
         data: {
             ajaxModal: {

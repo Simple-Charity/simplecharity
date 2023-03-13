@@ -99,73 +99,70 @@
             <h5 class="pb-6 text-sm font-semibold tracking-wider text-red sm:text-md super:pt-20">{{ entry.banner3Header|upper }}</h5>
             <h5 class="pb-6 text-2xl font-semibold sm:text-3xl lg:text-4xl text-blue">{{ entry.banner3Title }}</h5>
 
-            <div class="lg:w-2/3">
+            <div class="lg:w-2/3 pb-20">
                 <div class="text-blue text-md sm:text-xl lg:text-2xl" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">{{ entry.banner3Description }}</div>
             </div>
-            <div>
-            </div>
-            <table class="mx-auto mt-12">
-                <thead class="pb-4">
-                    <tr class="font-serif text-3xl font-bold">
-                <th></th>
-                <th>
 
-                {% set seed = entry.seed.one() %}
+            {% set stats = [] %}
+            {% set years = [] %}
 
-                <div class="">
-                    <img class="w-4 mx-auto mt-auto lg:w-4" src="{{seed.getUrl()}}" alt="">
-                </div>
-                
+            {% for stat in entry.coreStats.all() %}
 
-                </th>
-                <th>
-                {% set sprout = entry.sprout.one() %}
-                <div class="py-2">
-                    <img class="w-[2rem] lg:w-[2.9rem] mx-auto pr-2" src="{{sprout.getUrl()}}" alt="">
-                </div>
-                </th>
-                <th>
-                {% set tree = entry.tree.one() %}
-                <div class="">
-                    <img class="w-12 mx-auto mt-auto" src="{{tree.getUrl()}}" alt="">
-                </div>  
-                </th>
-            </tr>
-            </thead>
-            <thead class="pb-4">
-            <tr class="font-sans text-xxs lg:text-md">
-                <th></th>
-                <th class="px-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0">YEAR <span class="hidden sm:inline">ONE</span><span class="sm:hidden">1</span></th>
-                <th class="px-4"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">YEAR <span class="hidden sm:inline">TWO</span><span class="sm:hidden">2</span></th>
-                <th class="px-4"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">YEAR <span class="hidden sm:inline">THREE</span><span class="sm:hidden">3</span></th>
-            </tr>
-            <tr class="font-serif font-bold border-b-2 text-md sm:text-2xl border-b-green">
-                <th class="pb-4">impact metric</th>
-                <th data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0" class="pb-4 text-sm sm:text-lg">2019</th>
-                <th data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" class="pb-4 text-sm sm:text-lg">2020</th>
-                <th data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400" class="pb-4 text-sm sm:text-lg">2021</th>
-            </tr>
-            </thead>
-            
-            <tbody class="text-sm sm:text-lg lg:text-xl">
+                {% for yearInfo in stat.yearBreakdown|split("\n") %}
+                    {% set years = years|merge([
+                        {
+                            "year": yearInfo|striptags|split(";")[0],
+                            "amount": yearInfo|striptags|split(";")[1],
+                        }
+                    ]) %}
+                {% endfor %}
 
-            <tr class="h-4"></tr>
-            {% for item in entry.tableData.all() %}
-                {% if item.type == "tableEntry" %}
-                    <tr class="">
-                        <td class="text-center px-1 text-xs sm:text-sm lg:text-md xl:text-lg font-semibold sm:px-8 py-4 border-r-green border-r max-w-[5rem] sm:max-w-none">{{ item.rowTitle }}</td>
-                {% elseif item.type == "stat2019" %}
-                        <td data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0" class="px-1 py-4 text-center border-r border-r-green sm:px-8">{{ item.stat2019 }}</td>
-                {% elseif item.type == "stat2020" %}
-                        <td data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0" class="px-1 py-4 text-center border-r  border-r-green sm:px-8">{{ item.stat2020 }}</td>
-                {% elseif item.type == "stat2021" %}
-                        <td data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0" class="px-1 py-4 text-center sm:px-8">{{ item.stat2021 }}</td>
-                    </tr>
+                {% set bgColor = '' %}
+
+                {% if stat.backgroundColor == 'blue' %}
+                    {% set bgColor = 'bg-blue group-hover:bg-navy' %}
+                {% elseif stat.backgroundColor == 'navy' %}
+                    {% set bgColor = 'bg-navy group-hover:bg-navy' %}
+                {% elseif stat.backgroundColor == 'green' %}
+                    {% set bgColor = 'bg-green group-hover:bg-navy' %}
+                {% elseif stat.backgroundColor == 'red' %}
+                    {% set bgColor = 'bg-red group-hover:bg-navy' %}
+                {% elseif stat.backgroundColor == 'yellow' %}
+                    {% set bgColor = 'bg-yellow group-hover:bg-navy' %}
+                {% elseif stat.backgroundColor == 'teal' %}
+                    {% set bgColor = 'bg-teal group-hover:bg-navy' %}
                 {% endif %}
 
+                {% set textColor = 'text-blue group-hover:text-linen' %}
+
+                {% if stat.buttonInternalReference|length %}
+                    {% set ref = stat.buttonInternalReference.one().url %}
+                {% elseif stat.buttonExternalReference|length %}
+                    {% set ref = stat.buttonExternalReference %}
+                {% else %}
+                    {% set ref = '' %}
+                {% endif %}
+
+
+                {% set stats = stats|merge([
+                    {
+                        "name": stat.statName,
+                        "amount": stat.totalAmount,
+                        "years": years,
+                        "is_active": false,
+                        "background": bgColor,
+                        "text": textColor,
+                        "button_text": stat.buttonText,
+                        "button_reference": ref,
+                    }
+                ]) %}
+                
+                {% set years = [] %}
+
             {% endfor %}
-            </tbody>
-            </table>
+
+            <stats-grid :statistics="{{ stats|json_encode }}" caret="{{ craft.entries.slug('site-wide-assets').one().blueCaret.one().getUrl() }}"></stats-grid>
+
         </div>
         
     </div>
@@ -199,8 +196,3 @@
     </div>
 
 {% endblock %}
-
-{# -- Any JavaScript that should be included before </body> -- #}
-{% block bodyJs %}
-    {{ parent() }}
-{% endblock bodyJs %}

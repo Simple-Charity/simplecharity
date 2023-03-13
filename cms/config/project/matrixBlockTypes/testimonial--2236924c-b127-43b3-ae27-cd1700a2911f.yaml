@@ -1,0 +1,43 @@
+field: da7fe931-50f2-456d-bcec-5fa5d1ef2565 # Associated Testimonials
+fieldLayouts:
+  b5082a0e-96e2-47ea-b97a-50360e5d8de4:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 6e8f9fb8-bdae-4784-b624-b91b72c7e98a # Testimonial
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  6e8f9fb8-bdae-4784-b624-b91b72c7e98a: # Testimonial
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: testimonial
+    instructions: ''
+    name: Testimonial
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: false
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: testimonial
+name: Testimonial
+sortOrder: 1
