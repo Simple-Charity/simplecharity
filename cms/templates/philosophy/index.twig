@@ -21,69 +21,48 @@
                 </div>
 
                 <div class="pt-6 h-96 sm:w-1/2 mt-[-1rem]">
-                    <p class="text-sm sm:text-md md:text-md lg:text-lg xl:text-xl font-semibold text-blue pb-6 sm:pb-4">Ever read the Bible and wonder what to do with Christ’s call to <span class="text-red">care for the poor</span>?</p>
-                    <p class="text-sm sm:text-md md:text-md lg:text-lg xl:text-xl text-blue pb-2 lg:pb-4 ml-auto sm:mr-auto leading-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">We know how it feels to be overwhelmed and confused when it comes to giving. In a world of such extreme inequality, many of us recognize that giving to charity is an important act of Christian discipleship. The question then becomes, which ones?</p>
-                    <p class="text-sm sm:text-md md:text-md lg:text-lg xl:text-xl text-blue pr-auto sm:mr-auto leading-5 w-10/12 lg:w-full" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Today, there are over a million charities in just the US alone, but not all of them are equally helpful. Some are even downright harmful. So how can you know if a charity is trustworthy and effective? How can you know if your giving actually helps the poor?</p>
+
+                    <div class="text-sm sm:text-md md:text-md lg:text-lg xl:text-xl font-semibold text-blue pb-6 sm:pb-4 leading-5">
+                        {{ entry.philosophyDescriptions.all()[0].blockHeaderText }}
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" class="text-sm sm:text-md md:text-md lg:text-lg xl:text-xl text-blue pb-2 lg:pb-4 w-10/12 lg:w-full">
+                        {{ entry.philosophyDescriptions.all()[0].blockBodyText }}
+                    </div>
                 </div>
 
                 <div class="w-60 sm:w-[20rem] md:w-[25rem] lg:w-144 pt-36 sm:pt-[18rem] md:pt-[24.5rem] lg:pt-108 pb-12 ml-auto relative z-10">
-                    <p class="text-sm sm:text-md lg:text-lg xl:text-xl font-semibold text-blue pt-6 ">Poverty isn’t simple.</p>
-                    <p class="text-sm sm:text-md lg:text-lg xl:text-xl font-semibold text-blue ">Poverty alleviation isn’t simple.</p>
-                    <p class="text-sm sm:text-md lg:text-lg xl:text-xl font-semibold text-red pb-6">But giving should be.</p>
-                    
-                    <p class="text-sm sm:text-md lg:text-lg xl:text-xl text-blue pt-8 sm:pt-0 pb-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">And that’s why we decided to roll up our sleeves and do some deep research for you. Our team systematically evaluated 628 openly Christian charities and selected just 24 to feature on our website.</p>
-                    <p class="text-sm sm:text-md lg:text-lg xl:text-xl" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Then, we further narrowed down the list to our top 7 picks for outstanding Christian charities alleviating global poverty.</p>
 
+                    <div class="text-sm sm:text-md md:text-md lg:text-lg xl:text-xl font-semibold text-blue pb-6 sm:pb-4 leading-5">
+                        {{ entry.philosophyDescriptions.all()[1].blockHeaderText }}
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" class="text-sm sm:text-md md:text-md lg:text-lg xl:text-xl text-blue pb-2 lg:pb-4">
+                        {{ entry.philosophyDescriptions.all()[1].blockBodyText }}
+                    </div>
 
                     <div class="ml-auto pt-12 sm:pt-20 lg:pt-72 pl-6 w-48 sm:w-[16rem] md:w-[20rem] lg:w-108">
-                        <p class="text-sm sm:text-md lg:text-lg xl:text-xl font-semibold text-blue pb-10">Now you can give <span class="text-red">freely and confidently</span> to promote the flourishing of divine image-bearers worldwide.</p>
-                        <p class="text-sm sm:text-md lg:text-lg xl:text-xl text-blue pb-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">But don’t just take our word for it! Read on to find out why you can trust our selections.</p>
+                        <div class="text-sm sm:text-md md:text-md lg:text-lg xl:text-xl font-semibold text-blue pb-6 sm:pb-4 leading-5">
+                            {{ entry.philosophyDescriptions.all()[2].blockHeaderText }}
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" class="text-sm sm:text-md md:text-md lg:text-lg xl:text-xl text-blue pb-2 lg:pb-4">
+                            {{ entry.philosophyDescriptions.all()[2].blockBodyText }}
+                        </div>
 
-                        <div class="flex mb-4 mt-4 hidden sm:block">
-                            <button>
-                                <a href="{{ craft.entries.slug('process').one().url }}">
-                                    <div class="bluebutton w-48 sm:text-sm sm:w-52 lg:text-lg lg:w-60">
-                                        Evaluation Process
-                                    </div>
-                                </a>
-                            </button>
-                        </div>
-                        <div class="flex hidden sm:block">
-                            <button>
-                                <a href="{{ craft.entries.slug('charities').one().url }}">
-                                    <div class="bluebutton bg-linen text-blue hover:bg-blue hover:text-linen w-48 sm:text-sm lg:text-lg sm:w-52 lg:w-60">
-                                        Explore Charities
-                                    </div>
-                                </a>
-                            </button>
-                        </div>
-                    </div>
-
-                    
-                </div>
-
-                <div class="flex justify-center sm:hidden mt-20 mb-10">
-                    <div>
-                        <div class="flex mb-4 mt-4">
-                            <button>
-                                <a href="{{ craft.entries.slug('process').one().url }}">
-                                    <div class="bluebutton w-48 sm:text-md sm:w-60">
-                                        Evaluation Process
-                                    </div>
-                                </a>
-                            </button>
-                        </div>
-                        <div class="flex">
-                            <button>
-                                <a href="{{ craft.entries.slug('charities').one().url }}">
-                                    <div class="bluebutton bg-linen text-blue hover:bg-blue hover:text-linen w-48 sm:w-60 sm:text-md">
-                                        Explore Charities
-                                    </div>
-                                </a>
-                            </button>
-                        </div>
+                        {% for button in entry.buttons.all() %}
+                            <div class="flex mb-4 mt-4 hidden sm:block">
+                                <button>
+                                    <a href="{% if button.buttonInternalReference|length %}{{ button.buttonInternalReference.one().getUrl() }}{% else %}{{ button.buttonExternalReference }}{% endif %}">
+                                        <div class="{% if button.style == 'blue' %}bluebutton{% elseif button.style == 'red' %}redbutton{% elseif button.style == 'green' %}greenbutton{% elseif button.style == 'white' %}whitebutton{% endif %} w-48 sm:text-sm sm:w-52 lg:text-lg lg:w-60">
+                                            {{ button.buttonText }}
+                                        </div>
+                                    </a>
+                                </button>
+                            </div>
+                        {% endfor %}
                     </div>
                 </div>
+
+                
             </div>
 
             {# LAYOUT FOR SMALL SCREENS #}
@@ -92,9 +71,12 @@
                 
 
                 <div class="">
-                    <p class="text-sm sm:text-md md:text-md lg:text-lg xl:text-xl font-semibold text-blue pb-6 sm:pb-4">Ever read the Bible and wonder what to do with Christ’s call to <span class="text-red">care for the poor</span>?</p>
-                    <p class="text-sm sm:text-md md:text-md lg:text-lg xl:text-xl text-blue pb-2 lg:pb-4 ml-auto sm:mr-auto leading-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">We know how it feels to be overwhelmed and confused when it comes to giving. In a world of such extreme inequality, many of us recognize that giving to charity is an important act of Christian discipleship. The question then becomes, which ones?</p>
-                    <p class="text-sm sm:text-md md:text-md lg:text-lg xl:text-xl text-blue pr-auto sm:mr-auto leading-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Today, there are over a million charities in just the US alone, but not all of them are equally helpful. Some are even downright harmful. So how can you know if a charity is trustworthy and effective? How can you know if your giving actually helps the poor?</p>
+                    <div class="text-xl font-semibold text-blue pb-6 sm:pb-4">
+                        {{ entry.philosophyDescriptions.all()[0].blockHeaderText }}
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" class="text-lg text-blue pb-2 lg:pb-4">
+                        {{ entry.philosophyDescriptions.all()[0].blockBodyText }}
+                    </div>
                 </div>
 
                 <div class="">
@@ -104,49 +86,49 @@
                 
 
                 <div class="">
-                    <p class="text-sm sm:text-md lg:text-lg xl:text-xl font-semibold text-blue ">Poverty isn’t simple.</p>
-                    <p class="text-sm sm:text-md lg:text-lg xl:text-xl font-semibold text-blue ">Poverty alleviation isn’t simple.</p>
-                    <p class="text-sm sm:text-md lg:text-lg xl:text-xl font-semibold text-red ">But giving should be.</p>
-                    
-                    <p class="text-sm sm:text-md lg:text-lg xl:text-xl text-blue pt-8 sm:pt-0 pb-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">And that’s why we decided to roll up our sleeves and do some deep research for you. Our team systematically evaluated 628 openly Christian charities and selected just 24 to feature on our website.</p>
-                    <p class="text-sm sm:text-md lg:text-lg xl:text-xl" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Then, we further narrowed down the list to our top 7 picks for outstanding Christian charities alleviating global poverty.</p>
+                    <div class="text-xl font-semibold text-blue pb-6 sm:pb-4">
+                        {{ entry.philosophyDescriptions.all()[1].blockHeaderText }}
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" class="text-lg text-blue pb-2 lg:pb-4">
+                        {{ entry.philosophyDescriptions.all()[1].blockBodyText }}
+                    </div>
 
                     <div class="py-6">
                         <img class="" src="{{ phil_cropped[1].philImage.one().getUrl() }}" alt="">
                     </div>
 
                     <div class="">
-                        <p class="text-sm sm:text-md lg:text-lg xl:text-xl font-semibold text-blue">Now you can give <span class="text-red">freely and confidently</span> to promote the flourishing of divine image-bearers worldwide.</p>
+                        <div class="text-xl font-semibold text-blue pb-6 sm:pb-4">
+                            {{ entry.philosophyDescriptions.all()[2].blockHeaderText }}
+                        </div>
+                        
 
                         <div class="py-6">
                             <img class="" src="{{ phil_cropped[2].philImage.one().getUrl() }}" alt="">
                         </div>
-                        <p class="text-sm sm:text-md lg:text-lg xl:text-xl text-blue" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">But don’t just take our word for it! Read on to find out why you can trust our selections.</p>
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" class="text-lg text-blue pb-2 lg:pb-4">
+                            {{ entry.philosophyDescriptions.all()[2].blockBodyText }}
+                        </div>
 
-                        
                     </div>
 
                     
                 </div>
 
-                <div class="flex flex-wrap justify-center mt-10 mb-10">
-                    <div class="flex mb-4 mt-4 mx-2">
-                        <button>
-                            <a href="{{ craft.entries.slug('process').one().url }}">
-                                <div class="w-[14rem] bluebutton">
-                                    Evaluation Process
-                                </div>
-                            </a>
-                        </button>
-                    </div>
-                    <div class="flex mx-2">
-                        <button>
-                            <a href="{{ craft.entries.slug('charities').one().url }}">
-                                <div class="bluebutton bg-linen text-blue hover:bg-blue hover:text-linen w-[14rem]">
-                                    Explore Charities
-                                </div>
-                            </a>
-                        </button>
+                <div class="flex justify-center sm:hidden mt-20 mb-10">
+                    <div>
+                        {% for button in entry.buttons.all() %}
+                            <div class="flex mb-4 mt-4">
+                                <button>
+                                    <a href="{% if button.buttonInternalReference|length %}{{ button.buttonInternalReference.one().getUrl() }}{% else %}{{ button.buttonExternalReference }}{% endif %}">
+                                        <div class="{% if button.style == 'blue' %}bluebutton{% elseif button.style == 'red' %}redbutton{% elseif button.style == 'green' %}greenbutton{% elseif button.style == 'white' %}whitebutton{% endif %} w-60 text-lg sm:w-60">
+                                            {{ button.buttonText }}
+                                        </div>
+                                    </a>
+                                </button>
+                            </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
@@ -167,32 +149,59 @@
         
         
             <div class="relative pb-10 z-10 w-full mt-40 xl:mt-60 xxl:mt-96">
-                <h1 class="headercaps text-teal pb-6">OUR CONCEPTUAL FRAMEWORK<br>FOR POVERTY &#38; FLOURISHING</h1>
+                <div class="headercaps text-teal pb-6">{{ entry.banner2Header|upper }}</div>
                 <div class="lg:w-2/3">
-                    <p class="text-lg md:text-xl lg:text-2xl font-semibold text-blue pb-6">The charities we recommend work in five cause areas: <span class="text-red">Health, Education, Safety, Capital</span> and <span class="text-red">Ministry.</span></p>
-                    <p class="text-md md:text-lg pb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">We believe human beings flourish when they live out the purposes for which God made them: to be healthy and well, to learn and grow, to do meaningful work, to be safe from violence and to know and love God.</p>
-                    <p class="text-md md:text-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Our top seven charities include one global charity within each of the five cause areas, one global charity that works in all five cause areas, and one domestic charity.</p>
+                    <div class="text-lg md:text-xl lg:text-2xl font-semibold text-blue pb-6">{{ entry.banner2TitleText }}</div>
+                    <div class="text-md md:text-lg pb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">{{ entry.banner2Description }}</div>
                 </div>
             </div>
 
             {% set pent = entry.philosophyPentagon.one() %}
 
+            {% set iconsPlus = [] %}
+            {% set areaDecorators = 
+                [
+                    "absolute text-xxs w-14 -left-12 top-[7rem]          sm:-left-8 sm:top-[10.3rem]       md:-left-16 md:top-[11.1rem] md:text-xs md:w-24       lg:-left-16 lg:top-[14rem] lg:text-sm lg:w-28       xl:-left-20 xl:top-[15.5rem]",
+                    "absolute text-xxs w-14 left-64 top-12               sm:left-[24.1rem] sm:top-[4.6rem] md:left-[26.9rem] md:top-[5rem] md:text-xs md:w-24   lg:left-[34.3rem] lg:top-[6.3rem] lg:text-sm lg:w-28 xl:left-[38rem] xl:top-[6.8rem]",
+                    "absolute text-xxs w-14 left-[17.5rem] top-[6.75rem] sm:left-[26rem] sm:top-[10rem]    md:left-[28.9rem] md:top-[11.1rem] md:text-xs md:w-24 lg:left-[37rem] lg:top-[14rem] lg:text-sm lg:w-28   xl:left-[41rem] xl:top-[15.5rem]",
+                    "absolute text-xxs w-14 left-64 top-[11.9rem]        sm:left-[24rem] sm:top-[17.6rem]  md:left-[26.8rem] md:top-[19.6rem] md:text-xs md:w-24 lg:left-[34rem] lg:top-[24.5rem] lg:text-sm lg:w-28 xl:left-[37.5rem] xl:top-[27rem]",
+                    "absolute text-xxs w-12 left-0 top-[11.9rem]         sm:left-6 sm:top-[17.65rem]       md:left-2 md:top-[19.5rem] md:text-xs md:w-24         lg:left-2 lg:top-[24.5rem] lg:text-sm lg:w-28       xl:left-2 xl:top-[27rem]"
+                ] 
+            
+            %}
+            {% set descriptionDecorators = 
+                [
+                    "absolute text-xxs w-14 left-[3.6rem] top-[7.45rem]  sm:text-xs sm:left-[5.5rem] sm:top-[11.15rem]  md:left-[6.2rem] md:top-[12.4rem]  lg:text-sm lg:left-[8.1rem] lg:top-[15.75rem]  xl:text-lg xl:left-[8.65rem] xl:top-[17.1rem]",
+                    "absolute text-xxs w-14 left-[7.7rem] top-[4.2rem]   sm:text-xs sm:left-[11.8rem] sm:top-[6.2rem]   md:left-[13.25rem] md:top-[6.8rem] lg:text-sm lg:left-[17rem] lg:top-[8.8rem]     xl:text-lg xl:left-[18.25rem] xl:top-[9.4rem]",
+                    "absolute text-xxs w-14 left-[11.85rem] top-[7.4rem] sm:text-xs sm:left-[18.2rem] sm:top-[11.15rem] md:left-[20.4rem] md:top-[12.4rem] lg:text-sm lg:left-[26.1rem] lg:top-[15.75rem] xl:text-lg xl:left-[28.35rem] xl:top-[17.1rem]",
+                    "absolute text-xxs w-14 left-[10.6rem] top-[12.6rem] sm:text-xs sm:left-[16.2rem] sm:top-[18.8rem]  md:left-[18.1rem] md:top-[20.8rem] lg:text-sm lg:left-[23.15rem] lg:top-[26.4rem] xl:text-lg xl:left-[25.3rem] xl:top-[29rem]",
+                    "absolute text-xxs w-14 left-[5.15rem] top-[12.6rem] sm:text-xs sm:left-[7.95rem] sm:top-[18.8rem]  md:left-[8.9rem] md:top-[20.85rem] lg:text-sm lg:left-[11.5rem] lg:top-[26.4rem]  xl:text-lg xl:left-[12.3rem] xl:top-[29rem]"
+                ] 
+            %}
+            {% set i = 0 %}
+
+            {% for item in entry.causeAreaIcons.all() %}
+                {% set iconsPlus = iconsPlus|merge([
+                    {
+                        "area":item.area,
+                        "areaDecorator":areaDecorators[i],
+                        "description":item.description,
+                        "descriptionDecorator":descriptionDecorators[i],
+                    }
+                ]) %}
+                {% set i = i + 1 %}
+            {% endfor %}
+
             <div class="relative hidden sm:block">
                 <div class="absolute transition-all ease-in-out duration-200 transform w-72 sm:w-108 md:w-120 lg:w-160 xl:w-200 mx-auto left-0 right-0">
                     <img class="absolute" src="{{ pent.getUrl() }}" alt="">
 
-                    <p class="absolute text-xxs w-14 -left-12 top-[7rem]          sm:-left-8 sm:top-[10.3rem]       md:-left-16 md:top-[11.1rem] md:text-xs md:w-24       lg:-left-16 lg:top-[14rem] lg:text-sm lg:w-28       xl:-left-20 xl:top-[15.5rem]"     data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="0">STRENGTHENS A PERSON'S <strong>BODY</strong></p>
-                    <p class="absolute text-xxs w-14 left-64 top-12               sm:left-[24.1rem] sm:top-[4.6rem] md:left-[26.9rem] md:top-[5rem] md:text-xs md:w-24   lg:left-[34.3rem] lg:top-[6.3rem] lg:text-sm lg:w-28 xl:left-[38rem] xl:top-[6.8rem]"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="0">SANCTIFIES A PERSON'S <strong>SOUL</strong></p>
-                    <p class="absolute text-xxs w-14 left-[17.5rem] top-[6.75rem] sm:left-[26rem] sm:top-[10rem]    md:left-[28.9rem] md:top-[11.1rem] md:text-xs md:w-24 lg:left-[37rem] lg:top-[14rem] lg:text-sm lg:w-28   xl:left-[41rem] xl:top-[15.5rem]" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="0">SHARPENS A PERSON'S <strong>MIND</strong></p>
-                    <p class="absolute text-xxs w-14 left-64 top-[11.9rem]        sm:left-[24rem] sm:top-[17.6rem]  md:left-[26.8rem] md:top-[19.6rem] md:text-xs md:w-24 lg:left-[34rem] lg:top-[24.5rem] lg:text-sm lg:w-28 xl:left-[37.5rem] xl:top-[27rem]" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="0">SHOULD CHARACTERIZE A PERSON'S <strong>HOME</strong></p>
-                    <p class="absolute text-xxs w-12 left-0 top-[11.9rem]         sm:left-6 sm:top-[17.65rem]       md:left-2 md:top-[19.5rem] md:text-xs md:w-24         lg:left-2 lg:top-[24.5rem] lg:text-sm lg:w-28       xl:left-2 xl:top-[27rem]"         data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="0">FUELS A PERSON'S <strong>WORK</strong></p>
+                    {% for item in iconsPlus %}
+                        <div class="{{ item.areaDecorator }}" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="0">{{ item.description }}</div>
+                        <div class="{{ item.descriptionDecorator }}" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="0">{{ item.area|upper }}</div>
 
-                    <p class="absolute text-xxs w-14 left-[3.6rem] top-[7.45rem]  sm:text-xs sm:left-[5.5rem] sm:top-[11.15rem]  md:left-[6.2rem] md:top-[12.4rem]  lg:text-sm lg:left-[8.1rem] lg:top-[15.75rem]  xl:text-lg xl:left-[8.65rem] xl:top-[17.1rem]" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="0">HEALTH</p>
-                    <p class="absolute text-xxs w-14 left-[7.7rem] top-[4.2rem]   sm:text-xs sm:left-[11.8rem] sm:top-[6.2rem]   md:left-[13.25rem] md:top-[6.8rem] lg:text-sm lg:left-[17rem] lg:top-[8.8rem]     xl:text-lg xl:left-[18.25rem] xl:top-[9.4rem]" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="0">MINISTRY</p>
-                    <p class="absolute text-xxs w-14 left-[11.85rem] top-[7.4rem] sm:text-xs sm:left-[18.2rem] sm:top-[11.15rem] md:left-[20.4rem] md:top-[12.4rem] lg:text-sm lg:left-[26.1rem] lg:top-[15.75rem] xl:text-lg xl:left-[28.35rem] xl:top-[17.1rem]" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="0">EDUCATION</p>
-                    <p class="absolute text-xxs w-14 left-[10.6rem] top-[12.6rem] sm:text-xs sm:left-[16.2rem] sm:top-[18.8rem]  md:left-[18.1rem] md:top-[20.8rem] lg:text-sm lg:left-[23.15rem] lg:top-[26.4rem] xl:text-lg xl:left-[25.3rem] xl:top-[29rem]" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="0">SAFETY</p>
-                    <p class="absolute text-xxs w-14 left-[5.15rem] top-[12.6rem] sm:text-xs sm:left-[7.95rem] sm:top-[18.8rem]  md:left-[8.9rem] md:top-[20.85rem] lg:text-sm lg:left-[11.5rem] lg:top-[26.4rem]  xl:text-lg xl:left-[12.3rem] xl:top-[29rem]" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="0">CAPITAL</p>
-                    
+                    {% endfor %}
+
                     <div class="absolute text-center left-[8.05rem] top-[5.8rem] sm:left-[12.2rem] sm:top-[8.8rem] md:left-[13.8rem] md:top-[10rem] lg:left-[17.6rem] lg:top-[12.6rem] xl:left-[19.05rem] xl:top-[12.6rem]">
                         <h1 class="font-serif font-bold text-2xl sm:text-5xl lg:text-7xl xl:text-8xl">5</h1>
                         <p  class="font-sans  text-xxs sm:text-xs lg:text-sm xl:text-lg" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="0">CAUSE<br>AREAS</p>
@@ -210,8 +219,8 @@
                                 <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" class="w-20 h-20" src="{{ item.icon.one().getUrl() }}" alt="">
                             </div>
                             <div class="max-w-[10rem] {% if i % 2 == 1 %}text-right{% endif %}">
-                                <h5 class="text-md font-semibold">{{ item.area|upper }}</h5>
-                                <h5 class="text-sm">{{ item.description|upper }}</h5>
+                                <div class="text-md font-semibold">{{ item.area|upper }}</div>
+                                <div class="text-sm">{{ item.description }}</div>
                             </div>
                             <div class="pl-4 {% if i % 2 == 0 %}hidden{% endif %}">
                                 <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" class="w-20 h-20" src="{{ item.icon.one().getUrl() }}" alt="">
@@ -224,42 +233,28 @@
             </div>
 
             <div class="relative text-center sm:text-left py-10 z-10 sm:pt-[30rem] lg:pt-[38rem] xl:pt-[42rem]">
-                <h1 class="text-md sm:text-lg md:text-xl font-semibold text-blue">Our <span class="text-red">top 7</span> charities include...</h1>
+                <div class="text-md sm:text-lg md:text-xl font-semibold text-blue">{{ entry.charitiesInclude }}</div>
                 <div class="sm:pl-14 sm:pl-20 py-8">
-                    <p class="text-md sm:text-lg md:text-xl font-semibold">5 <span class="text-sm sm:text-md md:text-lg">global charities that fall within each cause area</span></p>
-                    <p class="text-sm sm:text-md md:text-lg font-semibold">+</p>
-                    <p class="text-md sm:text-lg md:text-xl font-semibold">1 <span class="text-sm sm:text-md md:text-lg">global charity that works in all five cause areas</span></p>
-                    <p class="text-sm sm:text-md md:text-lg font-semibold">+</p>
-                    <p class="text-md sm:text-lg md:text-xl font-semibold">1 <span class="text-sm sm:text-md md:text-lg">domestic charity</span></p>
+                    {% for item in entry.charityTypeDescriptions %}
+                        <p class="text-md sm:text-lg md:text-xl">{{ item.descriptionText }}</p>
+                    {% endfor %}
                 </div>
                 
+                <div class="text-lg md:text-xl font-semibold pb-12">{{ entry.charitiesTagline }}</div>
 
-                <p class="text-lg md:text-xl font-semibold pt-6 pb-12">Check out our selection of stellar <br>faith-based charities.</p>
-
-                <div class="sm:flex">
-                    <div class="flex justify-center sm:pr-4">
-                        <button>
-                            <a href="{{ craft.entries.slug('charities').one().url }}">
-                                <div class="bluebutton text-lightergreen w-60">
-                                    Explore Charities
-                                </div>
-                            </a>
-                        </button>
-                    </div>
-
-                    <div class="flex justify-center mb-4 mt-4">
-                        <button>
-                            <a href="{{ craft.entries.slug('process').one().url }}">
-                                <div class="bluebutton bg-transparent text-blue hover:bg-blue hover:text-lightergreen w-60">
-                                    Evaluation Process
-                                </div>
-                            </a>
-                        </button>
-                    </div>
+                <div class="flex flex-wrap justify-center sm:justify-start">
+                    {% for button in entry.buttons.all() %}
+                        <div class="flex my-4 mr-4">
+                            <button>
+                                <a href="{% if button.buttonInternalReference|length %}{{ button.buttonInternalReference.one().getUrl() }}{% else %}{{ button.buttonExternalReference }}{% endif %}">
+                                    <div class="{% if button.style == 'blue' %}bluebutton{% elseif button.style == 'red' %}redbutton{% elseif button.style == 'green' %}greenbutton{% elseif button.style == 'white' %}whitebutton{% endif %} w-60 text-lg sm:w-60">
+                                        {{ button.buttonText }}
+                                    </div>
+                                </a>
+                            </button>
+                        </div>
+                    {% endfor %}
                 </div>
-                
-                
-
             </div>
         </div>
     </div>
@@ -267,6 +262,13 @@
     
 {% endblock %}
 
+{% block bodyCss %}
+    <style>
+        p {
+            padding-bottom: 0.8rem;
+        }
+    </style>
+{% endblock bodyCss %}
 
 {% block bodyJs %}
     {{ parent() }}

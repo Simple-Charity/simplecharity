@@ -1,0 +1,168 @@
+field: 89ea5b4a-a42b-4b61-b234-5d3578996af3 # Buttons
+fieldLayouts:
+  c9efff0c-3604-4375-b89f-d2b8fcb14a27:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 3ad4669e-0ebb-4f6b-9207-76d9a1793e55 # Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 03d1591a-5065-4894-be50-a09695b03074 # Button Internal Reference
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 268be074-7caa-4534-9f9e-1a69a72e8fc8 # Button External Reference
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4159eb90-46a5-4386-812c-bd3a12651e19 # Style
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  3ad4669e-0ebb-4f6b-9207-76d9a1793e55: # Button Text
+    columnSuffix: hykhsrco
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: ''
+    name: 'Button Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  03d1591a-5065-4894-be50-a09695b03074: # Button Internal Reference
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttonInternalReference
+    instructions: ''
+    name: 'Button Internal Reference'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  268be074-7caa-4534-9f9e-1a69a72e8fc8: # Button External Reference
+    columnSuffix: mfyhsvcf
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonExternalReference
+    instructions: 'Fill this out only if there is no internal reference. '
+    name: 'Button External Reference'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  4159eb90-46a5-4386-812c-bd3a12651e19: # Style
+    columnSuffix: hhltmamv
+    contentColumnType: string
+    fieldGroup: null
+    handle: style
+    instructions: ''
+    name: Style
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Blue
+            -
+              - value
+              - blue
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - White
+            -
+              - value
+              - white
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Red
+            -
+              - value
+              - red
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Green
+            -
+              - value
+              - green
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+handle: button
+name: Button
+sortOrder: 1

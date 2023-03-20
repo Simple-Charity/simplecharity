@@ -1,0 +1,78 @@
+field: 99f5768e-b360-48b6-97d7-469a83ca29e6 # Process Cards
+fieldLayouts:
+  fb645f40-a312-4ca9-a2b4-48d60932ac72:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 5b3a77f2-0f37-41df-8186-f9135e3896ca # Card Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 2c96c8d1-b64a-4e98-8c32-70f749aa2308 # Card Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  2c96c8d1-b64a-4e98-8c32-70f749aa2308: # Card Text
+    columnSuffix: xtofxuoo
+    contentColumnType: text
+    fieldGroup: null
+    handle: cardText
+    instructions: ''
+    name: 'Card Text'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  5b3a77f2-0f37-41df-8186-f9135e3896ca: # Card Header
+    columnSuffix: twgnpveg
+    contentColumnType: text
+    fieldGroup: null
+    handle: cardHeader
+    instructions: ''
+    name: 'Card Header'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: card
+name: Card
+sortOrder: 1

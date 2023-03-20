@@ -102,7 +102,7 @@
 import VueAxios from '../js/modules/vue-axios';
 
 export default {
-    props: ["t1","t2","t3","t4","t5"],
+    props: ["stepData","t1","t2","t3","t4","t5"],
     data: function() {
         return {
         }

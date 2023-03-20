@@ -353,11 +353,9 @@
         ]) %}
     {% endfor %}
 
-    {% set caret = entry.faqCaret.one().getUrl() %}
-
     <div class="bg-lightgreen edge-x py-20">
         <div class="max-w-screen-2xl mx-auto">
-            <faq :faqs="{{ f|json_encode }}" caret="{{ caret }}" textcolor="text-blue"></faq>
+            <faq :faqs="{{ f|json_encode }}" textcolor="text-blue"></faq>
         </div>
     </div>
 {% endblock %}

@@ -1,4 +1,4 @@
-dateModified: 1678734321
+dateModified: 1679336568
 email:
   fromEmail: $SES_EMAIL
   fromName: $SES_FROM
@@ -29,6 +29,7 @@ meta:
     0e595d14-742b-4de7-9fc6-42365855aee2: 'External URL' # External URL
     0f1d9fac-f684-4d07-8be6-850f2272757d: 'Cause Icons' # Cause Icons
     0f1f1a5d-6cfe-4512-8322-b21dcc11a797: 'Button Internal Reference' # Button Internal Reference
+    0f10c829-cceb-4f99-8e15-c66ddeedf3eb: 'Charities include' # Charities include
     0f84852c-0852-469a-877e-42ab02751c54: 'Chapter Sprout' # Chapter Sprout
     0f93676b-20d0-4cf7-b83e-58f339ce9e3a: 'Summary Text' # Summary Text
     1a3e5055-20ed-4ffe-9642-a903f108b54f: 'Current Chapters' # Current Chapters
@@ -60,11 +61,13 @@ meta:
     2bb8b581-1984-4924-ae34-0fa0264d6d0e: Squiggle # Squiggle
     2bbd39c6-0585-4591-aafd-9a2cb1d8e8d0: 'Dropdown Text' # Dropdown Text
     2bfe0e36-f931-4d6f-a28c-5a11c00f2163: Internship # Internship
+    2c96c8d1-b64a-4e98-8c32-70f749aa2308: 'Card Text' # Card Text
     2cff7e6f-de41-4dff-bd2e-4537013ee77a: 'Story Category' # Story Category
     2d7db081-1e54-467e-8e94-7325b29014c5: Description # Description
     2d8f09a0-baa5-40a4-8005-2ac21001fa85: 'Doc Slug' # Doc Slug
     2d870c1f-4963-4d65-ab54-4576efc26fb7: 'Modal Text' # Modal Text
     002db005-6b93-4da0-9ab0-006da3ec35c4: Bio # Bio
+    2dfeac3d-6646-494a-b9d1-a9f8f0e68edf: Button # Button
     2e19f39e-6e49-4e40-830a-df9ed9db43fd: 'Summary Image' # Summary Image
     2e31dc24-46d1-459f-aa24-ac8e093bb6b7: 'Donate Information Text' # Donate Information Text
     2e9028ad-d3e4-4f65-ad46-1432e2aebf6c: 'Philosophy Images Crop' # Philosophy Images Crop
@@ -73,6 +76,7 @@ meta:
     3a3e4df0-9f3d-4ebf-b3a2-34f84143f75a: 'Item Description' # Item Description
     3a105c93-51be-48c3-8a6d-99e0a7672d7a: 'Body Text' # Body Text
     3a731d89-ac1f-4578-9725-c56ec44da677: 'Homepage Banner Two Cards' # Homepage Banner Two Cards
+    3ad4669e-0ebb-4f6b-9207-76d9a1793e55: 'Button Text' # Button Text
     3b0e9b39-a800-43ae-9b7f-943ab727aac5: 'Careers Hero Text' # Careers Hero Text
     3b67cd9a-7408-40d2-b67c-19fbf57e0cb4: 'Hidden Credit' # Hidden Credit
     3b5012b6-8415-4b1e-8653-516c6dea2f4e: Icon # Icon
@@ -81,6 +85,7 @@ meta:
     3c9b7cea-9893-4567-ac09-36ce15305bd8: 'Short Text' # Short Text
     3cf44beb-7d3a-4341-9fc0-b1f0a6794d39: 'Button Internal Reference' # Button Internal Reference
     3d85e4d6-b045-4c4c-86e7-9cf561e8c9e5: 'Image Carousel' # Image Carousel
+    03d1591a-5065-4894-be50-a09695b03074: 'Button Internal Reference' # Button Internal Reference
     3d351861-9bdd-4332-96ad-00a59755f771: Quotes # Quotes
     3daa54de-98b4-4bf5-8005-d5737b3ce6ca: 'Partner Hero Text' # Partner Hero Text
     3dd85da8-1e84-4ed9-a0d7-95fcf980e672: Image # Image
@@ -116,6 +121,8 @@ meta:
     4e4a3721-3a3f-40e3-860a-ba1da4738a40: 'Podcast External Buttons' # Podcast External Buttons
     4e76373d-ccba-4537-9825-605a71ae9afd: 'Current Core Giving' # Current Core Giving
     4ec05108-97b0-4c88-b647-a837d8d42c51: 'Book Image' # Book Image
+    4edd14c6-083e-49b7-9ec9-fc5576a70d24: 'Philosophy Descriptions' # Philosophy Descriptions
+    4efd1344-957d-40d0-8277-2d64bdc05598: 'Description Block' # Description Block
     04fa1b23-f82e-415c-9d00-11096c234fbc: 'Credit Header' # Credit Header
     4ff5c659-06c9-4f1e-85be-e4bc5792c681: Colleges # Colleges
     4fffda6c-5a56-4409-8fba-b6a250cb40e8: 'Banner 2 Description' # Banner 2 Description
@@ -125,7 +132,9 @@ meta:
     5a177aa1-a238-44c2-a6fb-7f62483aa7aa: 'Credit Header' # Credit Header
     5aa9b210-8916-449c-95bc-1423daa59428: 'Popdown Title' # Popdown Title
     5ae2b8a7-1c8b-4403-8519-bc8e4401cfc3: Stories # Stories
+    5b3a77f2-0f37-41df-8186-f9135e3896ca: 'Card Header' # Card Header
     5b18df65-ba57-4e2b-8e3d-8e722790aa62: 'Accent Color' # Accent Color
+    5b7166bc-5a27-4101-8130-4ecea3a0368b: Description # Description
     5bff095b-3448-4b93-9c59-8da6c7740dfa: 'Text Block' # Text Block
     5c23a019-9bee-420b-a594-2f450cc00477: 'Sprout Image' # Sprout Image
     5d5950b1-f8ab-436a-a7bc-f35bf1c65993: 'Icon Range' # Icon Range
@@ -153,6 +162,7 @@ meta:
     6c26cd6d-1813-4f00-a368-174f87123749: 'Year Breakdown' # Year Breakdown
     6cc171d4-b841-4523-a1a9-822fc33a1ed9: 'Icon Name' # Icon Name
     006d5a0e-c821-41d9-ac8d-b78c1fe335c1: Text # Text
+    6df503fb-b818-4d94-b4fd-d5c8807fe863: 'Banner 2 Title Text' # Banner 2 Title Text
     6e06aca7-6921-47a4-b6aa-8b80f8a81fd2: 'Team Member Photo' # Team Member Photo
     6e8f9fb8-bdae-4784-b624-b91b72c7e98a: Testimonial # Testimonial
     6e28e929-107e-4aef-9f0c-41582f328eae: 'Short Text' # Short Text
@@ -175,6 +185,7 @@ meta:
     7c22f283-70c7-4285-a852-c805bf6bcce8: 'Testimonial Quote' # Testimonial Quote
     7c36ed6d-871a-424b-8835-e8b13f06a917: 'Button Text' # Button Text
     7c77721a-ad6e-4e46-976b-1e2fab64bbb4: SEO # SEO
+    7cc27f63-dd4a-4207-a08b-fc7d6b12dc51: 'Charities Tagline' # Charities Tagline
     7cdd6748-08d7-4b20-9536-c78339c57663: 'Quotes Icon' # Quotes Icon
     7d8f687e-b864-4a32-81ed-1ddae66cd625: About # About
     7d807e4d-265c-43d9-835e-ce1c11ce15f5: 'Facebook Icon' # Facebook Icon
@@ -215,6 +226,7 @@ meta:
     8dcd782a-7d99-4b63-bf6c-cddce618ddcb: 'Button External Link' # Button External Link
     8dfaf97c-62b4-4a0a-a03b-f8d1efd75ecb: 'Banner 4 Header' # Banner 4 Header
     8dfeb5a7-d073-4127-9026-5afb204f6b81: Art # Art
+    8e4389b1-a62a-46c4-a206-6e34d74ff728: 'Block Body Text' # Block Body Text
     8f5ce5a0-fa1c-40f8-ab00-da3de67e0d89: College # College
     8f948b19-be04-49df-9d73-c8947fe20bcf: 'Card Description' # Card Description
     8f76022a-df87-43cc-a9b9-aabd6c0def19: Text # Text
@@ -272,8 +284,10 @@ meta:
     22b2f4d0-cbad-4629-86e1-b156684ef9a9: 'Homepage Squiggle 1' # Homepage Squiggle 1
     24b90193-7fa0-409f-8a4e-e5d09f2f1cad: 'Action Button 2 Link ' # Action Button 2 Link 
     24c511ad-7e00-4cca-83f2-eaa0b8a43882: 'Flickity Panel' # Flickity Panel
+    24e31f96-cefc-4c72-9e3c-f0de98223eca: Target # Target
     26d16a04-97b8-418a-9a96-a79dc7669fda: 'Positive Text' # Positive Text
     27d7b930-7b1f-4843-aba9-f88f97aaabd5: 'Team Member Square' # Team Member Square
+    27ec2002-12df-460a-86c3-88cd7de2bc82: Verb # Verb
     28ec04f3-9b85-4bce-82d5-3e611c99266c: Countries # Countries
     29a23e86-9a33-483d-a618-ebf945d1ca3f: 'Process Target 5' # Process Target 5
     29b81f71-d2ef-4982-9f12-708ed09a0e6f: 'Banner 3 Description' # Banner 3 Description
@@ -367,6 +381,7 @@ meta:
     85a993a9-f7d1-43b2-82e0-3258a95cc0c4: 'Social Media Icon Dark' # Social Media Icon Dark
     88c00b59-3751-4393-b312-2d32abf9b779: Button # Button
     89aa3733-252b-4632-adcb-8f2be00aaae1: 'Stories Category' # Stories Category
+    89ea5b4a-a42b-4b61-b234-5d3578996af3: Buttons # Buttons
     89f1a821-fb41-4a4b-98ce-25dd25ef6184: 'Bare Caret' # Bare Caret
     90a270d7-955b-4e20-a4c3-7095ac445cac: 'Homepage About Promo Text' # Homepage About Promo Text
     90d88c19-28f5-4df0-b6f5-872ec960f101: 'Share Url' # Share Url
@@ -384,6 +399,7 @@ meta:
     96f8bcf3-c586-40dc-923c-a0b12bcd41f0: Italicized # Italicized
     97a7725b-bca8-4548-8839-a9e841182eed: 'Blog Credit ' # Blog Credit 
     97cb017f-6d32-4bf0-ae0d-b11397163644: Icon # Icon
+    99f5768e-b360-48b6-97d7-469a83ca29e6: 'Process Cards' # Process Cards
     100cab40-4c4d-413a-8aac-e57f02ad1c2b: 'Icon Name' # Icon Name
     105f3eee-f090-40d5-b726-43feece5f10d: 'Site Wide Assets' # Site Wide Assets
     132cb2d1-306b-49d1-8a16-ec22a6feb5a3: Testimonials # Testimonials
@@ -400,6 +416,7 @@ meta:
     250d3ba7-f022-4862-9180-ffc7f6c34eea: 'Row Title' # Row Title
     266c6678-9669-488e-82b7-68601833935a: About # About
     0268a746-7ca6-401f-abee-87e90bc26be9: 'Stories Main Page Hero Text' # Stories Main Page Hero Text
+    268be074-7caa-4534-9f9e-1a69a72e8fc8: 'Button External Reference' # Button External Reference
     269f96df-2a0b-428b-a9fd-ccca81728d66: 'Tori Image' # Tori Image
     270a37fb-0986-4a76-86d7-5cc30897e838: Text # Text
     270ec404-d7e1-47a5-9ce0-cc7f6deaadbe: 'Extra Photo' # Extra Photo
@@ -422,6 +439,7 @@ meta:
     469f10e1-1d53-4625-b0c7-98fe1c15185f: 'Current College Chapters' # Current College Chapters
     474a3676-ce7f-4411-a1a0-4e63837c3db8: 'Button Text' # Button Text
     481d4794-f2ad-462e-b9fe-03e64537c48a: 'LinkedIn Icon' # LinkedIn Icon
+    484a5313-22f8-46d5-801f-2a024ff0b35b: Noun # Noun
     504dbfeb-fe5a-45d3-add1-6909303dfcb7: 'Background Color' # Background Color
     517c0586-5071-489c-bf64-043a9be344ee: 'Philosophy Images Cropped' # Philosophy Images Cropped
     531f5235-72eb-4ffb-913e-d4334fa423d5: Category # Category
@@ -490,6 +508,7 @@ meta:
     3373cc85-e7b6-47cc-aab8-db396ce0256b: 'Vimeo Embed Link' # Vimeo Embed Link
     3680cdaa-ccbe-411c-a1da-5f06bc2cfb58: 'Summary Block' # Summary Block
     4007a874-0135-4417-89e3-72c8cdd49f73: 'Process Target 4' # Process Target 4
+    4159eb90-46a5-4386-812c-bd3a12651e19: Style # Style
     4210c650-0ff5-41d2-b2c6-2581b010e6dd: 'Contact Hero Text' # Contact Hero Text
     4381d30a-d92c-4101-8a04-20a81f01ca0a: Solidarity # Solidarity
     4692a00e-7d38-4661-bff7-7a6647f5c9a6: 'Doc Link' # Doc Link
@@ -615,6 +634,7 @@ meta:
     74284365-7a11-44ce-89c8-f0d2cdd8fc9d: Stats # Stats
     75613124-d8c0-4155-ae38-4264e3ab0c53: 'Mission Teaser Text' # Mission Teaser Text
     91538023-7219-4718-be32-9afb302568a7: 'Generic Page Panels' # Generic Page Panels
+    94080954-ce37-4713-bdbf-59590c7cf19a: 'Charity Type Descriptions' # Charity Type Descriptions
     96430616-69dc-4527-a931-278353c4c6a0: Default # Default
     a0f0647d-ad32-4706-84ce-612fac5aceca: 'Button Text' # Button Text
     a050e10f-27ff-425f-8157-697fd1e26cb8: 'Third Subtitle' # Third Subtitle
@@ -644,6 +664,7 @@ meta:
     a328b612-4d50-40e8-bd65-46da54763177: 'Dropdown Title' # Dropdown Title
     a363d579-386d-45c0-87df-0238f9368c14: 'Item Reference' # Item Reference
     a481eae2-2105-4649-849c-f555e67e8187: 'Modal Title' # Modal Title
+    a614e07d-aeef-48d5-99ff-9844a0295a7c: Card # Card
     a773b31a-744d-47d2-b844-6e31a966ea18: 'External Link' # External Link
     a813e691-df0c-4f8d-bff5-fc8c60e70130: 'Job Title' # Job Title
     a920f479-b8c4-466e-99f7-2c50b6d7937f: 'Giver Image' # Giver Image
@@ -682,6 +703,7 @@ meta:
     ae5f5c29-ba86-4550-932d-66a8ce8d824a: 'About Globe' # About Globe
     ae86ffb3-35ab-4066-8e33-755aa600854d: Answer # Answer
     ae3552b1-3747-4cab-a2e3-1c3866e56bb0: 'Panel Title' # Panel Title
+    aea75f95-a95c-48dc-a688-d8c7e0693776: 'Block Header Text' # Block Header Text
     aebd3596-f0c5-4f10-8b22-74c079f120e0: About # About
     aecefbe8-8cf4-4e49-ae57-8e062840a3cf: 'Banner 4 Transition Text' # Banner 4 Transition Text
     af1a173c-1914-4742-93ad-2c314db525d5: 'Button Reference' # Button Reference
@@ -691,6 +713,7 @@ meta:
     b1d8a32f-a5c9-4759-911b-73c371b756f7: 'Banner 6 Typeform' # Banner 6 Typeform
     b1f7a83b-3612-4f8a-9aaa-9a8a792dc88c: 'Stories Category Color' # Stories Category Color
     b1f58be3-d9fb-48fc-8e44-d83a9ec26cc3: 'Mission Promo Photo' # Mission Promo Photo
+    b3b5fb35-9a45-4fe6-aeae-e4606fdbaa4d: Number # Number
     b3fb0610-6be1-43e3-a0a9-03af2d21be96: 'Cell Image' # Cell Image
     b4ce1ebd-62b7-49f1-98c0-3c9b74551163: 'Button Text' # Button Text
     b5da5d94-4af2-46c2-94d4-e657d2c8c6db: Book # Book
@@ -718,6 +741,7 @@ meta:
     b4061c60-781c-45c5-957e-2b5701bddbeb: 'Small Image' # Small Image
     b4838c48-1609-4cdf-a45f-4592d88a21f5: 'Support Icon' # Support Icon
     b5347fdb-2bf4-4902-b001-d87e090ad0c6: Verse # Verse
+    b33890ee-618c-44ba-8f9a-15e00fe15edf: Step # Step
     b36614ad-b59f-4441-9598-fbd5a0ead4b2: 'Button Reference' # Button Reference
     b7755107-5b9c-4c16-9252-ab2617412513: 'External Name' # External Name
     ba7a34a4-f53c-489d-bb11-6cc6a345a932: 'Short Text' # Short Text
@@ -922,9 +946,11 @@ meta:
     edf22f67-093b-4d2c-80fe-5fce655a811c: Back # Back
     ee64ce91-8a3c-42d7-bc02-fbc10754769a: 'Icon Red' # Icon Red
     eefdc20f-9349-4de5-9eec-307948cedc5b: 'Start A Club' # Start A Club
+    efdc869f-a789-402b-a6fa-3e560a7f5f68: 'Description Text' # Description Text
     efeeae7b-88ac-468b-84d6-bcee0e5c9419: 'Intern Class' # Intern Class
     eff795c5-5b81-480d-b272-22865c62db96: 'Home Give Freely Icon' # Home Give Freely Icon
     f0bbd4b7-b474-41f1-965f-75d538b8d3d8: Subheading # Subheading
+    f0447dfe-0355-4182-bf99-d23b289c4f6e: 'Process Steps' # Process Steps
     f09216d7-902a-4b74-9e8e-fa67f6803222: 'Newsletter Signup Link' # Newsletter Signup Link
     f1b2c133-48f6-404e-be23-ab08977141f8: 'Button Internal Reference' # Button Internal Reference
     f1e558e4-9407-4efc-b35d-32cd4eac8caa: Stat # Stat
@@ -964,6 +990,7 @@ meta:
     fe567d24-5d0b-4a0e-9073-b07d61a82015: 'Secondary Text' # Secondary Text
     fe3762fb-c042-4a4c-98fd-92b834600bea: 'Button Text' # Button Text
     ff0ca01f-73f5-49b7-923f-c9808835ce7e: 'Blue Wave One' # Blue Wave One
+    ff0f3327-c6cf-44da-9a80-b93bc44d90dd: 'Step Description' # Step Description
     ffc188d5-68d2-4d02-b195-a66e07c13a46: 'Short Bio' # Short Bio
 plugins:
   amazon-ses:

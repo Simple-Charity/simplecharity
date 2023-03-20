@@ -2,7 +2,7 @@
     <div class="">
         <div class="pack-grid w-full ">
             
-            <div v-for="stat in stats" class="grid-it w-full sm:w-[49%] lg:w-auto group overflow-hidden">
+            <div v-for="stat in stats" class="grid-it rounded-lg w-full sm:w-[49%] lg:w-auto group overflow-hidden">
                 <div class="p-8 transition ease-in-out duration-300 transform" :class="stat.background">
                     <div class="text-2xl pb-6 lg:max-w-[20rem] transition ease-in-out duration-300 transform" :class="stat.text">
                         {{ stat.name }}

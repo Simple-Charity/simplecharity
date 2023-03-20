@@ -6,9 +6,11 @@
             <ul v-for="item in f">
                 <div class="cursor-pointer" v-on:click="toggleOpen(item,1)">
                     <div class="flex items-center justify-between h-20">
-                        <p v-bind:class="{ 'text-linen':whiteText, 'text-blue':!whiteText }" class="text-lg sm:text-xl pr-4 font-semibold">{{item.question}}</p>
+                        <div v-bind:class="{ 'text-linen':whiteText, 'text-blue':!whiteText }" class="text-lg sm:text-xl pr-4 font-semibold">{{item.question}}</div>
 
-                        <img class="w-4" :src="caret" alt="">
+                        <div v-bind:class="{ 'text-linen':whiteText, 'text-blue':!whiteText }" class="text-3xl pb-1 scale-y-[1.5]">
+                            >
+                        </div>
                     </div>
                 </div>
                 <hr v-bind:class="{ 'text-linen':whiteText, 'text-blue':!whiteText }" class=" border-1 my-5">
@@ -43,7 +45,7 @@
     import VueAxios from '../js/modules/vue-axios';
 
     export default {
-        props: ['faqs','caret','tc'],
+        props: ['faqs','tc'],
         data: function() {
             return {
                 f:this.faqs,

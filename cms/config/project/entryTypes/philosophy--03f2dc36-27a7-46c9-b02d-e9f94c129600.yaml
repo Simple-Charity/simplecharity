@@ -4,6 +4,29 @@ fieldLayouts:
       -
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
             fieldUid: 7a633eca-bfc2-4150-9029-8866716a9600 # Page Description
             instructions: null
             label: null
@@ -30,57 +53,39 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Page Description'
+        name: 'Page Data'
         sortOrder: 1
       -
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
-            id: null
+            fieldUid: a7a14ce9-6fe8-4de9-bd97-4903128112f5 # Page Title
             instructions: null
             label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            readonly: false
-            requirable: false
-            size: null
-            step: null
+            required: false
             tip: null
-            title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4edd14c6-083e-49b7-9ec9-fc5576a70d24 # Philosophy Descriptions
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 89ea5b4a-a42b-4b61-b234-5d3578996af3 # Buttons
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
           -
             fieldUid: de181ef4-5782-4ca7-9576-f53cef092c82 # Philosophy Illustration
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 1e68fe69-8467-4f8f-9465-a7e7b1574d7d # Philosophy Pentagon
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-        name: Content
-        sortOrder: 2
-      -
-        elements:
-          -
-            fieldUid: ca7fe41e-e1cf-45af-add6-1646e0b3d8b1 # Cause Area Icons
             instructions: null
             label: null
             required: false
@@ -97,6 +102,10 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+        name: 'Banner 1'
+        sortOrder: 2
+      -
+        elements:
           -
             fieldUid: 1e0cae00-866d-4e22-8f37-ca9a509c1392 # Philosophy Wave
             instructions: null
@@ -106,7 +115,79 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: Assets
+          -
+            fieldUid: dcf00203-52d9-4bda-96c9-c83dca3f13aa # Banner 2 Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6df503fb-b818-4d94-b4fd-d5c8807fe863 # Banner 2 Title Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4fffda6c-5a56-4409-8fba-b6a250cb40e8 # Banner 2 Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1e68fe69-8467-4f8f-9465-a7e7b1574d7d # Philosophy Pentagon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ca7fe41e-e1cf-45af-add6-1646e0b3d8b1 # Cause Area Icons
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0f10c829-cceb-4f99-8e15-c66ddeedf3eb # Charities include
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 94080954-ce37-4713-bdbf-59590c7cf19a # Charity Type Descriptions
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7cc27f63-dd4a-4207-a08b-fc7d6b12dc51 # Charities Tagline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 2'
         sortOrder: 3
 handle: philosophy
 hasTitleField: false

@@ -1,11 +1,11 @@
-field: ca7fe41e-e1cf-45af-add6-1646e0b3d8b1 # Cause Area Icons
+field: f0447dfe-0355-4182-bf99-d23b289c4f6e # Process Steps
 fieldLayouts:
-  ac5f2e62-df89-498c-a40d-9c99f005b509:
+  800f09fa-43b3-4e17-a86d-30788fdb6f5d:
     tabs:
       -
         elements:
           -
-            fieldUid: 615d572c-d197-481e-b1be-c9e1a35a546d # Icon
+            fieldUid: 27ec2002-12df-460a-86c3-88cd7de2bc82 # Verb
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 961b40f0-ded9-4d93-8c05-eb3de1f084fd # Area
+            fieldUid: b3b5fb35-9a45-4fe6-aeae-e4606fdbaa4d # Number
             instructions: null
             label: null
             required: false
@@ -23,7 +23,25 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: cf6df6e4-5170-4f09-9262-ee12d74dedf7 # Description
+            fieldUid: 484a5313-22f8-46d5-801f-2a024ff0b35b # Noun
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ff0f3327-c6cf-44da-9a80-b93bc44d90dd # Step Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 24e31f96-cefc-4c72-9e3c-f0de98223eca # Target
             instructions: null
             label: null
             required: false
@@ -34,13 +52,13 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  615d572c-d197-481e-b1be-c9e1a35a546d: # Icon
+  24e31f96-cefc-4c72-9e3c-f0de98223eca: # Target
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
-    handle: icon
+    handle: target
     instructions: ''
-    name: Icon
+    name: Target
     searchable: false
     settings:
       allowSelfRelations: false
@@ -53,7 +71,7 @@ fields:
       previewMode: full
       restrictFiles: ''
       selectionLabel: ''
-      showSiteMenu: true
+      showSiteMenu: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       singleUploadLocationSource: 'volume:7911f1e3-9cf4-4ddd-bc43-d9c4d701d47d' # Site
@@ -67,13 +85,13 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  961b40f0-ded9-4d93-8c05-eb3de1f084fd: # Area
-    columnSuffix: vmouzcvr
+  27ec2002-12df-460a-86c3-88cd7de2bc82: # Verb
+    columnSuffix: ixjnhgaq
     contentColumnType: text
     fieldGroup: null
-    handle: area
+    handle: verb
     instructions: ''
-    name: Area
+    name: Verb
     searchable: false
     settings:
       byteLimit: null
@@ -87,13 +105,53 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  cf6df6e4-5170-4f09-9262-ee12d74dedf7: # Description
-    columnSuffix: aqapuztc
+  484a5313-22f8-46d5-801f-2a024ff0b35b: # Noun
+    columnSuffix: xxtbsvaf
     contentColumnType: text
     fieldGroup: null
-    handle: description
+    handle: noun
     instructions: ''
-    name: Description
+    name: Noun
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b3b5fb35-9a45-4fe6-aeae-e4606fdbaa4d: # Number
+    columnSuffix: tlcevqjw
+    contentColumnType: text
+    fieldGroup: null
+    handle: number
+    instructions: ''
+    name: Number
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ff0f3327-c6cf-44da-9a80-b93bc44d90dd: # Step Description
+    columnSuffix: bowaibpy
+    contentColumnType: text
+    fieldGroup: null
+    handle: stepDescription
+    instructions: ''
+    name: 'Step Description'
     searchable: false
     settings:
       availableTransforms: '*'
@@ -115,6 +173,6 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field
-handle: causeAreaIcon
-name: 'Cause Area Icon'
+handle: step
+name: Step
 sortOrder: 1

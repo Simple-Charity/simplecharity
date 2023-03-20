@@ -4,6 +4,29 @@ fieldLayouts:
       -
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
             fieldUid: 7a633eca-bfc2-4150-9029-8866716a9600 # Page Description
             instructions: null
             label: null
@@ -35,34 +58,158 @@ fieldLayouts:
       -
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
-            id: null
+            fieldUid: a7a14ce9-6fe8-4de9-bd97-4903128112f5 # Page Title
             instructions: null
             label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            readonly: false
-            requirable: false
-            size: null
-            step: null
+            required: false
             tip: null
-            title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: Content
+          -
+            fieldUid: 53b8a532-49f8-42da-81fc-58a956e8dcbe # Banner 1 Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a6c6e855-bc41-4a8d-8e0a-2c38d165b727 # Multi-Color Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1c7830fe-aa7d-4830-a076-cef1f4188c38 # Banner 1 Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f6ff699c-9876-4f80-bb5b-8e5f493503cb # Process Hexagons
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b91e077e-3da3-42ea-bb90-27c3b1ada32c # Process Hexagons Small
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 24278f74-90e5-4959-95ee-9dcdaa46e4a6 # Process Bracket 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a41134a7-7305-4eab-a699-85eeed70a2c2 # Process Bracket 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 99f5768e-b360-48b6-97d7-469a83ca29e6 # Process Cards
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 1'
         sortOrder: 2
       -
         elements:
           -
-            fieldUid: f6ff699c-9876-4f80-bb5b-8e5f493503cb # Process Hexagons
+            fieldUid: dcf00203-52d9-4bda-96c9-c83dca3f13aa # Banner 2 Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f0447dfe-0355-4182-bf99-d23b289c4f6e # Process Steps
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 2'
+        sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: 7408fb13-95c3-469f-bf05-45f80680ab76 # Banner 3 Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 29b81f71-d2ef-4982-9f12-708ed09a0e6f # Banner 3 Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 89ea5b4a-a42b-4b61-b234-5d3578996af3 # Buttons
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 3'
+        sortOrder: 4
+      -
+        elements:
+          -
+            fieldUid: ed9297cf-a1c1-4a43-b91d-de99dac43531 # FAQs
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: FAQs
+        sortOrder: 5
+      -
+        elements:
+          -
+            fieldUid: 852293a0-2780-40b7-a388-de44cdfd2ea3 # Charity Evaluation Report
             instructions: null
             label: null
             required: false
@@ -116,55 +263,6 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 24278f74-90e5-4959-95ee-9dcdaa46e4a6 # Process Bracket 1
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: a41134a7-7305-4eab-a699-85eeed70a2c2 # Process Bracket 2
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: b91e077e-3da3-42ea-bb90-27c3b1ada32c # Process Hexagons Small
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 852293a0-2780-40b7-a388-de44cdfd2ea3 # Charity Evaluation Report
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-        name: Assets
-        sortOrder: 3
-      -
-        elements:
-          -
-            fieldUid: ed9297cf-a1c1-4a43-b91d-de99dac43531 # FAQs
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
             fieldUid: 011489e7-5ebd-4cbd-8ecf-41512a00a694 # FAQ Caret
             instructions: null
             label: null
@@ -173,8 +271,8 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: FAQs
-        sortOrder: 4
+        name: Archive
+        sortOrder: 6
 handle: process
 hasTitleField: false
 name: Process
