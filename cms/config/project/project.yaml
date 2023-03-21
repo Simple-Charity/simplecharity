@@ -1,4 +1,4 @@
-dateModified: 1679336568
+dateModified: 1679364301
 email:
   fromEmail: $SES_EMAIL
   fromName: $SES_FROM
@@ -137,6 +137,7 @@ meta:
     5b7166bc-5a27-4101-8130-4ecea3a0368b: Description # Description
     5bff095b-3448-4b93-9c59-8da6c7740dfa: 'Text Block' # Text Block
     5c23a019-9bee-420b-a594-2f450cc00477: 'Sprout Image' # Sprout Image
+    5c103e86-4a79-4df8-bbf0-f3f70263f05c: 'Card Color' # Card Color
     5d5950b1-f8ab-436a-a7bc-f35bf1c65993: 'Icon Range' # Icon Range
     5d17801d-3b99-402e-9fdc-ffbb9f65f84d: Countries # Countries
     5dd468fa-bf80-407c-b62b-8dd95c699f15: Text # Text
@@ -199,6 +200,7 @@ meta:
     7f3bf0b3-9fff-4b46-baa7-d0dba0ff7071: 'Phil Image' # Phil Image
     7f92b4f5-ee87-418d-81d6-850a633333de: 'Big Quotes' # Big Quotes
     7f151a83-a974-41ef-b0fb-7f099f4caca5: 'Fundraise Icon' # Fundraise Icon
+    7f226f08-ad94-45db-a5c9-82df778ab44f: 'Banner 5 Description' # Banner 5 Description
     7f879e5d-085c-4c59-9280-fb94e6207449: 'Donate Information Hero Text' # Donate Information Hero Text
     7fbd0b43-da01-4a49-8257-fcbce21c40ab: 'Add Image Header Background' # Add Image Header Background
     8a06e679-8b4d-4916-a154-b2aa33d1c9a4: Photo # Photo
@@ -273,6 +275,7 @@ meta:
     15b9047e-629c-4b70-b7ec-352b2d2fb6d4: 'Navigation Items' # Navigation Items
     15b78182-ae2e-45eb-adbc-b18f898aaf88: 'Icon Blue' # Icon Blue
     15f8519a-b1fb-4c3e-a304-7d7f4f1f7ccc: 'Podcast About Header' # Podcast About Header
+    017a6d9a-8363-4430-a835-d4b46fbfad7e: 'Card Text' # Card Text
     17cec983-8b56-4935-aef1-f03f508fbac4: 'Banner 7 Header' # Banner 7 Header
     17d58203-f975-432e-b1f6-dc7cb6fa4630: Countries # Countries
     18a79c48-30af-4ed4-b9f2-8df8171097d4: 'Internship Squiggle 1' # Internship Squiggle 1
@@ -362,6 +365,7 @@ meta:
     70ae35b5-fe92-42a1-b832-3a64d669a7bc: 'East Asia & Pacific' # East Asia & Pacific
     70fd18c6-5135-4159-8fb7-f5c23ea9deda: 'About Banner 1' # About Banner 1
     71c3b90e-bbe2-4c9c-91a4-e9518aae47e3: 'Team Member Title' # Team Member Title
+    72a6a3b0-88c9-41df-b5fa-e74a3de98d19: 'This is Two Coins Text' # This is Two Coins Text
     073f92a7-3b49-436a-b1c7-0b2483337d4a: 'Challenge Thought Bubble' # Challenge Thought Bubble
     73f956fe-3b15-4dd6-99f2-210057f6c81a: Globals # Globals
     76c6edf0-ef3b-4d23-91f3-95c96641dd19: Blurb # Blurb
@@ -378,6 +382,7 @@ meta:
     84e10fff-d9d6-4bf0-bdf1-35f64a666581: 'Simple Charity Sprouts' # Simple Charity Sprouts
     84e64693-a1cb-4ec1-a08e-4bded3602c99: Blog # Blog
     84f3e056-261d-49ce-90e7-4110bf94fe18: 'Blog Main Page' # Blog Main Page
+    85a7ad98-8a42-4758-aed2-e663d86f0e91: 'Card Title Line 1' # Card Title Line 1
     85a993a9-f7d1-43b2-82e0-3258a95cc0c4: 'Social Media Icon Dark' # Social Media Icon Dark
     88c00b59-3751-4393-b312-2d32abf9b779: Button # Button
     89aa3733-252b-4632-adcb-8f2be00aaae1: 'Stories Category' # Stories Category
@@ -438,6 +443,7 @@ meta:
     463f7d45-cca7-4565-9965-ba21cab0c48c: 'Button Color' # Button Color
     469f10e1-1d53-4625-b0c7-98fe1c15185f: 'Current College Chapters' # Current College Chapters
     474a3676-ce7f-4411-a1a0-4e63837c3db8: 'Button Text' # Button Text
+    476d78a2-95b4-4319-8ee1-972661a08fd9: Card # Card
     481d4794-f2ad-462e-b9fe-03e64537c48a: 'LinkedIn Icon' # LinkedIn Icon
     484a5313-22f8-46d5-801f-2a024ff0b35b: Noun # Noun
     504dbfeb-fe5a-45d3-add1-6909303dfcb7: 'Background Color' # Background Color
@@ -592,6 +598,7 @@ meta:
     373086b8-e4c2-4bc4-95c2-e86e94ca6a78: 'Podcast Image Alignment' # Podcast Image Alignment
     409962ac-ddff-49f0-9e5e-e63f86db9761: 'Card Title' # Card Title
     447788ed-5f07-42d0-9f74-431f79b78af2: Centered # Centered
+    511911d0-c9d8-4422-9c29-0a544f4aac56: 'Card Title Line 2' # Card Title Line 2
     570772ad-1a3a-46de-a1bf-2c9a92083b34: Text # Text
     0663984a-aaf9-4d50-9e7d-4b9f5df7a4cd: New # New
     688459fb-dd83-4d7d-b645-ae5b0382fc8e: 'Data tf Widget' # Data tf Widget
@@ -733,6 +740,7 @@ meta:
     b70afe92-f19f-45eb-b090-05700fa87ae9: Default # Default
     b91e077e-3da3-42ea-bb90-27c3b1ada32c: 'Process Hexagons Small' # Process Hexagons Small
     b94b98e9-ef19-47a9-96b3-20c2f808b7d7: 'Student Chapters' # Student Chapters
+    b250d29c-4a5c-4fba-b92e-58a95fc43979: 'Internship Cards' # Internship Cards
     b262edd9-8091-48a3-9dc9-77db75491dca: 'Class Names' # Class Names
     b310cbd7-5f43-438f-8a4d-9d8a38f4ceee: 'Year Recommended' # Year Recommended
     b577bc6a-d699-4b25-b1f3-b6ac82836624: 'Blog Main Page' # Blog Main Page
@@ -985,6 +993,7 @@ meta:
     fc416d40-4fbe-43c9-9b27-48ad297e5f7b: 'Attribute Name' # Attribute Name
     fd6e3b6d-7d3d-4ff1-8f5f-4c1c6807f60f: 'Button Internal Reference' # Button Internal Reference
     fd585df9-c9ee-4479-ad2b-e90f5c413d52: 'Inline Image' # Inline Image
+    fe1b9033-4cb7-4b00-92c3-2b4c42e5768f: 'Banner 5 Secondary Header' # Banner 5 Secondary Header
     fe4f0d2e-41ac-41ea-809c-f0b5257a0c1b: 'Popdown Title' # Popdown Title
     fe25cb8c-c12f-46a0-ba11-95166876fa31: 'Team Member Name' # Team Member Name
     fe567d24-5d0b-4a0e-9073-b07d61a82015: 'Secondary Text' # Secondary Text

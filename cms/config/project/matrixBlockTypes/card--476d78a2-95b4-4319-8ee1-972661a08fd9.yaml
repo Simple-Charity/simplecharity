@@ -1,11 +1,11 @@
-field: 30a99fdf-5b65-4e1b-97ae-e5da56bd6ca8 # Generic Modal
+field: b250d29c-4a5c-4fba-b92e-58a95fc43979 # Internship Cards
 fieldLayouts:
-  a263c507-a9da-43d1-92ac-af0f1f3f03ae:
+  8b8f0f0b-d7a0-43ca-ad4e-d5d01d322e55:
     tabs:
       -
         elements:
           -
-            fieldUid: a481eae2-2105-4649-849c-f555e67e8187 # Modal Title
+            fieldUid: 85a7ad98-8a42-4758-aed2-e663d86f0e91 # Card Title Line 1
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 2d870c1f-4963-4d65-ab54-4576efc26fb7 # Modal Text
+            fieldUid: 511911d0-c9d8-4422-9c29-0a544f4aac56 # Card Title Line 2
             instructions: null
             label: null
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: a44879ea-12d8-4bac-96a8-860f95bd0fae # Modal Button Text
+            fieldUid: 017a6d9a-8363-4430-a835-d4b46fbfad7e # Card Text
             instructions: null
             label: null
             required: false
@@ -32,7 +32,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 057a724a-9942-43e3-b99a-0238d3cd0a4c # Modal Button Link
+            fieldUid: 5c103e86-4a79-4df8-bbf0-f3f70263f05c # Card Color
             instructions: null
             label: null
             required: false
@@ -43,13 +43,60 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  2d870c1f-4963-4d65-ab54-4576efc26fb7: # Modal Text
-    columnSuffix: mtuhsbms
+  5c103e86-4a79-4df8-bbf0-f3f70263f05c: # Card Color
+    columnSuffix: ltystmgc
+    contentColumnType: string
+    fieldGroup: null
+    handle: cardColor
+    instructions: ''
+    name: 'Card Color'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Yellow
+            -
+              - value
+              - yellow
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Green
+            -
+              - value
+              - green
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Red
+            -
+              - value
+              - red
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  017a6d9a-8363-4430-a835-d4b46fbfad7e: # Card Text
+    columnSuffix: mueyntgt
     contentColumnType: text
     fieldGroup: null
-    handle: modalText
+    handle: cardText
     instructions: ''
-    name: 'Modal Text'
+    name: 'Card Text'
     searchable: false
     settings:
       availableTransforms: '*'
@@ -71,13 +118,13 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field
-  057a724a-9942-43e3-b99a-0238d3cd0a4c: # Modal Button Link
-    columnSuffix: ysbuvzfw
+  85a7ad98-8a42-4758-aed2-e663d86f0e91: # Card Title Line 1
+    columnSuffix: kwhywugl
     contentColumnType: text
     fieldGroup: null
-    handle: modalButtonLink
+    handle: cardTitleLine1
     instructions: ''
-    name: 'Modal Button Link'
+    name: 'Card Title Line 1'
     searchable: false
     settings:
       byteLimit: null
@@ -91,13 +138,13 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  a481eae2-2105-4649-849c-f555e67e8187: # Modal Title
-    columnSuffix: aowkbrev
+  511911d0-c9d8-4422-9c29-0a544f4aac56: # Card Title Line 2
+    columnSuffix: xuhkrlei
     contentColumnType: text
     fieldGroup: null
-    handle: modalTitle
+    handle: cardTitleLine2
     instructions: ''
-    name: 'Modal Title'
+    name: 'Card Title Line 2'
     searchable: false
     settings:
       byteLimit: null
@@ -111,26 +158,6 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  a44879ea-12d8-4bac-96a8-860f95bd0fae: # Modal Button Text
-    columnSuffix: ywykovfd
-    contentColumnType: text
-    fieldGroup: null
-    handle: modalButtonText
-    instructions: ''
-    name: 'Modal Button Text'
-    searchable: false
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: null
-      initialRows: '4'
-      multiline: ''
-      placeholder: null
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
-handle: modal
-name: Modal
+handle: card
+name: Card
 sortOrder: 1

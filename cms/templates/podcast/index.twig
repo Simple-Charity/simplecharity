@@ -175,9 +175,9 @@
     <section class="relative overflow-hidden edge">
         <div v-prlx="{speed:0.05, preserveInitialPosition: false, }" class="absolute top-0 left-0 right-0 bottom-0 bg-center bg-cover sm:mt-[-3rem]" style="background-image: url('{{ entry.teamPhoto.one().getUrl() }}');"></div>
         <div class="relative z-10">
-            <p class="text-linen text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl xxl:text-8xl font-bold pt-[4rem] sm:pt-[12rem] md:pt-[15rem] xl:pt-[20rem] xxl:pt-[30%]">
-                This is <br> Two Coins.
-            </p>
+            <div class="text-linen text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl xxl:text-8xl font-bold pt-[4rem] sm:pt-[12rem] md:pt-[15rem] xl:pt-[20rem] xxl:pt-[30%]">
+                {{ entry.thisIsTwoCoinsText }}
+            </div>
         </div>
     </section>
 

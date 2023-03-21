@@ -4,6 +4,29 @@ fieldLayouts:
       -
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
             fieldUid: 7a633eca-bfc2-4150-9029-8866716a9600 # Page Description
             instructions: null
             label: null
@@ -35,34 +58,74 @@ fieldLayouts:
       -
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
-            id: null
+            fieldUid: a7a14ce9-6fe8-4de9-bd97-4903128112f5 # Page Title
             instructions: null
             label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            readonly: false
-            requirable: false
-            size: null
-            step: null
+            required: false
             tip: null
-            title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: Content
+          -
+            fieldUid: 53b8a532-49f8-42da-81fc-58a956e8dcbe # Banner 1 Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1c7830fe-aa7d-4830-a076-cef1f4188c38 # Banner 1 Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 905bfe24-6de1-48cb-a89a-1b7f658d65cb # Interns 2021
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 89ea5b4a-a42b-4b61-b234-5d3578996af3 # Buttons
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f6b553bf-2070-4cd1-a6c9-125463882273 # Currently Accepting Internship Applications
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 30a99fdf-5b65-4e1b-97ae-e5da56bd6ca8 # Generic Modal
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 1'
         sortOrder: 2
       -
         elements:
           -
-            fieldUid: a53319d7-a065-4006-b797-59fa46291543 # Internship Squiggle 0
+            fieldUid: dcf00203-52d9-4bda-96c9-c83dca3f13aa # Banner 2 Header
             instructions: null
             label: null
             required: false
@@ -71,7 +134,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 18a79c48-30af-4ed4-b9f2-8df8171097d4 # Internship Squiggle 1
+            fieldUid: adae44ac-cb6d-4632-b124-3850a4fa67de # Banner 2 Title
             instructions: null
             label: null
             required: false
@@ -80,20 +143,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 9a70a911-c438-4f3e-a2da-cd3e9b9aafee # Internship Squiggle 2
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-        name: Squiggles
-        sortOrder: 3
-      -
-        elements:
-          -
-            fieldUid: 905bfe24-6de1-48cb-a89a-1b7f658d65cb # Interns 2021
+            fieldUid: 4fffda6c-5a56-4409-8fba-b6a250cb40e8 # Banner 2 Description
             instructions: null
             label: null
             required: false
@@ -110,6 +160,46 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+        name: 'Banner 2'
+        sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: b250d29c-4a5c-4fba-b92e-58a95fc43979 # Internship Cards
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7408fb13-95c3-469f-bf05-45f80680ab76 # Banner 3 Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c3c7d690-94d0-4104-af1b-d1aed964af38 # Banner 3 Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 29b81f71-d2ef-4982-9f12-708ed09a0e6f # Banner 3 Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: a7b6ce52-2079-4db7-a87d-f94391373a11 # One Hundred Percent Circle
             instructions: null
@@ -119,8 +209,25 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+        name: 'Banner 3'
+        sortOrder: 4
+      -
+        elements:
           -
-            fieldUid: 585ca78c-fa8f-4b72-a544-512871ead130 # Jesse Headshot
+            fieldUid: 80d51e82-4686-4189-9040-5c89326d8635 # Testimonial Carousel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 4'
+        sortOrder: 5
+      -
+        elements:
+          -
+            fieldUid: 47537bf3-e4a9-4a0c-8a3f-ea2a6de8eda1 # Banner 5 Header
             instructions: null
             label: null
             required: false
@@ -129,7 +236,25 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 7f92b4f5-ee87-418d-81d6-850a633333de # Big Quotes
+            fieldUid: 7f226f08-ad94-45db-a5c9-82df778ab44f # Banner 5 Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: fe1b9033-4cb7-4b00-92c3-2b4c42e5768f # Banner 5 Secondary Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4ff5c659-06c9-4f1e-85be-e4bc5792c681 # Colleges
             instructions: null
             label: null
             required: false
@@ -155,12 +280,12 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: Assets
-        sortOrder: 4
+        name: 'Banner 5'
+        sortOrder: 6
       -
         elements:
           -
-            fieldUid: 4ff5c659-06c9-4f1e-85be-e4bc5792c681 # Colleges
+            fieldUid: 6783b347-f702-4ac7-baab-8f95f23223e7 # Banner 6 Header
             instructions: null
             label: null
             required: false
@@ -168,10 +293,37 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: Colleges
-        sortOrder: 5
+          -
+            fieldUid: 5de1c29f-0c4c-4ac6-88f7-e0a600245d8f # Banner 6 Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9a70a911-c438-4f3e-a2da-cd3e9b9aafee # Internship Squiggle 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 6'
+        sortOrder: 7
       -
         elements:
+          -
+            fieldUid: 7f92b4f5-ee87-418d-81d6-850a633333de # Big Quotes
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 3d351861-9bdd-4332-96ad-00a59755f771 # Quotes
             instructions: null
@@ -181,12 +333,8 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: Quote
-        sortOrder: 6
-      -
-        elements:
           -
-            fieldUid: f6b553bf-2070-4cd1-a6c9-125463882273 # Currently Accepting Internship Applications
+            fieldUid: a53319d7-a065-4006-b797-59fa46291543 # Internship Squiggle 0
             instructions: null
             label: null
             required: false
@@ -195,7 +343,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 30a99fdf-5b65-4e1b-97ae-e5da56bd6ca8 # Generic Modal
+            fieldUid: 585ca78c-fa8f-4b72-a544-512871ead130 # Jesse Headshot
             instructions: null
             label: null
             required: false
@@ -203,8 +351,17 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: Application
-        sortOrder: 7
+          -
+            fieldUid: 18a79c48-30af-4ed4-b9f2-8df8171097d4 # Internship Squiggle 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Archive
+        sortOrder: 8
 handle: internship
 hasTitleField: false
 name: Internship

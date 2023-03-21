@@ -26,10 +26,6 @@ fieldLayouts:
             type: craft\fieldlayoutelements\EntryTitleField
             warning: null
             width: 100
-        name: Intro
-        sortOrder: 1
-      -
-        elements:
           -
             fieldUid: 7a633eca-bfc2-4150-9029-8866716a9600 # Page Description
             instructions: null
@@ -58,7 +54,7 @@ fieldLayouts:
             warning: null
             width: 100
         name: 'Page Data'
-        sortOrder: 2
+        sortOrder: 1
       -
         elements:
           -
@@ -106,8 +102,8 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Banner 1: Header'
-        sortOrder: 3
+        name: 'Banner 1'
+        sortOrder: 2
       -
         elements:
           -
@@ -119,8 +115,8 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Banner 2: Waveform'
-        sortOrder: 4
+        name: 'Banner 2'
+        sortOrder: 3
       -
         elements:
           -
@@ -141,8 +137,8 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Banner 3: Storytelling'
-        sortOrder: 5
+        name: 'Banner 3'
+        sortOrder: 4
       -
         elements:
           -
@@ -163,8 +159,8 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Banner 4: Episodes'
-        sortOrder: 6
+        name: 'Banner 4'
+        sortOrder: 5
       -
         elements:
           -
@@ -194,8 +190,8 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Banner 5: Featured Review'
-        sortOrder: 7
+        name: 'Banner 5'
+        sortOrder: 6
       -
         elements:
           -
@@ -207,8 +203,17 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Banner 6: This is Two Coins'
-        sortOrder: 8
+          -
+            fieldUid: 72a6a3b0-88c9-41df-b5fa-e74a3de98d19 # This is Two Coins Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Banner 6'
+        sortOrder: 7
       -
         elements:
           -
@@ -238,8 +243,8 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Banner 7: About Us'
-        sortOrder: 9
+        name: 'Banner 7'
+        sortOrder: 8
       -
         elements:
           -
@@ -278,8 +283,8 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Banner 8: Reviews'
-        sortOrder: 10
+        name: 'Banner 8'
+        sortOrder: 9
       -
         elements:
           -
@@ -309,8 +314,8 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Banner 9: Experts'
-        sortOrder: 11
+        name: 'Banner 9'
+        sortOrder: 10
 handle: podcast
 hasTitleField: false
 name: Podcast

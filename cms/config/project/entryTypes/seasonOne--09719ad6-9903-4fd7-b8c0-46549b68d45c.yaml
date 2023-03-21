@@ -133,10 +133,6 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Banner 2: Listen'
-        sortOrder: 3
-      -
-        elements:
           -
             fieldUid: a9906eff-f12c-4717-b737-a295dfa458d8 # Podcast Transcript
             instructions: null
@@ -146,8 +142,8 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Banner 2: Transcript'
-        sortOrder: 4
+        name: 'Banner 2'
+        sortOrder: 3
       -
         elements:
           -
@@ -159,8 +155,8 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Banner 3: Related Partner'
-        sortOrder: 5
+        name: 'Banner 3'
+        sortOrder: 4
       -
         elements:
           -
@@ -172,8 +168,8 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Banner 4: Credits'
-        sortOrder: 6
+        name: 'Banner 4'
+        sortOrder: 5
       -
         elements:
           -
@@ -185,8 +181,8 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Banner 5: Hear More'
-        sortOrder: 7
+        name: 'Banner 5'
+        sortOrder: 6
 handle: seasonOne
 hasTitleField: true
 name: 'Season One'

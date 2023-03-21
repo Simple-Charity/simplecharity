@@ -28,7 +28,7 @@
     
                             </div>
                             <div>
-                                <p class="text-lg text-left">{{ modalbody }}</p>
+                                <div class="text-lg text-left">{{ modalbody }}</div>
     
                                 <div class="flex flex-wrap justify-center pt-10">
                                     <div v-if="buttonone">
