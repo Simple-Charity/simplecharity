@@ -56,11 +56,11 @@
 
                     <div class="flex-shrink sm:hidden">
                         <div class="text-linen sm:text-center lg:ml-20">                    
-                            <my-donut
+                            {# <my-donut
                                 given="{{ entry.monthlyAmountRaised }}"
                                 total="{{ entry.monthlyGoal }}">
-                            </my-donut>
-                            <p class="pt-4 mx-auto text-center text-md sm:text-lg lg:text-xl"> <b>{{ entry.monthlyAmountRaised|currency('USD', stripZeros=true) }}</b> /month raised so far.<br>Our goal is <b>{{ entry.monthlyGoal|currency('USD', stripZeros=true) }}</b> /month by {{ entry.coreGoalEndDate }} </p>
+                            </my-donut> #}
+                            {# <p class="pt-4 mx-auto text-center text-md sm:text-lg lg:text-xl"> <b>{{ entry.monthlyAmountRaised|currency('USD', stripZeros=true) }}</b> /month raised so far.<br>Our goal is <b>{{ entry.monthlyGoal|currency('USD', stripZeros=true) }}</b> /month by {{ entry.coreGoalEndDate }} </p> #}
                         </div>
                     </div>
 
@@ -76,11 +76,11 @@
                 </div>
                 <div class="flex-shrink hidden sm:block">
                     <div class="text-center text-linen lg:ml-20">                    
-                        <my-donut
+                        {# <my-donut
                             given="{{ entry.monthlyAmountRaised }}"
                             total="{{ entry.monthlyGoal }}">
-                        </my-donut>
-                        <p class="text-lg"> <b>{{ entry.monthlyAmountRaised|currency('USD', stripZeros=true) }}</b> /month raised so far. Our goal is <b>{{ entry.monthlyGoal|currency('USD', stripZeros=true) }}</b> /month by {{ entry.coreGoalEndDate }} </p>
+                        </my-donut> #}
+                        {# <p class="text-lg"> <b>{{ entry.monthlyAmountRaised|currency('USD', stripZeros=true) }}</b> /month raised so far. Our goal is <b>{{ entry.monthlyGoal|currency('USD', stripZeros=true) }}</b> /month by {{ entry.coreGoalEndDate }} </p> #}
                     </div>
                 </div>
             </div>

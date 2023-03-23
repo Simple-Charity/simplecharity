@@ -5,7 +5,7 @@
             foreground="#f68e6d"
             :sections="sections"
             has-legend
-            size=350
+            :size=350
             legend-placement="bottom"
             :thickness="35">
         </vc-donut>
